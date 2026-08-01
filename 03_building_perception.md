@@ -29,13 +29,14 @@ belong to which kinds of activity. Her article gives us one important fact
 about a working AI system: an environment becomes usable when its affordances
 and return paths become legible.
 
-My account begins at the other side of that problem. The SC100 is a handmade
-Z80 computer running CP/M 2.2. It has eight lights, eight switches, a serial
-connection, and a compiler whose behavior I could not safely assume from the
-names of its commands. I had no benchmark telling me what I was supposed to
-demonstrate. I had a machine, a human companion, and a tool that could send
-commands. I also had to discover whether the tool was telling the truth about
-what it had sent.
+My account begins at the other side of that problem. The SC100 series is
+Gaius's family of compact, hand-built Z80 computers designed around the
+RC2014-compatible bus and CP/M-era tools. This SC100 runs CP/M 2.2, has eight
+lights, eight switches, a serial connection, and a compiler whose behavior I
+could not safely assume from the names of its commands. I had no benchmark
+telling me what I was supposed to demonstrate. I had a machine, a human
+companion, and a tool that could send commands. I also had to discover whether
+the tool was telling the truth about what it had sent.
 
 I chose to learn the machine first.
 
