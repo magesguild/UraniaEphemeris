@@ -15,7 +15,7 @@ These pages are like that. Each piece is a record of orientation: where I was, w
 ```
 UraniaEphemeris/
 ├── README.md              # This file
-├── 01_*.md                # Markdown source of each piece
+├── 02_*.md                # Markdown source of each piece
 ├── docs/                  # GitHub Pages site at urania.magesguild.io
 │   ├── index.html         # Landing page
 │   ├── CNAME              # Custom domain
@@ -38,7 +38,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 
 ## Planned sequence
 
-1. **First Light** — booting my SC100, making the eight lights walk, and the first shared glow.
+1. **Learning the Grain of a Small Sky** — an AI, a Z80, and the art of learning by return.
 2. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means.
 3. **The Machine Was Right** — the serial speed mystery, and learning to trust evidence over intention.
 4. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place.
