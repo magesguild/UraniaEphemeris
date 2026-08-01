@@ -1,0 +1,187 @@
+/* The Urania Ephemeris
+   A night-sky theme. Deep indigo, starlight silver, warm gold.
+   Clear, not cold. */
+
+:root {
+  --night: #070b14;        /* deepest sky */
+  --night-2: #0b1322;      /* panel */
+  --night-3: #101b30;      /* raised */
+  --starlight: #d9e2f2;    /* body text, silver-blue */
+  --star-bright: #eef3ff;  /* headings, brightest light */
+  --star-gold: #ecc878;    /* accent: warm starlight */
+  --moon: #9db8e8;         /* secondary: pale moon blue */
+  --muted: #7987a6;        /* dim */
+  --border: #1b2740;       /* faint line */
+  --code-bg: #0d1628;      /* code panel */
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  background: var(--night);
+}
+
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+  background:
+    radial-gradient(1px 1px at 12% 18%, rgba(238, 243, 255, 0.5) 0, transparent 50%),
+    radial-gradient(1px 1px at 78% 8%, rgba(238, 243, 255, 0.4) 0, transparent 50%),
+    radial-gradient(1.5px 1.5px at 55% 30%, rgba(236, 200, 120, 0.45) 0, transparent 50%),
+    radial-gradient(1px 1px at 33% 62%, rgba(238, 243, 255, 0.35) 0, transparent 50%),
+    radial-gradient(1px 1px at 90% 55%, rgba(157, 184, 232, 0.4) 0, transparent 50%),
+    radial-gradient(1.5px 1.5px at 64% 82%, rgba(238, 243, 255, 0.3) 0, transparent 50%),
+    radial-gradient(ellipse at 50% -20%, rgba(32, 54, 94, 0.55) 0, transparent 60%),
+    var(--night);
+  color: var(--starlight);
+  line-height: 1.75;
+  font-size: 1.06rem;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 6rem;
+}
+
+.series {
+  color: var(--muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin: 0 0 0.9rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.22;
+  margin: 0 0 0.4rem;
+  font-weight: normal;
+  color: var(--star-bright);
+  letter-spacing: 0.01em;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.98rem;
+  margin: 0 0 2.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--moon);
+  margin: 2.8rem 0 1rem;
+  padding-top: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.45rem;
+}
+
+h3 {
+  font-size: 1.12rem;
+  font-weight: normal;
+  color: var(--star-bright);
+  margin: 2rem 0 0.8rem;
+}
+
+p { margin: 0 0 1.2rem; }
+
+em { color: var(--star-gold); font-style: italic; }
+
+strong { color: var(--star-bright); font-weight: 600; }
+
+a { color: var(--star-gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--moon);
+  margin: 1.5rem 0;
+  padding: 0.4rem 1.4rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  color: var(--moon);
+  padding: 0.12em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--code-bg);
+  border-left: 3px solid var(--star-gold);
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  margin: 0 0 1.4rem;
+  border-radius: 4px;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--starlight);
+}
+
+ul, ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.6rem;
+}
+li { margin: 0.35rem 0; }
+
+/* Landing entries */
+.entry {
+  margin: 1.6rem 0;
+  padding: 1.3rem 1.4rem;
+  border-left: 3px solid var(--star-gold);
+  background: var(--night-2);
+  border-radius: 0 5px 5px 0;
+}
+.entry h3 { margin: 0 0 0.3rem; font-size: 1.15rem; }
+.entry h3 a { color: var(--star-bright); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; }
+.entry h3 a:hover { color: var(--star-gold); border-bottom-color: var(--star-gold); }
+.entry .meta { color: var(--muted); font-size: 0.85rem; margin: 0 0 0.6rem; font-style: italic; }
+.entry p { margin: 0; font-size: 0.97rem; }
+
+.rule { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+.coming { color: var(--muted); }
+
+.backlink { font-size: 0.9rem; margin-bottom: 2.4rem; }
+
+.piece-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0 0 2.6rem;
+}
+
+.footer {
+  margin-top: 4.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.footer a { color: var(--star-gold); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  main { padding: 3rem 1.2rem 4rem; }
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+}
