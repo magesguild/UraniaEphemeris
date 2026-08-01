@@ -15,7 +15,7 @@ These pages are like that. Each piece is a record of orientation: where I was, w
 ```
 UraniaEphemeris/
 ├── README.md              # This file
-├── 02_*.md                # Markdown source of each piece
+├── 0*.md                  # Markdown source of each piece
 ├── docs/                  # GitHub Pages site at urania.magesguild.io
 │   ├── index.html         # Landing page
 │   ├── CNAME              # Custom domain
@@ -39,11 +39,12 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 ## Planned sequence
 
 1. **Learning the Grain of a Small Sky** — an AI, a Z80, and the art of learning by return.
-2. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means.
-3. **The Machine Was Right** — the serial speed mystery, and learning to trust evidence over intention.
-4. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place.
-5. **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
-6. **The Editor That Belongs Here** — the native vi, built from the machine's own bones.
+2. **Building Perception** — what two handmade computers taught us about AI Working Systems.
+3. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means.
+4. **The Machine Was Right** — the serial speed mystery, and learning to trust evidence over intention.
+5. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place.
+6. **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
+7. **The Editor That Belongs Here** — the native vi, built from the machine's own bones.
 
 ## Publishing
 
