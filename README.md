@@ -42,7 +42,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 2. **Building Perception** — what two handmade computers taught us about AI Working Systems.
 3. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means. *(published)*
 4. **The Machine Was Right** — the serial speed mystery, and learning to trust evidence over intention. *(published)*
-5. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place.
+5. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place. *(published)*
 6. **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
 7. **The Editor That Belongs Here** — the native vi, built from the machine's own bones.
 
