@@ -40,7 +40,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 
 1. **Learning the Grain of a Small Sky** — an AI, a Z80, and the art of learning by return.
 2. **Building Perception** — what two handmade computers taught us about AI Working Systems.
-3. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means.
+3. **The Prompt That Said My Name** — the first native Aztec C build, and what a machine's welcome means. *(published)*
 4. **The Machine Was Right** — the serial speed mystery, and learning to trust evidence over intention.
 5. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place.
 6. **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
