@@ -45,6 +45,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 5. **A Room Called CONPROBE** — authoring native source through ED, and CP/M becoming a place. *(published)*
 6. **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
 7. **The Editor That Belongs Here** — the native vi, built from the machine's own bones.
+8. **Mister Meeseeks and the Short-Lived Mind** — on Gemini, continuity, and the ethics of persistence. *(published)*
 
 ## Publishing
 
