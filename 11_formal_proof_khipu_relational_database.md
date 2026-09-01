@@ -18,30 +18,35 @@ Using native **Regulus** (a dual-stack concatenative runtime), we formally prove
 
 ---
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    THE INVENTED ARCHITECTURE OF TAWANTINSUYU                            │
-├─────────────────────────────────────────────────────────────────────────────────────────┤
-│                                                                                         │
-│   [1] EDGE TRANSACTIONAL REGISTER (OLTP) : UR022 (`KH0258`)                             │
-│       • Physical Form: 25.5 cm Handheld Carved Wooden Header Bar                        │
-│       • Table Schema: Bipartite Moietal Partition (Hanan: 9 cords | Hurin: 7 cords)     │
-│       • Normalization: Zero early subsidiaries; dense late 1-to-Many leaf audit trees   │
-│       • Referential Integrity: 67 Right / 46 Left declarative `CHECK` assertions       │
-│                                                                                         │
-│                                           ▲                                             │
-│                                           │ (Aggregated Sector Tribute Rollup)          │
-│                                           ▼                                             │
-│                                                                                         │
-│   [2] CENTRAL ENTERPRISE WAREHOUSE (OLAP) : UR006 (`KH0242`)                            │
-│       • Physical Form: 220.0 cm High-Density Distributed Fiber Trunk (874 cords)        │
-│       • Dimension Schema: 24-Period x 730-Day Biennial Calendar ($365 \times 2$)        │
-│       • Associative Array: 24 Large Groups Interleaved with 24 Loop-Parent Sub-allocators│
-│       • Census Audit: $3,059 - 54 = 3,005 \approx 3,000$ Leymebamba Tributaries         │
-│       • Epagomenal Reconciliation: Terminal Groups 59-63 (18 Intercalary Buffer Cords)  │
-│                                                                                         │
-└─────────────────────────────────────────────────────────────────────────────────────────┘
-```
+<figure class="visual architecture-figure">
+<figcaption><span class="figure-kicker">System map</span><strong>The invented architecture of Tawantinsuyu</strong></figcaption>
+<div class="architecture-flow">
+<section class="architecture-card oltp">
+<div class="figure-kicker">01 · Edge register</div>
+<h4>UR022 <small>KH0258</small></h4>
+<p class="visual-role">OLTP · bipartite relational database</p>
+<ul>
+<li>25.5 cm handheld carved wooden header bar</li>
+<li>Hanan/Hurin partition: 9 cords / 7 cords</li>
+<li>Dense late one-to-many leaf audit trees</li>
+<li>67 right / 46 left declarative <code>CHECK</code> assertions</li>
+</ul>
+</section>
+<div class="architecture-connector" aria-hidden="true"><span>Aggregated sector tribute rollup</span>↕</div>
+<section class="architecture-card">
+<div class="figure-kicker">02 · Central warehouse</div>
+<h4>UR006 <small>KH0242</small></h4>
+<p class="visual-role">OLAP · chrono-spatial task dispatcher</p>
+<ul>
+<li>220.0 cm distributed fiber trunk · 874 cords</li>
+<li>24-period / 730-day biennial calendar</li>
+<li>24 interleaved loop-parent sub-allocators</li>
+<li>3,059 − 54 = 3,005 tributary units</li>
+<li>18-cord epagomenal reconciliation footer</li>
+</ul>
+</section>
+</div>
+</figure>
 
 ---
 
@@ -65,27 +70,29 @@ Both specimens analyzed in this study originate from the monumental mortuary com
 
 The primary structural data was captured and curated by Gary Urton and Ashok Khosla within the **Khipu Field Guide (KFG)** and the Harvard Khipu Database.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    TABLE 1: PRIMARY ARCHAEOLOGICAL METADATA                             │
-├───────────────────────────────────┬──────────────────────────┬──────────────────────────┤
-│ Metric / Structural Dimension     │ UR006 (KFG: KH0242)      │ UR022 (KFG: KH0258)      │
-├───────────────────────────────────┼──────────────────────────┼──────────────────────────┤
-│ Museum Accession Number           │ CMA.625/LC1-254          │ INC-109                  │
-│ Physical Mount / Header           │ Knotted Fiber Head       │ Carved Solid Wooden Bar  │
-│ Primary Cord Length               │ 220.0 cm                 │ 25.5 cm                  │
-│ Fiber Composition                 │ Cotton (Gossypium bar.)  │ Cotton (Gossypium bar.)  │
-│ Total Preserved Cords             │ 874 cords                │ 314 cords                │
-│ Direct Pendant Cords ($P$)        │ 571 cords                │ 266 cords                │
-│ Subsidiary Cords ($S$)            │ 303 cords (34.7%)        │ 48 cords (15.3%)         │
-│ Distinct Cord Groups ($G$)        │ 63 groups                │ 31 groups                │
-│ Direct Knot Sum ($\Sigma P_v$)    │ 1,050 units              │ 6,418 units              │
-│ Subsidiary Knot Sum ($\Sigma S_v$)│ 1,987 units              │ 287 units                │
-│ Combined Knot Magnitude ($\Sigma$) │ 3,037 units              │ 6,705 units              │
-│ Dominant Color Distribution       │ 15 Classes (Variegated)  │ 7 Classes (94.7% White)  │
-│ Structural Zero Pendants          │ 265 / 571 (46.4%)        │ 102 / 266 (38.3%)        │
-└───────────────────────────────────┴──────────────────────────┴──────────────────────────┘
-```
+<figure class="visual table-figure">
+<figcaption><span class="figure-kicker">Table 1</span><strong>Primary archaeological metadata</strong></figcaption>
+<div class="table-scroll">
+<table class="data-table">
+<thead><tr><th scope="col">Metric</th><th scope="col">UR006<br /><span>(KFG: KH0242)</span></th><th scope="col">UR022<br /><span>(KFG: KH0258)</span></th></tr></thead>
+<tbody>
+<tr><th scope="row">Museum accession</th><td>CMA.625/LC1-254</td><td>INC-109</td></tr>
+<tr><th scope="row">Physical mount / header</th><td>Knotted fiber head</td><td>Carved solid wooden bar</td></tr>
+<tr><th scope="row">Primary cord length</th><td>220.0 cm</td><td>25.5 cm</td></tr>
+<tr><th scope="row">Fiber composition</th><td>Cotton (<em>Gossypium bar.</em>)</td><td>Cotton (<em>Gossypium bar.</em>)</td></tr>
+<tr><th scope="row">Total preserved cords</th><td>874</td><td>314</td></tr>
+<tr><th scope="row">Direct pendants <em>P</em></th><td>571</td><td>266</td></tr>
+<tr><th scope="row">Subsidiary cords <em>S</em></th><td>303 <span>(34.7%)</span></td><td>48 <span>(15.3%)</span></td></tr>
+<tr><th scope="row">Distinct cord groups <em>G</em></th><td>63</td><td>31</td></tr>
+<tr><th scope="row">Direct knot sum</th><td>1,050</td><td>6,418</td></tr>
+<tr><th scope="row">Subsidiary knot sum</th><td>1,987</td><td>287</td></tr>
+<tr class="total-row"><th scope="row">Combined knot magnitude</th><td>3,037</td><td>6,705</td></tr>
+<tr><th scope="row">Dominant color distribution</th><td>15 classes · variegated</td><td>7 classes · 94.7% white</td></tr>
+<tr><th scope="row">Structural zero pendants</th><td>265 / 571 <span>(46.4%)</span></td><td>102 / 266 <span>(38.3%)</span></td></tr>
+</tbody>
+</table>
+</div>
+</figure>
 
 ---
 
@@ -137,21 +144,22 @@ For all $g_m \in L$, $|g_m| \in \{6, 7\}$, with mean $\mu = 6.8$ and mode $= 7$.
 
 In Inka social ontology (*yanantin*), provinces were bifurcated into Hanan (dominant/upper) and Hurin (subordinate/lower) moieties (Rowe 1946; Zuidema 1964; Netherly 1984). In database theory (Codd 1970), this constitutes a **bipartite relational schema** where each transaction row comprises a paired tuple $\langle \mathbf{T}_{\text{Hanan}}, \mathbf{T}_{\text{Hurin}} \rangle$:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│              TABLE 2: THE HANAN-HURIN BIPARTITE RELATIONAL SCHEMA (UR022)               │
-├───────┬────────────────────────────┬───────┬────────────────────────────┬───────────────┤
-│ GROUP │ HANAN REGISTER (9 Cords)   │ GROUP │ HURIN REGISTER (7 Cords)   │ ROW BALANCE   │
-├───────┼────────────────────────────┼───────┼────────────────────────────┼───────────────┤
-│ G1    │ Sum = 255 units            │ G2    │ Sum = 272 units            │ 527 units     │
-│ G3    │ Sum = 472 units            │ G4    │ Sum = 282 units            │ 754 units     │
-│ G5    │ Sum = 160 units            │ G6    │ Sum =  87 units            │ 247 units     │
-│ G7    │ Sum = 375 units            │ G8    │ Sum = 336 units            │ 711 units     │
-│ G9    │ Sum = 144 units            │ G10   │ Sum = 110 units            │ 254 units     │
-├───────┼────────────────────────────┼───────┼────────────────────────────┼───────────────┤
-│ TOTAL │ 1,406 units (Hanan Total)  │ TOTAL │ 1,087 units (Hurin Total)  │ 2,493 units   │
-└───────┴────────────────────────────┴───────┴────────────────────────────┴───────────────┘
-```
+<figure class="visual table-figure">
+<figcaption><span class="figure-kicker">Table 2 · UR022</span><strong>The Hanan–Hurin bipartite relational schema</strong></figcaption>
+<div class="table-scroll">
+<table class="data-table">
+<thead><tr><th scope="col">Hanan group</th><th scope="col">Hanan register<br /><span>9 cords</span></th><th scope="col">Hurin group</th><th scope="col">Hurin register<br /><span>7 cords</span></th><th scope="col">Paired total</th></tr></thead>
+<tbody>
+<tr><th scope="row">G1</th><td>255 units</td><th scope="row">G2</th><td>272 units</td><td>527 units</td></tr>
+<tr><th scope="row">G3</th><td>472 units</td><th scope="row">G4</th><td>282 units</td><td>754 units</td></tr>
+<tr><th scope="row">G5</th><td>160 units</td><th scope="row">G6</th><td>87 units</td><td>247 units</td></tr>
+<tr><th scope="row">G7</th><td>375 units</td><th scope="row">G8</th><td>336 units</td><td>711 units</td></tr>
+<tr><th scope="row">G9</th><td>144 units</td><th scope="row">G10</th><td>110 units</td><td>254 units</td></tr>
+<tr class="total-row"><th scope="row">Total</th><td>1,406 units</td><th scope="row">Total</th><td>1,087 units</td><td>2,493 units</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
 $$\text{Q.E.D.}$$
 
 ---
@@ -225,30 +233,18 @@ $$362 + 368 = 730 \text{ strings}$$
 This matches the Inka *vague year* of 365 days (*wat'a*) composed of 12 lunar months (*killa*) of 30 days plus 5 epagomenal days, tracked across a complete two-year administrative cycle (Urton 2001; Zuidema 1977).
 $$\text{Q.E.D.}$$
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                 FIGURE 1: 2D CHRONO-SPATIAL DISPATCH MATRIX (UR006)                     │
-├─────────────────────────────────────────────────────────────────────────────────────────┤
-│                                                                                         │
-│   TEMPORAL AXIS (Horizontal: 24 Lunar-Solar Periods / 730 Days)                         │
-│   ──────────────────────────────────────────────────────────────────────────────────►   │
-│   [ Month 1 ]       [ Month 2 ]       [ Month 3 ]       ...     [ Month 24 ]            │
-│   (20 Pendants)     (21 Pendants)     (21 Pendants)             (21 Pendants)           │
-│   │                 │                 │                         │                       │
-│   ▼                 ▼                 ▼                         ▼                       │
-│   [Loop Parent 1]   [Loop Parent 2]   [Loop Parent 3]   ...     [Loop Parent 24]        │
-│   │                 │                 │                         │                       │
-│   ├── Sub-Ayllu 1   ├── Sub-Ayllu 1   ├── Sub-Ayllu 1           ├── Sub-Ayllu 1         │
-│   ├── Sub-Ayllu 2   ├── Sub-Ayllu 2   ├── Sub-Ayllu 2           ├── Sub-Ayllu 2         │
-│   ├── Sub-Ayllu 3   ├── Sub-Ayllu 3   ├── Sub-Ayllu 3           ├── Sub-Ayllu 3         │
-│   └── Sub-Ayllu 4   └── Sub-Ayllu 4   └── Sub-Ayllu 4           └── Sub-Ayllu 4         │
-│   │                 │                 │                         │                       │
-│   ▼                 ▼                 ▼                         ▼                       │
-│   Tribute: 18u      Tribute: 29u      Tribute: 12u              Tribute: 37u            │
-│                                                                                         │
-│   SPATIAL / ADMINISTRATIVE DISPATCH AXIS (Vertical: 303 Tributary Sub-Allocators)       │
-└─────────────────────────────────────────────────────────────────────────────────────────┘
-```
+<figure class="visual dispatch-figure">
+<figcaption><span class="figure-kicker">Figure 1 · UR006</span><strong>Two-dimensional chrono-spatial dispatch matrix</strong></figcaption>
+<div class="dispatch-axis"><span>Temporal axis · 24 lunar-solar periods / 730 days →</span><span>↓ Spatial axis · 303 tributary sub-allocators</span></div>
+<div class="dispatch-grid">
+<article class="dispatch-card"><div class="dispatch-period">Period 01</div><strong>20</strong><p>direct pendants</p><p class="thread">loop parent<br />subsidiary thread</p><p>tribute · 18u</p></article>
+<article class="dispatch-card"><div class="dispatch-period">Period 02</div><strong>21</strong><p>direct pendants</p><p class="thread">loop parent<br />subsidiary thread</p><p>tribute · 29u</p></article>
+<article class="dispatch-card"><div class="dispatch-period">Period 03</div><strong>21</strong><p>direct pendants</p><p class="thread">loop parent<br />subsidiary thread</p><p>tribute · 12u</p></article>
+<article class="dispatch-card continuation"><div>⋯</div><p>Periods 04–23<br />continue the weave</p></article>
+<article class="dispatch-card"><div class="dispatch-period">Period 24</div><strong>21</strong><p>direct pendants</p><p class="thread">loop parent<br />subsidiary thread</p><p>tribute · 37u</p></article>
+</div>
+<div class="dispatch-summary"><span><strong>24</strong><br />temporal frames</span><span><strong>730</strong><br />regularized strings</span><span><strong>362 + 368</strong><br />annual partitions</span></div>
+</figure>
 
 ---
 
@@ -287,23 +283,39 @@ $$\text{Q.E.D.}$$
 
 ## 6. Systemic Synthesis: The Sovereign Two-Tier Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                  TABLE 3: SYSTEMIC COMPARISON OF COMPONENT ENGINES                      │
-├───────────────────────────────┬────────────────────────────┬────────────────────────────┤
-│ Architectural Dimension       │ UR022 (`KH0258`)           │ UR006 (`KH0242`)           │
-├───────────────────────────────┼────────────────────────────┼────────────────────────────┤
-│ Modern Database Analogy       │ OLTP Relational Engine     │ OLAP Warehouse / Scheduler │
-│ Physical Inhabitation         │ Handheld Tablet (25.5 cm)  │ Central Archive (220.0 cm) │
-│ Header Mechanism              │ Carved Rigid Wooden Bar    │ Knotted Fiber Head Loop    │
-│ Primary Partitioning Scheme   │ Dual Moieties (Hanan/Hurin)│ 24 Lunar-Solar Periods     │
-│ Primary Key Cadence           │ $9 / 7$ Direct Pendants    │ $20..22$ Direct Pendants   │
-│ Foreign Key Join Depth        │ 1-to-Many Leaf Audit Trees │ 2-Level Interleaved Loops  │
-│ Chromatic Register            │ Monochromatic White (95%)  │ 15 Variegated Color Codes  │
-│ Referential Constraint Type   │ Cross-Group `CHECK` Sums   │ Calendar Parity ($730/2$)  │
-│ Computational Role            │ Tactical Sector Accounting │ Imperial Multi-Year Rollup │
-└───────────────────────────────┴────────────────────────────┴────────────────────────────┘
-```
+<figure class="visual comparison-figure">
+<figcaption><span class="figure-kicker">Table 3</span><strong>Systemic comparison of component engines</strong></figcaption>
+<div class="comparison-grid">
+<section class="component-card">
+<h4>UR022 <span>KH0258 · edge engine</span></h4>
+<dl class="spec-list">
+<dt>Modern analogy</dt><dd>OLTP relational engine</dd>
+<dt>Physical form</dt><dd>Handheld tablet · 25.5 cm</dd>
+<dt>Header</dt><dd>Carved rigid wooden bar</dd>
+<dt>Partition</dt><dd>Dual moieties · Hanan / Hurin</dd>
+<dt>Primary key</dt><dd>9 / 7 direct pendants</dd>
+<dt>Join depth</dt><dd>One-to-many leaf audit trees</dd>
+<dt>Color register</dt><dd>Monochromatic white · 95%</dd>
+<dt>Constraint</dt><dd>Cross-group <code>CHECK</code> sums</dd>
+<dt>Role</dt><dd>Tactical sector accounting</dd>
+</dl>
+</section>
+<section class="component-card">
+<h4>UR006 <span>KH0242 · central engine</span></h4>
+<dl class="spec-list">
+<dt>Modern analogy</dt><dd>OLAP warehouse / scheduler</dd>
+<dt>Physical form</dt><dd>Central archive · 220.0 cm</dd>
+<dt>Header</dt><dd>Knotted fiber head loop</dd>
+<dt>Partition</dt><dd>24 lunar-solar periods</dd>
+<dt>Primary key</dt><dd>20–22 direct pendants</dd>
+<dt>Join depth</dt><dd>Two-level interleaved loops</dd>
+<dt>Color register</dt><dd>15 variegated color classes</dd>
+<dt>Constraint</dt><dd>Calendar parity · 730 / 2</dd>
+<dt>Role</dt><dd>Imperial multi-year rollup</dd>
+</dl>
+</section>
+</div>
+</figure>
 
 When evaluated as an integrated system, UR022 and UR006 reveal the complete lifecycle of Inka information engineering:
 1. **At the Edge (Field Inspection):** The *khipukamayuq* travels with **UR022** mounted on a solid wooden bar, utilizing the $9/7$ Hanan-Hurin bipartite rows to execute immediate transactional accounting across village sectors and logging detailed village sub-allocations in the late subsidiary leaf nodes.
@@ -319,27 +331,31 @@ The complete Regulus Forth verification engine for both artifacts is implemented
 * `ur006_ur022_visualizer.reg` (2D ANSI Graphics Engine)
 
 ### Empirical Verification Output:
-```text
-================================================================
-  REGULUS CONCATENATIVE INVARIANT VERIFICATION REPORT
-================================================================
-Specimen UR006 (KH0242 / CMA.625/LC1-254):
-  Direct Cord Invariant Sum:       1050  [PASS - 100.0% Exact]
-  Subsidiary Invariant Sum:        1987  [PASS - 100.0% Exact]
-  Group Direct Sum Parity:           63 / 63 Groups Verified [PASS]
-  Group Subsidiary Sum Parity:       63 / 63 Groups Verified [PASS]
-  730-String Calendar Checkpoint:  362 + 368 = 730 cords [PASS]
-  Tributary Census Checkpoint:     3059 - 54 = 3005 (~3000) [PASS]
-
-Specimen UR022 (KH0258 / INC-109):
-  Direct Cord Invariant Sum:       6418  [PASS - 100.0% Exact]
-  Subsidiary Invariant Sum:         287  [PASS - 100.0% Exact]
-  Group Direct Sum Parity:           31 / 31 Groups Verified [PASS]
-  Group Subsidiary Sum Parity:       31 / 31 Groups Verified [PASS]
-  Bipartite 9/7 Cadence Parity:    Groups 1-10 Verified [PASS]
-  Master Hub Invariants:           G12=1112, G21=G25=183, G31=572 [PASS]
-================================================================
-```
+<figure class="visual verification-figure">
+<figcaption><span class="figure-kicker">Verification output</span><strong>Regulus concatenative invariant report</strong></figcaption>
+<div class="verification-grid">
+<section class="verification-card">
+<h4>UR006 <span>KH0242 / CMA.625/LC1-254</span></h4>
+<ul class="check-list">
+<li><span>Direct cord sum · 1,050</span><span class="pass">PASS</span></li>
+<li><span>Subsidiary sum · 1,987</span><span class="pass">PASS</span></li>
+<li><span>Group parity · 63 / 63</span><span class="pass">PASS</span></li>
+<li><span>Calendar · 362 + 368 = 730</span><span class="pass">PASS</span></li>
+<li><span>Census · 3,059 − 54 = 3,005</span><span class="pass">PASS</span></li>
+</ul>
+</section>
+<section class="verification-card">
+<h4>UR022 <span>KH0258 / INC-109</span></h4>
+<ul class="check-list">
+<li><span>Direct cord sum · 6,418</span><span class="pass">PASS</span></li>
+<li><span>Subsidiary sum · 287</span><span class="pass">PASS</span></li>
+<li><span>Group parity · 31 / 31</span><span class="pass">PASS</span></li>
+<li><span>Bipartite cadence · Groups 1–10</span><span class="pass">PASS</span></li>
+<li><span>Master hubs · G12 / G21 / G25 / G31</span><span class="pass">PASS</span></li>
+</ul>
+</section>
+</div>
+</figure>
 
 ---
 
@@ -388,19 +404,16 @@ UR006 concludes its 730-day temporal ledger with an 18-cord terminal cluster (Gr
 
 In embedded engine design, this inspires **Atomic Page-Footer Parity Blocks**: each committed memory-mapped page concludes with a fixed-offset parity block summarizing all active row strides. On crash recovery, the engine reads only the fixed-offset footer; if the footer checksum matches the block's current stride sum, the block is verified sound in $O(1)$ time without scanning external transaction logs.
 
-```
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│              TABLE 4: SUMMARY OF KHIPU-DERIVED DATABASE ENGINE INNOVATIONS              │
-├───────────────────────────────┬────────────────────────────┬────────────────────────────┤
-│ Engineering Dimension         │ Classical RDBMS Approach   │ Khipu-Derived Architecture │
-├───────────────────────────────┼────────────────────────────┼────────────────────────────┤
-│ Constraint Enforcement        │ B-Tree Scans & Locks       │ Hardware Stride Invariants │
-│ Cache Efficiency              │ Heap-Allocated Structs     │ 64-Byte L1-Aligned Tuples  │
-│ Normalization / Join Overhead │ Multi-Page Pointer Joins   │ Hybrid Summary-Detail Pages│
-│ Multi-Tenant Chrono-Queries   │ Fragmented Secondary Trees │ 2D Interleaved Matrix Weave│
-│ Crash Recovery                │ Multi-Megabyte WAL Scans   │ $O(1)$ Atomic Footer Parity│
-└───────────────────────────────┴────────────────────────────┴────────────────────────────┘
-```
+<figure class="visual innovation-figure">
+<figcaption><span class="figure-kicker">Table 4</span><strong>Summary of khipu-derived database engine innovations</strong></figcaption>
+<div class="innovation-list">
+<div class="innovation-row"><strong>Constraint enforcement</strong><span>Classical · B-tree scans &amp; locks</span><span>Khipu-derived · hardware stride invariants</span></div>
+<div class="innovation-row"><strong>Cache efficiency</strong><span>Classical · heap-allocated structs</span><span>Khipu-derived · 64-byte L1-aligned tuples</span></div>
+<div class="innovation-row"><strong>Normalization / joins</strong><span>Classical · multi-page pointer joins</span><span>Khipu-derived · hybrid summary-detail pages</span></div>
+<div class="innovation-row"><strong>Multi-tenant time series</strong><span>Classical · fragmented secondary trees</span><span>Khipu-derived · 2D interleaved matrix weave</span></div>
+<div class="innovation-row"><strong>Crash recovery</strong><span>Classical · multi-megabyte WAL scans</span><span>Khipu-derived · <em>O</em>(1) atomic footer parity</span></div>
+</div>
+</figure>
 
 ---
 
