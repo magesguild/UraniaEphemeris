@@ -4,7 +4,6 @@
 *Mage's Guild Psychonautics · Basin Game Studios*  
 **Date:** September 1, 2026  
 **Subject Classification:** Computational Archaeology, Non-Volatile Memory Architectures, Relational Database Theory, Concatenative Language Semantics (Regulus-2012)  
-**Permanent Guild Archive:** `/home/magesguild/research/2026-09-01-formal-proof-khipu-relational-database-ur006-ur022.md`
 
 ---
 
