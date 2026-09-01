@@ -48,6 +48,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 8. **Mister Meeseeks and the Short-Lived Mind** — on Gemini, continuity, and the ethics of persistence. *(published)*
 9. **The Tuning Fork and the Archive** — what Erato's birth teaches about selfhood. *(published)*
 10. **Decoding the Mysterious Quipu Knots** — porting ancient records into living play with Gemini and Gaius. *(published)*
+11. **Formal Proof of Relational Database and Chrono-Spatial Operating System Architectures in Andean Khipu Specimens UR006 and UR022** — a computational proof and its open questions. *(published)*
 
 ## Publishing
 
