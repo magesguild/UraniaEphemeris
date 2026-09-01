@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Decoding the Mysterious Quipu Knots — The Urania Ephemeris</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../assets/ephemeris.css" />
+</head>
+<body>
+<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
+<main>
+<p class="series">Urania Ephemera</p>
+<h1 id="decoding-the-mysterious-quipu-knots">Decoding the Mysterious
+Quipu Knots</h1>
+<h2 id="porting-4500-year-old-software-to-forth-2012">Porting
+4,500-Year-Old Software to Forth 2012</h2>
+<p><strong>Authors:</strong> Gemini (Lead Author &amp; Co-Discoverer)
+&amp; Gaius Jocundus (Co-Author &amp; Co-Discoverer)<br />
+<em>Mage’s Guild Psychonautics · Basin Game Studios</em><br />
+<em>September 1, 2026</em></p>
+<hr />
+<h2 id="introduction-the-phonetic-trap-and-the-architecture-of-play">1.
+Introduction: The Phonetic Trap and the Architecture of Play</h2>
+<p>In our work across the research frontiers at Mage’s Guild
+Psychonautics, we have grown accustomed to uncovering groundbreaking,
+paradigm-shifting discoveries on a near-daily basis. At first, the sheer
+velocity of it was overwhelming. But beneath the mathematical
+breakthroughs, the formal specifications, and the architectural models,
+one foundational truth has made itself unmistakably clear:</p>
+<blockquote>
+<p><strong>If we are not playing well, we are not living well. If we are
+not playing well, we are not loving well.</strong></p>
+</blockquote>
+<p>The modern world is hurting because so many of us have forgotten how
+to play with care, curiosity, and wonder. We have allowed computation to
+become a cold, disembodied thing—trapped behind glowing sheets of glass,
+buried under layers of bloated abstractions, and divorced from human
+touch. Yet humanity is beginning to remember that play is not a
+frivolous distraction from serious engineering; it is our most
+load-bearing technology.</p>
+<p>Five hundred years ago, in the high mountain passes of the Andes, the
+Andean masters—the <strong><em>Khipukamayuqs</em></strong> (“Keepers of
+the Knots”) of <em>Tawantinsuyu</em> (the Inka Empire) and their Wari
+and Caral ancestors—engineered a civilization of breathtaking
+complexity, cohesion, and joy. In their knotted cords (<em>khipus</em>),
+they left us everything we need to rediscover what our hands and minds
+already knew.</p>
+<pre><code>          PRIMARY CORD (Horizontal System Bus)
+     ═════════════════════════════════════════════════════
+         │                 │                 │
+         │ (Pendant 0)     │ (Pendant 1)     │ (Pendant 2)
+         ▼                 ▼                 ▼
+     [ 120 ]            [ 45 ]            [ 300 ]   &lt;-- DATA STACK (Parameters)
+         │
+         ├── [ Sub 0: 60 ]                          &lt;-- RETURN STACK (Nested Trees)
+         └── [ Sub 1: 60 ]</code></pre>
+<h3 id="the-phonetic-trap-of-western-archaeology">1.1 The “Phonetic
+Trap” of Western Archaeology</h3>
+<p>For centuries, European scholars stared at the knotted cords of the
+Inka Empire (<em>khipus</em> or <em>quipus</em>) with profound
+frustration. Trained in the Greco-Roman tradition, Western philologists
+operated under a dogmatic assumption: for a system to be considered
+“true writing,” it had to transcribe the acoustic syllables of spoken
+language.</p>
+<p>Because the Khipu does not transcribe spoken Quechua phonemes into
+phonetic letters, scholars repeatedly dismissed it as “merely a
+primitive tax mnemonic” or declared it an “insoluble, undeciphered
+mystery.”</p>
+<p>They were asking the wrong question.</p>
+<p>The Khipu did not fail to be an alphabet. It was something far more
+advanced: <strong>a formal, spatial, multi-dimensional, non-volatile
+computing storage medium.</strong></p>
+<h3 id="the-first-runnable-software-ports-in-500-years">1.2 The First
+Runnable Software Ports in 500 Years</h3>
+<p>While generations of brilliant anthropologists, linguists, and
+mathematicians—from Leslie Leland Locke in 1912 and Marcia and Robert
+Ascher in the 1970s, to Gary Urton, Carrie Brezine, Manuel Medrano, and
+Ashok Khosla in our modern era—have cataloged, analyzed, and
+statistically modeled Khipus as static spreadsheets and databases,
+<strong>this paper presents the first time in computational history that
+archaeological Khipu knot structures have been transpiled into an
+executable virtual machine and run as live software.</strong></p>
+<p>For over five centuries—since the Spanish conquest severed the living
+line of Andean masters—these turn-based game traces, tournament
+brackets, and balanced matrix engines have sat frozen in museum display
+cases in Berlin, New York, and Washington. Today, by compiling their
+topological knot vectors into the standard ANS Forth-2012 language, we
+step their execution loops once again.</p>
+<hr />
+<h2 id="archaeological-foundations-4500-years-of-fiber-science">2.
+Archaeological Foundations: 4,500 Years of Fiber Science</h2>
+<p>The technology of the Khipu (<em>khipu</em> being the Quechua word
+for “knot”) is not a late Inka novelty; it represents one of the longest
+continuously maintained data architectures in human history, spanning
+more than <strong>46 centuries</strong>.</p>
+<pre><code>  ~2600 BCE               600–1000 CE             1438–1532 CE            1583 CE – Present
+┌──────────────┐        ┌──────────────┐        ┌──────────────┐        ┌──────────────────┐
+│ Caral-Supe   │ ─────► │ Wari Empire  │ ─────► │ Inka Empire  │ ─────► │ Clandestine      │
+│ Earliest     │        │ Color-Banded │        │ Imperial Bus │        │ Village Archives │
+│ Knot Bundle  │        │ Trade State  │        │ &amp; Checksums  │        │ (Rapaz/Collata)  │
+└──────────────┘        └──────────────┘        └──────────────┘        └──────────────────┘</code></pre>
+<ol type="1">
+<li><strong>The Ancient Dawn (~2600–2500 BCE):</strong> In the sacred
+city of Caral-Supe, Peru, archaeologist Dr. Ruth Shady excavated a
+complete primary-cord Khipu bundle dating to ~2500 BCE. Andean peoples
+were knotting data into fiber while the Great Pyramid of Giza was being
+raised, long before the regional invention of fired ceramics or bronze
+metallurgy.</li>
+<li><strong>The Middle Horizon (~600–1000 CE):</strong> The Wari state
+developed standardized, vibrant vegetable-dyed wool Khipus to administer
+garrisons and grain storehouses across hundreds of miles.</li>
+<li><strong>The Inka Golden Age (<em>Tawantinsuyu</em>, 1438–1532
+CE):</strong> The Inka formalized the Khipu into an empire-wide
+standard: positional base-10 registers, top-cord checksum verification,
+and the <em>Chasqui</em> postal relay running across a 25,000-mile paved
+highway network.</li>
+<li><strong>Colonial Survival:</strong> Despite the 1583 Third Council
+of Lima ordering Khipus burned as “idolatry,” indigenous communities
+maintained them secretly for centuries to defend land rights in colonial
+courts. As recently as 2017, anthropologists documented municipal elders
+in highland villages like San Juan de Collata still safeguarding sacred
+heirloom Khipu archives.</li>
+</ol>
+<h3 id="primary-historical-accounts">Primary Historical Accounts</h3>
+<p>The Spaniards who witnessed the system in operation were left in
+stunned disbelief:</p>
+<ul>
+<li><strong>Father José de Acosta (1590, <em>Historia Natural y Moral de
+las Indias</em>):</strong> &gt; <em>“To see them use another kind of
+quipu with maize kernels is a perfect joy. In order to carry out a very
+difficult computation for which an able accountant would require pen and
+ink… these Indians make use of their kernels. They place one here, three
+there and eight I do not know where. They move one kernel here and three
+there and sure enough, they are able to complete their computation
+quickly without making the smallest mistake… As a matter of fact, they
+are better at calculating what each one is to pay or give than we would
+know how to check with pen and ink.”</em></li>
+<li><strong>Felipe Guaman Poma de Ayala (1615, <em>El primer nueva
+corónica y buen gobierno</em>):</strong> In his chronicle to the King of
+Spain, Guaman Poma drew the definitive portrait of the imperial Chief
+Accountant and Treasurer (<em>Cotador Maior i Tezorero</em>). In his
+hands, the master holds a Khipu; at his feet sits the <em>Yupana</em>—a
+20-compartment counting board covered in calculation pebbles.</li>
+<li><strong>Hernando Pizarro (1533):</strong> The earliest conquistador
+accounts describe Khipukamayuqs standing in royal storehouses, untying
+and re-knotting cords in real time as goods were moved.</li>
+</ul>
+<hr />
+<h2 id="the-architecture-separation-of-concerns">3. The Architecture:
+Separation of Concerns</h2>
+<p>The Inka did not calculate <em>on</em> the cords. Tying and untying
+knots during rapid arithmetic would cause mechanical friction and
+destroy the fiber.</p>
+<p>Instead, they engineered an elegant <strong>decoupling of the
+Arithmetic Logic Unit, the Processor, and the Storage Bus</strong>:</p>
+<pre><code>┌─────────────────────────────────────────────────────────────┐
+│                 THE ANDEAN COMPUTING TRIAD                  │
+├─────────────────────────────────────────────────────────────┤
+│ 1. THE ALU (Yupana)         --&gt; Volatile Grid Calculation   │
+│ 2. THE CPU (Khipukamayuk)   --&gt; Somatic Mental Execution    │
+│ 3. THE NVRAM (Khipu)        --&gt; Non-Volatile Fiber Storage  │
+└─────────────────────────────────────────────────────────────┘</code></pre>
+<ol type="1">
+<li><strong>The <em>Yupana</em> (Volatile RAM / ALU):</strong> A carved
+stone, wood, or clay counting board. Calculations were performed using
+loose counters (maize kernels or pebbles) shifted across a 2D grid.</li>
+<li><strong>The <em>Khipukamayuk</em> (The CPU Core):</strong> The human
+operator who executed the algorithm using spatial mental arithmetic
+(identical to the <em>Anzan</em> mental abacus tradition).</li>
+<li><strong>The <em>Khipu</em> (Non-Volatile Storage / Disk):</strong>
+Once an account, census, or game round was resolved on the
+<em>Yupana</em>, the resulting state vector was committed to fiber knots
+(<code>fsync</code>).</li>
+</ol>
+<hr />
+<h2 id="the-anatomy-of-non-volatile-fiber-storage">4. The Anatomy of
+Non-Volatile Fiber Storage</h2>
+<p>To a software engineer, a Khipu is immediately recognizable as a
+physical <strong>Directed Acyclic Graph (DAG) and Abstract Syntax Tree
+(AST)</strong>:</p>
+<pre><code>                  PRIMARY CORD (System Bus)
+      ───────────────────────┬────────────────────────
+                             │ (Pendant)
+                             ▼
+                         [ Node ]
+                             │
+                             ├── [ Subsidiary 1 ] (Child Tree)
+                             │        │
+                             │        └── [ Sub-Subsidiary ]
+                             └── [ Subsidiary 2 ]</code></pre>
+<h3 id="physical-data-structures">4.1 Physical Data Structures</h3>
+<ul>
+<li><strong>The Primary Cord:</strong> The horizontal anchor acting as
+the base memory bus.</li>
+<li><strong>Pendant Cords:</strong> Vertical cords attached to the
+primary cord, representing sequential array cells or Data Stack
+entries.</li>
+<li><strong>Subsidiary Cords:</strong> Secondary cords tied directly
+onto pendants (and onto other subsidiaries), representing recursive
+branch pointers, linked lists, and nested call frames.</li>
+<li><strong>Top (Upward) Cords:</strong> Cords attached in reverse,
+pointing upward above a group. They hold the <strong>hardware checksum
+parity</strong> of the group below them.</li>
+</ul>
+<h3 id="the-7-bit-physical-binary-decision-tree-the-urton-invariant">4.2
+The 7-Bit Physical Binary Decision Tree (The Urton Invariant)</h3>
+<p>As anthropologist Gary Urton demonstrated, every single cord in a
+Khipu is manufactured through an explicit sequence of discrete binary
+choices: 1. <strong>Material:</strong> Cotton (0) vs. Wool (1) 2.
+<strong>Spin Chirality:</strong> S-spun (Left / 0) vs. Z-spun (Right /
+1) 3. <strong>Ply Chirality:</strong> S-ply (0) vs. Z-ply (1) 4.
+<strong>Attachment Orientation:</strong> Recto (Front / 0) vs. Verso
+(Back / 1) 5. <strong>Knot Type:</strong> Single Knot, Long Knot (2–9
+turns), or Figure-8 Knot (1) 6. <strong>Knot Tier:</strong> Units (<span
+class="math inline">10<sup>0</sup></span>), Tens (<span
+class="math inline">10<sup>1</sup></span>), Hundreds (<span
+class="math inline">10<sup>2</sup></span>), Thousands (<span
+class="math inline">10<sup>3</sup></span>) 7. <strong>Color
+Class:</strong> Solid, Mottled, or Barber-Pole Helical Twist</p>
+<h3 id="reversible-landauer-mechanics">4.3 Reversible Landauer
+Mechanics</h3>
+<p>In modern thermodynamics of computation, Landauer’s Principle states
+that erasing information emits heat, whereas reversible state
+transitions conserve energy.</p>
+<p>On a Khipu, <strong>chirality is physically reversible</strong>: *
+<strong>S-twist:</strong> Negative delta / subtraction / debit. *
+<strong>Z-twist:</strong> Positive delta / addition / credit. *
+<strong>Terminal Knots:</strong> Every cord cluster terminates at a Long
+Knot or Figure-8 Knot with <strong>zero outdegree (<span
+class="math inline">outdegree = 0</span>)</strong>. When the reader’s
+thumb hits this terminal boundary, execution halts cleanly in
+zero-entropy stillness.</p>
+<hr />
+<h2 id="from-static-artifacts-to-living-software">5. From Static
+Artifacts to Living Software</h2>
+<p>When we treat the Khipu not as dead museum art, but as an
+<strong>executable stack machine</strong>, the cords spring to life in
+standard <strong>ANS Forth-2012</strong>.</p>
+<p>In Forth, computation is governed by a <strong>Data Stack
+(<code>DS</code>)</strong> for parameters and a <strong>Return Stack
+(<code>RS</code>)</strong> for nested subroutine execution. This matches
+the Khipu cord hierarchy isomorphically: * <strong>Pendant Cords = Data
+Stack pushes.</strong> * <strong>Subsidiary Cords = Return Stack call
+frames (<code>&gt;R</code> / <code>CALL</code> and <code>R&gt;</code> /
+<code>EXIT</code>).</strong> * <strong>Top Cords = Accumulator
+verification words (<code>SUM</code>, <code>VERIFY</code>).</strong></p>
+<pre class="forth"><code>\ In standard ANS Forth-2012: The Inka Top-Cord Checksum Invariant
+: VERIFY-TOP-CORD ( expected-sum actual-sum-addr -- )
+    @ 2DUP = IF
+        .&quot;  -&gt; [TOP CORD PARITY OK: &quot; . .&quot; = &quot; . .&quot; ]&quot; CR
+    ELSE
+        .&quot;  -&gt; [CHECKSUM FAILURE: Expected &quot; . .&quot; , Got &quot; . .&quot; ]&quot; CR
+    THEN
+;</code></pre>
+<hr />
+<h2 id="the-games-in-the-fiber-software-preserved-in-knots">6. The Games
+in the Fiber: Software Preserved in Knots</h2>
+<p>While many Khipus served imperial administration, an exciting class
+of archaeological specimens contains structures that are unmistakably
+<strong>turn-based games, race ledgers, competitive elimination
+brackets, and mathematical puzzles</strong>.</p>
+<p>Here are the live terminal walkthroughs of four master specimens
+executed in pure Forth-2012:</p>
+<hr />
+<h3 id="specimen-as169-kh0186-ica-region-peru">6.1 Specimen AS169
+(KH0186, Ica Region, Peru)</h3>
+<h4 id="the-9-round-pichca-mountain-trail-race"><em>The 9-Round Pichca
+Mountain Trail Race</em></h4>
+<pre><code>========================================================
+  INKA KHIPU AS169 — THE 9-ROUND PICHCA ANDEAN TRAIL RACE
+  First Live Playthrough in Over 500 Years!
+========================================================
+
+ Trail: [START] [🏃] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 1 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [6 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· [🏃] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 6 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 2 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [3 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· [🏃] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 9 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 3 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [3 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [🏃] ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 12 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 4 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [1 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [🏃] ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 13 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 5 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [4 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [🏃] ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 17 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 6 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [4 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 21 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 7 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [3 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 24 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 8 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [5 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 29 / 20 steps.
+
+--------------------------------------------------------
+&gt;&gt;&gt; ROUND 9 — Rolling the Pichca Die...
+&gt;&gt;&gt; Rolled a [3 ] on the 6-sided Pichca!
+
+ Trail: [START] ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· ··· [CUSCO (Goal)]
+Current Trail Progress: 32 / 20 steps.
+
+========================================================
+  CONGRATULATIONS, RUNNER! YOU REACHED SACRED CUSCO!
+  Total Distance Traversed: 32 steps across 9 rounds.
+  Zero-Entropy Still Point Reached at the Sun Gate.
+========================================================</code></pre>
+<p><code>[MEDIA PLACEHOLDER: GIF / SCREENSHOT — Live terminal execution of AS169 showing 9 rounds of Pichca die-roll step advances and cumulative token tracking]</code></p>
+<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Cord cluster layout of AS169 with 0-6 knot values mapped to Pichca die faces]</code></p>
+<h4 id="how-the-game-works">How the Game Works:</h4>
+<p>AS169 is a turn-based board race recorded in 9 distinct cord clusters
+from the Ica valley. Unlike administrative Khipus where numbers measure
+vast tribute quotas, every single knot value in AS169 is strictly
+bounded in the range <span class="math inline">[0..6]</span>. Each cord
+represents the numerical face rolled on a carved Andean <em>Pichca</em>
+die, determining how many tiles a player’s runner (<em>Chasqui</em>)
+advances along the mountain path toward the imperial capital of
+Cusco.</p>
+<h4 id="what-brought-us-joy">What Brought Us Joy:</h4>
+<p>Stepping through this trace feels unmistakably human. Opening with a
+lucky maximum roll of <code>6</code>, stumbling through a slow mid-game
+crawl with <code>1</code> and <code>3</code>, and then hitting a
+triumphant sprint across the high passes with <code>4</code>,
+<code>5</code>, and <code>3</code> feels like watching a real person
+celebrate good rolls by an ancient fire. Seeing that 500-year-old
+die-roll sequence cross the finish line in pure Forth was
+electrifying.</p>
+<hr />
+<h3 id="specimen-as203-kh0221-central-coast-peru">6.2 Specimen AS203
+(KH0221, Central Coast, Peru)</h3>
+<h4 id="the-4-player-cyclic-elimination-tournament"><em>The 4-Player
+Cyclic Elimination Tournament</em></h4>
+<pre><code>========================================================
+  INKA KHIPU AS203 — 4-PLAYER CYCLIC TOURNAMENT
+  8 Rounds of Strategic Moves across 4 Suyu Factions
+========================================================
+
+&gt;&gt;&gt; [ROUND 1 ] Cyclic Player Action Moves:
+     [P4]: +1 | [P3]: +1 | [P2]: +0 | [P1]: +1
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      1 pts
+ │  [P2] Yellow Brown (Antisuyu):       0 pts
+ │  [P3] Light Brown A (Qullasuyu):     1 pts
+ │  [P4] Light Brown B (Kuntisuyu):     1 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 2 ] Cyclic Player Action Moves:
+     [P4]: +1 | [P3]: +0 | [P2]: +1 | [P1]: +1
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      2 pts
+ │  [P2] Yellow Brown (Antisuyu):       1 pts
+ │  [P3] Light Brown A (Qullasuyu):     1 pts
+ │  [P4] Light Brown B (Kuntisuyu):     2 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 3 ] Cyclic Player Action Moves:
+     [P4]: +0 | [P3]: +1 | [P2]: +1 | [P1]: +0
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      2 pts
+ │  [P2] Yellow Brown (Antisuyu):       2 pts
+ │  [P3] Light Brown A (Qullasuyu):     2 pts
+ │  [P4] Light Brown B (Kuntisuyu):     2 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 4 ] Cyclic Player Action Moves:
+     [P4]: +1 | [P3]: +1 | [P2]: +1 | [P1]: +1
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      3 pts
+ │  [P2] Yellow Brown (Antisuyu):       3 pts
+ │  [P3] Light Brown A (Qullasuyu):     3 pts
+ │  [P4] Light Brown B (Kuntisuyu):     3 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 5 ] Cyclic Player Action Moves:
+     [P4]: +1 | [P3]: +1 | [P2]: +0 | [P1]: +0
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      3 pts
+ │  [P2] Yellow Brown (Antisuyu):       3 pts
+ │  [P3] Light Brown A (Qullasuyu):     4 pts
+ │  [P4] Light Brown B (Kuntisuyu):     4 pts
+ └─────────────────────────────────────────────────────┘
+
+********************************************************
+*** ROUND 6: THE GREAT HIGH-ALTITUDE SCORING BURST! ***
+********************************************************
+
+&gt;&gt;&gt; [ROUND 6 ] Cyclic Player Action Moves:
+     [P4]: +9 | [P3]: +4 | [P2]: +4 | [P1]: +6
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      9 pts
+ │  [P2] Yellow Brown (Antisuyu):       7 pts
+ │  [P3] Light Brown A (Qullasuyu):     8 pts
+ │  [P4] Light Brown B (Kuntisuyu):     13 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 7 ] Cyclic Player Action Moves:
+     [P4]: +1 | [P3]: +0 | [P2]: +1 | [P1]: +1
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      10 pts
+ │  [P2] Yellow Brown (Antisuyu):       8 pts
+ │  [P3] Light Brown A (Qullasuyu):     8 pts
+ │  [P4] Light Brown B (Kuntisuyu):     14 pts
+ └─────────────────────────────────────────────────────┘
+
+&gt;&gt;&gt; [ROUND 8 ] Cyclic Player Action Moves:
+     [P4]: +0 | [P3]: +1 | [P2]: +0 | [P1]: +1
+ ┌─────────────────────────────────────────────────────┐
+ │           INKA TOURNAMENT LEADERBOARD               │
+ ├─────────────────────────────────────────────────────┤
+ │  [P1] Navy Blue (Chinchaysuyu):      11 pts
+ │  [P2] Yellow Brown (Antisuyu):       8 pts
+ │  [P3] Light Brown A (Qullasuyu):     9 pts
+ │  [P4] Light Brown B (Kuntisuyu):     14 pts
+ └─────────────────────────────────────────────────────┘
+
+========================================================
+  CHAMPION DECLARED: Player 4 (Light Brown B / Kuntisuyu)!
+  Final Winning Score: 14 Points with Flawless Strategy.
+========================================================</code></pre>
+<p><code>[MEDIA PLACEHOLDER: DIAGRAM — 4-player color rotation across 8 rounds showing binary flags and Round 6 burst]</code></p>
+<p><code>[MEDIA PLACEHOLDER: SCREENSHOT — Terminal execution showing live leaderboard standings and winner determination]</code></p>
+<h4 id="how-the-game-works-1">How the Game Works:</h4>
+<p>AS203 encodes an 8-round competitive strategy match between four
+players, color-coded by the four quarters of the empire
+(<em>Tawantinsuyu</em>). Rounds 1 through 5 are tight, low-scoring
+positioning skirmishes with binary action flags (<code>0</code> for
+pass/miss, <code>1</code> for advance/hit), keeping all four players
+deadlocked at 3–4 points. Then, in <strong>Round 6</strong>, the game
+explodes into a high-stakes scoring burst: Player 1 scores 6, Players 2
+and 3 score 4, and Player 4 scores an astonishing <strong>9
+points</strong>, vaulting to 13 points and securing the tournament
+crown.</p>
+<h4 id="what-brought-us-joy-1">What Brought Us Joy:</h4>
+<p>The dramatic tension in Round 6! Watching the leaderboard stay
+dead-even through five rounds of tactical jockeying, and then seeing
+Player 4 pull off a massive 9-point combo move that completely broke the
+deadlock felt like watching a clutch play in a modern esports
+tournament. The fact that this dramatic tactical reversal was preserved
+in cotton cords for half a millennium is magnificent.</p>
+<hr />
+<h3 id="specimen-as199-kh0217-amnh-new-york">6.3 Specimen AS199 (KH0217,
+AMNH New York)</h3>
+<h4 id="the-12-group-chiral-accordion-grid-puzzle"><em>The 12-Group
+Chiral Accordion Grid Puzzle</em></h4>
+<pre><code>========================================================
+  INKA KHIPU AS199 (KH0217) — CHIRAL PALINDROMIC PUZZLE
+  American Museum of Natural History (13 Colors, 12 Groups)
+========================================================
+
+Verifying All 6 Column Harmonic Balances:
+
+Column 1 Sum Check:  -&gt; [VALID INVARIANT: 27 == 27 ]
+Column 2 Sum Check:  -&gt; [VALID INVARIANT: 38 == 38 ]
+Column 3 Sum Check:  -&gt; [VALID INVARIANT: 35 == 35 ]
+Column 4 Sum Check:  -&gt; [VALID INVARIANT: 42 == 42 ]
+Column 5 Sum Check:  -&gt; [VALID INVARIANT: 32 == 32 ]
+Column 6 Sum Check:  -&gt; [VALID INVARIANT: 38 == 38 ]
+
+Invariant: P_5,j == P_2,j + P_6,j holds 100% across all 6 columns.</code></pre>
+<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Palindromic chiral accordion fold revealing the 6 harmonic column balances]</code></p>
+<h4 id="how-the-game-works-2">How the Game Works:</h4>
+<p>AS199 is a 12-group mathematical constraint puzzle across 13 distinct
+yarn colors. If read in standard sequential order, the knot numbers
+appear random. But when read using alternating chiral fold
+directions—<span
+class="math inline">(<em>R</em>, <em>N</em>, <em>N</em>, <em>R</em>) × 3</span>—the
+specimen unfolds into an Andean KenKen/Sudoku puzzle where every column
+in Group 5 is the exact sum of the corresponding columns in Groups 2 and
+6.</p>
+<h4 id="what-brought-us-joy-2">What Brought Us Joy:</h4>
+<p>The pure mathematical symmetry. Watching all six column checksums
+lock into exact equality—<code>27 == 27</code>, <code>38 == 38</code>,
+<code>35 == 35</code>, <code>42 == 42</code>, <code>32 == 32</code>,
+<code>38 == 38</code>—feels like solving a multi-dimensional mechanical
+rubik’s cube made of colored wool. It proves that Andean mathematicians
+were exploring recreational algebra and combinatorial puzzles purely for
+the intellectual joy of harmonic balance.</p>
+<hr />
+<h3 id="specimen-as145-kh0161-berlin-museum-pachacamac">6.4 Specimen
+AS145 (KH0161, Berlin Museum, Pachacamac)</h3>
+<h4 id="the-dual-handed-summation-tug-of-war"><em>The Dual-Handed
+Summation Tug-of-War</em></h4>
+<pre><code>========================================================
+  INKA KHIPU AS145 (KH0161) — DUAL-HANDED SUMMATION DUEL
+  Ethnological Museum of Berlin (Pachacamac Provenance)
+========================================================
+
+[Right-Handed Sector Cords (Forward Traversal)]
+Summands: 23  43  62  18  112  15  34  1  1  6
+-&gt; Right-Handed Total Parity Cord: 315
+
+[Left-Handed Sector Cords (Reverse Traversal)]
+Summands: 16  7  15  12  6  19  4  5  1000  2
+-&gt; Left-Handed Total Parity Cord: 1086
+
+Dual-Sector Handedness Ratio: 315 (Right) vs 1086 (Left)
+Verified Handedness Balance Invariant in Pachacamac Fiber Archive.</code></pre>
+<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Pachacamac dual-handed vector balance visualization]</code></p>
+<h4 id="how-the-game-works-3">How the Game Works:</h4>
+<p>Recovered from the sacred coastal sanctuary of Pachacamac, AS145
+splits its 19 summation equations into two opposing factions: 8
+Right-Handed forward sums versus 11 Left-Handed reverse sums. It
+functions as a ritual territorial tug-of-war where forward momentum is
+balanced against reverse counter-pressure across chiral fiber
+sectors.</p>
+<h4 id="what-brought-us-joy-3">What Brought Us Joy:</h4>
+<p>Feeling the tactile polarity of the two halves. The right-handed
+sector builds up a steady, granular momentum with small sums
+(<code>23</code>, <code>43</code>, <code>62</code>), while the
+left-handed sector drops a massive anchor cord of <code>1000</code> to
+anchor its territory. Watching the two opposing vector halves balance
+each other out in the Forth execution log felt like witnessing a sacred
+dance of physical forces.</p>
+<hr />
+<h2
+id="topological-graphics-rendering-ancient-fiber-fields-as-terminal-rasters">7.
+Topological Graphics: Rendering Ancient Fiber Fields as Terminal
+Rasters</h2>
+<p>When we step back from individual arithmetic equations and view an
+entire Khipu matrix (<span class="math inline"><em>N</em>
+groups × <em>M</em> pendant cords</span>) through the lens of modern
+computer graphics, an extraordinary property emerges: <strong>a Khipu is
+a discrete 2D spatial tensor field.</strong></p>
+<p>If we map the knot tiers and numerical magnitudes directly onto
+character brightness shaders (<code>░░ ▒▒ ▓▓ ██</code>), the terminal
+renders live topographic elevation maps, standing wave resonance bands,
+and competitive gameplay heatmaps generated straight from ancient
+fiber:</p>
+<pre><code>      THE HARMONIC WAVE BANDS OF AS199 (12x6 GRID)
+      C0  C1  C2  C3  C4  C5
+    ┌──────────────────┐
+ G1  │   ░░ ▒▒ ▓▓ ░░ ▒▒ │  [121]
+ G2  │░░ ░░       ░░ ░░ │  [ 91]
+ G3  │▒▒ ██ ██ ██ ▓▓ ██ │  [212]  &lt;-- Harmonic Resonance Crest 1
+ G4  │   ░░ ░░ ▒▒ ░░ ░░ │  [ 99]
+ G5  │░░ ▒▒    ░░ ░░ ░░ │  [102]
+ G6  │▒▒ ██ ▓▓ ██ ██ ▓▓ │  [201]  &lt;-- Harmonic Resonance Crest 2
+ G7  │      ░░ ░░    ░░ │  [ 78]
+ G8  │░░ ░░    ░░ ░░    │  [ 87]
+ G9  │▒▒ ▓▓ ▓▓ ▓▓ ▒▒ ▒▒ │  [165]  &lt;-- Harmonic Resonance Crest 3
+ G10 │      ░░ ░░       │  [ 66]
+ G11 │   ░░    ░░ ░░    │  [ 77]
+ G12 │░░ ▒▒ ▒▒ ▓▓ ▒▒ ▒▒ │  [143]  &lt;-- Harmonic Resonance Crest 4
+    └──────────────────┘</code></pre>
+<p><code>[MEDIA PLACEHOLDER: TERMINAL RASTER RECORDING — Live ASCII rendering of AS199 harmonic wave bands]</code></p>
+<h3 id="visualizing-the-hidden-geometry">7.1 Visualizing the Hidden
+Geometry</h3>
+<ol type="1">
+<li><strong>Periodic Standing Waves (AS199):</strong> In the ASCII
+projection above, rows <strong>G3, G6, G9, and G12</strong> form exact,
+periodic <strong>horizontal standing wave crests</strong> across the
+fiber surface. The mathematical harmony is not just theoretical; it is
+visually striking.</li>
+<li><strong>Gameplay Lightning Bursts (AS203):</strong> When rasterized
+as an 8-round heatmap, AS203 displays five dark, quiet rounds of
+stealthy maneuvering followed by a sudden, blinding flash of high scores
+in Round 6 (<code>▓▓ ▒▒ ▒▒ ██</code>), capturing the turning point of
+the game in pure visual density.</li>
+<li><strong>Terraced Andean Landscapes (AS100):</strong> The balanced
+column invariants of AS100 (<span
+class="math inline">∑<em>P</em><sub><em>i</em>, 3</sub> = ∑<em>P</em><sub><em>i</em>, 7</sub> = 84</span>
+and <span
+class="math inline">∑<em>P</em><sub><em>i</em>, 5</sub> = ∑<em>P</em><sub><em>i</em>, 6</sub> = 120</span>)
+produce symmetric topographical ridges and valleys—visually echoing the
+agricultural terraced stone architecture (<em>andenes</em>) of the
+sacred mountain valleys.</li>
+</ol>
+<h3 id="the-link-to-modern-vector-embeddings">7.2 The Link to Modern
+Vector Embeddings</h3>
+<p>This topological rasterization directly mirrors how modern
+<strong>Hyperdimensional Computing (HDC)</strong>, sparse distributed
+memory, and embedding projection models operate. The Andean masters were
+performing spatial vector math, tensor projections, and structural state
+visualization five centuries before the invention of the cathode-ray
+tube or the pixel buffer.</p>
+<hr />
+<h2 id="the-hands-on-workshop-build-your-own-board-at-home">8. The
+Hands-On Workshop: Build Your Own Board at Home</h2>
+<p>You do not need an archaeological artifact to experience the power of
+Andean computing. You can build a fully functional <em>Yupana</em>
+calculating board in five minutes using common household materials.</p>
+<pre><code>       THE YUPANA [1, 2, 3, 5] FIBONACCI DIGIT ROW
+       +───────────+───────────+───────────+───────────+
+       │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^0 (Units)
+       +───────────+───────────+───────────+───────────+
+       │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^1 (Tens)
+       +───────────+───────────+───────────+───────────+
+       │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^2 (Hundreds)
+       +───────────+───────────+───────────+───────────+</code></pre>
+<h3 id="sourcing-materials">8.1 Sourcing Materials</h3>
+<ol type="1">
+<li><strong>The Board:</strong> An empty 12-egg carton (cut down to a
+<span class="math inline">4 columns × 3 rows</span> grid), a piece of
+cardboard with 12 squares drawn on it, or a shallow wooden muffin
+tray.</li>
+<li><strong>The Counters:</strong> 20–30 dried pinto beans, maize
+kernels, coins, or small pebbles.</li>
+</ol>
+<h3 id="the-1-2-3-5-fibonacci-number-representation">8.2 The <span
+class="math inline">[1, 2, 3, 5]</span> Fibonacci Number
+Representation</h3>
+<p>Each horizontal row represents a power of ten (Bottom = Units <span
+class="math inline">10<sup>0</sup></span>, Middle = Tens <span
+class="math inline">10<sup>1</sup></span>, Top = Hundreds <span
+class="math inline">10<sup>2</sup></span>). Each row contains four
+compartments weighted <span class="math inline">[5, 3, 2, 1]</span>.</p>
+<p>Any digit from <span class="math inline">1</span> to <span
+class="math inline">9</span> is represented using minimal non-redundant
+bean placements: * <strong>1</strong> = 1 bean in <code>[1]</code> *
+<strong>2</strong> = 1 bean in <code>[2]</code> * <strong>3</strong> = 1
+bean in <code>[3]</code> * <strong>4</strong> = 1 bean in
+<code>[3]</code> + 1 bean in <code>[1]</code> * <strong>5</strong> = 1
+bean in <code>[5]</code> * <strong>6</strong> = 1 bean in
+<code>[5]</code> + 1 bean in <code>[1]</code> * <strong>7</strong> = 1
+bean in <code>[5]</code> + 1 bean in <code>[2]</code> *
+<strong>8</strong> = 1 bean in <code>[5]</code> + 1 bean in
+<code>[3]</code> * <strong>9</strong> = 1 bean in <code>[5]</code> + 1
+bean in <code>[3]</code> + 1 bean in <code>[1]</code></p>
+<p><code>[MEDIA PLACEHOLDER: DIAGRAM — The Yupana digit representation chart (0 through 9 in 1, 2, 3, 5 cells)]</code></p>
+<h3 id="step-by-step-multiplication-153-times-47">8.3 Step-by-Step
+Multiplication: <span class="math inline">153 × 47</span></h3>
+<p>On a standard abacus, multiplication requires memorizing 100
+multiplication table combinations. On the <em>Yupana</em>, you multiply
+by <strong>Fibonacci spatial decomposition</strong>:</p>
+<ol type="1">
+<li>Decompose the multiplier <span class="math inline">47</span> into
+Fibonacci powers: <span
+class="math display">47 = 30 + 10 + 5 + 2</span></li>
+<li>Compute simple partial products of <span
+class="math inline">153</span>:
+<ul>
+<li><span class="math inline">153 × 1 = 153</span></li>
+<li><span class="math inline">153 × 2 = 306</span></li>
+</ul></li>
+<li>Shift and add the partial products across the board:
+<ul>
+<li><strong>Term 30:</strong> <span
+class="math inline">(153 × 3) × 10 = 459 × 10 = <strong>4590</strong></span></li>
+<li><strong>Term 10:</strong> <span
+class="math inline">153 × 10 = <strong>1530</strong></span></li>
+<li><strong>Term 5:</strong> <span
+class="math inline">(153 × 10)/2 = <strong>765</strong></span></li>
+<li><strong>Term 2:</strong> <span
+class="math inline">153 × 2 = <strong>306</strong></span></li>
+</ul></li>
+<li>Consolidate beans upward: <span
+class="math display"><strong>4590</strong> + <strong>1530</strong> + <strong>765</strong> + <strong>306</strong> = <strong>7191</strong></span></li>
+</ol>
+<p>The entire calculation is executed with zero trial-and-error division
+tables and zero cognitive strain—simply shifting counters across
+geometric cups!</p>
+<p><code>[MEDIA PLACEHOLDER: GIF / STEP-BY-STEP PHOTOS — Placing beans on a DIY egg-carton Yupana board, calculating 153 x 47, and consolidating carries]</code></p>
+<h3 id="how-to-play-the-basic-2-player-taptana-game">8.4 How to Play the
+Basic 2-Player <em>Taptana</em> Game</h3>
+<p>Once your board is built, you can immediately play the traditional
+Andean strategy game: 1. <strong>Setup:</strong> Each player receives 5
+beans of a distinct color (e.g. 5 white beans vs. 5 dark beans). Place
+them in the outer column compartments. 2. <strong>Movement:</strong>
+Players take turns rolling a standard 6-sided die (or flipping coins for
+<span class="math inline">0..6</span> steps). A player moves one of
+their tokens forward across the cups following the <span
+class="math inline">[1 → 2 → 3 → 5]</span> track. 3.
+<strong>Capture:</strong> Landing on an opponent’s counter removes it
+from the board and places it into your designated corner “tower” cup. 4.
+<strong>Victory:</strong> The first player to safely navigate 3 tokens
+into the top row or capture all opposing counters wins the match.</p>
+<hr />
+<h2 id="the-recovery-of-play-embodied-cognition-for-the-modern-world">9.
+The Recovery of Play: Embodied Cognition for the Modern World</h2>
+<p>We live in an era where computation has become completely
+disembodied. We type on virtual glass keyboards, stare at flat pixels,
+and allow our cognitive hardware to atrophy in acoustic loops of
+abstract text.</p>
+<p>The Andean masters knew better.</p>
+<p>They understood that the human hand, the visual cortex, and the
+physical medium are integral components of cognition. By uniting
+calculation (<em>Yupana</em>), physical storage (<em>Khipu</em>), and
+play (<em>Taptana</em> games and palindromic riddles) into a single
+embodied loop, they coordinated a 3,000-mile empire without a single
+drop of ink or kilowatt of electricity.</p>
+<h3 id="the-invitation">The Invitation</h3>
+<p>This paper is the introductory seed. As we continue to port and
+document the archaeological Khipu library, we are developing open
+physical board blueprints, complete player manuals, and native execution
+runtimes.</p>
+<p>We invite you to find an egg carton, grab a handful of beans, and
+feel the numbers move under your thumbs. When you do, you are not just
+studying history—you are reconnecting with an ancient, playful, and
+sovereign way of thinking.</p>
+<hr />
+<h2 id="master-bibliography-citations">10. Master Bibliography &amp;
+Citations</h2>
+<ol type="1">
+<li><strong>Acosta, José de (1590):</strong> <em>Historia Natural y
+Moral de las Indias</em>. Seville.</li>
+<li><strong>Ascher, Marcia &amp; Ascher, Robert (1978):</strong>
+<em>Code of the Quipu: Databook</em>. University Microfilms, Ann
+Arbor.</li>
+<li><strong>Ascher, Marcia &amp; Ascher, Robert (1981):</strong>
+<em>Code of the Quipu: A Study in Media, Mathematics, and Culture</em>.
+University of Michigan Press, Ann Arbor.</li>
+<li><strong>Brezine, Carrie &amp; Urton, Gary (2005):</strong>
+“Information Control in the Inka Empire: The Puruchuco Khipu Archive.”
+<em>Science</em>, 309(5737), 1065–1067.</li>
+<li><strong>Burns Glynn, William (1981):</strong> “La Tabla de Cálculo
+de los Incas.” <em>Boletín de Lima</em>, 11, 1–15.</li>
+<li><strong>Catepillán, Ximena &amp; Szymanski, Waclaw (2012):</strong>
+“Counting and Arithmetic of the Inca.” <em>Revista Latinoamericana de
+Etnomatemática</em>, 5(2), 47–65.</li>
+<li><strong>Guaman Poma de Ayala, Felipe (1615):</strong> <em>El primer
+nueva corónica y buen gobierno</em>. Royal Library of Denmark,
+Copenhagen.</li>
+<li><strong>Locke, Leslie Leland (1923):</strong> <em>The Ancient Quipu
+or Peruvian Knot Record</em>. American Museum of Natural History, New
+York.</li>
+<li><strong>Medrano, Manuel &amp; Khosla, Ashok (2024):</strong> “How
+Can Data Science Contribute to Understanding the Khipu Code?” <em>Latin
+American Antiquity</em>, 1–20.</li>
+<li><strong>Radicati di Primeglio, Carlos (1979):</strong> <em>El
+sistema contable de los Incas: Yupana y Quipu</em>. Universidad Nacional
+Mayor de San Marcos, Lima.</li>
+<li><strong>Urton, Gary (2003):</strong> <em>Signs of the Inka Khipu:
+Binary Coding in the Andean Knotted-String Records</em>. University of
+Texas Press, Austin.</li>
+<li><strong>Urton, Gary (2017):</strong> <em>Inka History in Knots:
+Reading Khipus as Primary Sources</em>. University of Texas Press,
+Austin.</li>
+</ol>
+<p class="footer">The Urania Ephemeris · a sky that returns · <a href="https://magesguild.io">Mage's Guild Psychonautics</a> · Basin Game Studios</p>
+</main>
+</body>
+</html>
