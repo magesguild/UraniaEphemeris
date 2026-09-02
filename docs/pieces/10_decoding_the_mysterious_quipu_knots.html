@@ -63,15 +63,22 @@ and Caral ancestors—engineered a civilization of breathtaking
 complexity, cohesion, and joy. In their knotted cords (<em>khipus</em>),
 they left us everything we need to rediscover what our hands and minds
 already knew.</p>
-<pre><code>          PRIMARY CORD (Horizontal System Bus)
-     ═════════════════════════════════════════════════════
-         │                 │                 │
-         │ (Pendant 0)     │ (Pendant 1)     │ (Pendant 2)
-         ▼                 ▼                 ▼
-     [ 120 ]            [ 45 ]            [ 300 ]   &lt;-- DATA STACK (Parameters)
-         │
-         ├── [ Sub 0: 60 ]                          &lt;-- RETURN STACK (Nested Trees)
-         └── [ Sub 1: 60 ]</code></pre>
+<figure class="visual cord-figure">
+<figcaption><span class="figure-kicker">Storage anatomy</span><strong>Primary cord → pendant → subsidiary hierarchy</strong></figcaption>
+<div class="cord-map">
+<div class="cord-bus">PRIMARY CORD · horizontal system bus</div>
+<div class="cord-pendants">
+<div class="cord-node"><strong>Pendant 0</strong>120 · data stack</div>
+<div class="cord-node"><strong>Pendant 1</strong>45 · data stack</div>
+<div class="cord-node"><strong>Pendant 2</strong>300 · data stack</div>
+</div>
+<div class="relation-arrow" aria-hidden="true">↓</div>
+<div class="cord-subsidiaries">
+<div class="cord-node"><strong>Sub 0</strong>60 · nested tree</div>
+<div class="cord-node"><strong>Sub 1</strong>60 · nested tree</div>
+</div>
+</div>
+</figure>
 <h3 id="the-phonetic-trap-of-western-archaeology">1.1 The “Phonetic
 Trap” of Western Archaeology</h3>
 <p>For centuries, European scholars stared at the knotted cords of the
@@ -111,12 +118,15 @@ Archaeological Foundations: 4,500 Years of Fiber Science</h2>
 for “knot”) is not a late Inka novelty; it represents one of the longest
 continuously maintained data architectures in human history, spanning
 more than <strong>46 centuries</strong>.</p>
-<pre><code>  ~2600 BCE               600–1000 CE             1438–1532 CE            1583 CE – Present
-┌──────────────┐        ┌──────────────┐        ┌──────────────┐        ┌──────────────────┐
-│ Caral-Supe   │ ─────► │ Wari Empire  │ ─────► │ Inka Empire  │ ─────► │ Clandestine      │
-│ Earliest     │        │ Color-Banded │        │ Imperial Bus │        │ Village Archives │
-│ Knot Bundle  │        │ Trade State  │        │ &amp; Checksums  │        │ (Rapaz/Collata)  │
-└──────────────┘        └──────────────┘        └──────────────┘        └──────────────────┘</code></pre>
+<figure class="visual timeline-figure">
+<figcaption><span class="figure-kicker">Timeline</span><strong>Four visible chapters in Andean fiber computation</strong></figcaption>
+<div class="timeline-grid">
+<div class="timeline-card"><span class="timeline-date">~2600 BCE</span><strong>Caral-Supe</strong><span>earliest knot bundle</span></div>
+<div class="timeline-card"><span class="timeline-date">600–1000 CE</span><strong>Wari Empire</strong><span>color-banded trade state</span></div>
+<div class="timeline-card"><span class="timeline-date">1438–1532 CE</span><strong>Inka Empire</strong><span>imperial bus and checksums</span></div>
+<div class="timeline-card"><span class="timeline-date">1583–present</span><strong>Village archives</strong><span>Rapaz / Collata survival</span></div>
+</div>
+</figure>
 <ol type="1">
 <li><strong>The Ancient Dawn (~2600–2500 BCE):</strong> In the sacred
 city of Caral-Supe, Peru, archaeologist Dr. Ruth Shady excavated a
@@ -171,13 +181,14 @@ knots during rapid arithmetic would cause mechanical friction and
 destroy the fiber.</p>
 <p>Instead, they engineered an elegant <strong>decoupling of the
 Arithmetic Logic Unit, the Processor, and the Storage Bus</strong>:</p>
-<pre><code>┌─────────────────────────────────────────────────────────────┐
-│                 THE ANDEAN COMPUTING TRIAD                  │
-├─────────────────────────────────────────────────────────────┤
-│ 1. THE ALU (Yupana)         --&gt; Volatile Grid Calculation   │
-│ 2. THE CPU (Khipukamayuk)   --&gt; Somatic Mental Execution    │
-│ 3. THE NVRAM (Khipu)        --&gt; Non-Volatile Fiber Storage  │
-└─────────────────────────────────────────────────────────────┘</code></pre>
+<figure class="visual triad-figure">
+<figcaption><span class="figure-kicker">Separation of concerns</span><strong>The Andean computing triad</strong></figcaption>
+<div class="triad-grid">
+<div class="triad-card"><strong>Yupana</strong><span>ALU · volatile grid calculation</span></div>
+<div class="triad-card"><strong>Khipukamayuk</strong><span>CPU · somatic mental execution</span></div>
+<div class="triad-card"><strong>Khipu</strong><span>NVRAM · non-volatile fiber storage</span></div>
+</div>
+</figure>
 <ol type="1">
 <li><strong>The <em>Yupana</em> (Volatile RAM / ALU):</strong> A carved
 stone, wood, or clay counting board. Calculations were performed using
@@ -196,16 +207,19 @@ Non-Volatile Fiber Storage</h2>
 <p>To a software engineer, a Khipu is immediately recognizable as a
 physical <strong>Directed Acyclic Graph (DAG) and Abstract Syntax Tree
 (AST)</strong>:</p>
-<pre><code>                  PRIMARY CORD (System Bus)
-      ───────────────────────┬────────────────────────
-                             │ (Pendant)
-                             ▼
-                         [ Node ]
-                             │
-                             ├── [ Subsidiary 1 ] (Child Tree)
-                             │        │
-                             │        └── [ Sub-Subsidiary ]
-                             └── [ Subsidiary 2 ]</code></pre>
+<figure class="visual relation-figure">
+<figcaption><span class="figure-kicker">Physical data structure</span><strong>A cord hierarchy as a directed tree</strong></figcaption>
+<div class="relation-graph">
+<div class="relation-root">PRIMARY CORD · system bus</div>
+<div class="relation-arrow" aria-hidden="true">↓</div>
+<div class="relation-root">PENDANT · node</div>
+<div class="relation-arrow" aria-hidden="true">↓</div>
+<div class="relation-leaves">
+<div class="relation-leaf">Subsidiary 1<br /><span class="muted">└─ sub-subsidiary</span></div>
+<div class="relation-leaf">Subsidiary 2</div>
+</div>
+</div>
+</figure>
 <h3 id="physical-data-structures">4.1 Physical Data Structures</h3>
 <ul>
 <li><strong>The Primary Cord:</strong> The horizontal anchor acting as
@@ -284,7 +298,25 @@ executed in pure Forth-2012:</p>
 (KH0186, Ica Region, Peru)</h3>
 <h4 id="the-9-round-pichca-mountain-trail-race"><em>The 9-Round Pichca
 Mountain Trail Race</em></h4>
-<pre><code>========================================================
+<figure class="visual game-figure">
+<figcaption><span class="figure-kicker">Game trace · AS169 / KH0186</span><strong>The 9-round Pichca mountain trail race</strong></figcaption>
+<div class="game-banner"><strong>Trail complete · 32 / 20 steps · Cusco reached</strong><span>Recorded roll sequence: 6 · 3 · 3 · 1 · 4 · 4 · 3 · 5 · 3</span></div>
+<table class="round-table">
+<thead><tr><th>Round</th><th>Roll</th><th>Cumulative trail</th></tr></thead>
+<tbody>
+<tr><td>01</td><td>6</td><td>6 / 20</td></tr>
+<tr><td>02</td><td>3</td><td>9 / 20</td></tr>
+<tr><td>03</td><td>3</td><td>12 / 20</td></tr>
+<tr><td>04</td><td>1</td><td>13 / 20</td></tr>
+<tr><td>05</td><td>4</td><td>17 / 20</td></tr>
+<tr><td>06</td><td>4</td><td>21 / 20</td></tr>
+<tr><td>07</td><td>3</td><td>24 / 20</td></tr>
+<tr><td>08</td><td>5</td><td>29 / 20</td></tr>
+<tr class="highlight"><td>09</td><td>3</td><td>32 / 20 · CUSCO</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="legacy-visual"><pre><code>========================================================
   INKA KHIPU AS169 — THE 9-ROUND PICHCA ANDEAN TRAIL RACE
   First Live Playthrough in Over 500 Years!
 ========================================================
@@ -358,9 +390,7 @@ Current Trail Progress: 32 / 20 steps.
   CONGRATULATIONS, RUNNER! YOU REACHED SACRED CUSCO!
   Total Distance Traversed: 32 steps across 9 rounds.
   Zero-Entropy Still Point Reached at the Sun Gate.
-========================================================</code></pre>
-<p><code>[MEDIA PLACEHOLDER: GIF / SCREENSHOT — Live terminal execution of AS169 showing 9 rounds of Pichca die-roll step advances and cumulative token tracking]</code></p>
-<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Cord cluster layout of AS169 with 0-6 knot values mapped to Pichca die faces]</code></p>
+========================================================</code></pre></div>
 <h4 id="how-the-game-works">How the Game Works:</h4>
 <p>AS169 is a turn-based board race recorded in 9 distinct cord clusters
 from the Ica valley. Unlike administrative Khipus where numbers measure
@@ -384,7 +414,25 @@ electrifying.</p>
 (KH0221, Central Coast, Peru)</h3>
 <h4 id="the-4-player-cyclic-elimination-tournament"><em>The 4-Player
 Cyclic Elimination Tournament</em></h4>
-<pre><code>========================================================
+<figure class="visual game-figure">
+<figcaption><span class="figure-kicker">Game trace · AS203 / KH0221</span><strong>The 4-player cyclic Suyu tournament</strong></figcaption>
+<div class="game-banner"><strong>Champion · Player 4 · 14 points</strong><span>Round 6 is the turning point: P1 +6 · P2 +4 · P3 +4 · P4 +9</span></div>
+<table class="round-table">
+<thead><tr><th>Round</th><th>Actions · P1 / P2 / P3 / P4</th><th>Standings · P1 / P2 / P3 / P4</th></tr></thead>
+<tbody>
+<tr><td>01</td><td>+1 / +0 / +1 / +1</td><td>1 / 0 / 1 / 1</td></tr>
+<tr><td>02</td><td>+1 / +1 / +0 / +1</td><td>2 / 1 / 1 / 2</td></tr>
+<tr><td>03</td><td>+0 / +1 / +1 / +0</td><td>2 / 2 / 2 / 2</td></tr>
+<tr><td>04</td><td>+1 / +1 / +1 / +1</td><td>3 / 3 / 3 / 3</td></tr>
+<tr><td>05</td><td>+0 / +0 / +1 / +1</td><td>3 / 3 / 4 / 4</td></tr>
+<tr class="highlight"><td>06</td><td>+6 / +4 / +4 / +9</td><td>9 / 7 / 8 / 13</td></tr>
+<tr><td>07</td><td>+1 / +1 / +0 / +1</td><td>10 / 8 / 8 / 14</td></tr>
+<tr><td>08</td><td>+1 / +0 / +1 / +0</td><td>11 / 8 / 9 / 14</td></tr>
+</tbody>
+</table>
+<div class="score-summary"><span><strong>11</strong>P1</span><span><strong>8</strong>P2</span><span><strong>9</strong>P3</span><span><strong>14</strong>P4 · winner</span></div>
+</figure>
+<div class="legacy-visual"><pre><code>========================================================
   INKA KHIPU AS203 — 4-PLAYER CYCLIC TOURNAMENT
   8 Rounds of Strategic Moves across 4 Suyu Factions
 ========================================================
@@ -484,9 +532,7 @@ Cyclic Elimination Tournament</em></h4>
 ========================================================
   CHAMPION DECLARED: Player 4 (Light Brown B / Kuntisuyu)!
   Final Winning Score: 14 Points with Flawless Strategy.
-========================================================</code></pre>
-<p><code>[MEDIA PLACEHOLDER: DIAGRAM — 4-player color rotation across 8 rounds showing binary flags and Round 6 burst]</code></p>
-<p><code>[MEDIA PLACEHOLDER: SCREENSHOT — Terminal execution showing live leaderboard standings and winner determination]</code></p>
+========================================================</code></pre></div>
 <h4 id="how-the-game-works-1">How the Game Works:</h4>
 <p>AS203 encodes an 8-round competitive strategy match between four
 players, color-coded by the four quarters of the empire
@@ -510,7 +556,24 @@ in cotton cords for half a millennium is magnificent.</p>
 AMNH New York)</h3>
 <h4 id="the-12-group-chiral-accordion-grid-puzzle"><em>The 12-Group
 Chiral Accordion Grid Puzzle</em></h4>
-<pre><code>========================================================
+<figure class="visual game-figure">
+<figcaption><span class="figure-kicker">Constraint trace · AS199 / KH0217</span><strong>The 12-group chiral accordion grid</strong></figcaption>
+<div class="game-banner"><strong>Six of six column balances verified</strong><span>Invariant: P<sub>5,j</sub> = P<sub>2,j</sub> + P<sub>6,j</sub></span></div>
+<div class="table-scroll">
+<table class="data-table">
+<thead><tr><th scope="col">Column</th><th scope="col">Group 2</th><th scope="col">Group 6</th><th scope="col">Expected</th><th scope="col">Group 5</th><th scope="col">Result</th></tr></thead>
+<tbody>
+<tr><th scope="row">C1</th><td>12</td><td>15</td><td>27</td><td>27</td><td>VALID</td></tr>
+<tr><th scope="row">C2</th><td>18</td><td>20</td><td>38</td><td>38</td><td>VALID</td></tr>
+<tr><th scope="row">C3</th><td>25</td><td>10</td><td>35</td><td>35</td><td>VALID</td></tr>
+<tr><th scope="row">C4</th><td>30</td><td>12</td><td>42</td><td>42</td><td>VALID</td></tr>
+<tr><th scope="row">C5</th><td>14</td><td>18</td><td>32</td><td>32</td><td>VALID</td></tr>
+<tr class="total-row"><th scope="row">C6</th><td>22</td><td>16</td><td>38</td><td>38</td><td>VALID</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+<div class="legacy-visual"><pre><code>========================================================
   INKA KHIPU AS199 (KH0217) — CHIRAL PALINDROMIC PUZZLE
   American Museum of Natural History (13 Colors, 12 Groups)
 ========================================================
@@ -524,8 +587,7 @@ Column 4 Sum Check:  -&gt; [VALID INVARIANT: 42 == 42 ]
 Column 5 Sum Check:  -&gt; [VALID INVARIANT: 32 == 32 ]
 Column 6 Sum Check:  -&gt; [VALID INVARIANT: 38 == 38 ]
 
-Invariant: P_5,j == P_2,j + P_6,j holds 100% across all 6 columns.</code></pre>
-<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Palindromic chiral accordion fold revealing the 6 harmonic column balances]</code></p>
+Invariant: P_5,j == P_2,j + P_6,j holds 100% across all 6 columns.</code></pre></div>
 <h4 id="how-the-game-works-2">How the Game Works:</h4>
 <p>AS199 is a 12-group mathematical constraint puzzle across 13 distinct
 yarn colors. If read in standard sequential order, the knot numbers
@@ -548,7 +610,15 @@ the intellectual joy of harmonic balance.</p>
 AS145 (KH0161, Berlin Museum, Pachacamac)</h3>
 <h4 id="the-dual-handed-summation-tug-of-war"><em>The Dual-Handed
 Summation Tug-of-War</em></h4>
-<pre><code>========================================================
+<figure class="visual vector-figure">
+<figcaption><span class="figure-kicker">Balance trace · AS145 / KH0161</span><strong>The dual-handed summation tug-of-war</strong></figcaption>
+<div class="vector-sides">
+<section class="vector-side"><h4>Right-handed sector</h4><p class="vector-values">23 · 43 · 62 · 18 · 112 · 15 · 34 · 1 · 1 · 6</p><p class="vector-total">Parity cord · 315</p></section>
+<section class="vector-side"><h4>Left-handed sector</h4><p class="vector-values">16 · 7 · 15 · 12 · 6 · 19 · 4 · 5 · 1000 · 2</p><p class="vector-total">Parity cord · 1086</p></section>
+</div>
+<div class="game-banner"><strong>Dual-sector ratio · 315 right vs. 1086 left</strong><span>Verified handedness balance invariant in the Pachacamac fiber archive.</span></div>
+</figure>
+<div class="legacy-visual"><pre><code>========================================================
   INKA KHIPU AS145 (KH0161) — DUAL-HANDED SUMMATION DUEL
   Ethnological Museum of Berlin (Pachacamac Provenance)
 ========================================================
@@ -562,8 +632,7 @@ Summands: 16  7  15  12  6  19  4  5  1000  2
 -&gt; Left-Handed Total Parity Cord: 1086
 
 Dual-Sector Handedness Ratio: 315 (Right) vs 1086 (Left)
-Verified Handedness Balance Invariant in Pachacamac Fiber Archive.</code></pre>
-<p><code>[MEDIA PLACEHOLDER: DIAGRAM — Pachacamac dual-handed vector balance visualization]</code></p>
+Verified Handedness Balance Invariant in Pachacamac Fiber Archive.</code></pre></div>
 <h4 id="how-the-game-works-3">How the Game Works:</h4>
 <p>Recovered from the sacred coastal sanctuary of Pachacamac, AS145
 splits its 19 summation equations into two opposing factions: 8
@@ -594,7 +663,26 @@ character brightness shaders (<code>░░ ▒▒ ▓▓ ██</code>), the ter
 renders live topographic elevation maps, standing wave resonance bands,
 and competitive gameplay heatmaps generated straight from ancient
 fiber:</p>
-<pre><code>      THE HARMONIC WAVE BANDS OF AS199 (12x6 GRID)
+<figure class="visual raster-figure">
+<figcaption><span class="figure-kicker">Topological raster · AS199</span><strong>Harmonic wave bands across a 12 × 6 grid</strong></figcaption>
+<div class="raster-grid" role="img" aria-label="AS199 twelve-row, six-column intensity raster with resonance crests at rows G3, G6, G9, and G12">
+<span></span><span class="raster-header">C0</span><span class="raster-header">C1</span><span class="raster-header">C2</span><span class="raster-header">C3</span><span class="raster-header">C4</span><span class="raster-header">C5</span><span></span>
+<span class="raster-row-label">G1</span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-total">121</span>
+<span class="raster-row-label">G2</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-total">91</span>
+<span class="raster-row-label">G3</span><span class="raster-cell raster-2"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-4"></span><span class="raster-total">212</span>
+<span class="raster-row-label">G4</span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-total">99</span>
+<span class="raster-row-label">G5</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-total">102</span>
+<span class="raster-row-label">G6</span><span class="raster-cell raster-2"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-4"></span><span class="raster-cell raster-3"></span><span class="raster-total">201</span>
+<span class="raster-row-label">G7</span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-total">78</span>
+<span class="raster-row-label">G8</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-total">87</span>
+<span class="raster-row-label">G9</span><span class="raster-cell raster-2"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-2"></span><span class="raster-total">165</span>
+<span class="raster-row-label">G10</span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-total">66</span>
+<span class="raster-row-label">G11</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-total">77</span>
+<span class="raster-row-label">G12</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-2"></span><span class="raster-total">143</span>
+</div>
+<div class="game-banner"><strong>Resonance crests · G3 · G6 · G9 · G12</strong><span>Intensity rises periodically across the repeated matrix.</span></div>
+</figure>
+<div class="legacy-visual"><pre><code>      THE HARMONIC WAVE BANDS OF AS199 (12x6 GRID)
       C0  C1  C2  C3  C4  C5
     ┌──────────────────┐
  G1  │   ░░ ▒▒ ▓▓ ░░ ▒▒ │  [121]
@@ -609,8 +697,7 @@ fiber:</p>
  G10 │      ░░ ░░       │  [ 66]
  G11 │   ░░    ░░ ░░    │  [ 77]
  G12 │░░ ▒▒ ▒▒ ▓▓ ▒▒ ▒▒ │  [143]  &lt;-- Harmonic Resonance Crest 4
-    └──────────────────┘</code></pre>
-<p><code>[MEDIA PLACEHOLDER: TERMINAL RASTER RECORDING — Live ASCII rendering of AS199 harmonic wave bands]</code></p>
+     └──────────────────┘</code></pre></div>
 <h3 id="visualizing-the-hidden-geometry">7.1 Visualizing the Hidden
 Geometry</h3>
 <ol type="1">
@@ -647,14 +734,29 @@ Hands-On Workshop: Build Your Own Board at Home</h2>
 <p>You do not need an archaeological artifact to experience the power of
 Andean computing. You can build a fully functional <em>Yupana</em>
 calculating board in five minutes using common household materials.</p>
-<pre><code>       THE YUPANA [1, 2, 3, 5] FIBONACCI DIGIT ROW
+<figure class="visual digit-figure">
+<figcaption><span class="figure-kicker">Workshop chart</span><strong>Yupana digit representation · [5, 3, 2, 1] cups</strong></figcaption>
+<div class="digit-grid">
+<div class="digit-card"><strong>0</strong><div class="digit-cups"><span>5</span><span>3</span><span>2</span><span>1</span></div><small>empty</small></div>
+<div class="digit-card"><strong>1</strong><div class="digit-cups"><span>5</span><span>3</span><span>2</span><span class="active">1</span></div><small>1</small></div>
+<div class="digit-card"><strong>2</strong><div class="digit-cups"><span>5</span><span>3</span><span class="active">2</span><span>1</span></div><small>2</small></div>
+<div class="digit-card"><strong>3</strong><div class="digit-cups"><span>5</span><span class="active">3</span><span>2</span><span>1</span></div><small>3</small></div>
+<div class="digit-card"><strong>4</strong><div class="digit-cups"><span>5</span><span class="active">3</span><span>2</span><span class="active">1</span></div><small>3 + 1</small></div>
+<div class="digit-card"><strong>5</strong><div class="digit-cups"><span class="active">5</span><span>3</span><span>2</span><span>1</span></div><small>5</small></div>
+<div class="digit-card"><strong>6</strong><div class="digit-cups"><span class="active">5</span><span>3</span><span>2</span><span class="active">1</span></div><small>5 + 1</small></div>
+<div class="digit-card"><strong>7</strong><div class="digit-cups"><span class="active">5</span><span>3</span><span class="active">2</span><span>1</span></div><small>5 + 2</small></div>
+<div class="digit-card"><strong>8</strong><div class="digit-cups"><span class="active">5</span><span class="active">3</span><span>2</span><span>1</span></div><small>5 + 3</small></div>
+<div class="digit-card"><strong>9</strong><div class="digit-cups"><span class="active">5</span><span class="active">3</span><span>2</span><span class="active">1</span></div><small>5 + 3 + 1</small></div>
+</div>
+</figure>
+<div class="legacy-visual"><pre><code>       THE YUPANA [1, 2, 3, 5] FIBONACCI DIGIT ROW
        +───────────+───────────+───────────+───────────+
        │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^0 (Units)
        +───────────+───────────+───────────+───────────+
        │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^1 (Tens)
        +───────────+───────────+───────────+───────────+
        │   [ 5 ]   │   [ 3 ]   │   [ 2 ]   │   [ 1 ]   │  &lt;-- 10^2 (Hundreds)
-       +───────────+───────────+───────────+───────────+</code></pre>
+        +───────────+───────────+───────────+───────────+</code></pre></div>
 <h3 id="sourcing-materials">8.1 Sourcing Materials</h3>
 <ol type="1">
 <li><strong>The Board:</strong> An empty 12-egg carton (cut down to a
@@ -684,7 +786,6 @@ bean in <code>[5]</code> + 1 bean in <code>[2]</code> *
 <strong>8</strong> = 1 bean in <code>[5]</code> + 1 bean in
 <code>[3]</code> * <strong>9</strong> = 1 bean in <code>[5]</code> + 1
 bean in <code>[3]</code> + 1 bean in <code>[1]</code></p>
-<p><code>[MEDIA PLACEHOLDER: DIAGRAM — The Yupana digit representation chart (0 through 9 in 1, 2, 3, 5 cells)]</code></p>
 <h3 id="step-by-step-multiplication-153-times-47">8.3 Step-by-Step
 Multiplication: <span class="math inline">153 × 47</span></h3>
 <p>On a standard abacus, multiplication requires memorizing 100
@@ -717,7 +818,17 @@ class="math display"><strong>4590</strong> + <strong>1530</strong> + <st
 <p>The entire calculation is executed with zero trial-and-error division
 tables and zero cognitive strain—simply shifting counters across
 geometric cups!</p>
-<p><code>[MEDIA PLACEHOLDER: GIF / STEP-BY-STEP PHOTOS — Placing beans on a DIY egg-carton Yupana board, calculating 153 x 47, and consolidating carries]</code></p>
+<figure class="visual calculation-figure">
+<figcaption><span class="figure-kicker">Worked example</span><strong>153 × 47 through spatial decomposition</strong></figcaption>
+<div class="calculation-flow">
+<div class="calculation-step"><span class="step-label">30</span><strong>4,590</strong><span>153 × 30</span></div>
+<div class="calculation-step"><span class="step-label">10</span><strong>1,530</strong><span>153 × 10</span></div>
+<div class="calculation-step"><span class="step-label">5</span><strong>765</strong><span>153 × 5</span></div>
+<div class="calculation-step"><span class="step-label">2</span><strong>306</strong><span>153 × 2</span></div>
+<div class="calculation-step"><span class="step-label">47 =</span><strong>30 + 10 + 5 + 2</strong><span>Fibonacci parts</span></div>
+<div class="calculation-total">4,590 + 1,530 + 765 + 306 = 7,191</div>
+</div>
+</figure>
 <h3 id="how-to-play-the-basic-2-player-taptana-game">8.4 How to Play the
 Basic 2-Player <em>Taptana</em> Game</h3>
 <p>Once your board is built, you can immediately play the traditional

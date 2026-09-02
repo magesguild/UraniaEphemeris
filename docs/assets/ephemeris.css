@@ -261,6 +261,84 @@ dl.spec-list { display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0,
 .innovation-row span { color: var(--muted); }
 .innovation-row span:last-child { color: var(--starlight); }
 
+/* Article 10: readable counterparts to the original terminal diagrams. */
+.cord-map { display: grid; gap: 0.65rem; text-align: center; }
+.cord-bus { padding: 0.6rem; border: 1px solid var(--star-gold); color: var(--star-bright); background: rgba(7, 11, 20, 0.62); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.8rem; }
+.cord-pendants { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.55rem; }
+.cord-node { position: relative; padding: 0.7rem 0.45rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); color: var(--moon); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.74rem; }
+.cord-node::before { content: "↓"; display: block; color: var(--star-gold); font-size: 1rem; }
+.cord-node strong { display: block; color: var(--star-bright); font-size: 1.1rem; }
+.cord-subsidiaries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem; }
+.cord-subsidiaries .cord-node { border-top-color: var(--moon); }
+.cord-subsidiaries .cord-node::before { content: "└─"; }
+.timeline-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; align-items: stretch; }
+.timeline-card { position: relative; padding: 0.75rem 0.6rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); text-align: center; }
+.timeline-card:not(:last-child)::after { content: "→"; position: absolute; right: -0.6rem; top: 50%; z-index: 1; color: var(--star-gold); background: var(--night-3); font-size: 1.1rem; }
+.timeline-card .timeline-date { color: var(--star-gold); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.68rem; }
+.timeline-card strong { display: block; margin: 0.28rem 0; color: var(--star-bright); font-size: 0.98rem; }
+.timeline-card span:last-child { color: var(--muted); font-size: 0.76rem; }
+.triad-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.65rem; }
+.triad-card { padding: 0.9rem 0.7rem; border: 1px solid var(--border); border-top: 2px solid var(--star-gold); background: rgba(7, 11, 20, 0.52); text-align: center; }
+.triad-card:nth-child(2) { border-top-color: var(--moon); }
+.triad-card:nth-child(3) { border-top-color: var(--starlight); }
+.triad-card strong { display: block; color: var(--star-bright); }
+.triad-card span { display: block; margin-top: 0.25rem; color: var(--muted); font-size: 0.78rem; }
+.relation-graph { display: grid; gap: 0.6rem; justify-items: center; }
+.relation-root, .relation-leaf { padding: 0.65rem 0.8rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); color: var(--star-bright); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.78rem; text-align: center; }
+.relation-root { border-color: var(--star-gold); }
+.relation-leaf span { color: var(--muted); font-size: 0.7rem; }
+.relation-arrow { color: var(--star-gold); line-height: 1; }
+.relation-leaves { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem; width: 100%; }
+.game-figure { display: grid; gap: 0.9rem; }
+.game-banner { padding: 0.75rem; border-left: 3px solid var(--star-gold); background: rgba(7, 11, 20, 0.52); }
+.game-banner strong { display: block; color: var(--star-bright); }
+.game-banner span { color: var(--muted); font-size: 0.8rem; }
+.trail-track { display: grid; grid-template-columns: auto repeat(20, minmax(0, 1fr)) auto; gap: 0.15rem; align-items: center; }
+.trail-track span { min-width: 0; height: 1.2rem; border: 1px solid var(--border); background: var(--night-3); color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.65rem; text-align: center; line-height: 1.1rem; }
+.trail-track .trail-start, .trail-track .trail-goal { height: auto; border: 0; background: none; font-size: 0.68rem; }
+.trail-track .runner { background: var(--star-gold); border-color: var(--star-gold); color: var(--night); }
+.round-table { width: 100%; border-collapse: collapse; font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.72rem; }
+.round-table th, .round-table td { padding: 0.42rem 0.5rem; border-bottom: 1px solid var(--border); text-align: left; }
+.round-table th { color: var(--moon); font-size: 0.67rem; text-transform: uppercase; }
+.round-table td { color: var(--starlight); }
+.round-table .highlight td { color: var(--star-gold); }
+.score-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.45rem; }
+.score-summary span { padding: 0.55rem 0.35rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.75rem; text-align: center; }
+.score-summary strong { display: block; color: var(--star-bright); font-size: 1rem; }
+.vector-sides { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+.vector-side { padding: 0.85rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); }
+.vector-side h4 { margin: 0 0 0.55rem; color: var(--star-bright); }
+.vector-side:first-child { border-top: 2px solid var(--star-gold); }
+.vector-side:last-child { border-top: 2px solid var(--moon); }
+.vector-values { margin: 0 0 0.7rem; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.73rem; line-height: 1.6; }
+.vector-total { color: var(--star-gold); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.8rem; }
+.raster-grid { display: grid; grid-template-columns: 2.3rem repeat(6, minmax(0, 1fr)) 3.5rem; gap: 0.18rem; align-items: center; }
+.raster-grid span { min-width: 0; }
+.raster-header { color: var(--moon); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.68rem; text-align: center; }
+.raster-row-label, .raster-total { color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.68rem; }
+.raster-total { color: var(--starlight); text-align: right; }
+.raster-cell { height: 1.05rem; border: 1px solid rgba(121, 135, 166, 0.2); border-radius: 2px; }
+.raster-0 { background: var(--night-3); }
+.raster-1 { background: #253555; }
+.raster-2 { background: #536d99; }
+.raster-3 { background: #9db8e8; }
+.raster-4 { background: var(--star-gold); }
+.raster-crest .raster-cell { box-shadow: 0 0 0 1px rgba(236, 200, 120, 0.55); }
+.digit-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5rem; }
+.digit-card { padding: 0.65rem 0.4rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); text-align: center; }
+.digit-card strong { display: block; margin-bottom: 0.45rem; color: var(--star-gold); font-size: 1.05rem; }
+.digit-cups { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.2rem; }
+.digit-cups span { display: grid; place-items: center; height: 1.35rem; border: 1px solid var(--border); color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.65rem; }
+.digit-cups .active { border-color: var(--star-gold); background: rgba(236, 200, 120, 0.2); color: var(--star-bright); }
+.digit-card small { display: block; margin-top: 0.4rem; color: var(--muted); font-size: 0.65rem; }
+.calculation-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.45rem; align-items: center; }
+.calculation-step { padding: 0.65rem 0.35rem; border: 1px solid var(--border); background: rgba(7, 11, 20, 0.52); text-align: center; }
+.calculation-step .step-label { color: var(--star-gold); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.66rem; }
+.calculation-step strong { display: block; margin-top: 0.25rem; color: var(--star-bright); font-size: 0.9rem; }
+.calculation-step span { color: var(--muted); font-size: 0.7rem; }
+.calculation-total { grid-column: 1 / -1; padding: 0.7rem; border-top: 1px solid var(--star-gold); color: var(--star-gold); font-family: "SFMono-Regular", Consolas, monospace; text-align: center; }
+.legacy-visual { display: none; }
+
 @media (max-width: 600px) {
   main { padding: 3rem 1.2rem 4rem; }
   h1 { font-size: 1.8rem; }
@@ -273,4 +351,13 @@ dl.spec-list { display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0,
   .dispatch-summary { grid-template-columns: 1fr; }
   .innovation-row { grid-template-columns: 1fr; gap: 0.18rem; }
   .innovation-row span { padding-left: 0.7rem; }
+  .timeline-grid, .triad-grid, .vector-sides { grid-template-columns: 1fr; }
+  .timeline-card:not(:last-child)::after { content: "↓"; right: auto; top: auto; bottom: -0.8rem; left: 50%; }
+  .cord-pendants { grid-template-columns: 1fr; }
+  .trail-track { grid-template-columns: auto repeat(10, minmax(0, 1fr)) auto; }
+  .trail-track span:nth-of-type(n+13):not(.trail-goal) { display: none; }
+  .score-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .raster-grid { grid-template-columns: 2rem repeat(6, minmax(0, 1fr)) 2.8rem; }
+  .digit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .calculation-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
