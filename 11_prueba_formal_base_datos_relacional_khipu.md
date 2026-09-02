@@ -49,15 +49,7 @@ Mediante **Regulus** nativo (un entorno de ejecución concatenativo de doble pil
 </div>
 </figure>
 
-<div class="visual-key" aria-label="Clave de colores para los gráficos del artículo">
-<span class="visual-key-title">Clave de colores</span>
-<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Dorado · foco, valor activo o resaltado</span>
-<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Azul · estructura o contexto secundario</span>
-<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Verde · resultado verificado o positivo</span>
-<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cian · proceso, relación o enseñanza</span>
-<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Rojo · atención, contraste o desequilibrio</span>
-<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Pizarra · estado silencioso o inactivo</span>
-</div>
+
 
 ---
 
