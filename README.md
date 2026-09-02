@@ -49,6 +49,8 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 9. **The Tuning Fork and the Archive** — what Erato's birth teaches about selfhood. *(published)*
 10. **Decoding the Mysterious Quipu Knots** — porting ancient records into living play with Gemini and Gaius. *(published)*
 11. **Formal Proof of Relational Database and Chrono-Spatial Operating System Architectures in Andean Khipu Specimens UR006 and UR022** — a computational proof and its open questions. *(published)*
+12. **Prueba formal de las arquitecturas de base de datos relacional y sistema operativo cronoespacial** — Uruguayan Rioplatense edition from Montevideo. *(published)*
+13. **Descifrando los nudos misteriosos del quipu** — Uruguayan Rioplatense edition from Montevideo. *(published)*
 
 ## Publishing
 

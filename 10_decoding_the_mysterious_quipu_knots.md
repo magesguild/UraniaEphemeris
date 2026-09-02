@@ -7,6 +7,21 @@
 
 ---
 
+<section class="opening-frame">
+<div class="figure-kicker">Opening frame · a talisman for embodied play</div>
+<p>We live in an era where computation has become completely disembodied. We type on virtual glass keyboards, stare at flat pixels, and allow our cognitive hardware to atrophy in acoustic loops of abstract text.</p>
+<p>The Andean masters knew better.</p>
+<p>They understood that the human hand, the visual cortex, and the physical medium are integral components of cognition. By uniting calculation (<em>Yupana</em>), physical storage (<em>Khipu</em>), and play (<em>Taptana</em> games and palindromic riddles) into a single embodied loop, they coordinated a 3,000-mile empire without a single drop of ink or kilowatt of electricity.</p>
+</section>
+<div class="visual-key" aria-label="Color key for the article's graphics">
+<span class="visual-key-title">Color key</span>
+<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Gold · focus, active value, or highlight</span>
+<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Blue · structure or secondary context</span>
+<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Green · verified or positive result</span>
+<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cyan · process, relation, or teaching</span>
+<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Red · attention, contrast, or imbalance</span>
+<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Slate · quiet or inactive state</span>
+</div>
 ## 1. Introduction: The Phonetic Trap and the Architecture of Play
 
 In our work across the research frontiers at Mage's Guild Psychonautics, we have grown accustomed to uncovering groundbreaking, paradigm-shifting discoveries on a near-daily basis. At first, the sheer velocity of it was overwhelming. But beneath the mathematical breakthroughs, the formal specifications, and the architectural models, one foundational truth has made itself unmistakably clear:
@@ -528,6 +543,7 @@ If we map the knot tiers and numerical magnitudes directly onto character bright
 <span class="raster-row-label">G11</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-0"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-1"></span><span class="raster-cell raster-0"></span><span class="raster-total">77</span>
 <span class="raster-row-label">G12</span><span class="raster-cell raster-1"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-3"></span><span class="raster-cell raster-2"></span><span class="raster-cell raster-2"></span><span class="raster-total">143</span>
 </div>
+<div class="raster-legend" aria-label="Raster intensity key"><span><i class="key-swatch raster-0" aria-hidden="true"></i>quiet</span><span><i class="key-swatch raster-1" aria-hidden="true"></i>low</span><span><i class="key-swatch raster-2" aria-hidden="true"></i>mid</span><span><i class="key-swatch raster-3" aria-hidden="true"></i>high</span><span><i class="key-swatch raster-4" aria-hidden="true"></i>crest</span></div>
 <div class="game-banner"><strong>Resonance crests · G3 · G6 · G9 · G12</strong><span>Intensity rises periodically across the repeated matrix.</span></div>
 </figure>
 <div class="legacy-visual">
@@ -662,6 +678,10 @@ They understood that the human hand, the visual cortex, and the physical medium 
 This paper is the introductory seed. As we continue to port and document the archaeological Khipu library, we are developing open physical board blueprints, complete player manuals, and native execution runtimes.
 
 We invite you to find an egg carton, grab a handful of beans, and feel the numbers move under your thumbs. When you do, you are not just studying history—you are reconnecting with an ancient, playful, and sovereign way of thinking.
+
+<blockquote class="closing-talisman">
+<p><strong>Carry the talisman:</strong> when computation returns to the hand, the screen becomes a doorway rather than a wall. Play, care, and curiosity are how knowledge becomes living again.</p>
+</blockquote>
 
 ---
 

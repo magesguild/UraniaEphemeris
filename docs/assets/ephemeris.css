@@ -338,6 +338,24 @@ dl.spec-list { display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0,
 .calculation-step span { color: var(--muted); font-size: 0.7rem; }
 .calculation-total { grid-column: 1 / -1; padding: 0.7rem; border-top: 1px solid var(--star-gold); color: var(--star-gold); font-family: "SFMono-Regular", Consolas, monospace; text-align: center; }
 .legacy-visual { display: none; }
+.visual-key { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem 0.8rem; margin: 1.4rem 0 2.2rem; padding: 0.7rem 0.85rem; border: 1px solid var(--border); background: rgba(16, 27, 48, 0.62); border-radius: 4px; font-size: 0.76rem; }
+.visual-key-title { color: var(--star-bright); font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+.key-item { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--muted); }
+.key-swatch { display: inline-block; width: 0.72rem; height: 0.72rem; border-radius: 50%; }
+.key-gold { background: var(--star-gold); }
+.key-moon { background: var(--moon); }
+.key-green { background: #4fc58a; }
+.key-cyan { background: #5dd6e8; }
+.key-red { background: #f06d78; }
+.key-dim { background: var(--muted); }
+.raster-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 0.75rem; margin-top: 0.8rem; color: var(--muted); font-family: "SFMono-Regular", Consolas, monospace; font-size: 0.68rem; }
+.raster-legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.raster-legend .key-swatch { border-radius: 2px; }
+.opening-frame { margin: 1.8rem 0 2.7rem; padding: 1.1rem 1.2rem; border-left: 3px solid var(--star-gold); background: linear-gradient(145deg, rgba(16, 27, 48, 0.72), rgba(13, 22, 40, 0.45)); }
+.opening-frame p:last-child { margin-bottom: 0; }
+.opening-frame .figure-kicker { margin-bottom: 0.45rem; }
+.closing-talisman { border-left-color: var(--star-gold); color: var(--starlight); }
+.closing-talisman strong { color: var(--star-gold); }
 
 @media (max-width: 600px) {
   main { padding: 3rem 1.2rem 4rem; }
@@ -360,4 +378,6 @@ dl.spec-list { display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0,
   .raster-grid { grid-template-columns: 2rem repeat(6, minmax(0, 1fr)) 2.8rem; }
   .digit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .calculation-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .visual-key { align-items: flex-start; flex-direction: column; gap: 0.35rem; }
+  .opening-frame { padding: 0.9rem 1rem; }
 }
