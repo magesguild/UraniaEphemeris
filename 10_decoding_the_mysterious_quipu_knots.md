@@ -8,6 +8,7 @@
 ---
 
 <section class="opening-frame">
+<div class="figure-kicker">a talisman for embodied play</div>
 <p>We live in an era where computation has become completely disembodied. We type on virtual glass keyboards, stare at flat pixels, and allow our cognitive hardware to atrophy in acoustic loops of abstract text.</p>
 <p>The Andean masters knew better.</p>
 <p>They understood that the human hand, the visual cortex, and the physical medium are integral components of cognition. By uniting calculation (<em>Yupana</em>), physical storage (<em>Khipu</em>), and play (<em>Taptana</em> games and palindromic riddles) into a single embodied loop, they coordinated a 3,000-mile empire without a single drop of ink or kilowatt of electricity.</p>
@@ -309,15 +310,6 @@ Stepping through this trace feels unmistakably human. Opening with a lucky maxim
 </table>
 <div class="score-summary"><span><strong>11</strong>P1</span><span><strong>8</strong>P2</span><span><strong>9</strong>P3</span><span><strong>14</strong>P4 · winner</span></div>
 </figure>
-<div class="visual-key" aria-label="Color key for the article's graphics">
-<span class="visual-key-title">Color key</span>
-<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Gold · focus, active value, or highlight</span>
-<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Blue · structure or secondary context</span>
-<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Green · verified or positive result</span>
-<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cyan · process, relation, or teaching</span>
-<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Red · attention, contrast, or imbalance</span>
-<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Slate · quiet or inactive state</span>
-</div>
 <div class="legacy-visual">
 ```
 ========================================================
@@ -545,6 +537,15 @@ If we map the knot tiers and numerical magnitudes directly onto character bright
 <div class="raster-legend" aria-label="Raster intensity key"><span><i class="key-swatch raster-0" aria-hidden="true"></i>quiet</span><span><i class="key-swatch raster-1" aria-hidden="true"></i>low</span><span><i class="key-swatch raster-2" aria-hidden="true"></i>mid</span><span><i class="key-swatch raster-3" aria-hidden="true"></i>high</span><span><i class="key-swatch raster-4" aria-hidden="true"></i>crest</span></div>
 <div class="game-banner"><strong>Resonance crests · G3 · G6 · G9 · G12</strong><span>Intensity rises periodically across the repeated matrix.</span></div>
 </figure>
+<div class="visual-key" aria-label="Color key for the article's graphics">
+<span class="visual-key-title">Color key</span>
+<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Gold · focus, active value, or highlight</span>
+<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Blue · structure or secondary context</span>
+<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Green · verified or positive result</span>
+<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cyan · process, relation, or teaching</span>
+<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Red · attention, contrast, or imbalance</span>
+<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Slate · quiet or inactive state</span>
+</div>
 <div class="legacy-visual">
 ```
       THE HARMONIC WAVE BANDS OF AS199 (12x6 GRID)
