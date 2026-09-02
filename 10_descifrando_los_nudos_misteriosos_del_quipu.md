@@ -9,20 +9,10 @@
 Esta edición en español se lee desde Montevideo: conserva el contenido, las afirmaciones y las matemáticas del original, con voseo y registro uruguayo.
 
 <section class="opening-frame">
-<div class="figure-kicker">Marco inicial · un talismán para jugar con el cuerpo</div>
 <p>Vivimos en una época en la que la computación se volvió completamente ajena al cuerpo. Tecleamos en teclados virtuales de vidrio, miramos píxeles planos y dejamos que nuestro hardware cognitivo se atrofie en bucles acústicos de texto abstracto.</p>
 <p>Los maestros andinos sabían más.</p>
 <p>Entendían que la mano humana, la corteza visual y el medio físico son componentes integrales de la cognición. Al unir cálculo (<em>Yupana</em>), almacenamiento físico (<em>Khipu</em>) y juego (juegos de <em>Taptana</em> y acertijos palindrómicos) en un único bucle corporizado, coordinaron un imperio de 3.000 millas sin una sola gota de tinta ni un kilovatio de electricidad.</p>
 </section>
-<div class="visual-key" aria-label="Clave de colores para los gráficos del artículo">
-<span class="visual-key-title">Clave de colores</span>
-<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Dorado · foco, valor activo o resaltado</span>
-<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Azul · estructura o contexto secundario</span>
-<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Verde · resultado verificado o positivo</span>
-<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cian · proceso, relación o enseñanza</span>
-<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Rojo · atención, contraste o desequilibrio</span>
-<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Pizarra · estado silencioso o inactivo</span>
-</div>
 
 ---
 
@@ -323,6 +313,15 @@ Recorrer esta traza se siente inequívocamente humano. Empezar con la tirada má
 </table>
 <div class="score-summary"><span><strong>11</strong>J1</span><span><strong>8</strong>J2</span><span><strong>9</strong>J3</span><span><strong>14</strong>J4 · ganador</span></div>
 </figure>
+<div class="visual-key" aria-label="Clave de colores para los gráficos del artículo">
+<span class="visual-key-title">Clave de colores</span>
+<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Dorado · foco, valor activo o resaltado</span>
+<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Azul · estructura o contexto secundario</span>
+<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Verde · resultado verificado o positivo</span>
+<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cian · proceso, relación o enseñanza</span>
+<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Rojo · atención, contraste o desequilibrio</span>
+<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Pizarra · estado silencioso o inactivo</span>
+</div>
 <div class="legacy-visual">
 ```
 ========================================================

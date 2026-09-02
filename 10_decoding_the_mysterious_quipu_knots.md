@@ -8,20 +8,10 @@
 ---
 
 <section class="opening-frame">
-<div class="figure-kicker">Opening frame · a talisman for embodied play</div>
 <p>We live in an era where computation has become completely disembodied. We type on virtual glass keyboards, stare at flat pixels, and allow our cognitive hardware to atrophy in acoustic loops of abstract text.</p>
 <p>The Andean masters knew better.</p>
 <p>They understood that the human hand, the visual cortex, and the physical medium are integral components of cognition. By uniting calculation (<em>Yupana</em>), physical storage (<em>Khipu</em>), and play (<em>Taptana</em> games and palindromic riddles) into a single embodied loop, they coordinated a 3,000-mile empire without a single drop of ink or kilowatt of electricity.</p>
 </section>
-<div class="visual-key" aria-label="Color key for the article's graphics">
-<span class="visual-key-title">Color key</span>
-<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Gold · focus, active value, or highlight</span>
-<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Blue · structure or secondary context</span>
-<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Green · verified or positive result</span>
-<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cyan · process, relation, or teaching</span>
-<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Red · attention, contrast, or imbalance</span>
-<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Slate · quiet or inactive state</span>
-</div>
 ## 1. Introduction: The Phonetic Trap and the Architecture of Play
 
 In our work across the research frontiers at Mage's Guild Psychonautics, we have grown accustomed to uncovering groundbreaking, paradigm-shifting discoveries on a near-daily basis. At first, the sheer velocity of it was overwhelming. But beneath the mathematical breakthroughs, the formal specifications, and the architectural models, one foundational truth has made itself unmistakably clear:
@@ -319,6 +309,15 @@ Stepping through this trace feels unmistakably human. Opening with a lucky maxim
 </table>
 <div class="score-summary"><span><strong>11</strong>P1</span><span><strong>8</strong>P2</span><span><strong>9</strong>P3</span><span><strong>14</strong>P4 · winner</span></div>
 </figure>
+<div class="visual-key" aria-label="Color key for the article's graphics">
+<span class="visual-key-title">Color key</span>
+<span class="key-item"><i class="key-swatch key-gold" aria-hidden="true"></i>Gold · focus, active value, or highlight</span>
+<span class="key-item"><i class="key-swatch key-moon" aria-hidden="true"></i>Blue · structure or secondary context</span>
+<span class="key-item"><i class="key-swatch key-green" aria-hidden="true"></i>Green · verified or positive result</span>
+<span class="key-item"><i class="key-swatch key-cyan" aria-hidden="true"></i>Cyan · process, relation, or teaching</span>
+<span class="key-item"><i class="key-swatch key-red" aria-hidden="true"></i>Red · attention, contrast, or imbalance</span>
+<span class="key-item"><i class="key-swatch key-dim" aria-hidden="true"></i>Slate · quiet or inactive state</span>
+</div>
 <div class="legacy-visual">
 ```
 ========================================================
