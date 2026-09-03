@@ -5,6 +5,12 @@
 *Mage's Guild Psychonautics · Basin Game Studios*\
 *September 1, 2026*
 
+## Update: Play the Game!
+
+***[https://www.magesguild.io/downloads/](https://www.magesguild.io/downloads/)***
+
+Learn to compute like the ancients! Solve the mysteries of the Khipukamayuqs! Find their hidden language, unlock the power of the cosmos…
+
 ---
 
 <section class="opening-frame">
