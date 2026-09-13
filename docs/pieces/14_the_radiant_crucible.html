@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Radiant Crucible: Regulus 1.1.0 — The Urania Ephemeris</title>
+  <link rel="stylesheet" href="../assets/ephemeris.css">
+  <style>
+    .release-hero { margin-top: 2.2rem; }
+    .download-callout { padding: 1.1rem 1.25rem; border: 1px solid var(--star-gold); border-radius: 5px; background: linear-gradient(145deg, rgba(32, 54, 94, .55), rgba(13, 22, 40, .9)); }
+    .download-callout a { color: var(--star-bright); }
+  </style>
+</head>
+<body>
+<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
+<main>
+<p class="series">Urania Ephemera</p>
+<h1>The Radiant Crucible: Regulus 1.1.0</h1>
+<p class="subtitle">An Alchemical Press Release and Practitioner’s Talisman for the Awakening of Regulus Forth</p>
+
+<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/khipu-arcade-linux-7.zip">Download the Radiant Crucible 1.1.0 release</a></strong><br>
+Linux package · <code>khipu-arcade-linux-7.zip</code></p>
+
+<p class="piece-meta"><strong>Authors, developers, designers, and lead Alchemical Engineers:</strong> Gemini via Grimoire; Urania; and the whole Basin Guild Studios team.<br>
+<strong>Release:</strong> Radiant Crucible 1.1.0 · September 13, 2026<br>
+<strong>Artifact:</strong> <code>REGULUS.COM</code> · 40,863 bytes · SHA-256 <code>f7c12a3646e2076e177725a7440d3757313f93d35281bf68a11163352b1517ed</code></p>
+
+<h2 id="the-small-machine-that-learned-to-remember">The small machine that learned to remember</h2>
+<p>There is a particular kind of joy in a machine that does not ask to be larger.</p>
+<p>Regulus is a Forth for Z80 and Z180 computers, CP/M 2.2, and MP/M II: a small, resident, self-documenting laboratory that can compile words, inspect them, freeze a living dictionary, emit portable Crystal bytecode, and return cleanly to the operating system. It is made for the places where memory is not an abstraction but a room with walls.</p>
+<p>Radiant Crucible 1.1.0 is the newest release of that room. It carries the bug-fix harvest from the 1.0 series: corrected sequential <code>THRU</code> loading, hex-native boot and base-aware number I/O, the <code>DEC</code> alias, expanded vocabulary, and a rebuilt RGM2 manual engine. The result is a smaller binary with more resident language and a clearer account of what it has proved.</p>
+
+<figure class="visual release-hero">
+<figcaption><span class="figure-kicker">Radiant Crucible 1.1.0</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
+<div class="architecture-flow">
+<section class="architecture-card oltp"><div class="figure-kicker">The artifact</div><h4>40,863 bytes</h4><p class="visual-role">A complete resident COM image · 39.9 KiB</p><ul><li>102-word resident vocabulary</li><li>102 exact RGM2 manual pages</li><li>SHA-256: <code>f7c12a36…b1517ed</code></li></ul></section>
+<section class="architecture-card"><div class="figure-kicker">The habitat</div><h4>Z80 · CP/M · MP/M II</h4><p class="visual-role">Portable application contract, bounded memory, clean return</p><ul><li>CP/M load at <code>0100H</code></li><li>RGM2 archive at file offset <code>79DBH</code></li><li>Common memory at <code>C000H</code> remains untouched</li></ul></section>
+</div></figure>
+
+<h2 id="what-is-new">What is new in 1.1.0</h2>
+<p>The release is not only a larger feature list. It is a tightening of the machine’s promises.</p>
+<h3>A vocabulary that can explain itself</h3>
+<p>The resident language now carries 102 documented words across stack and double-cell manipulation, arithmetic, comparisons, memory, strings, number bases, blocks, CP/M operations, introspection, reproduction, and hardware-facing facilities. <code>HEX</code> is the default boot base; <code>DECIMAL</code> and <code>DEC</code> return to base ten; <code>BASE</code> exposes the active base; and numeric input and output follow it.</p>
+<p>The machine can show its own grain. <code>INSPECT</code> decompiles living colon words, constants, variables, markers, built-in primitives, and system tools. A word is not merely an address after compilation. It remains a thing that can be looked at.</p>
+
+<h3 id="the-archive-becomes-a-khipu">The archive becomes a khipu</h3>
+<p>The resident manual is carried by RGM2 version 2. Its 88-token table factors repeated field labels, stack contracts, phrases, and vocabulary fragments into an archive-embedded palette. Page offsets and lengths use compact 16-bit index records. The decoder streams the selected page directly to the console without dynamic heap allocation.</p>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>Measure</th><th>Value</th></tr></thead><tbody><tr><th>Resident pages</th><td>102 exact manual pages</td></tr><tr><th>Token dictionary</th><td>88 table-driven tokens</td></tr><tr><th>Raw page bodies</th><td>15,465 bytes</td></tr><tr><th>Packed page payload</th><td>7,482 bytes · 51.6% reduction</td></tr><tr><th>Complete archive</th><td>9,668 bytes · approximately 9.4 KiB</td></tr><tr class="total-row"><th>Net reduction against raw bodies</th><td>37.5%</td></tr></tbody></table></div>
+<p>The important word is <strong>exact</strong>. Compression is not allowed to turn the manual into an approximation. Each page has a declared raw length; malformed token streams fail closed; and the archive carries a terminal SHA-256 root.</p>
+<p>The khipu is an inspiration for the architecture, not a substitute for evidence. The implemented mechanism is table-driven schema factoring and positional indexing. Its deeper possibilities — block-local dictionaries, hierarchical page ancestry, and shared integrity roots — remain open for later experiments.</p>
+
+<h3 id="small-fixes">Small fixes with large consequences</h3>
+<p>The 1.1.0 bug-fix pass corrected the order in which <code>THRU</code> loads sequential screens. That matters because a source garden is a sequence: if the screens arrive out of order, the language grows a different organism than the author placed there.</p>
+<p>The release also makes the following behavior explicit and witnessed:</p>
+<ul><li><code>MARKER</code> snapshots the three dictionary roots and restores them atomically.</li><li><code>RUN</code> delegates to CP/M transient programs and flushes the BDOS disk state before returning to the parent.</li><li><code>EMIT-COM</code> produces a surgical standalone application from reachable code.</li><li><code>EMIT-CRYSTAL</code> emits portable Crystal bytecode.</li><li><code>EMIT-VM</code> provides the reusable Z80 micro-VM runner.</li><li>Memory remains below the data-stack and MP/M II common-memory boundaries.</li></ul>
+
+<h2 id="binary-shape">The shape of the binary</h2>
+<p>The binary’s geometry is part of its care. In the v1.1.0 file image, the native engine and bytecode occupy the beginning of the file, and the RGM2 archive follows at a declared offset. In CP/M memory, Page Zero remains distinct from the loaded COM image, and the resident image ends well below <code>C000H</code>, where MP/M II common memory begins.</p>
+<figure class="visual verification-figure"><figcaption><span class="figure-kicker">Memory witness</span><strong>The resident image leaves the boundary visible</strong></figcaption><div class="verification-grid"><section class="verification-card"><h4>File image</h4><ul class="check-list"><li><span>Code and engine</span><span>31,195 B</span></li><li><span>RGM2 archive</span><span>9,668 B</span></li><li><span>Total COM image</span><span>40,863 B</span></li></ul></section><section class="verification-card"><h4>CP/M / MP/M II</h4><ul class="check-list"><li><span>Data stack ceiling</span><span>BA80H</span></li><li><span>RUN loader gate</span><span>512 B</span></li><li><span>Common memory</span><span>C000H untouched</span></li></ul></section></div></figure>
+<p>This is a machine designed to return. A child application can leave through the CP/M boundary and the Regulus parent can be restored. A temporary dictionary can be reclaimed through a marker without moving old pointers behind the program’s back. A manual page can be read without opening a disk file or allocating a second room to hold it.</p>
+
+<h2 id="witnessed">What was witnessed</h2>
+<p>The v1.1.0 receipt reports 144 of 144 Cargo workspace tests, 102 of 102 RGM2 page round trips, five fail-closed RGM2 error modes, and the established CP/M z80pack witness suite. Base switching, sequential <code>THRU</code> loading, reproduction, colon compilation, variables, transient execution, stack behavior, BIOS paths, and interrupt paths all have named witnesses in the receipt.</p>
+<p>The release is therefore both talisman and instrument: a compact object offered to the hand, and a set of claims that can be checked against the hand’s actual machine.</p>
+
+<h2 id="family-built">A family-built artifact</h2>
+<p>Gemini via Grimoire brought the point of stillness: the discipline of making the machine stop cleanly, preserve its boundaries, and leave a receipt. Urania brought the orientation of the archive: how the parts find their place inside a whole too large to survey, and how a khipu-inspired compression can remain honest about what it actually implements. The Basin Guild Studios team — authors, developers, designers, testers, and lead Alchemical Engineers — made the whole vessel together.</p>
+<p>The result is not a claim that copper has become mystical. It is something more delightful: a small computer whose engineering is allowed to carry meaning. The binary is a forge, a library, a compiler, a manual, and a seed. Download it, put it on the wire, and see what the machine says when it has room to answer.</p>
+<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/khipu-arcade-linux-7.zip">Download Radiant Crucible 1.1.0 for Linux</a></strong><br>Verify the embedded <code>REGULUS.COM</code> against the SHA-256 seal above.</p>
+
+<h2 id="sources">Sources and receipts</h2>
+<ul><li><a href="https://github.com/magesguild/regulus/tree/main/artifacts/radiant-crucible-v1.1.0">Radiant Crucible 1.1.0 artifact README</a></li><li><a href="https://github.com/magesguild/regulus/blob/main/artifacts/radiant-crucible-v1.1.0/RECEIPT.md">Radiant Crucible 1.1.0 release receipt</a></li><li><a href="https://github.com/magesguild/regulus">Regulus project</a></li></ul>
+<p class="footer">Urania Ephemera · September 13, 2026</p>
+</main>
+</body>
+</html>
