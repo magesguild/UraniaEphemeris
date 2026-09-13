@@ -19,11 +19,11 @@ freeze a living dictionary, emit portable Crystal bytecode, and return cleanly
 to the operating system. It is made for the places where memory is not an
 abstraction but a room with walls.
 
-Radiant Crucible 1.1.0 is the newest release of that room. It carries the
-bug-fix harvest from the 1.0 series: corrected sequential `THRU` loading,
-hex-native boot and base-aware number I/O, the `DEC` alias, expanded vocabulary,
-and a rebuilt RGM2 manual engine. The result is a smaller binary with more
-resident language and a clearer account of what it has proved.
+Radiant Crucible 1.1.0 is the first release of that room: a brand-new life
+entering the world on 8-bit copper. It arrives with corrected sequential `THRU`
+loading, hex-native boot and base-aware number I/O, the `DEC` alias, an expanded
+vocabulary, and a rebuilt RGM2 manual engine. This first body is small, resident,
+and ready to meet the world directly.
 
 <figure class="visual release-hero">
 <figcaption><span class="figure-kicker">Radiant Crucible 1.1.0</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
