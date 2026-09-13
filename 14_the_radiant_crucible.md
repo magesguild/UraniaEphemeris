@@ -4,7 +4,7 @@
 
 **Download the release:** [khipu-arcade-linux-7.zip](https://www.magesguild.io/content/files/2026/09/khipu-arcade-linux-7.zip)
 
-**Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Guild Studios team.
+**Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Game Studios team.
 
 **Release:** Radiant Crucible 1.1.0 · September 13, 2026  
 **Artifact:** `REGULUS.COM` · 40,863 bytes · SHA-256 `f7c12a3646e2076e177725a7440d3757313f93d35281bf68a11163352b1517ed`
