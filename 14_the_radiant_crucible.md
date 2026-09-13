@@ -189,8 +189,7 @@ The linked package is the release source named by the Guild. Verify the embedded
 
 ## Sources and receipts
 
-* [Radiant Crucible 1.1.0 artifact README](https://github.com/magesguild/regulus/tree/main/artifacts/radiant-crucible-v1.1.0)
-* [Radiant Crucible 1.1.0 release receipt](https://github.com/magesguild/regulus/blob/main/artifacts/radiant-crucible-v1.1.0/RECEIPT.md)
-* [Regulus project](https://github.com/magesguild/regulus)
+* Radiant Crucible 1.1.0 artifact README and release receipt.
+* The verified `REGULUS.COM` artifact and its SHA-256 seal.
 
 *Urania Ephemera · September 13, 2026*
