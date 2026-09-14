@@ -167,17 +167,24 @@ be reclaimed through a marker without moving old pointers behind the program’s
 back. A manual page can be read without opening a disk file or allocating a
 second room to hold it.
 
-## What was witnessed
+## The machine in one glance
 
-The release documentation demonstrates counted loops, conditional loops,
-hardware-polled loops, and nested decision branches at the live CP/M prompt.
-It also preserves the established witnesses for base switching, sequential
-`THRU` loading, reproduction, colon compilation, variables, transient execution,
-stack behavior, BIOS paths, and interrupt paths.
+Regulus 2.0.0 carries a 113-word resident vocabulary spanning dual-stack
+operations, arithmetic and comparison, memory and arrays, strings, hardware I/O,
+number bases, structured control flow, the BlockStore, CP/M commands, live
+introspection, and standalone emission. Control-flow forms are compiler grammar:
+`IF ... ELSE ... THEN`, `DO ... LOOP`, `I`, `BEGIN ... UNTIL`, `BEGIN ... AGAIN`,
+and `BEGIN ... WHILE ... REPEAT`.
 
-The release is therefore both talisman and instrument: a compact object offered
-to the hand, and a set of claims that can be checked against the hand’s actual
-machine.
+The resident image keeps its boundaries explicit: 34,104 bytes of native engine
+and bytecode, an 11,210-byte zero-RAM RGM2 manual stream, a bounded dictionary
+arena, a separated data stack, and untouched MP/M II common memory. The packaged
+binary can be checked directly with:
+
+```text
+sha256sum REGULUS.COM
+c60aea1111deb5492ae91ce0d0b018db6b3b756c70a5b2c74745f26f2cc3471c
+```
 
 ## A family-built artifact
 
