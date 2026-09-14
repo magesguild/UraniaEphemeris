@@ -1,13 +1,13 @@
-# The Radiant Crucible: Regulus 1.2.0
+# The Radiant Crucible: Regulus 2.0.0
 
 **An Alchemical Press Release and Practitioner’s Talisman for the Awakening of Regulus Forth**
 
-**Download the release:** [regulus-radiant-crucible-v1.2.0.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.2.0.zip)
+**Download the release:** [regulus-radiant-crucible-v2.0.0.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0.zip)
 
 **Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Game Studios team.
 
-**Release:** Radiant Crucible 1.2.0 · September 13, 2026  
-**Artifact:** `REGULUS.COM` · 45,573 bytes · SHA-256 `83b77ab62b9598b25d8552234408cc3039e74a42ddd9b6df317d1ef90b4adc88`
+**Release:** Radiant Crucible 2.0.0 · September 14, 2026  
+**Artifact:** `REGULUS.COM` · 45,314 bytes · SHA-256 `c60aea1111deb5492ae91ce0d0b018db6b3b756c70a5b2c74745f26f2cc3471c`
 
 ## The small machine that learned to remember
 
@@ -19,23 +19,25 @@ freeze a living dictionary, emit portable Crystal bytecode, and return cleanly
 to the operating system. It is made for the places where memory is not an
 abstraction but a room with walls.
 
-Radiant Crucible 1.2.0 is a brand-new life entering the world on 8-bit copper.
+Radiant Crucible 2.0.0 is a brand-new life entering the world on 8-bit copper.
 It includes reliable sequential `THRU` loading, hex-native boot and base-aware
 number I/O, the `DEC` alias, an expanded vocabulary, a rebuilt RGM2 manual
-engine, direct streaming emission, and user-authored structured control flow.
-It is resident, bounded, and ready to meet the world directly.
+engine, direct streaming emission, user-authored structured control flow, and the
+remaining khipu-compatible structures that could be made real in a bounded CP/M
+body. Final bugs discovered during the build are resolved; the organism is
+resident, bounded, and ready to meet the world directly.
 
 <figure class="visual release-hero">
-<figcaption><span class="figure-kicker">Radiant Crucible 1.2.0</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
+<figcaption><span class="figure-kicker">Radiant Crucible 2.0.0</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
 <div class="architecture-flow">
 <section class="architecture-card oltp">
 <div class="figure-kicker">The artifact</div>
-<h4>45,573 bytes</h4>
-<p class="visual-role">A complete resident COM image · 44.5 KiB</p>
+<h4>45,314 bytes</h4>
+<p class="visual-role">A complete resident COM image · 44.3 KiB</p>
 <ul>
 <li>102-word resident vocabulary</li>
 <li>113 resident RGM2 manual pages</li>
-<li>SHA-256: <code>83b77ab6…0b4adc88</code></li>
+<li>SHA-256: <code>c60aea11…f2cc3471c</code></li>
 </ul>
 </section>
 <section class="architecture-card">
@@ -44,16 +46,16 @@ It is resident, bounded, and ready to meet the world directly.
 <p class="visual-role">Portable application contract, bounded memory, clean return</p>
 <ul>
 <li>CP/M load at <code>0100H</code></li>
-<li>RGM2 archive at file offset <code>863BH</code></li>
+<li>RGM2 archive at file offset <code>8638H</code></li>
 <li>Common memory at <code>C000H</code> remains untouched</li>
 </ul>
 </section>
 </div>
 </figure>
 
-## Inside Radiant Crucible 1.2.0
+## Inside Radiant Crucible 2.0.0
 
-Radiant Crucible 1.2.0 is a complete, self-documenting computational organism
+Radiant Crucible 2.0.0 is a complete, self-documenting computational organism
 in one small resident image. Its promises are visible in the tools it carries
 and in the tests that accompany them.
 
@@ -131,7 +133,7 @@ The following behavior is included and witnessed:
 
 ## The shape of the binary
 
-The binary’s geometry is part of its care. In the v1.2.0 file image, the native
+The binary’s geometry is part of its care. In the v2.0.0 file image, the native
 engine and bytecode occupy the beginning of the file, and the RGM2 archive
 follows at a declared offset. In CP/M memory, Page Zero remains distinct from
 the loaded COM image, and the resident image ends well below `C000H`, where
@@ -143,9 +145,9 @@ MP/M II common memory begins.
 <section class="verification-card">
 <h4>File image</h4>
 <ul class="check-list">
-<li><span>Code and engine</span><span>34,363 B</span></li>
+<li><span>Code and engine</span><span>34,104 B</span></li>
 <li><span>RGM2 archive</span><span>11,210 B</span></li>
-<li><span>Total COM image</span><span>45,573 B</span></li>
+<li><span>Total COM image</span><span>45,314 B</span></li>
 </ul>
 </section>
 <section class="verification-card">
@@ -192,7 +194,7 @@ delightful: a small computer whose engineering is allowed to carry meaning.
 The binary is a forge, a library, a compiler, a manual, and a seed. Download it,
 put it on the wire, and see what the machine says when it has room to answer.
 
-<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.2.0.zip">Download Radiant Crucible 1.2.0 for Linux</a></strong><br />
+<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0.zip">Download Radiant Crucible 2.0.0 for Linux</a></strong><br />
 The linked package is the release source named by the Guild. Verify the embedded
 <code>REGULUS.COM</code> against the SHA-256 seal above.</p>
 

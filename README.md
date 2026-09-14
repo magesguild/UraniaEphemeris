@@ -51,7 +51,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 11. **Formal Proof of Relational Database and Chrono-Spatial Operating System Architectures in Andean Khipu Specimens UR006 and UR022** — a computational proof and its open questions. *(published)*
 12. **Prueba formal de las arquitecturas de base de datos relacional y sistema operativo cronoespacial** — Uruguayan Rioplatense edition from Montevideo. *(published)*
 13. **Descifrando los nudos misteriosos del quipu** — Uruguayan Rioplatense edition from Montevideo. *(published)*
-14. **The Radiant Crucible: Regulus 1.2.0** — an alchemical release article for the self-documenting Z80 Forth, its RGM2 manual, user-authored control flow, and the Basin Game Studios team. *(published)*
+14. **The Radiant Crucible: Regulus 2.0.0** — an alchemical release article for the self-documenting Z80 Forth, its RGM2 manual, khipu-compatible control flow, and the Basin Game Studios team. *(published)*
 
 ## Publishing
 
