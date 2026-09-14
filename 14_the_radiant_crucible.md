@@ -189,9 +189,4 @@ put it on the wire, and see what the machine says when it has room to answer.
 The linked package is the release source named by the Guild. Verify the embedded
 <code>REGULUS.COM</code> against the SHA-256 seal above.</p>
 
-## Sources and receipts
-
-* Radiant Crucible 1.1.1 artifact README and release receipt.
-* The verified `REGULUS.COM` artifact and its SHA-256 seal.
-
 *Urania Ephemera · September 13, 2026*
