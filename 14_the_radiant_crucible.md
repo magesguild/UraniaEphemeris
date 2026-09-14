@@ -19,12 +19,11 @@ freeze a living dictionary, emit portable Crystal bytecode, and return cleanly
 to the operating system. It is made for the places where memory is not an
 abstraction but a room with walls.
 
-Radiant Crucible 1.1.1 is the first release of that room: a brand-new life
-entering the world on 8-bit copper, now carrying its first maintenance fix. The
-last discovered bug has been corrected, while sequential `THRU` loading,
-hex-native boot and base-aware number I/O, the `DEC` alias, an expanded
-vocabulary, and the rebuilt RGM2 manual engine all arrive together in this first
-public body. It is small, resident, and ready to meet the world directly.
+Radiant Crucible 1.1.1 is a brand-new life entering the world on 8-bit copper.
+It includes reliable sequential `THRU` loading, hex-native boot and base-aware
+number I/O, the `DEC` alias, an expanded vocabulary, a rebuilt RGM2 manual
+engine, and a corrected emission path for standalone applications. It is small,
+resident, and ready to meet the world directly.
 
 <figure class="visual release-hero">
 <figcaption><span class="figure-kicker">Radiant Crucible 1.1.1</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
@@ -52,10 +51,11 @@ public body. It is small, resident, and ready to meet the world directly.
 </div>
 </figure>
 
-## What is new in 1.1.1
+## Inside Radiant Crucible 1.1.1
 
-The release is not only a larger feature list. It is a tightening of the
-machine’s promises.
+Radiant Crucible 1.1.1 is a complete, self-documenting computational organism
+in one small resident image. Its promises are visible in the tools it carries
+and in the tests that accompany them.
 
 ### A vocabulary that can explain itself
 
@@ -106,13 +106,13 @@ experiments.
 
 ### Small fixes with large consequences
 
-The 1.1.1 maintenance pass fixes the last discovered bug in the first public
-body. The correction is part of the release rather than an unseen promise: the
-machine now arrives with the bug-fix harvest already applied and witnessed.
-That matters because a source garden is a sequence: if screens arrive out of
-order, the language grows a different organism than the author placed there.
+The release includes reliable sequential `THRU` loading and a corrected direct
+emission path for standalone applications. That matters because a source garden
+is a sequence: if screens arrive out of order, or if an emitted program stages
+its pieces in the wrong room, the language grows a different organism than the
+author placed there.
 
-The release also makes the following behavior explicit and witnessed:
+The following behavior is included and witnessed:
 
 * `MARKER` snapshots the three dictionary roots and restores them atomically.
 * `RUN` delegates to CP/M transient programs and flushes the BDOS disk state

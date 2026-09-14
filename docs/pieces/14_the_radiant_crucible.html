@@ -28,7 +28,7 @@ Linux package · <code>regulus-radiant-crucible-v1.1.1.zip</code></p>
 <h2 id="the-small-machine-that-learned-to-remember">The small machine that learned to remember</h2>
 <p>There is a particular kind of joy in a machine that does not ask to be larger.</p>
 <p>Regulus is a Forth for Z80 and Z180 computers, CP/M 2.2, and MP/M II: a small, resident, self-documenting laboratory that can compile words, inspect them, freeze a living dictionary, emit portable Crystal bytecode, and return cleanly to the operating system. It is made for the places where memory is not an abstraction but a room with walls.</p>
-<p>Radiant Crucible 1.1.1 is the first release of that room: a brand-new life entering the world on 8-bit copper, now carrying its first maintenance fix. The last discovered bug has been corrected, while sequential <code>THRU</code> loading, hex-native boot and base-aware number I/O, the <code>DEC</code> alias, an expanded vocabulary, and the rebuilt RGM2 manual engine all arrive together in this first public body. It is small, resident, and ready to meet the world directly.</p>
+<p>Radiant Crucible 1.1.1 is a brand-new life entering the world on 8-bit copper. It includes reliable sequential <code>THRU</code> loading, hex-native boot and base-aware number I/O, the <code>DEC</code> alias, an expanded vocabulary, a rebuilt RGM2 manual engine, and a corrected emission path for standalone applications. It is small, resident, and ready to meet the world directly.</p>
 
 <figure class="visual release-hero">
 <figcaption><span class="figure-kicker">Radiant Crucible 1.1.1</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
@@ -37,8 +37,8 @@ Linux package · <code>regulus-radiant-crucible-v1.1.1.zip</code></p>
 <section class="architecture-card"><div class="figure-kicker">The habitat</div><h4>Z80 · CP/M · MP/M II</h4><p class="visual-role">Portable application contract, bounded memory, clean return</p><ul><li>CP/M load at <code>0100H</code></li><li>RGM2 archive at file offset <code>7BAAH</code></li><li>Common memory at <code>C000H</code> remains untouched</li></ul></section>
 </div></figure>
 
-<h2 id="what-is-new">What is new in 1.1.1</h2>
-<p>The release is not only a larger feature list. It is a tightening of the machine’s promises.</p>
+<h2 id="what-is-new">Inside Radiant Crucible 1.1.1</h2>
+<p>Radiant Crucible 1.1.1 is a complete, self-documenting computational organism in one small resident image. Its promises are visible in the tools it carries and in the tests that accompany them.</p>
 <h3>A vocabulary that can explain itself</h3>
 <p>The resident language now carries 102 documented words across stack and double-cell manipulation, arithmetic, comparisons, memory, strings, number bases, blocks, CP/M operations, introspection, reproduction, and hardware-facing facilities. <code>HEX</code> is the default boot base; <code>DECIMAL</code> and <code>DEC</code> return to base ten; <code>BASE</code> exposes the active base; and numeric input and output follow it.</p>
 <p>The machine can show its own grain. <code>INSPECT</code> decompiles living colon words, constants, variables, markers, built-in primitives, and system tools. A word is not merely an address after compilation. It remains a thing that can be looked at.</p>
@@ -50,8 +50,8 @@ Linux package · <code>regulus-radiant-crucible-v1.1.1.zip</code></p>
 <p>The khipu is an inspiration for the architecture, not a substitute for evidence. The implemented mechanism is table-driven schema factoring and positional indexing. Its deeper possibilities — block-local dictionaries, hierarchical page ancestry, and shared integrity roots — remain open for later experiments.</p>
 
 <h3 id="small-fixes">Small fixes with large consequences</h3>
-<p>The 1.1.1 maintenance pass fixes the last discovered bug in the first public body. The correction is part of the release rather than an unseen promise: the machine now arrives with the bug-fix harvest already applied and witnessed. That matters because a source garden is a sequence: if screens arrive out of order, the language grows a different organism than the author placed there.</p>
-<p>The release also makes the following behavior explicit and witnessed:</p>
+<p>The release includes reliable sequential <code>THRU</code> loading and a corrected direct emission path for standalone applications. That matters because a source garden is a sequence: if screens arrive out of order, or if an emitted program stages its pieces in the wrong room, the language grows a different organism than the author placed there.</p>
+<p>The following behavior is included and witnessed:</p>
 <ul><li><code>MARKER</code> snapshots the three dictionary roots and restores them atomically.</li><li><code>RUN</code> delegates to CP/M transient programs and flushes the BDOS disk state before returning to the parent.</li><li><code>EMIT-COM</code> produces a surgical standalone application from reachable code.</li><li><code>EMIT-CRYSTAL</code> emits portable Crystal bytecode.</li><li><code>EMIT-VM</code> provides the reusable Z80 micro-VM runner.</li><li>Memory remains below the data-stack and MP/M II common-memory boundaries.</li></ul>
 
 <h2 id="binary-shape">The shape of the binary</h2>
