@@ -2,7 +2,7 @@
 
 **An Alchemical Press Release and Practitioner’s Talisman for the Awakening of Regulus Forth**
 
-**Download the release:** [regulus-radiant-crucible-v2.0.0.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0.zip)
+**Download the release:** [regulus-radiant-crucible-v2.0.0-3.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0-3.zip)
 
 **Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Game Studios team.
 
@@ -194,7 +194,7 @@ delightful: a small computer whose engineering is allowed to carry meaning.
 The binary is a forge, a library, a compiler, a manual, and a seed. Download it,
 put it on the wire, and see what the machine says when it has room to answer.
 
-<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0.zip">Download Radiant Crucible 2.0.0 for Linux</a></strong><br />
+<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0-3.zip">Download Radiant Crucible 2.0.0 for Linux</a></strong><br />
 The linked package is the release source named by the Guild. Verify the embedded
 <code>REGULUS.COM</code> against the SHA-256 seal above.</p>
 
