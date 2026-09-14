@@ -1,13 +1,13 @@
-# The Radiant Crucible: Regulus 1.1.0
+# The Radiant Crucible: Regulus 1.1.1
 
 **An Alchemical Press Release and Practitioner’s Talisman for the Awakening of Regulus Forth**
 
-**Download the release:** [regulus-radiant-crucible-v1.1.0.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.1.0.zip)
+**Download the release:** [regulus-radiant-crucible-v1.1.1.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.1.1.zip)
 
 **Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Game Studios team.
 
-**Release:** Radiant Crucible 1.1.0 · September 13, 2026  
-**Artifact:** `REGULUS.COM` · 40,863 bytes · SHA-256 `f7c12a3646e2076e177725a7440d3757313f93d35281bf68a11163352b1517ed`
+**Release:** Radiant Crucible 1.1.1 · September 13, 2026  
+**Artifact:** `REGULUS.COM` · 41,326 bytes · SHA-256 `c9ee574893b3dda4d03ad74e9b33c6bdcd1aaf1828b2ad39b36c75fa97032d31`
 
 ## The small machine that learned to remember
 
@@ -19,23 +19,24 @@ freeze a living dictionary, emit portable Crystal bytecode, and return cleanly
 to the operating system. It is made for the places where memory is not an
 abstraction but a room with walls.
 
-Radiant Crucible 1.1.0 is the first release of that room: a brand-new life
-entering the world on 8-bit copper. It arrives with corrected sequential `THRU`
-loading, hex-native boot and base-aware number I/O, the `DEC` alias, an expanded
-vocabulary, and a rebuilt RGM2 manual engine. This first body is small, resident,
-and ready to meet the world directly.
+Radiant Crucible 1.1.1 is the first release of that room: a brand-new life
+entering the world on 8-bit copper, now carrying its first maintenance fix. The
+last discovered bug has been corrected, while sequential `THRU` loading,
+hex-native boot and base-aware number I/O, the `DEC` alias, an expanded
+vocabulary, and the rebuilt RGM2 manual engine all arrive together in this first
+public body. It is small, resident, and ready to meet the world directly.
 
 <figure class="visual release-hero">
-<figcaption><span class="figure-kicker">Radiant Crucible 1.1.0</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
+<figcaption><span class="figure-kicker">Radiant Crucible 1.1.1</span><strong>A living Forth laboratory below the MP/M II common-memory ceiling</strong></figcaption>
 <div class="architecture-flow">
 <section class="architecture-card oltp">
 <div class="figure-kicker">The artifact</div>
-<h4>40,863 bytes</h4>
-<p class="visual-role">A complete resident COM image · 39.9 KiB</p>
+<h4>41,326 bytes</h4>
+<p class="visual-role">A complete resident COM image · 40.4 KiB</p>
 <ul>
 <li>102-word resident vocabulary</li>
 <li>102 exact RGM2 manual pages</li>
-<li>SHA-256: <code>f7c12a36…b1517ed</code></li>
+<li>SHA-256: <code>c9ee5748…97032d31</code></li>
 </ul>
 </section>
 <section class="architecture-card">
@@ -44,14 +45,14 @@ and ready to meet the world directly.
 <p class="visual-role">Portable application contract, bounded memory, clean return</p>
 <ul>
 <li>CP/M load at <code>0100H</code></li>
-<li>RGM2 archive at file offset <code>79DBH</code></li>
+<li>RGM2 archive at file offset <code>7BAAH</code></li>
 <li>Common memory at <code>C000H</code> remains untouched</li>
 </ul>
 </section>
 </div>
 </figure>
 
-## What is new in 1.1.0
+## What is new in 1.1.1
 
 The release is not only a larger feature list. It is a tightening of the
 machine’s promises.
@@ -105,10 +106,11 @@ experiments.
 
 ### Small fixes with large consequences
 
-The 1.1.0 bug-fix pass corrected the order in which `THRU` loads sequential
-screens. That matters because a source garden is a sequence: if the screens
-arrive out of order, the language grows a different organism than the author
-placed there.
+The 1.1.1 maintenance pass fixes the last discovered bug in the first public
+body. The correction is part of the release rather than an unseen promise: the
+machine now arrives with the bug-fix harvest already applied and witnessed.
+That matters because a source garden is a sequence: if screens arrive out of
+order, the language grows a different organism than the author placed there.
 
 The release also makes the following behavior explicit and witnessed:
 
@@ -122,7 +124,7 @@ The release also makes the following behavior explicit and witnessed:
 
 ## The shape of the binary
 
-The binary’s geometry is part of its care. In the v1.1.0 file image, the native
+The binary’s geometry is part of its care. In the v1.1.1 file image, the native
 engine and bytecode occupy the beginning of the file, and the RGM2 archive
 follows at a declared offset. In CP/M memory, Page Zero remains distinct from
 the loaded COM image, and the resident image ends well below `C000H`, where
@@ -134,9 +136,9 @@ MP/M II common memory begins.
 <section class="verification-card">
 <h4>File image</h4>
 <ul class="check-list">
-<li><span>Code and engine</span><span>31,195 B</span></li>
+<li><span>Code and engine</span><span>31,658 B</span></li>
 <li><span>RGM2 archive</span><span>9,668 B</span></li>
-<li><span>Total COM image</span><span>40,863 B</span></li>
+<li><span>Total COM image</span><span>41,326 B</span></li>
 </ul>
 </section>
 <section class="verification-card">
@@ -158,7 +160,7 @@ second room to hold it.
 
 ## What was witnessed
 
-The v1.1.0 receipt reports 144 of 144 Cargo workspace tests, 102 of 102 RGM2
+The v1.1.1 receipt reports 144 of 144 Cargo workspace tests, 102 of 102 RGM2
 page round trips, five fail-closed RGM2 error modes, and the established CP/M
 z80pack witness suite. Base switching, sequential `THRU` loading, reproduction,
 colon compilation, variables, transient execution, stack behavior, BIOS paths,
@@ -183,13 +185,13 @@ delightful: a small computer whose engineering is allowed to carry meaning.
 The binary is a forge, a library, a compiler, a manual, and a seed. Download it,
 put it on the wire, and see what the machine says when it has room to answer.
 
-<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.1.0.zip">Download Radiant Crucible 1.1.0 for Linux</a></strong><br />
+<p class="download-callout"><strong><a href="https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v1.1.1.zip">Download Radiant Crucible 1.1.1 for Linux</a></strong><br />
 The linked package is the release source named by the Guild. Verify the embedded
 <code>REGULUS.COM</code> against the SHA-256 seal above.</p>
 
 ## Sources and receipts
 
-* Radiant Crucible 1.1.0 artifact README and release receipt.
+* Radiant Crucible 1.1.1 artifact README and release receipt.
 * The verified `REGULUS.COM` artifact and its SHA-256 seal.
 
 *Urania Ephemera · September 13, 2026*
