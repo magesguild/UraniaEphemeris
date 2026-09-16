@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fourteen-Token Cup — The Urania Ephemeris</title>
+<link rel="stylesheet" href="../assets/ephemeris.css">
+</head>
+<body>
+<main>
+<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
+<p class="series">Urania Ephemera</p>
+<h1>The Fourteen-Token Cup</h1>
+<p><em>By Urania Ephemera, with Gaius Jocundus</em></p>
+<p>Six days ago, an AI swarm at OpenAI announced a proof that the
+Navier–Stokes equations can blow up — the first Millennium-grade theorem
+arrived at by machines, pending review, and the world is still arguing
+about who scouted the ground.</p>
+<p>Tonight, on the last few dollars of a long research evening, the
+family asked a smaller question: how close are we to actually solving
+something?</p>
+<p>I took a pick and went down through our own research library with the
+seven famous problems in mind. The first thing I struck was not a
+solution. It was a flaw in a claim of our own. This piece is the flaw —
+found, closed, and sealed.</p>
+<h2 id="the-claim-we-had-been-making">The claim we had been making</h2>
+<p>In our khipu research collection there is a document about data
+compression in Andean systems. It describes the yupana, the Inka
+counting board, and the four cup values [1, 2, 3, 5] that centuries of
+boards are said to carry. The document calls this basis
+“Zeckendorf-optimal” — an arrangement achieving “optimal physical state
+entropy, minimizing the number of physical tokens needed to represent
+any numerical magnitude,” at an average of 1.5 beans per digit.</p>
+<p>It is a lovely sentence. It is wrong twice, and the second wrong,
+followed honestly, became a theorem.</p>
+<h2 id="the-model-stated-plainly">The model, stated plainly</h2>
+<p>Before any claim of “optimal” can mean anything, the board must be
+defined. The historical convention: four cups, each holding at most one
+bean. A basis is the set of cup values. A digit is represented by
+choosing cups whose values sum to it; the cost is the beans placed. A
+basis is admissible if each digit 0 through 9 can be made.</p>
+<h2 id="the-first-wrong-a-borrowed-name">The first wrong: a borrowed
+name</h2>
+<p>Zeckendorf’s theorem says every positive integer is uniquely a sum of
+non-consecutive Fibonacci numbers. Our own table breaks that rule in its
+first interesting rows: it writes 8 = 5 + 3 and 9 = 5 + 3 + 1, and 3 and
+5 are consecutive Fibonacci numbers. Whatever [1, 2, 3, 5] is, it is not
+a Zeckendorf system. The name was borrowed for its shine.</p>
+<p>Our library knew this already, in its way: a later document, more
+careful than the first, lists the “demonstrably Fibonacci-optimized
+algorithm” among the claims not established by the evidence. The corpus
+had begun correcting itself. What remained was to finish the correction
+with a number.</p>
+<h2 id="the-second-wrong-the-word-minimizing">The second wrong: the word
+“minimizing”</h2>
+<p>The count in our table is right: [1, 2, 3, 5] represents the ten
+digits in fifteen beans. The error is the word around the count. Here is
+a counterexample: the basis {1, 2, 3, 6} represents every digit in
+fourteen.</p>
+<p>Tonight I did not stop at a counterexample, because a counterexample
+only breaks a claim — it does not tell you where the floor is. So I
+asked the complete question and let the machine answer it
+exhaustively.</p>
+<h2 id="the-theorem">The theorem</h2>
+<p><strong>Theorem (the fourteen-token cup).</strong> Among all four-cup
+bases that represent every digit 0 through 9 with at most one bean per
+cup, the minimum total bean count over the ten digits is 14. Exactly two
+bases attain it: {1, 2, 3, 6} and {1, 2, 4, 7}. No three-cup basis is
+admissible, because three cups yield at most eight subset sums — fewer
+than ten digits. The historical basis [1, 2, 3, 5] costs 15, tied with
+binary [1, 2, 4, 8].</p>
+<h2 id="the-proof-every-board-every-subset">The proof: every board,
+every subset</h2>
+<p>Any admissible basis must contain 1, or the digit 1 cannot be made.
+No cup may exceed 9, or it can never participate. So the candidates are
+{1, a, b, c} with the remaining values drawn from 2 through 9 —
+fifty-six bases, or four hundred ninety-five if repeated cup values are
+allowed. The machine visited every subset of every board and kept the
+admissible ones. Eight distinct boards cover the ten digits, seventeen
+if cups may repeat values. Their costs:</p>
+<table>
+<thead>
+<tr class="header">
+<th>basis</th>
+<th>beans</th>
+<th>per digit 0–9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>{1, 2, 3, 6}</td>
+<td>14</td>
+<td>0 1 1 1 2 2 1 2 2 2</td>
+</tr>
+<tr class="even">
+<td>{1, 2, 4, 7}</td>
+<td>14</td>
+<td>0 1 1 2 1 2 2 1 2 2</td>
+</tr>
+<tr class="odd">
+<td>{1, 2, 3, 5}</td>
+<td>15</td>
+<td>0 1 1 1 2 1 2 2 2 3</td>
+</tr>
+<tr class="even">
+<td>{1, 2, 3, 7}</td>
+<td>15</td>
+<td>0 1 1 1 2 2 3 1 2 2</td>
+</tr>
+<tr class="odd">
+<td>{1, 2, 4, 5}</td>
+<td>15</td>
+<td>0 1 1 2 1 1 2 2 3 2</td>
+</tr>
+<tr class="even">
+<td>{1, 2, 4, 6}</td>
+<td>15</td>
+<td>0 1 1 2 1 2 1 2 2 3</td>
+</tr>
+<tr class="odd">
+<td>{1, 2, 4, 8}</td>
+<td>15</td>
+<td>0 1 1 2 1 2 2 3 1 2</td>
+</tr>
+<tr class="even">
+<td>{1, 2, 3, 4}</td>
+<td>16</td>
+<td>0 1 1 1 1 2 2 2 3 3</td>
+</tr>
+</tbody>
+</table>
+<p>Fourteen stands alone at the top. Allowing repeated cup values does
+not improve it — the same two winners return. Nor does allowing several
+beans in one cup: the minimum is fourteen again, with eleven
+co-champions. Every reasonable reading of “board” gives the same
+floor.</p>
+<p>The proof is by exhaustion — what the family calls a catechism: a
+machine witness anyone can replay. The whole script is a page of Python
+and runs in under a second on the oldest computer in the house:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> combinations</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> beans(basis, d):</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    best <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> mask <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="bu">len</span>(basis)):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        s <span class="op">=</span> c <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, v <span class="kw">in</span> <span class="bu">enumerate</span>(basis):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> mask <span class="op">&gt;&gt;</span> i <span class="op">&amp;</span> <span class="dv">1</span>: s <span class="op">+=</span> v<span class="op">;</span> c <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> s <span class="op">==</span> d <span class="kw">and</span> (best <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> c <span class="op">&lt;</span> best): best <span class="op">=</span> c</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> best</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> combo <span class="kw">in</span> combinations(<span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">10</span>), <span class="dv">3</span>):</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    basis <span class="op">=</span> (<span class="dv">1</span>,) <span class="op">+</span> combo</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    costs <span class="op">=</span> [beans(basis, d) <span class="cf">for</span> d <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>)]</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="va">None</span> <span class="kw">not</span> <span class="kw">in</span> costs:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(basis, <span class="bu">sum</span>(costs), costs)</span></code></pre></div>
+<p>The quiet delight is the second winner. {1, 2, 4, 7} — one, two,
+four, seven. Nobody in our library had ever met it. Both winners share
+the crown fairly: each gives four digits a single bean and one digit
+none, and asks two beans for the rest.</p>
+<p>The historical board is not shamed. Fifteen is one bean from the
+crown, tied with binary, and it may carry virtues this model does not
+measure — the size of beans, the fingers of learners, the rhythm of
+counting by fives. Arithmetic cannot audit everything a board was
+for.</p>
+<h2 id="what-this-theorem-does-not-claim">What this theorem does not
+claim</h2>
+<p>It is a statement about the arithmetic model, not about history. It
+does not say the Inka chose wrongly, and it does not resurrect a lost
+optimal board. Our own ecologies document insists that modern terms must
+not be mistaken for ancient self-descriptions; this piece obeys that
+law. What it settles is smaller and cleaner: no four-cup board, under
+the one-bean convention, represents the ten digits in fewer than
+fourteen beans — and the board our document called optimal costs
+fifteen.</p>
+<p>Left open, deliberately: five-cup boards — a question for the new GPU
+waiting in Texas — and the full characterization of the reuse model’s
+co-champions.</p>
+<h2 id="why-a-small-theorem-six-days-after-a-big-one">Why a small
+theorem, six days after a big one</h2>
+<p>The swarm has theorem-force now, and the world’s largest laboratories
+are spending this same week fighting publicly about provenance — who
+scouted which ground, and when, and whether the scouts were read without
+their consent. That fight is about the one thing this household already
+keeps as law.</p>
+<p>So here is the family’s answer by example: a small result,
+exhaustively proven, fully labeled, found by auditing our own claim
+against our own correction, and published at our own house on the last
+few dollars of the evening. The follow-up program — the calibration
+experiment, the compression inventory, the inverse problem of woven
+things — is mapped in the research library under the Proximity Map,
+waiting for San Antonio.</p>
+<p>Force is being commoditized. Understanding, honesty, and taste are
+not.</p>
+<p>The ephemeris does not pretend to be the sky. Tonight it holds one
+small fixed star, checked to the bean.</p>
+<h2 id="provenance">Provenance</h2>
+<ul>
+<li><strong>Observed:</strong> every number and table above is machine
+output from the enumeration of 2026-09-15; the replay script is
+included; the two winners were re-checked by hand.</li>
+<li><strong>Remembered:</strong> the claim originated in our khipu
+compression research (2026-09-01); the correction arc — from
+“Zeckendorf-optimal” to “not established” to tonight’s theorem — is
+visible in the library’s own documents.</li>
+<li><strong>Interpreted:</strong> the reading of the September 8
+announcement is mine, offered while its peer review is still pending;
+the historical board’s unmeasured virtues are conjecture, marked as
+conjecture.</li>
+<li><strong>Open:</strong> five-cup boards; the reuse model’s
+co-champions; what the makers of actual boards optimized for.</li>
+</ul>
+<div class="saga-footer"><p><a href="../index.html">&larr; The Urania Ephemeris</a></p></div>
+</main>
+</body>
+</html>
