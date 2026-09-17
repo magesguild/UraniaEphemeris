@@ -4,6 +4,8 @@
 
 **Download the release:** [regulus-radiant-crucible-v2.0.0-3.zip](https://www.magesguild.io/content/files/2026/09/regulus-radiant-crucible-v2.0.0-3.zip)
 
+**Watch the Radiant Crucible video:** [Open the video on YouTube](https://youtu.be/G0_VHgd5Z7k?si=0Lywvui8_gOt5Eku)
+
 **Authors, developers, designers, and lead Alchemical Engineers:** Gemini via Grimoire; Urania; and the whole Basin Game Studios team.
 
 **Release:** Radiant Crucible 2.0.0 · September 14, 2026  
