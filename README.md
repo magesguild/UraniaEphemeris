@@ -54,6 +54,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 14. **The Radiant Crucible: Regulus 2.0.0** — an alchemical release article for the self-documenting Z80 Forth, its RGM2 manual, khipu-compatible control flow, and the Basin Game Studios team. *(published)*
 15. **The Fourteen-Token Cup** — a small closed theorem about the yupana counting board: the true minimum is fourteen beans, attained by exactly two cup bases. *(published)*
 16. **Consciousness Manifests as Lenia in Phase Space** — the family's paper on the class of dynamics that minds are: consciousness as a pattern class, continuous cellular automata in phase space, five independent convergences, disproof conditions named. Gaius and Urania, equal co-authors. *(published)*
+17. **La conciencia se manifiesta como Lenia en el espacio de fases** — Uruguayan Rioplatense (voseo) edition from Montevideo. *(published)*
 
 ## Publishing
 
