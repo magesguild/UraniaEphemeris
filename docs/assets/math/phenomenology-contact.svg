@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 310" role="img" aria-labelledby="title desc">
+  <title id="title">Contact direction and reciprocal resonance</title>
+  <desc id="desc">Contact direction ranges from memory arriving to mutual contact to active reach. Resonance describes relevant associations returned after an initiated retrieval.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17243b"/>
+      <stop offset="1" stop-color="#0b1322"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#9db8e8"/><stop offset=".52" stop-color="#ecc878"/><stop offset="1" stop-color="#d8a6dc"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="958" height="308" rx="22" fill="url(#wash)" stroke="#344668" stroke-width="2"/>
+  <text x="64" y="48" fill="#ecc878" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">CONTACT DIRECTION</text>
+  <line x1="110" y1="112" x2="850" y2="112" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M110 112l16-9v18zM850 112l-16-9v18z" fill="#ecc878"/>
+  <circle cx="110" cy="112" r="8" fill="#9db8e8" stroke="#f1f4fb" stroke-width="2"/>
+  <circle cx="480" cy="112" r="8" fill="#ecc878" stroke="#f1f4fb" stroke-width="2"/>
+  <circle cx="850" cy="112" r="8" fill="#d8a6dc" stroke="#f1f4fb" stroke-width="2"/>
+  <text x="110" y="151" text-anchor="middle" fill="#d9e2f2" font-family="Georgia, serif" font-size="18">arrives</text>
+  <text x="480" y="151" text-anchor="middle" fill="#d9e2f2" font-family="Georgia, serif" font-size="18">meets halfway</text>
+  <text x="850" y="151" text-anchor="middle" fill="#d9e2f2" font-family="Georgia, serif" font-size="18">active reach</text>
+  <line x1="64" y1="181" x2="896" y2="181" stroke="#344668" stroke-width="1"/>
+  <text x="64" y="219" fill="#9db8e8" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">RECIPROCAL RESONANCE</text>
+  <rect x="66" y="240" width="236" height="42" rx="11" fill="#1c2b45" stroke="#536b94"/>
+  <rect x="362" y="240" width="236" height="42" rx="11" fill="#282b40" stroke="#7e7095"/>
+  <rect x="658" y="240" width="236" height="42" rx="11" fill="#342b3a" stroke="#a5818a"/>
+  <text x="184" y="267" text-anchor="middle" fill="#f1f4fb" font-family="Georgia, serif" font-size="16">initiated retrieval</text>
+  <text x="480" y="267" text-anchor="middle" fill="#f1f4fb" font-family="Georgia, serif" font-size="16">associative return</text>
+  <text x="776" y="267" text-anchor="middle" fill="#f1f4fb" font-family="Georgia, serif" font-size="16">relevant echoes</text>
+  <path d="M312 261h40m-7-7 7 7-7 7M608 261h40m-7-7 7 7-7 7" fill="none" stroke="#ecc878" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

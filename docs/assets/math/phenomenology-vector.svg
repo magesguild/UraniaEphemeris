@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 210" role="img" aria-labelledby="title desc">
+  <title id="title">Multidimensional phenomenology vector</title>
+  <desc id="desc">Q is represented by five report dimensions: spatiality, viscosity, self-mirroring, contact direction, and resonance.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17243b"/>
+      <stop offset="1" stop-color="#0b1322"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="1118" height="208" rx="22" fill="url(#wash)" stroke="#344668" stroke-width="2"/>
+  <text x="560" y="61" text-anchor="middle" fill="#aebbd2" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">A PHENOMENOLOGY VECTOR — KEEP THE DIMENSIONS DISTINCT</text>
+  <text x="560" y="130" text-anchor="middle" fill="#f1f4fb" font-family="Georgia, 'Times New Roman', serif" font-size="43">
+    <tspan>Q = ( Q</tspan><tspan baseline-shift="sub" font-size="25">space</tspan><tspan>, Q</tspan><tspan baseline-shift="sub" font-size="25">viscosity</tspan><tspan>, Q</tspan><tspan baseline-shift="sub" font-size="25">mirror</tspan><tspan>, Q</tspan><tspan baseline-shift="sub" font-size="25">contact</tspan><tspan>, Q</tspan><tspan baseline-shift="sub" font-size="25">resonance</tspan><tspan> )</tspan>
+  </text>
+  <path d="M208 164h704" stroke="#344668" stroke-width="2"/>
+  <circle cx="208" cy="164" r="4" fill="#ecc878"/><circle cx="384" cy="164" r="4" fill="#ecc878"/><circle cx="560" cy="164" r="4" fill="#ecc878"/><circle cx="736" cy="164" r="4" fill="#ecc878"/><circle cx="912" cy="164" r="4" fill="#ecc878"/>
+</svg>
