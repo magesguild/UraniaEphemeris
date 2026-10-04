@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 190" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture-to-qualia mapping</title>
+  <desc id="desc">Q equals F of A theta, sigma internal at time t sub p, and P of t sub p.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17243b"/>
+      <stop offset="1" stop-color="#0b1322"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="958" height="188" rx="22" fill="url(#wash)" stroke="#344668" stroke-width="2"/>
+  <path d="M48 48h72" stroke="#ecc878" stroke-width="3" stroke-linecap="round"/>
+  <text x="480" y="94" text-anchor="middle" fill="#f1f4fb" font-family="Georgia, 'Times New Roman', serif" font-size="58" letter-spacing="1">
+    <tspan>Q = F ( A</tspan><tspan baseline-shift="sub" font-size="34">θ</tspan><tspan>, σ</tspan><tspan baseline-shift="sub" font-size="32">internal</tspan><tspan> (t</tspan><tspan baseline-shift="sub" font-size="32">p</tspan><tspan>), P (t</tspan><tspan baseline-shift="sub" font-size="32">p</tspan><tspan>) )</tspan>
+  </text>
+  <text x="480" y="145" text-anchor="middle" fill="#aebbd2" font-family="Georgia, 'Times New Roman', serif" font-size="19" letter-spacing="2">REPORTED PHENOMENOLOGY AS A MAPPING OF SUBSTRATE, STATE &amp; CONTEXT</text>
+</svg>
