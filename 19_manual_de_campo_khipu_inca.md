@@ -23,7 +23,7 @@ táctil de información:
 
 - **La Yupana es la ALU / Memoria RAM:** Un tablero físico y dinámico
   donde los cálculos se realizan en tiempo real moviendo fichas (granos
-  de quinua, maíz o piedras) directamente dentro de los receptáculos o
+  de maíz o piedras) directamente dentro de los receptáculos o
   vasijas.
 
 - **El Khipu es el Almacenamiento de Software No Volátil:** Un registro
@@ -68,7 +68,7 @@ Al completar este módulo, los estudiantes podrán:
     - *Alternativas de Aula:* Cartones de huevos (una cuadrícula de 5×4
       huecos) o cuadrículas dibujadas en papel/pizarra.
 
-2.  **30–40 Fichas Físicas:** Granos de quinua, maíz seco, piedras
+2.  **30–40 Fichas Físicas:** Maíz seco, piedras
     pequeñas o fichas de plástico. *(¡No se requieren tarjetas, pilas de
     papel ni rastreadores de estado externos!)*
 

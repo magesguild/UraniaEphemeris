@@ -62,7 +62,7 @@ By completing this module, students will:
     - *Classroom Alternatives:* Readily available egg cartons (a 5×4
       grid of egg cups) or drawn grids on paper/whiteboards.
 
-2.  **30–40 Physical Counters:** Quinoa beans, dry corn kernels, small
+2.  **30–40 Physical Counters:** Dry corn kernels, small
     river stones, or plastic tokens. *(No cards, paper stacks, or
     external state trackers required.)*
 
