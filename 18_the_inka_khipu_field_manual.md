@@ -1,182 +1,457 @@
-# The Inka Khipu Field Manual
-## A Hands-On Guide to Yupana Arithmetic and Khipu Records
+Educator's Field Manual: The Inka Khipu
+Arcade & Somatic Compute System
+A Complete Pedagogical Guide for Hands-On Andean Arithmetic
+Basin Game Studios / Mage's Guild Psychonautics (c) 2026 - MIT LICENSE -
+enhance-redistribute - This Knowledge is Yours to Improve
+1. Executive Summary & Pedagogical Foundations
+Objective
 
-**Basin Game Studios · Mage's Guild Psychonautics**  
-*English edition · 2026 · MIT License*
+To teach students positional decimal arithmetic, spatial matrix decomposition, and non-lossy
+digital logic without relying on abstract memorization, external data stacks, or electronic
+computation.
+Core Philosophy: Somatic Computing & Discrete Phase Space
 
-> This article is a web edition of the supplied *Educator's Field Manual: The Inka Khipu Arcade & Somatic Compute System*. It preserves the manual's teaching model while labeling its modern pedagogical system as a reconstruction and adaptation, not as a settled account of ancient Andean practice.
+The Yupana (Andean counting board) and Khipu (knotted cord archive) form a unified, tactile
+information-processing architecture:
+   ●​ The Yupana is the ALU / RAM: A dynamic, physical board where calculations occur in
+      real time by moving physical counters (beans, corn kernels, or pebbles) directly within
+      cup receptacles.
+   ●​ The Khipu is Non-Volatile Software Storage: A permanent, physical record where final
+      Yupana states are committed into cord networks using positional knot metrics.
+   ●​ Clock-Step Execution (Phase Space): Instead of executing rigid mental math for every
+      individual bean, the operator uses their hands to instantiate physical states by placing
+      multiple beans in cups. At a chosen "clock step" (a deliberate manual pass across the
+      board), the operator applies simple local rules (fusions, avalanches, unweaving) to let the
+      system "settle" into its path of least resistance—its natural gravitational attractor.
+Key Learning Outcomes
 
-## 1. Purpose and pedagogical foundations
+By completing this module, students will:
+  1.​ Express any decimal number 0…9,999 on a physical 4-cup geometric grid using no more
+      than 3 physical counters per row.
+  2.​ Perform addition and subtraction using fluid "fusions," "avalanches," and "unweaving"
+      instead of memorized carry/borrow algorithms.
+  3.​ Execute multi-digit multiplication and division entirely on-board through spatial loom
+      shifts and fair-share allocation (Ayni).
+  4.​ Understand how tactile, non-silicon systems process complex computational workloads
+      deterministically.
+2. Materials & Physical Set-Up
+Classroom Materials Required (Per Student or Pair)
 
-The manual's objective is to teach positional decimal arithmetic, spatial matrix decomposition, and deterministic logic without relying on abstract memorization, external data stacks, or electronic computation.
+ 1.​ 1 × Yupana Board: A grid of 5 rows by 4 geometric columns.
+        ○​ Classroom Alternatives: Readily available egg cartons (a 5×4 grid of egg cups) or
+           drawn grids on paper/whiteboards.
+ 2.​ 30–40 Physical Counters: Quinoa beans, dry corn kernels, small river stones, or plastic
+     tokens. (No cards, paper stacks, or external state trackers required.)
+The Board Topology
 
-Its central model is a unified, tactile information-processing architecture:
 
-- **The Yupana** is the active workspace: a physical board where counters move through cup receptacles as a calculation proceeds.
-- **The Khipu** is the durable record: a physical cord archive into which a settled state may be recorded using positional and knot features.
-- **The clock step** is a deliberate manual pass across the board. The operator places a state, then applies local rules—fusion, avalanche, and unweaving—until the board settles.
+ TIER / ROW     [5]             [3]             [2]               [1]           TIER VALUE
 
-The manual calls this **somatic computing**: the hands, board, counters, and observer together form the computational apparatus. That is a modern teaching lens. It is useful because it makes state and transformation visible, but it should not be mistaken for proof that historical khipukamayuq practice used this exact vocabulary or procedure.
 
-### Learning outcomes
+ 10
+   4            ()              ()              ()                ()            =0
+ (10,000)
 
-By completing the module, a student should be able to:
+   3
+ 10 (1,000)     ()              ()              ()                ()            =0
 
-1. Express any decimal number from 0 through 9,999 on a physical four-cup grid, using no more than three counters per row in the rested form.
-2. Perform addition and subtraction through fusions, avalanches, and unweaving rather than memorized carry and borrow algorithms.
-3. Explore multiplication as spatial loom shifts and division as fair-share allocation.
-4. Explain how a tactile, non-silicon system can process a deterministic workload.
 
-## 2. Materials and physical setup
+   2
+ 10 (100)       (●)             ()              (●)               ()            = 700 [(5 +
+                                                                                2) × 100]
 
-For each student or pair:
 
-1. One Yupana board: five rows by four geometric columns.
-2. Thirty to forty counters: quinoa beans, dry corn kernels, small stones, or tokens.
+   1
+ 10 (10)        ()              (●)             ()                (●)           = 40 [(3 + 1)
+                                                                                × 10]
 
-An egg carton or a drawn 5 × 4 grid is enough for a first lesson. No cards, paper stacks, or external state trackers are required for the board exercises.
 
-### Board topology
+   0
+ 10 (1)         (●)             (●)             ()                (●)           = 9 [(5 + 3 +
+                                                                                1) × 1]
 
-Each row contains four cups valued **[5], [3], [2], [1]**. The vertical rows represent powers of ten:
 
-| Row | Place | Value |
-|---:|---|---:|
-| 0 | Units | 10⁰ = 1 |
-| 1 | Tens | 10¹ = 10 |
-| 2 | Hundreds | 10² = 100 |
-| 3 | Thousands | 10³ = 1,000 |
-| 4 | Ten-thousands | 10⁴ = 10,000 |
+                                                          0                        1
+ ●​ Vertical Axis (Powers of 10): Bottom row is Units (10 ), moving up to Tens (10 ),
+                  2                   3                       4
+    Hundreds (10 ), Thousands (10 ), and Ten-Thousands (10 ).
+ ●​ Horizontal Axis (The 4 Magic Cups): Each row contains four physical receptacles
+    valued at [5], [3], [2], and [1].
+3. Unit 1: Digit Representation & The Golden Rule
+Lesson Concept
 
-The four horizontal cup values form each digit. For example, a 7 in the hundreds row is a counter in [5] and a counter in [2], giving 7 × 100 = 700.
+Any decimal digit ($0 \dots 9$) is formed in a single row by summing the values of the cups
+containing beans.
+The Golden Rule: Always place counters in the largest available cup that fits the remaining
+value.
+This rule guarantees that no single digit ever requires more than 3 beans when the board is
+in a rested state.
+Teacher's Digit Encoding Reference Chart
 
-## 3. Unit 1: digit representation
 
-To represent a decimal digit, place counters in cups whose values sum to that digit. The manual's **Golden Rule** is:
+ Digit                          Cup Combination                Total Beans Used
 
-> Always place counters in the largest available cup that fits the remaining value.
 
-In the rested form, this keeps every digit to at most three counters.
+ 0                              Empty Row                      0
 
-| Digit | Cup combination | Counters |
-|---:|---|---:|
-| 0 | empty row | 0 |
-| 1 | [1] | 1 |
-| 2 | [2] | 1 |
-| 3 | [3] | 1 |
-| 4 | [3] + [1] | 2 |
-| 5 | [5] | 1 |
-| 6 | [5] + [1] | 2 |
-| 7 | [5] + [2] | 2 |
-| 8 | [5] + [3] | 2 |
-| 9 | [5] + [3] + [1] | 3 |
 
-To set 382, place 3 + 8 + 2 in the hundreds, tens, and units rows respectively. To set 1,509, place 1 in thousands, 5 in hundreds, leave tens empty, and place 9 in units.
+ 1                              [1]                            1
 
-## 4. Unit 2: addition and the clock-step avalanche
 
-Addition begins physically. Set the first number, then place the second number's counters into the corresponding rows without carrying immediately. The board is intentionally allowed to enter an unsettled state.
+ 2                              [2]                            1
 
-On the clock step, sweep from the units row upward and apply local rules:
 
-1. Two [1] counters fuse into one [2].
-2. A [1] and a [2] fuse into one [3].
-3. A [2] and a [3] fuse into one [5].
-4. When two [5] counters occupy a row, they fuse and avalanche upward as one [1] counter in the next row. The current [5] cup clears to zero.
+ 3                              [3]                            1
 
-### Addition procedure
 
-1. Set **A** according to the Golden Rule.
-2. Take the counters for **B**.
-3. Drop them into the corresponding cups and rows.
-4. Sweep from 10⁰ upward, resolving fusions and avalanches until every row is rested.
+ 4                              [3] + [1]                      2
 
-For example, 247 + 385 is performed by setting 247, dropping in 385, and clock-stepping. The target settled state is **632**: hundreds [5] + [1], tens [3], units [2].
 
-## 5. Unit 3: subtraction and unweaving
+ 5                              [5]                            1
 
-Subtraction removes counters directly. When a row lacks the counter needed for the subtrahend, unweave a counter from the next higher row:
 
-> Remove one [1] counter from the 10ⁿ⁺¹ row and replace it with two [5] counters in the 10ⁿ row.
+ 6                              [5] + [1]                      2
 
-This expresses 10 as 5 + 5 in the lower place. Then remove the requested amount.
 
-### Subtraction procedure
+ 7                              [5] + [2]                      2
 
-1. Set the minuend **A**.
-2. Identify the subtrahend **B** by digit and place.
-3. Remove counters from the highest relevant row downward.
-4. If a cup lacks a required counter, unweave from above and continue.
 
-Example: for 1,204 − 531, unweave the thousands [1] into two hundreds [5] counters, remove 531, and settle at **673**.
+ 8                              [5] + [3]                      2
 
-## 6. Unit 4: multiplication as a loom
 
-The manual treats the vertical rows as loom rails. Multiplication is built from partial patterns rather than memorized times tables:
+ 9                              [5] + [3] + [1]                3
+4. Unit 2: Somatic Addition & The Clock-Step
+Avalanche
+Mechanical Principles: Phase Space & Clock Steps
 
-- ×1 replicates a pattern in its row.
-- ×2 doubles the pattern.
-- ×3 triples the pattern.
-- ×5 shifts the pattern upward one row, corresponding to ×10, with the cup pattern resolved by the local rules.
-- Multiplication by tens or hundreds shifts the whole pattern upward by one or two rows.
+In somatic compute, addition is performed by directly placing the new addend's beans into the
+board alongside the existing value. You do not need to calculate carries immediately while
+placing beans. The human operator populates the cups (instantiating the un-settled phase
+space) and then "steps the clock" forward by sweeping hands across the board to apply local
+settlement rules:
+   1.​ In-Row Fusion (Gravitational Attraction):
+         ○​ Two [1] beans in cup [1]: On clock step, merge into one bean in cup [2].
+         ○​ One [1] and one [2] bean: On clock step, merge into one bean in cup [3].
+         ○​ One [2] and one [3] bean: On clock step, fall into the path of least resistance →
+            merge into one bean in cup [5]. Note, there is a “gravity” to the golden rule’s
+            movement, which will become intuitive with practice. We could represent a 5 by
+            populating 3 and 2, but the clock step essentially “applies gravity and fusion” at
+            time of calculation.
+   2.​ The Great Bean Avalanche (Carry-Up Rule):
+         ○​ When cup [5] accumulates two beans (5 + 5 = 10), both beans fuse and jump UP
+            to the tier above as a single [1] bean (+ 10). Cup [5] of the current tier is cleared
+            to 0.
+ TIER                [5]                [3]                 [2]                [1]
 
-Place the partial products, then perform one clock step. The worksheet example is **64 × 23 = 1,472**: decompose 23 as 20 + 3, shift and place the ×2 component, place the ×3 component, and settle the combined board.
 
-## 7. Unit 5: division and Ayni fair-share allocation
+ Tier Above          ()                 ()                  ()                 (●) (Carried +1
+ (10s)                                                                         bean into Cup
+                                                                               [1])
 
-The manual presents division as the inverse of the multiplier loom. It uses **Ayni**, reciprocal exchange or fair-share distribution, as the pedagogical frame: a communal total is repeatedly partitioned into equal allotments.
 
-### Four-step protocol
+ Avalanche           \                  \                   \                  ▲ (5 + 5 = 10
+ Trigger                                                                       Avalanche
+                                                                               Trigger)
 
-1. **Board setup:** place the dividend on the main grid and keep the divisor as a reference pattern.
-2. **Test capacity:** scale the divisor to the highest occupied tier and test whether it fits.
-3. **Harvest and allot:** subtract one full divisor unit and record one quotient count at that tier.
-4. **Step down:** unweave remaining counters toward lower tiers and repeat until the units are complete.
 
-The manual works through **4,800 ÷ 32 = 150** and **1,472 ÷ 23 = 64**. In each case, division is a sequence of visible tests, subtractions, unweavings, and quotient records rather than an invisible symbolic operation.
+ Units Tier (1s)     (●) + (●)          ()                  ()                 Cup [5]
+                                                                               empties to 0
 
-## 8. Unit 6: the Khipu archive
 
-When a calculation settles on the Yupana, the manual proposes committing its state to a pendant cord. The following is the manual's teaching baseline, not a complete account of khipu variation:
+Direct On-Board Addition Procedure (A + B)
+  1.​ Set the initial number A on the Yupana according to the Golden Rule.
+  2.​ Take the beans for number B in your hand.
+  3.​ Drop B's beans directly into the corresponding tier cups where A is sitting (e.g., if B has a
+      5 in the units place, drop a bean into the units row's [5] cup).
+                                                            0
+  4.​ Clock Step: Sweep your hands from bottom tier (10 ) upwards, resolving fusions and
+      avalanches until every row obeys the Golden Rule.
 
-| Feature | Teaching use in this manual |
-|---|---|
-| Single knot (S) | Thousands and higher places |
-| Long knot (L) | Tens and hundreds; finger-turn count gives the digit, e.g. L7 |
-| Figure-eight knot (E) | A 1 in the units place |
-| Empty cord space | A zero placeholder for that positional tier |
 
-The manual gives example committed values of 1,701, 14, and 3,001 across pendant cords. It also explicitly notes that the complete Andean khipu tradition involves color and other features, and that this introductory encoding does not exhaust the wider computational ecosystem.
 
-The lesson does **not** claim that every historical khipu follows this exact encoding, that the proposed knots are a universal code, or that the archaeological semantics of a specimen can be inferred from a classroom exercise alone. It offers a discoverable modern baseline for moving from a dynamic board state to a durable record.
 
-## 9. Assessment rubric
+5. Unit 3: Somatic Subtraction & Unweaving
+(Borrowing)
+Mechanical Principle
 
-| Skill | Novice | Proficient | Master |
-|---|---|---|---|
-| Digit encoding | More than three counters or incorrect values | Encodes 0–9 correctly | Sets a four-digit number fluently and economically |
-| Addition and clock step | Misses fusions or carries | Resolves fusions and avalanches | Handles multi-row avalanches without prompting |
-| Subtraction and unweaving | Removes from empty cups | Unweaves correctly | Performs multi-tier unweaving fluently |
-| Ayni division | Loses scale or allotments | Executes top-down harvesting | Explains the fair-share model while dividing |
-| Database commit | Confuses knots and places | Translates a settled state accurately | Explains how the record preserves the board state |
+Subtraction is the physical removal of beans directly from the board. If a cup does not contain
+enough beans to remove the subtrahend value, the operator unweaves a bean from a higher
+tier to supply the necessary energy.
+                                                                                    𝑛+1
+Unweaving Rule (Borrowing): Remove 1 bean from cup [1] of the tier above (10           ), and
+                                                            𝑛
+replace it with TWO beans in cup [5] of the current tier (10 ). (10 = 5 + 5).
 
-## 10. Student worksheets
 
-Use a physical board and record intermediate states. Suggested problems from the manual:
+ TIER                                              ACTION / BEAN STATE
 
-1. **Addition:** 247 + 385 = 632.
-2. **Subtraction:** 1,204 − 531 = 673.
-3. **Multiplication:** 64 × 23 = 1,472.
-4. **Ayni division:** 3,600 ÷ 24 = 150.
 
-For each exercise, the student should show the initial placement, every unweaving or fusion, every avalanche, and the final settled board. The record is part of the lesson: the learner is not merely asked for an answer but is asked to make the path visible.
+ Tier Above (10s)                                  (●) → Remove 1 bean (-10)
 
-## Provenance and limits
 
-- **Source:** supplied PDF, *Educator's Field Manual: The Inka Khipu Arcade & Somatic Compute System*, English edition, 12 pages, 2026.
-- **Preserved:** the manual's board topology, cup values, Golden Rule, clock-step operations, unweaving, loom multiplication, Ayni division, proposed introductory knot metrics, assessment rubric, and worksheets.
-- **Observed:** the source document explicitly identifies itself as a Basin Game Studios / Mage's Guild Psychonautics educational work and MIT-licensed material.
-- **Interpreted:** “ALU / RAM,” “non-volatile software storage,” “clock-step execution,” “gravitational attractor,” and “database commit” are modern computational teaching metaphors and design choices in this manual.
-- **Open:** the historical scope of any particular Yupana configuration, the semantics of nonnumeric khipu features, the relationship between this classroom encoding and individual archaeological specimens, and the full diversity of Andean recording practices.
+ Unweaving Flow                                    │ → ▼ (Unweaves into 5 + 5)
 
-The manual's strongest invitation is practical: put counters on a board, let the state become visible, and let the learner discover that arithmetic can be touched. Its claims become more trustworthy when the line between historical evidence and modern reconstruction stays visible.
+
+ Units Tier (1s)                                   (●) (●) in Cup [5] → Subtract freely!
+
+
+Direct Subtraction Procedure (A - B)
+
+  1.​ Set minuend A on the Yupana.
+  2.​ Identify the value of subtrahend B by digit.
+  3.​ Remove beans corresponding to B starting from the highest tier down. If a cup lacks a
+      required bean, unweave one bean from the tier above into two [5] beans in the current
+      tier, then remove the target amount.
+6. Unit 4: Tactile Multiplication (The Multiplier Loom)
+Mechanical Principle
+
+Multiplication on the Yupana uses spatial translation across rows—treating the vertical board
+tiers as "loom rails." You do not need to memorize times tables.
+Spatial Shift Rules
+
+Decompose the multiplier into its individual component cups ([5], [3], [2], [1] across their
+respective rows). For each component:
+  ●​ Multiplying by [1]: Replicate the multiplicand's pattern in the same row tier.
+  ●​ Multiplying by [2]: Double the multiplicand's pattern into the same row tier.
+  ●​ Multiplying by [3]: Triple the multiplicand's pattern into the same row tier.
+  ●​ Multiplying by [5]: Shift the multiplicand's pattern UP one row tier (equivalent to × 10)
+      and take half, OR place into the [5] cups of the shifted tier.
+  ●​ Multiplying by Tens / Hundreds (10, 30, etc.): Shift the entire pattern UP by 1 or 2 row
+      tiers.
+After placing all partial product beans directly onto the board, execute a single Clock Step to
+resolve all fusions and avalanches until the board settles.
+7. Unit 5: Somatic Division & Fair-Share Allocation
+(Ayni)
+Pedagogical Foundations of Ayni
+
+In Andean culture, Ayni represents reciprocal community exchange and fair-share distribution.
+Somatic division models this directly: a total communal harvest (dividend) is systematically
+partitioned into equal family allotments (divisor).
+
+Division on the Yupana is the exact inverse of the Multiplier Loom. Instead of shifting a
+multiplicand UP the board to build a product, division tests how many full divisor units can be
+"harvested" (subtracted) from the dividend, tier by tier, working from the top down.
+The 4-Step Somatic Division Protocol
+
+
+ STEP                             ACTION                           DESCRIPTION
+
+
+ 1                                Board Setup                      Place the total dividend on
+                                                                   the main Yupana grid. Keep
+                                                                   the divisor to the side as a
+                                                                   reference template.
+
+ 2                                Test Capacity                    Test if a full unit of the
+                                                                   divisor (scaled to the
+                                                                   highest occupied tier) fits
+                                                                   into the dividend.
+
+ 3                                Harvest & Allot                  Subtract the divisor's
+                                                                   pattern from the board and
+                                                                   record 1 count in the
+                                                                   Quotient row for that tier.
+
+ 4                                Step-Down                        Unweave remaining beans
+                                                                             𝑛               𝑛−1
+                                                                   down (10 → 5 + 5 in 10
+                                                                   ) and repeat until Units are
+                                                                   complete.
+Detailed Division Walkthrough 1: 4,800 / 32 = 150
+
+  ●​ Initial Board State: 4,800 on board (Thousands: [3]+[1], Hundreds: [5]+[3]). Divisor
+     reference = 32 (3 Tens, 2 Units).
+Step 1: Test Hundreds Tier (Scaling Divisor by 100 → 3,200)
+
+  ●​   Can we remove 3,200 (3 Thousands, 2 Hundreds) from 4,800? YES!
+  ●​   Action: Remove 3 beans from Thousands row, 2 beans from Hundreds row.
+  ●​   Board Remaining: 1,600 (Thousands: [1], Hundreds: [5]+[1]).
+  ●​   Quotient Recorded: 1 Hundred (100).
+Step 2: Test Hundreds Tier Again
+
+  ●​ Can we remove another 3,200 from 1,600? NO.
+  ●​ Unweave Thousands: Take 1 bean from Thousands [1] and unweave it into TWO [5]
+     beans in Hundreds row.
+  ●​ Board Hundreds Row now holds: [5], [5], [5], [1] (= 1,600).
+Step 3: Test Tens Tier (Scaling Divisor by 10 → 320)
+
+  ●​ How many 320s (3 Hundreds, 2 Tens) fit into 1,600?
+       ○​ 1st allotment (-320): Board = 1,280. Quotient += 10.
+       ○​ 2nd allotment (-320): Board = 960. Quotient += 10.
+       ○​ 3rd allotment (-320): Board = 640. Quotient += 10.
+       ○​ 4th allotment (-320): Board = 320. Quotient += 10.
+       ○​ 5th allotment (-320): Board = 0. Quotient += 10.
+  ●​ Total Tens Allotment: 50.
+FINAL RESULT: 100 + 50 = 150 (Exact Distribution, 0 Remainder)
+
+Detailed Division Walkthrough 2: 1,472 / 23 = 64
+
+  ●​ Initial Board State: 1,472 on board (Thousands: [1], Hundreds: [3]+[1], Tens: [5]+[2], Units:
+     [2]). Divisor reference = 23 (2 Tens, 3 Units).
+Step 1: Test Hundreds Tier (Scaling Divisor by 100 → 2,300)
+
+  ●​ Can we remove 2,300 from 1,472? NO.
+  ●​ Unweave Thousands: Take 1 bean from Thousands [1] and unweave into TWO [5] beans
+     in Hundreds row.
+  ●​ Hundreds row now holds: 1,400 (two [5]s, one [3], one [1]).
+Step 2: Test Tens Tier (Scaling Divisor by 10 → 230)
+
+  ●​ How many 230s (2 Hundreds, 3 Tens) fit into 1,472?
+       ○​ Test 60 allotments (6 × 230 = 1, 380):
+       ○​ Subtract 1,380 (13 Hundreds, 8 Tens) from board.
+       ○​ Board Remaining: 92 (Tens: [5]+[3]+[1], Units: [2]).
+        ○​ Quotient Recorded: 60.
+Step 3: Test Units Tier (Divisor → 23)
+
+  ●​ How many 23s (2 Tens, 3 Units) fit into 92?
+       ○​ Unweave Tens if needed to expose unit beans.
+       ○​ 4 allotments (4 × 23 = 92).
+       ○​ Subtract 92 from board. Board Remaining: 0.
+       ○​ Quotient Recorded: 4.
+FINAL RESULT: 60 + 4 = 64 (Exact Distribution)
+
+
+
+
+8. Unit 6: The Khipu Archive (Database Commits)
+Once a calculation settles on the Yupana, the state is committed into a Khipu pendant cord:
+ PRIMARY CORD             Pendant 1                Pendant 2               Pendant 3
+ (MAIN RAIL)
+
+
+ Thousands (10 )
+                    3     (S)                      ()                      ( L3 ) 3,000
+
+
+ Hundreds (10 )
+                2         ( L7 )                   ( S ) Tens              ()
+
+
+           0
+ Units (10 )              (E)                      ( L4 )                  (E)
+
+
+ COMMITTED                1,701                    14                      3,001
+ VALUE
+
+
+Knot Metric Encoding
+                                               3
+  1.​ Single Knots (S): Used in Thousands (10 ) tier and higher.
+                                        1                       2
+  2.​ Long Knots (L): Used in Tens (10 ) and Hundreds (10 ) tiers. The number of finger-turns
+      in the knot equals the digit (e.g., 𝐿7 = 7).
+                                                                    0
+  3.​ Figure-Eight Knots (E): Used exclusively in the Units (10 ) tier to represent a 1.
+  4.​ Empty Cord Space: Represents a 0 placeholder for that positional tier.
+
+Note: The tying of the knot types is not something we have enough skill to teach effectively,
+but we are decoding with these baselines. Supplying thread to the students may allow them to
+discover this system on their own, as it is a discoverable method of storing software. There are
+colors involved in some of the later khipu encoding schemes, as well, and this system does not
+exhaust the complete compute ecosystem of the Andean khipu tradition. There is evidence of
+more advanced Yupana board configurations, perhaps used to track advanced or remote state.
+There are also items that appear to be something akin to smart contracts. We will continue
+publishing and distributing materials as we learn more.
+
+
+
+
+9. Educator's Assessment & Verification Rubric
+
+ Skill / Objective      Novice (1-2 pts)         Proficient (3-4         Master (5 pts)
+                                                 pts)
+
+
+ Digit Encoding         Uses > 3 beans per       Encodes digits          Instantly sets any
+                        row or violates the      $0\dots9$ correctly     4-digit number with
+                        Golden Rule.             using the Golden        minimal bean
+                                                 Rule.                   counts.
+
+ Addition & Clock       Forgets to fuse          Executes In-Row         Demonstrates fluid
+ Step                   beans or misses          Fusions and Bean        multi-row
+                        carry-ups across         Avalanches              avalanches without
+                        rows during the          accurately on           prompting.
+                        clock step.              board.
+
+ Subtraction &          Attempts to              Unweaves                Performs multi-tier
+ Unweaving              subtract from            higher-tier beans (     unweaving
+                        empty cups without       10 → 5 + 5)             smoothly during
+                        unweaving higher         correctly.              complex problems.
+                        tiers.
+
+ Ayni Division          Struggles to scale       Executes top-down       Demonstrates fluid
+                        divisor tiers or track   harvesting and          division and
+                        subtractive              unweaving to find       explains Ayni
+                        allotments.              exact quotients.        resource allocation.
+
+ Database Commit        Confuses knot            Accurately              Explains how
+                        types or positional      translates Yupana       Yupana state
+                        tiers on the             values onto Khipu       transfers non-lossy
+                        pendant cord.            cord metrics (𝑠, 𝐿, 𝐸   into Khipu storage.
+                                                 ).
+10. Updated Sample Student Worksheets
+Worksheet 1: Digit Encoding Practice
+
+Mark or place the beans in the cups for each number according to the Golden Rule:
+ 1.​ Number: 382
+                             2
+        ○​ Hundreds (10 ): [5] ( ) [3] (●) [2] ( ) [1] ( )​
+
+                      1
+        ○​ Tens (10 ): [5] (●) [3] (●) [2] ( ) [1] ( )​
+
+                       0
+        ○​ Units (10 ): [5] ( ) [3] ( ) [2] (●) [1] ( )​
+
+  2.​ Number: 1,509
+                                 3
+        ○​ Thousands (10 ): [5] ( ) [3] ( ) [2] ( ) [1] (●)​
+
+                             2
+        ○​ Hundreds (10 ): [5] (●) [3] ( ) [2] ( ) [1] ( )​
+
+                      1
+        ○​ Tens (10 ): [5] ( ) [3] ( ) [2] ( ) [1] ( ) (Empty)​
+
+                       0
+        ○​ Units (10 ): [5] (●) [3] (●) [2] ( ) [1] (●)​
+Worksheet 2: Somatic Problem Set (On-Board Operations)
+
+Solve using your physical Yupana board (no external stacks!). Record your intermediate steps
+and final board state:
+Problem 1: Addition
+
+247 + 385 = _____
+  ●​ Step A: Set 247 on board.
+  ●​ Step B: Drop 385 directly into corresponding tier cups.
+  ●​ Step C (Clock Step): Resolve fusions and avalanches.
+  ●​ Target Answer: 632 (Hundreds: [5]+[1], Tens: [3], Units: [2])​
+
+Problem 2: Subtraction
+
+1, 204 − 531 = _____
+   ●​ Step A: Set 1,204 on board.
+   ●​ Step B: Unweave Thousands tier (1, 000 → 500 + 500 in Hundreds).
+   ●​ Step C: Remove 531 directly.
+   ●​ Target Answer: 673 (Hundreds: [5]+[1], Tens: [5]+[2], Units: [3])​
+
+Problem 3: Multiplication (Loom Shift)
+
+64 × 23 = _____
+  ●​ Step A: Decompose multiplier 23 = 20 + 3.
+  ●​ Step B: Place 64 × 2 shifted up 1 row (1, 280).
+  ●​ Step C: Place 64 × 3 in same row (192).
+  ●​ Step D (Clock Step): Resolve all fusions/avalanches.
+  ●​ Target Answer: 1,472 (Thousands: [1], Hundreds: [3]+[1], Tens: [5]+[2], Units: [2])​
+
+Problem 4: Ayni Division (Fair-Share Allocation)
+
+3, 600/24 = _____
+   ●​ Step A: Set 3,600 on board. Divisor = 24.
+   ●​ Step B (Hundreds Tier): Test 240s (24 × 10). Subtract 2, 400 (1 × 2400). Remaining =
+      1, 200. Quotient Hundreds = 100.
+   ●​ Step C (Tens Tier): Unweave 1, 200 into Tens/Hundreds. Test 24s (24 × 10). Subtract
+      1, 200 (5 × 240). Remaining = 0. Quotient Tens = 50.
+   ●​ Target Answer: 150 (Quotient: Hundreds [1], Tens [5])​
+

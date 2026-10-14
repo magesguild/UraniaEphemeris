@@ -1,69 +1,855 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Inka Khipu Field Manual — The Urania Ephemeris</title>
-<link rel="stylesheet" href="../assets/ephemeris.css">
+<title>KhipuFieldManual - English</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="generator" content="pdftohtml 0.36"/>
+<style type="text/css">
+<!--
+.xflip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph;
+}
+.yflip {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv;
+}
+.xyflip {
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    filter: fliph + flipv;
+}
+-->
+</style>
+<link rel="stylesheet" href="../assets/ephemeris.css"/>
+<style>body{background:#17202b;margin:0;padding:1rem 0 3rem}main{max-width:980px;margin:0 auto}.backlink,.footer{font-family:Georgia,serif;max-width:918px;margin:1rem auto;color:#eee}.backlink a{color:#c8dff0}.footer{text-align:center}</style>
 </head>
-<body>
-<main>
-<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
-<p class="series">Urania Ephemera</p>
-<h1>The Inka Khipu Field Manual</h1>
-<h2>A Hands-On Guide to Yupana Arithmetic and Khipu Records</h2>
-<p><strong>Basin Game Studios · Mage's Guild Psychonautics</strong><br><em>English edition · 2026 · MIT License</em></p>
-<blockquote><p>This article is a web edition of the supplied <em>Educator's Field Manual: The Inka Khipu Arcade &amp; Somatic Compute System</em>. It preserves the manual's teaching model while labeling its modern pedagogical system as a reconstruction and adaptation, not as a settled account of ancient Andean practice.</p></blockquote>
-
-<h2>1. Purpose and pedagogical foundations</h2>
-<p>The manual teaches positional decimal arithmetic, spatial matrix decomposition, and deterministic logic without relying on abstract memorization, external data stacks, or electronic computation.</p>
-<p>Its central model is a unified, tactile information-processing architecture:</p>
-<ul><li><strong>The Yupana</strong> is the active workspace: a physical board where counters move through cup receptacles.</li><li><strong>The Khipu</strong> is the durable record: a physical cord archive into which a settled state may be recorded.</li><li><strong>The clock step</strong> is a deliberate manual pass across the board, applying fusion, avalanche, and unweaving rules until the board settles.</li></ul>
-<p>The manual calls this <strong>somatic computing</strong>: the hands, board, counters, and observer together form the computational apparatus. That is a modern teaching lens. It is useful because it makes state and transformation visible, but it should not be mistaken for proof that historical khipukamayuq practice used this exact vocabulary or procedure.</p>
-<h3>Learning outcomes</h3>
-<ol><li>Express 0 through 9,999 on a physical four-cup grid, using no more than three counters per row in rested form.</li><li>Perform addition and subtraction through fusions, avalanches, and unweaving.</li><li>Explore multiplication as spatial loom shifts and division as fair-share allocation.</li><li>Explain how a tactile, non-silicon system can process a deterministic workload.</li></ol>
-
-<h2>2. Materials and physical setup</h2>
-<p>For each student or pair: one Yupana board (five rows by four columns) and thirty to forty counters—beans, corn kernels, stones, or tokens. An egg carton or a drawn 5 × 4 grid is enough for a first lesson.</p>
-<table><thead><tr><th>Row</th><th>Place</th><th>Value</th></tr></thead><tbody><tr><td>0</td><td>Units</td><td>10⁰ = 1</td></tr><tr><td>1</td><td>Tens</td><td>10¹ = 10</td></tr><tr><td>2</td><td>Hundreds</td><td>10² = 100</td></tr><tr><td>3</td><td>Thousands</td><td>10³ = 1,000</td></tr><tr><td>4</td><td>Ten-thousands</td><td>10⁴ = 10,000</td></tr></tbody></table>
-<p>Each row contains four cups valued <strong>[5], [3], [2], [1]</strong>. A 7 in the hundreds row is [5] + [2], or 700.</p>
-
-<h2>3. Digit representation</h2>
-<p>The manual's <strong>Golden Rule</strong> is: always place counters in the largest available cup that fits the remaining value. In rested form, every digit uses at most three counters.</p>
-<table><thead><tr><th>Digit</th><th>Cup combination</th><th>Counters</th></tr></thead><tbody><tr><td>0</td><td>empty</td><td>0</td></tr><tr><td>1</td><td>[1]</td><td>1</td></tr><tr><td>2</td><td>[2]</td><td>1</td></tr><tr><td>3</td><td>[3]</td><td>1</td></tr><tr><td>4</td><td>[3] + [1]</td><td>2</td></tr><tr><td>5</td><td>[5]</td><td>1</td></tr><tr><td>6</td><td>[5] + [1]</td><td>2</td></tr><tr><td>7</td><td>[5] + [2]</td><td>2</td></tr><tr><td>8</td><td>[5] + [3]</td><td>2</td></tr><tr><td>9</td><td>[5] + [3] + [1]</td><td>3</td></tr></tbody></table>
-
-<h2>4. Addition and the clock-step avalanche</h2>
-<p>Set the first number, then place the second number's counters into the corresponding rows without carrying immediately. On the clock step, sweep from units upward:</p>
-<ol><li>Two [1] counters fuse into one [2].</li><li>A [1] and [2] fuse into [3].</li><li>A [2] and [3] fuse into [5].</li><li>Two [5] counters fuse and avalanche upward as one [1] in the next row.</li></ol>
-<p>For <strong>247 + 385</strong>, set 247, drop in 385, and settle the board. The target is <strong>632</strong>: hundreds [5] + [1], tens [3], units [2].</p>
-
-<h2>5. Subtraction and unweaving</h2>
-<p>When a row lacks the counter needed for subtraction, remove one [1] from the next higher row and replace it with two [5] counters below. This expresses 10 as 5 + 5. For <strong>1,204 − 531</strong>, unweave the thousands [1], remove 531, and settle at <strong>673</strong>.</p>
-
-<h2>6. Multiplication as a loom</h2>
-<p>The vertical rows act as loom rails. ×1 replicates a pattern; ×2 doubles it; ×3 triples it; ×5 shifts it upward one row, corresponding to ×10; tens and hundreds shift the whole pattern upward. Place the partial products, then perform one clock step. The worksheet example is <strong>64 × 23 = 1,472</strong>.</p>
-
-<h2>7. Division and Ayni fair-share allocation</h2>
-<p>The manual presents division as the inverse of the multiplier loom. It uses <strong>Ayni</strong>, reciprocal exchange or fair-share distribution, as the pedagogical frame: a communal total is repeatedly partitioned into equal allotments.</p>
-<ol><li><strong>Board setup:</strong> place the dividend and keep the divisor as a reference.</li><li><strong>Test capacity:</strong> scale the divisor to the highest occupied tier.</li><li><strong>Harvest and allot:</strong> subtract one divisor unit and record one quotient count.</li><li><strong>Step down:</strong> unweave toward lower tiers and repeat.</li></ol>
-<p>The manual works through <strong>4,800 ÷ 32 = 150</strong> and <strong>1,472 ÷ 23 = 64</strong> as visible sequences of tests, subtractions, unweavings, and quotient records.</p>
-
-<h2>8. The Khipu archive</h2>
-<p>When a calculation settles on the Yupana, the manual proposes committing its state to a pendant cord. This is an introductory teaching baseline, not a complete account of khipu variation:</p>
-<table><thead><tr><th>Feature</th><th>Teaching use in this manual</th></tr></thead><tbody><tr><td>Single knot (S)</td><td>Thousands and higher places</td></tr><tr><td>Long knot (L)</td><td>Tens and hundreds; turns give the digit, e.g. L7</td></tr><tr><td>Figure-eight (E)</td><td>A 1 in the units place</td></tr><tr><td>Empty cord space</td><td>A zero placeholder for that tier</td></tr></tbody></table>
-<p>The manual gives example committed values of 1,701, 14, and 3,001. It also notes that color and other features belong to the wider Andean recording tradition, and that this introductory encoding does not exhaust it.</p>
-<p>It does <strong>not</strong> claim that every historical khipu follows this exact encoding, that these knots form a universal code, or that an archaeological specimen's semantics can be inferred from a classroom exercise alone.</p>
-
-<h2>9. Assessment and worksheets</h2>
-<p>Assess digit encoding, clock-step fusions and avalanches, multi-tier unweaving, Ayni division, and accurate translation from a settled Yupana state to a proposed khipu record. Suggested problems:</p>
-<ol><li>247 + 385 = 632</li><li>1,204 − 531 = 673</li><li>64 × 23 = 1,472</li><li>3,600 ÷ 24 = 150</li></ol>
-<p>For each exercise, show the initial placement, every fusion or unweaving, every avalanche, and the final board. The path is part of the lesson.</p>
-
-<h2>Provenance and limits</h2>
-<ul><li><strong>Source:</strong> supplied PDF, <em>Educator's Field Manual: The Inka Khipu Arcade &amp; Somatic Compute System</em>, English edition, 12 pages, 2026.</li><li><strong>Preserved:</strong> the board topology, cup values, Golden Rule, operations, proposed knot metrics, rubric, and worksheets.</li><li><strong>Interpreted:</strong> “ALU / RAM,” “non-volatile software storage,” “clock-step execution,” “gravitational attractor,” and “database commit” are modern computational teaching metaphors.</li><li><strong>Open:</strong> the historical scope of any Yupana configuration, the semantics of nonnumeric khipu features, and the relationship between this classroom encoding and individual archaeological specimens.</li></ul>
-<p>The manual's strongest invitation is practical: put counters on a board, let the state become visible, and let the learner discover that arithmetic can be touched. Its claims become more trustworthy when the line between historical evidence and modern reconstruction stays visible.</p>
-<hr>
-<p class="footer">The Urania Ephemeris · a sky that returns · <a href="https://magesguild.io">Mage's Guild Psychonautics</a> · Basin Game Studios</p>
-</main>
-</body>
+<body bgcolor="#A0A0A0" vlink="blue" link="blue"><main><p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
+<!-- Page 1 -->
+<a name="1"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft10{font-size:36px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft11{font-size:17px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft12{font-size:17px;font-family:BAAAAA+GoogleSans;color:#000000;}
+	.ft13{font-size:27px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft14{font-size:21px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft15{font-size:17px;font-family:CAAAAA+GoogleSans;color:#000000;}
+	.ft16{font-size:17px;font-family:DAAAAA+ArialMT;color:#000000;}
+	.ft17{font-size:36px;line-height:49px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft18{font-size:17px;line-height:22px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft19{font-size:17px;line-height:22px;font-family:BAAAAA+GoogleSans;color:#000000;}
+	.ft110{font-size:17px;line-height:22px;font-family:CAAAAA+GoogleSans;color:#000000;}
+-->
+</style>
+<div id="page1-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual001.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft17"><b>Educator's&#160;Field&#160;Manual:&#160;The&#160;Inka&#160;Khipu&#160;<br/>Arcade&#160;&amp;&#160;Somatic&#160;Compute&#160;System&#160;</b></p>
+<p style="position:absolute;top:225px;left:108px;white-space:nowrap" class="ft19"><b>A&#160;Complete&#160;Pedagogical&#160;Guide&#160;for&#160;Hands-On&#160;Andean&#160;Arithmetic&#160;<br/></b><i>Basin&#160;Game&#160;Studios&#160;/&#160;Mage's&#160;Guild&#160;Psychonautics&#160;(c)&#160;2026&#160;-&#160;MIT&#160;LICENSE&#160;-&#160;<br/>enhance-redistribute&#160;-&#160;This&#160;Knowledge&#160;is&#160;Yours&#160;to&#160;Improve&#160;<br/></i><b>1.&#160;Executive&#160;Summary&#160;&amp;&#160;Pedagogical&#160;Foundations&#160;</b></p>
+<p style="position:absolute;top:346px;left:108px;white-space:nowrap" class="ft14"><b>Objective&#160;</b></p>
+<p style="position:absolute;top:394px;left:108px;white-space:nowrap" class="ft110">To&#160;teach&#160;students&#160;positional&#160;decimal&#160;arithmetic,&#160;spatial&#160;matrix&#160;decomposition,&#160;and&#160;non-lossy&#160;<br/>digital&#160;logic&#160;without&#160;relying&#160;on&#160;abstract&#160;memorization,&#160;external&#160;data&#160;stacks,&#160;or&#160;electronic&#160;<br/>computation.&#160;<br/><b>Core&#160;Philosophy:&#160;Somatic&#160;Computing&#160;&amp;&#160;Discrete&#160;Phase&#160;Space&#160;</b></p>
+<p style="position:absolute;top:508px;left:108px;white-space:nowrap" class="ft110">The&#160;<b>Yupana</b>&#160;(Andean&#160;counting&#160;board)&#160;and&#160;<b>Khipu</b>&#160;(knotted&#160;cord&#160;archive)&#160;form&#160;a&#160;unified,&#160;tactile&#160;<br/>information-processing&#160;architecture:&#160;</p>
+<p style="position:absolute;top:554px;left:126px;white-space:nowrap" class="ft16">●&#160;</p>
+<p style="position:absolute;top:553px;left:153px;white-space:nowrap" class="ft110"><b>The&#160;Yupana&#160;is&#160;the&#160;ALU&#160;/&#160;RAM:</b>&#160;A&#160;dynamic,&#160;physical&#160;board&#160;where&#160;calculations&#160;occur&#160;in&#160;<br/>real&#160;time&#160;by&#160;moving&#160;physical&#160;counters&#160;(beans,&#160;corn&#160;kernels,&#160;or&#160;pebbles)&#160;directly&#160;within&#160;<br/>cup&#160;receptacles.&#160;</p>
+<p style="position:absolute;top:622px;left:126px;white-space:nowrap" class="ft16">●&#160;</p>
+<p style="position:absolute;top:621px;left:153px;white-space:nowrap" class="ft110"><b>The&#160;Khipu&#160;is&#160;Non-Volatile&#160;Software&#160;Storage:</b>&#160;A&#160;permanent,&#160;physical&#160;record&#160;where&#160;final&#160;<br/>Yupana&#160;states&#160;are&#160;committed&#160;into&#160;cord&#160;networks&#160;using&#160;positional&#160;knot&#160;metrics.&#160;</p>
+<p style="position:absolute;top:667px;left:126px;white-space:nowrap" class="ft16">●&#160;</p>
+<p style="position:absolute;top:666px;left:153px;white-space:nowrap" class="ft110"><b>Clock-Step&#160;Execution&#160;(Phase&#160;Space):</b>&#160;Instead&#160;of&#160;executing&#160;rigid&#160;mental&#160;math&#160;for&#160;every&#160;<br/>individual&#160;bean,&#160;the&#160;operator&#160;uses&#160;their&#160;hands&#160;to&#160;instantiate&#160;physical&#160;states&#160;by&#160;placing&#160;<br/>multiple&#160;beans&#160;in&#160;cups.&#160;At&#160;a&#160;chosen&#160;&#34;clock&#160;step&#34;&#160;(a&#160;deliberate&#160;manual&#160;pass&#160;across&#160;the&#160;<br/>board),&#160;the&#160;operator&#160;applies&#160;simple&#160;local&#160;rules&#160;(fusions,&#160;avalanches,&#160;unweaving)&#160;to&#160;let&#160;the&#160;<br/>system&#160;&#34;settle&#34;&#160;into&#160;its&#160;path&#160;of&#160;least&#160;resistance—its&#160;natural&#160;gravitational&#160;attractor.&#160;</p>
+<p style="position:absolute;top:778px;left:108px;white-space:nowrap" class="ft14"><b>Key&#160;Learning&#160;Outcomes&#160;</b></p>
+<p style="position:absolute;top:826px;left:108px;white-space:nowrap" class="ft15">By&#160;completing&#160;this&#160;module,&#160;students&#160;will:&#160;</p>
+<p style="position:absolute;top:849px;left:126px;white-space:nowrap" class="ft16">1.&#160;</p>
+<p style="position:absolute;top:848px;left:153px;white-space:nowrap" class="ft110">Express&#160;any&#160;decimal&#160;number&#160;0…9,999&#160;on&#160;a&#160;physical&#160;4-cup&#160;geometric&#160;grid&#160;using&#160;no&#160;more&#160;<br/>than&#160;3&#160;physical&#160;counters&#160;per&#160;row.&#160;</p>
+<p style="position:absolute;top:894px;left:126px;white-space:nowrap" class="ft16">2.&#160;</p>
+<p style="position:absolute;top:893px;left:153px;white-space:nowrap" class="ft110">Perform&#160;addition&#160;and&#160;subtraction&#160;using&#160;fluid&#160;&#34;fusions,&#34;&#160;&#34;avalanches,&#34;&#160;and&#160;&#34;unweaving&#34;&#160;<br/>instead&#160;of&#160;memorized&#160;carry/borrow&#160;algorithms.&#160;</p>
+<p style="position:absolute;top:939px;left:126px;white-space:nowrap" class="ft16">3.&#160;</p>
+<p style="position:absolute;top:938px;left:153px;white-space:nowrap" class="ft110">Execute&#160;multi-digit&#160;multiplication&#160;and&#160;division&#160;entirely&#160;on-board&#160;through&#160;spatial&#160;loom&#160;<br/>shifts&#160;and&#160;fair-share&#160;allocation&#160;(<i>Ayni</i>).&#160;</p>
+<p style="position:absolute;top:984px;left:126px;white-space:nowrap" class="ft16">4.&#160;</p>
+<p style="position:absolute;top:983px;left:153px;white-space:nowrap" class="ft110">Understand&#160;how&#160;tactile,&#160;non-silicon&#160;systems&#160;process&#160;complex&#160;computational&#160;workloads&#160;<br/>deterministically.&#160;</p>
+</div>
+<!-- Page 2 -->
+<a name="2"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft211{font-size:17px;font-family:EAAAAA+CambriaMath;color:#000000;}
+	.ft212{font-size:12px;font-family:EAAAAA+CambriaMath;color:#000000;}
+-->
+</style>
+<div id="page2-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual002.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft23"><b>&#160;</b></p>
+<p style="position:absolute;top:162px;left:108px;white-space:nowrap" class="ft23"><b>2.&#160;Materials&#160;&amp;&#160;Physical&#160;Set-Up&#160;</b></p>
+<p style="position:absolute;top:216px;left:108px;white-space:nowrap" class="ft24"><b>Classroom&#160;Materials&#160;Required&#160;(Per&#160;Student&#160;or&#160;Pair)&#160;</b></p>
+<p style="position:absolute;top:264px;left:126px;white-space:nowrap" class="ft26">1.&#160;</p>
+<p style="position:absolute;top:263px;left:153px;white-space:nowrap" class="ft21"><b>1&#160;×&#160;Yupana&#160;Board:</b>&#160;A&#160;grid&#160;of&#160;5&#160;rows&#160;by&#160;4&#160;geometric&#160;columns.&#160;</p>
+<p style="position:absolute;top:287px;left:171px;white-space:nowrap" class="ft26">○&#160;</p>
+<p style="position:absolute;top:286px;left:198px;white-space:nowrap" class="ft210"><i>Classroom&#160;Alternatives:</i>&#160;Readily&#160;available&#160;egg&#160;cartons&#160;(a&#160;5×4&#160;grid&#160;of&#160;egg&#160;cups)&#160;or&#160;<br/>drawn&#160;grids&#160;on&#160;paper/whiteboards.&#160;</p>
+<p style="position:absolute;top:332px;left:126px;white-space:nowrap" class="ft26">2.&#160;</p>
+<p style="position:absolute;top:331px;left:153px;white-space:nowrap" class="ft210"><b>30–40&#160;Physical&#160;Counters:</b>&#160;Quinoa&#160;beans,&#160;dry&#160;corn&#160;kernels,&#160;small&#160;river&#160;stones,&#160;or&#160;plastic&#160;<br/>tokens.&#160;<i>(No&#160;cards,&#160;paper&#160;stacks,&#160;or&#160;external&#160;state&#160;trackers&#160;required.)&#160;</i></p>
+<p style="position:absolute;top:376px;left:108px;white-space:nowrap" class="ft24"><b>The&#160;Board&#160;Topology&#160;</b></p>
+<p style="position:absolute;top:423px;left:108px;white-space:nowrap" class="ft25">&#160;</p>
+<p style="position:absolute;top:456px;left:122px;white-space:nowrap" class="ft21"><b>TIER&#160;/&#160;ROW&#160;</b></p>
+<p style="position:absolute;top:456px;left:239px;white-space:nowrap" class="ft21"><b>[5]&#160;</b></p>
+<p style="position:absolute;top:456px;left:356px;white-space:nowrap" class="ft21"><b>[3]&#160;</b></p>
+<p style="position:absolute;top:456px;left:473px;white-space:nowrap" class="ft21"><b>[2]&#160;</b></p>
+<p style="position:absolute;top:456px;left:590px;white-space:nowrap" class="ft21"><b>[1]&#160;</b></p>
+<p style="position:absolute;top:456px;left:707px;white-space:nowrap" class="ft21"><b>TIER&#160;VALUE&#160;</b></p>
+<p style="position:absolute;top:512px;left:146px;white-space:nowrap" class="ft21"><b>&#160;</b></p>
+<p style="position:absolute;top:515px;left:122px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:508px;left:140px;white-space:nowrap" class="ft212">4</p>
+<p style="position:absolute;top:534px;left:122px;white-space:nowrap" class="ft21"><b>(10,000)&#160;</b></p>
+<p style="position:absolute;top:506px;left:239px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:506px;left:356px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:506px;left:473px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:506px;left:590px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:506px;left:707px;white-space:nowrap" class="ft25">=&#160;0&#160;</p>
+<p style="position:absolute;top:591px;left:146px;white-space:nowrap" class="ft21"><b>&#160;(1,000)&#160;</b></p>
+<p style="position:absolute;top:594px;left:122px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:587px;left:140px;white-space:nowrap" class="ft212">3</p>
+<p style="position:absolute;top:585px;left:239px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:585px;left:356px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:585px;left:473px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:585px;left:590px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:585px;left:707px;white-space:nowrap" class="ft25">=&#160;0&#160;</p>
+<p style="position:absolute;top:647px;left:146px;white-space:nowrap" class="ft21"><b>&#160;(100)&#160;</b></p>
+<p style="position:absolute;top:650px;left:122px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:643px;left:140px;white-space:nowrap" class="ft212">2</p>
+<p style="position:absolute;top:641px;left:239px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:641px;left:356px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:641px;left:473px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:641px;left:590px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:641px;left:707px;white-space:nowrap" class="ft29">=&#160;<b>700</b>&#160;<i>[(5&#160;+&#160;<br/>2)&#160;×&#160;100]&#160;<br/>&#160;</i></p>
+<p style="position:absolute;top:733px;left:146px;white-space:nowrap" class="ft21"><b>&#160;(10)&#160;</b></p>
+<p style="position:absolute;top:737px;left:122px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:730px;left:140px;white-space:nowrap" class="ft212">1</p>
+<p style="position:absolute;top:728px;left:239px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:728px;left:356px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:728px;left:473px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:728px;left:590px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:728px;left:707px;white-space:nowrap" class="ft29">=&#160;<b>40</b>&#160;<i>[(3&#160;+&#160;1)&#160;<br/>×&#160;10]&#160;<br/>&#160;</i></p>
+<p style="position:absolute;top:820px;left:146px;white-space:nowrap" class="ft21"><b>&#160;(1)&#160;</b></p>
+<p style="position:absolute;top:823px;left:122px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:817px;left:140px;white-space:nowrap" class="ft212">0</p>
+<p style="position:absolute;top:814px;left:239px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:814px;left:356px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:814px;left:473px;white-space:nowrap" class="ft25">(&#160;)&#160;</p>
+<p style="position:absolute;top:814px;left:590px;white-space:nowrap" class="ft25">(●)&#160;</p>
+<p style="position:absolute;top:814px;left:707px;white-space:nowrap" class="ft29">=&#160;<b>9</b>&#160;<i>[(5&#160;+&#160;3&#160;+&#160;<br/>1)&#160;×&#160;1]&#160;<br/>&#160;</i></p>
+<p style="position:absolute;top:899px;left:126px;white-space:nowrap" class="ft26">●&#160;</p>
+<p style="position:absolute;top:898px;left:153px;white-space:nowrap" class="ft21"><b>Vertical&#160;Axis&#160;(Powers&#160;of&#160;10):</b>&#160;Bottom&#160;row&#160;is&#160;Units&#160;(</p>
+<p style="position:absolute;top:898px;left:552px;white-space:nowrap" class="ft25">),&#160;moving&#160;up&#160;to&#160;Tens&#160;(</p>
+<p style="position:absolute;top:898px;left:734px;white-space:nowrap" class="ft25">),&#160;</p>
+<p style="position:absolute;top:901px;left:527px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:894px;left:546px;white-space:nowrap" class="ft212">0</p>
+<p style="position:absolute;top:901px;left:709px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:894px;left:727px;white-space:nowrap" class="ft212">1</p>
+<p style="position:absolute;top:926px;left:153px;white-space:nowrap" class="ft25">Hundreds&#160;(</p>
+<p style="position:absolute;top:926px;left:259px;white-space:nowrap" class="ft25">),&#160;Thousands&#160;(</p>
+<p style="position:absolute;top:926px;left:387px;white-space:nowrap" class="ft25">),&#160;and&#160;Ten-Thousands&#160;(</p>
+<p style="position:absolute;top:926px;left:578px;white-space:nowrap" class="ft25">).&#160;</p>
+<p style="position:absolute;top:929px;left:235px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:922px;left:253px;white-space:nowrap" class="ft212">2</p>
+<p style="position:absolute;top:929px;left:362px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:922px;left:380px;white-space:nowrap" class="ft212">3</p>
+<p style="position:absolute;top:929px;left:553px;white-space:nowrap" class="ft211">10</p>
+<p style="position:absolute;top:922px;left:571px;white-space:nowrap" class="ft212">4</p>
+<p style="position:absolute;top:949px;left:126px;white-space:nowrap" class="ft26">●&#160;</p>
+<p style="position:absolute;top:948px;left:153px;white-space:nowrap" class="ft210"><b>Horizontal&#160;Axis&#160;(The&#160;4&#160;Magic&#160;Cups):</b>&#160;Each&#160;row&#160;contains&#160;four&#160;physical&#160;receptacles&#160;<br/>valued&#160;at&#160;<b>[5]</b>,&#160;<b>[3]</b>,&#160;<b>[2]</b>,&#160;and&#160;<b>[1]</b>.&#160;</p>
+<p style="position:absolute;top:993px;left:108px;white-space:nowrap" class="ft23"><b>&#160;</b></p>
+</div>
+<!-- Page 3 -->
+<a name="3"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page3-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual003.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+<p style="position:absolute;top:162px;left:108px;white-space:nowrap" class="ft33"><b>3.&#160;Unit&#160;1:&#160;Digit&#160;Representation&#160;&amp;&#160;The&#160;Golden&#160;Rule&#160;</b></p>
+<p style="position:absolute;top:216px;left:108px;white-space:nowrap" class="ft34"><b>Lesson&#160;Concept&#160;</b></p>
+<p style="position:absolute;top:263px;left:108px;white-space:nowrap" class="ft310">Any&#160;decimal&#160;digit&#160;($0&#160;\dots&#160;9$)&#160;is&#160;formed&#160;in&#160;a&#160;single&#160;row&#160;by&#160;summing&#160;the&#160;values&#160;of&#160;the&#160;cups&#160;<br/>containing&#160;beans.&#160;<br/><b>The&#160;Golden&#160;Rule:</b>&#160;Always&#160;place&#160;counters&#160;in&#160;the&#160;largest&#160;available&#160;cup&#160;that&#160;fits&#160;the&#160;remaining&#160;<br/>value.&#160;<br/>This&#160;rule&#160;guarantees&#160;that&#160;<b>no&#160;single&#160;digit&#160;ever&#160;requires&#160;more&#160;than&#160;3&#160;beans</b>&#160;when&#160;the&#160;board&#160;is&#160;<br/>in&#160;a&#160;rested&#160;state.&#160;<br/><b>Teacher's&#160;Digit&#160;Encoding&#160;Reference&#160;Chart&#160;</b></p>
+<p style="position:absolute;top:445px;left:108px;white-space:nowrap" class="ft35">&#160;</p>
+<p style="position:absolute;top:478px;left:122px;white-space:nowrap" class="ft31"><b>Digit&#160;</b></p>
+<p style="position:absolute;top:478px;left:356px;white-space:nowrap" class="ft31"><b>Cup&#160;Combination&#160;</b></p>
+<p style="position:absolute;top:478px;left:590px;white-space:nowrap" class="ft31"><b>Total&#160;Beans&#160;Used&#160;</b></p>
+<p style="position:absolute;top:529px;left:122px;white-space:nowrap" class="ft31"><b>0&#160;</b></p>
+<p style="position:absolute;top:529px;left:356px;white-space:nowrap" class="ft35">Empty&#160;Row&#160;</p>
+<p style="position:absolute;top:529px;left:590px;white-space:nowrap" class="ft35">0&#160;</p>
+<p style="position:absolute;top:579px;left:122px;white-space:nowrap" class="ft31"><b>1&#160;</b></p>
+<p style="position:absolute;top:579px;left:356px;white-space:nowrap" class="ft35">[1]&#160;</p>
+<p style="position:absolute;top:579px;left:590px;white-space:nowrap" class="ft35">1&#160;</p>
+<p style="position:absolute;top:630px;left:122px;white-space:nowrap" class="ft31"><b>2&#160;</b></p>
+<p style="position:absolute;top:630px;left:356px;white-space:nowrap" class="ft35">[2]&#160;</p>
+<p style="position:absolute;top:630px;left:590px;white-space:nowrap" class="ft35">1&#160;</p>
+<p style="position:absolute;top:681px;left:122px;white-space:nowrap" class="ft31"><b>3&#160;</b></p>
+<p style="position:absolute;top:681px;left:356px;white-space:nowrap" class="ft35">[3]&#160;</p>
+<p style="position:absolute;top:681px;left:590px;white-space:nowrap" class="ft35">1&#160;</p>
+<p style="position:absolute;top:731px;left:122px;white-space:nowrap" class="ft31"><b>4&#160;</b></p>
+<p style="position:absolute;top:731px;left:356px;white-space:nowrap" class="ft35">[3]&#160;+&#160;[1]&#160;</p>
+<p style="position:absolute;top:731px;left:590px;white-space:nowrap" class="ft35">2&#160;</p>
+<p style="position:absolute;top:782px;left:122px;white-space:nowrap" class="ft31"><b>5&#160;</b></p>
+<p style="position:absolute;top:782px;left:356px;white-space:nowrap" class="ft35">[5]&#160;</p>
+<p style="position:absolute;top:782px;left:590px;white-space:nowrap" class="ft35">1&#160;</p>
+<p style="position:absolute;top:832px;left:122px;white-space:nowrap" class="ft31"><b>6&#160;</b></p>
+<p style="position:absolute;top:832px;left:356px;white-space:nowrap" class="ft35">[5]&#160;+&#160;[1]&#160;</p>
+<p style="position:absolute;top:832px;left:590px;white-space:nowrap" class="ft35">2&#160;</p>
+<p style="position:absolute;top:883px;left:122px;white-space:nowrap" class="ft31"><b>7&#160;</b></p>
+<p style="position:absolute;top:883px;left:356px;white-space:nowrap" class="ft35">[5]&#160;+&#160;[2]&#160;</p>
+<p style="position:absolute;top:883px;left:590px;white-space:nowrap" class="ft35">2&#160;</p>
+<p style="position:absolute;top:934px;left:122px;white-space:nowrap" class="ft31"><b>8&#160;</b></p>
+<p style="position:absolute;top:934px;left:356px;white-space:nowrap" class="ft35">[5]&#160;+&#160;[3]&#160;</p>
+<p style="position:absolute;top:934px;left:590px;white-space:nowrap" class="ft35">2&#160;</p>
+<p style="position:absolute;top:984px;left:122px;white-space:nowrap" class="ft31"><b>9&#160;</b></p>
+<p style="position:absolute;top:984px;left:356px;white-space:nowrap" class="ft35">[5]&#160;+&#160;[3]&#160;+&#160;[1]&#160;</p>
+<p style="position:absolute;top:984px;left:590px;white-space:nowrap" class="ft35">3&#160;</p>
+<p style="position:absolute;top:1026px;left:108px;white-space:nowrap" class="ft33"><b>&#160;</b></p>
+</div>
+<!-- Page 4 -->
+<a name="4"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft413{font-size:27px;line-height:37px;font-family:AAAAAA+GoogleSans;color:#000000;}
+-->
+</style>
+<div id="page4-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual004.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft43"><b>&#160;</b></p>
+<p style="position:absolute;top:162px;left:108px;white-space:nowrap" class="ft413"><b>4.&#160;Unit&#160;2:&#160;Somatic&#160;Addition&#160;&amp;&#160;The&#160;Clock-Step&#160;<br/>Avalanche&#160;</b></p>
+<p style="position:absolute;top:253px;left:108px;white-space:nowrap" class="ft44"><b>Mechanical&#160;Principles:&#160;Phase&#160;Space&#160;&amp;&#160;Clock&#160;Steps&#160;</b></p>
+<p style="position:absolute;top:300px;left:108px;white-space:nowrap" class="ft410">In&#160;somatic&#160;compute,&#160;addition&#160;is&#160;performed&#160;by&#160;directly&#160;placing&#160;the&#160;new&#160;addend's&#160;beans&#160;into&#160;the&#160;<br/>board&#160;alongside&#160;the&#160;existing&#160;value.&#160;You&#160;do&#160;not&#160;need&#160;to&#160;calculate&#160;carries&#160;immediately&#160;while&#160;<br/>placing&#160;beans.&#160;The&#160;human&#160;operator&#160;populates&#160;the&#160;cups&#160;(instantiating&#160;the&#160;un-settled&#160;phase&#160;<br/>space)&#160;and&#160;then&#160;&#34;steps&#160;the&#160;clock&#34;&#160;forward&#160;by&#160;sweeping&#160;hands&#160;across&#160;the&#160;board&#160;to&#160;apply&#160;local&#160;<br/>settlement&#160;rules:&#160;</p>
+<p style="position:absolute;top:414px;left:126px;white-space:nowrap" class="ft46">1.&#160;</p>
+<p style="position:absolute;top:413px;left:153px;white-space:nowrap" class="ft41"><b>In-Row&#160;Fusion&#160;(Gravitational&#160;Attraction):&#160;</b></p>
+<p style="position:absolute;top:436px;left:171px;white-space:nowrap" class="ft46">○&#160;</p>
+<p style="position:absolute;top:435px;left:198px;white-space:nowrap" class="ft41"><b>Two&#160;[1]&#160;beans&#160;in&#160;cup&#160;[1]:</b>&#160;On&#160;clock&#160;step,&#160;merge&#160;into&#160;one&#160;bean&#160;in&#160;cup&#160;[2].&#160;</p>
+<p style="position:absolute;top:459px;left:171px;white-space:nowrap" class="ft46">○&#160;</p>
+<p style="position:absolute;top:458px;left:198px;white-space:nowrap" class="ft41"><b>One&#160;[1]&#160;and&#160;one&#160;[2]&#160;bean:</b>&#160;On&#160;clock&#160;step,&#160;merge&#160;into&#160;one&#160;bean&#160;in&#160;cup&#160;[3].&#160;</p>
+<p style="position:absolute;top:481px;left:171px;white-space:nowrap" class="ft46">○&#160;</p>
+<p style="position:absolute;top:480px;left:198px;white-space:nowrap" class="ft41"><b>One&#160;[2]&#160;and&#160;one&#160;[3]&#160;bean:</b>&#160;On&#160;clock&#160;step,&#160;fall&#160;into&#160;the&#160;path&#160;of&#160;least&#160;resistance&#160;&#160;&#160;</p>
+<p style="position:absolute;top:483px;left:770px;white-space:nowrap" class="ft411">→</p>
+<p style="position:absolute;top:503px;left:198px;white-space:nowrap" class="ft410">merge&#160;into&#160;one&#160;bean&#160;in&#160;cup&#160;[5].&#160;Note,&#160;there&#160;is&#160;a&#160;“gravity”&#160;to&#160;the&#160;golden&#160;rule’s&#160;<br/>movement,&#160;which&#160;will&#160;become&#160;intuitive&#160;with&#160;practice.&#160;We&#160;could&#160;represent&#160;a&#160;5&#160;by&#160;<br/>populating&#160;3&#160;and&#160;2,&#160;but&#160;the&#160;clock&#160;step&#160;essentially&#160;“applies&#160;gravity&#160;and&#160;fusion”&#160;at&#160;<br/>time&#160;of&#160;calculation.&#160;</p>
+<p style="position:absolute;top:594px;left:126px;white-space:nowrap" class="ft46">2.&#160;</p>
+<p style="position:absolute;top:593px;left:153px;white-space:nowrap" class="ft41"><b>The&#160;Great&#160;Bean&#160;Avalanche&#160;(Carry-Up&#160;Rule):&#160;</b></p>
+<p style="position:absolute;top:616px;left:171px;white-space:nowrap" class="ft46">○&#160;</p>
+<p style="position:absolute;top:615px;left:198px;white-space:nowrap" class="ft45">When&#160;cup&#160;[5]&#160;accumulates&#160;<b>two&#160;beans</b>&#160;(</p>
+<p style="position:absolute;top:615px;left:577px;white-space:nowrap" class="ft45">),&#160;both&#160;beans&#160;fuse&#160;and&#160;<b>jump&#160;UP&#160;</b></p>
+<p style="position:absolute;top:618px;left:489px;white-space:nowrap" class="ft411">5&#160;+&#160;5&#160;=&#160;10</p>
+<p style="position:absolute;top:638px;left:198px;white-space:nowrap" class="ft41"><b>to&#160;the&#160;tier&#160;above&#160;as&#160;a&#160;single&#160;[1]&#160;bean</b>&#160;(</p>
+<p style="position:absolute;top:638px;left:526px;white-space:nowrap" class="ft45">).&#160;Cup&#160;[5]&#160;of&#160;the&#160;current&#160;tier&#160;is&#160;cleared&#160;</p>
+<p style="position:absolute;top:641px;left:489px;white-space:nowrap" class="ft411">+&#160;10</p>
+<p style="position:absolute;top:660px;left:198px;white-space:nowrap" class="ft45">to&#160;&#160;.&#160;</p>
+<p style="position:absolute;top:663px;left:217px;white-space:nowrap" class="ft411">0</p>
+<p style="position:absolute;top:693px;left:122px;white-space:nowrap" class="ft41"><b>TIER&#160;</b></p>
+<p style="position:absolute;top:693px;left:262px;white-space:nowrap" class="ft41"><b>[5]&#160;</b></p>
+<p style="position:absolute;top:693px;left:403px;white-space:nowrap" class="ft41"><b>[3]&#160;</b></p>
+<p style="position:absolute;top:693px;left:543px;white-space:nowrap" class="ft41"><b>[2]&#160;</b></p>
+<p style="position:absolute;top:693px;left:684px;white-space:nowrap" class="ft41"><b>[1]&#160;</b></p>
+<p style="position:absolute;top:744px;left:122px;white-space:nowrap" class="ft48"><b>Tier&#160;Above&#160;<br/>(10s)&#160;</b></p>
+<p style="position:absolute;top:744px;left:262px;white-space:nowrap" class="ft45">(&#160;)&#160;</p>
+<p style="position:absolute;top:744px;left:403px;white-space:nowrap" class="ft45">(&#160;)&#160;</p>
+<p style="position:absolute;top:744px;left:543px;white-space:nowrap" class="ft45">(&#160;)&#160;</p>
+<p style="position:absolute;top:744px;left:684px;white-space:nowrap" class="ft49"><b>(●)</b>&#160;<i>(Carried&#160;+1&#160;<br/>bean&#160;into&#160;Cup&#160;<br/>[1])&#160;</i></p>
+<p style="position:absolute;top:839px;left:122px;white-space:nowrap" class="ft48"><b>Avalanche&#160;<br/>Trigger&#160;</b></p>
+<p style="position:absolute;top:839px;left:262px;white-space:nowrap" class="ft45">\&#160;</p>
+<p style="position:absolute;top:839px;left:403px;white-space:nowrap" class="ft45">\&#160;</p>
+<p style="position:absolute;top:839px;left:543px;white-space:nowrap" class="ft45">\&#160;</p>
+<p style="position:absolute;top:839px;left:684px;white-space:nowrap" class="ft48"><b>▲&#160;(5&#160;+&#160;5&#160;=&#160;10&#160;<br/>Avalanche&#160;<br/>Trigger)&#160;</b></p>
+<p style="position:absolute;top:935px;left:122px;white-space:nowrap" class="ft41"><b>Units&#160;Tier&#160;(1s)&#160;</b></p>
+<p style="position:absolute;top:935px;left:262px;white-space:nowrap" class="ft41"><b>(●)&#160;+&#160;(●)&#160;</b></p>
+<p style="position:absolute;top:935px;left:403px;white-space:nowrap" class="ft45">(&#160;)&#160;</p>
+<p style="position:absolute;top:935px;left:543px;white-space:nowrap" class="ft45">(&#160;)&#160;</p>
+<p style="position:absolute;top:935px;left:684px;white-space:nowrap" class="ft48"><b>Cup&#160;[5]&#160;<br/>empties&#160;to&#160;0&#160;</b></p>
+<p style="position:absolute;top:1017px;left:108px;white-space:nowrap" class="ft44"><b>Direct&#160;On-Board&#160;Addition&#160;Procedure&#160;(A&#160;+&#160;B)&#160;</b></p>
+</div>
+<!-- Page 5 -->
+<a name="5"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft514{font-size:17px;font-family:FAAAAA+Arial;color:#000000;}
+	.ft515{font-size:17px;line-height:28px;font-family:CAAAAA+GoogleSans;color:#000000;}
+-->
+</style>
+<div id="page5-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual005.png" alt="background image"/>
+<p style="position:absolute;top:109px;left:126px;white-space:nowrap" class="ft56">1.&#160;</p>
+<p style="position:absolute;top:108px;left:153px;white-space:nowrap" class="ft55">Set&#160;the&#160;initial&#160;number&#160;A&#160;on&#160;the&#160;Yupana&#160;according&#160;to&#160;the&#160;Golden&#160;Rule.&#160;</p>
+<p style="position:absolute;top:131px;left:126px;white-space:nowrap" class="ft56">2.&#160;</p>
+<p style="position:absolute;top:130px;left:153px;white-space:nowrap" class="ft55">Take&#160;the&#160;beans&#160;for&#160;number&#160;B&#160;in&#160;your&#160;hand.&#160;</p>
+<p style="position:absolute;top:154px;left:126px;white-space:nowrap" class="ft56">3.&#160;</p>
+<p style="position:absolute;top:153px;left:153px;white-space:nowrap" class="ft510">Drop&#160;B's&#160;beans&#160;directly&#160;into&#160;the&#160;corresponding&#160;tier&#160;cups&#160;where&#160;A&#160;is&#160;sitting&#160;(e.g.,&#160;if&#160;B&#160;has&#160;a&#160;<br/>5&#160;in&#160;the&#160;units&#160;place,&#160;drop&#160;a&#160;bean&#160;into&#160;the&#160;units&#160;row's&#160;[5]&#160;cup).&#160;</p>
+<p style="position:absolute;top:205px;left:126px;white-space:nowrap" class="ft56">4.&#160;</p>
+<p style="position:absolute;top:204px;left:153px;white-space:nowrap" class="ft51"><b>Clock&#160;Step:</b>&#160;Sweep&#160;your&#160;hands&#160;from&#160;bottom&#160;tier&#160;(</p>
+<p style="position:absolute;top:204px;left:543px;white-space:nowrap" class="ft55">)&#160;upwards,&#160;resolving&#160;fusions&#160;and&#160;</p>
+<p style="position:absolute;top:207px;left:518px;white-space:nowrap" class="ft511">10</p>
+<p style="position:absolute;top:200px;left:536px;white-space:nowrap" class="ft512">0</p>
+<p style="position:absolute;top:226px;left:153px;white-space:nowrap" class="ft55">avalanches&#160;until&#160;every&#160;row&#160;obeys&#160;the&#160;Golden&#160;Rule.&#160;</p>
+<p style="position:absolute;top:248px;left:108px;white-space:nowrap" class="ft53"><b>&#160;</b></p>
+<p style="position:absolute;top:302px;left:108px;white-space:nowrap" class="ft513"><b>5.&#160;Unit&#160;3:&#160;Somatic&#160;Subtraction&#160;&amp;&#160;Unweaving&#160;<br/>(Borrowing)&#160;</b></p>
+<p style="position:absolute;top:394px;left:108px;white-space:nowrap" class="ft54"><b>Mechanical&#160;Principle&#160;</b></p>
+<p style="position:absolute;top:441px;left:108px;white-space:nowrap" class="ft515">Subtraction&#160;is&#160;the&#160;physical&#160;removal&#160;of&#160;beans&#160;directly&#160;from&#160;the&#160;board.&#160;If&#160;a&#160;cup&#160;does&#160;not&#160;contain&#160;<br/>enough&#160;beans&#160;to&#160;remove&#160;the&#160;subtrahend&#160;value,&#160;the&#160;operator&#160;<b>unweaves</b>&#160;a&#160;bean&#160;from&#160;a&#160;higher&#160;<br/>tier&#160;to&#160;supply&#160;the&#160;necessary&#160;energy.&#160;<br/><b>Unweaving&#160;Rule&#160;(Borrowing):</b>&#160;Remove&#160;1&#160;bean&#160;from&#160;cup&#160;[1]&#160;of&#160;the&#160;tier&#160;above&#160;(</p>
+<p style="position:absolute;top:514px;left:720px;white-space:nowrap" class="ft55">),&#160;and&#160;</p>
+<p style="position:absolute;top:517px;left:680px;white-space:nowrap" class="ft511">10</p>
+<p style="position:absolute;top:511px;left:698px;white-space:nowrap" class="ft512">𝑛+1</p>
+<p style="position:absolute;top:542px;left:108px;white-space:nowrap" class="ft55">replace&#160;it&#160;with&#160;TWO&#160;beans&#160;in&#160;cup&#160;[5]&#160;of&#160;the&#160;current&#160;tier&#160;(</p>
+<p style="position:absolute;top:542px;left:542px;white-space:nowrap" class="ft55">).&#160;(</p>
+<p style="position:absolute;top:542px;left:648px;white-space:nowrap" class="ft55">).&#160;</p>
+<p style="position:absolute;top:545px;left:517px;white-space:nowrap" class="ft511">10</p>
+<p style="position:absolute;top:539px;left:536px;white-space:nowrap" class="ft512">𝑛</p>
+<p style="position:absolute;top:545px;left:561px;white-space:nowrap" class="ft511">10&#160;=&#160;5&#160;+&#160;5</p>
+<p style="position:absolute;top:565px;left:108px;white-space:nowrap" class="ft55">&#160;</p>
+<p style="position:absolute;top:597px;left:122px;white-space:nowrap" class="ft51"><b>TIER&#160;</b></p>
+<p style="position:absolute;top:597px;left:473px;white-space:nowrap" class="ft51"><b>ACTION&#160;/&#160;BEAN&#160;STATE&#160;</b></p>
+<p style="position:absolute;top:648px;left:122px;white-space:nowrap" class="ft51"><b>Tier&#160;Above&#160;(10s)&#160;</b></p>
+<p style="position:absolute;top:648px;left:473px;white-space:nowrap" class="ft51"><b>(●)</b>&#160;&#160;&#160;<i>Remove&#160;1&#160;bean&#160;(-10)&#160;</i></p>
+<p style="position:absolute;top:651px;left:502px;white-space:nowrap" class="ft511">→</p>
+<p style="position:absolute;top:670px;left:473px;white-space:nowrap" class="ft52"><i>&#160;</i></p>
+<p style="position:absolute;top:712px;left:122px;white-space:nowrap" class="ft51"><b>Unweaving&#160;Flow&#160;</b></p>
+<p style="position:absolute;top:713px;left:473px;white-space:nowrap" class="ft514"><b>│</b></p>
+<p style="position:absolute;top:712px;left:483px;white-space:nowrap" class="ft51"><b>&#160;&#160;&#160;▼&#160;(Unweaves&#160;into&#160;5&#160;+&#160;5)&#160;</b></p>
+<p style="position:absolute;top:715px;left:487px;white-space:nowrap" class="ft511">→</p>
+<p style="position:absolute;top:735px;left:473px;white-space:nowrap" class="ft51"><b>&#160;</b></p>
+<p style="position:absolute;top:776px;left:122px;white-space:nowrap" class="ft51"><b>Units&#160;Tier&#160;(1s)&#160;</b></p>
+<p style="position:absolute;top:776px;left:473px;white-space:nowrap" class="ft51"><b>(●)&#160;(●)&#160;in&#160;Cup&#160;[5]</b>&#160;&#160;&#160;<i>Subtract&#160;freely!&#160;</i></p>
+<p style="position:absolute;top:779px;left:611px;white-space:nowrap" class="ft511">→</p>
+<p style="position:absolute;top:799px;left:473px;white-space:nowrap" class="ft52"><i>&#160;</i></p>
+<p style="position:absolute;top:831px;left:108px;white-space:nowrap" class="ft54"><b>Direct&#160;Subtraction&#160;Procedure&#160;(A&#160;-&#160;B)&#160;</b></p>
+<p style="position:absolute;top:880px;left:126px;white-space:nowrap" class="ft56">1.&#160;</p>
+<p style="position:absolute;top:879px;left:153px;white-space:nowrap" class="ft55">Set&#160;minuend&#160;A&#160;on&#160;the&#160;Yupana.&#160;</p>
+<p style="position:absolute;top:902px;left:126px;white-space:nowrap" class="ft56">2.&#160;</p>
+<p style="position:absolute;top:901px;left:153px;white-space:nowrap" class="ft55">Identify&#160;the&#160;value&#160;of&#160;subtrahend&#160;B&#160;by&#160;digit.&#160;</p>
+<p style="position:absolute;top:925px;left:126px;white-space:nowrap" class="ft56">3.&#160;</p>
+<p style="position:absolute;top:924px;left:153px;white-space:nowrap" class="ft510">Remove&#160;beans&#160;corresponding&#160;to&#160;B&#160;starting&#160;from&#160;the&#160;highest&#160;tier&#160;down.&#160;If&#160;a&#160;cup&#160;lacks&#160;a&#160;<br/>required&#160;bean,&#160;unweave&#160;one&#160;bean&#160;from&#160;the&#160;tier&#160;above&#160;into&#160;two&#160;[5]&#160;beans&#160;in&#160;the&#160;current&#160;<br/>tier,&#160;then&#160;remove&#160;the&#160;target&#160;amount.&#160;</p>
+<p style="position:absolute;top:991px;left:108px;white-space:nowrap" class="ft53"><b>&#160;</b></p>
+</div>
+<!-- Page 6 -->
+<a name="6"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page6-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual006.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft63"><b>6.&#160;Unit&#160;4:&#160;Tactile&#160;Multiplication&#160;(The&#160;Multiplier&#160;Loom)&#160;</b></p>
+<p style="position:absolute;top:162px;left:108px;white-space:nowrap" class="ft64"><b>Mechanical&#160;Principle&#160;</b></p>
+<p style="position:absolute;top:209px;left:108px;white-space:nowrap" class="ft610">Multiplication&#160;on&#160;the&#160;Yupana&#160;uses&#160;spatial&#160;translation&#160;across&#160;rows—treating&#160;the&#160;vertical&#160;board&#160;<br/>tiers&#160;as&#160;&#34;loom&#160;rails.&#34;&#160;You&#160;do&#160;not&#160;need&#160;to&#160;memorize&#160;times&#160;tables.&#160;<br/><b>Spatial&#160;Shift&#160;Rules&#160;</b></p>
+<p style="position:absolute;top:301px;left:108px;white-space:nowrap" class="ft65">Decompose&#160;the&#160;multiplier&#160;into&#160;its&#160;individual&#160;component&#160;cups&#160;(</p>
+<p style="position:absolute;top:301px;left:666px;white-space:nowrap" class="ft65">&#160;across&#160;their&#160;</p>
+<p style="position:absolute;top:304px;left:563px;white-space:nowrap" class="ft611">[5],&#160;[3],&#160;[2],&#160;[1]</p>
+<p style="position:absolute;top:324px;left:108px;white-space:nowrap" class="ft65">respective&#160;rows).&#160;For&#160;each&#160;component:&#160;</p>
+<p style="position:absolute;top:347px;left:126px;white-space:nowrap" class="ft66">●&#160;</p>
+<p style="position:absolute;top:346px;left:153px;white-space:nowrap" class="ft61"><b>Multiplying&#160;by&#160;[1]:</b>&#160;Replicate&#160;the&#160;multiplicand's&#160;pattern&#160;in&#160;the&#160;same&#160;row&#160;tier.&#160;</p>
+<p style="position:absolute;top:370px;left:126px;white-space:nowrap" class="ft66">●&#160;</p>
+<p style="position:absolute;top:369px;left:153px;white-space:nowrap" class="ft61"><b>Multiplying&#160;by&#160;[2]:</b>&#160;Double&#160;the&#160;multiplicand's&#160;pattern&#160;into&#160;the&#160;same&#160;row&#160;tier.&#160;</p>
+<p style="position:absolute;top:392px;left:126px;white-space:nowrap" class="ft66">●&#160;</p>
+<p style="position:absolute;top:391px;left:153px;white-space:nowrap" class="ft61"><b>Multiplying&#160;by&#160;[3]:</b>&#160;Triple&#160;the&#160;multiplicand's&#160;pattern&#160;into&#160;the&#160;same&#160;row&#160;tier.&#160;</p>
+<p style="position:absolute;top:415px;left:126px;white-space:nowrap" class="ft66">●&#160;</p>
+<p style="position:absolute;top:414px;left:153px;white-space:nowrap" class="ft61"><b>Multiplying&#160;by&#160;[5]:</b>&#160;Shift&#160;the&#160;multiplicand's&#160;pattern&#160;UP&#160;one&#160;row&#160;tier&#160;(equivalent&#160;to&#160;</p>
+<p style="position:absolute;top:414px;left:785px;white-space:nowrap" class="ft65">)&#160;</p>
+<p style="position:absolute;top:417px;left:748px;white-space:nowrap" class="ft611">×&#160;10</p>
+<p style="position:absolute;top:436px;left:153px;white-space:nowrap" class="ft65">and&#160;take&#160;half,&#160;OR&#160;place&#160;into&#160;the&#160;[5]&#160;cups&#160;of&#160;the&#160;shifted&#160;tier.&#160;</p>
+<p style="position:absolute;top:460px;left:126px;white-space:nowrap" class="ft66">●&#160;</p>
+<p style="position:absolute;top:459px;left:153px;white-space:nowrap" class="ft610"><b>Multiplying&#160;by&#160;Tens&#160;/&#160;Hundreds&#160;(10,&#160;30,&#160;etc.):</b>&#160;Shift&#160;the&#160;entire&#160;pattern&#160;UP&#160;by&#160;1&#160;or&#160;2&#160;row&#160;<br/>tiers.&#160;</p>
+<p style="position:absolute;top:504px;left:108px;white-space:nowrap" class="ft610">After&#160;placing&#160;all&#160;partial&#160;product&#160;beans&#160;directly&#160;onto&#160;the&#160;board,&#160;execute&#160;a&#160;single&#160;<b>Clock&#160;Step</b>&#160;to&#160;<br/>resolve&#160;all&#160;fusions&#160;and&#160;avalanches&#160;until&#160;the&#160;board&#160;settles.&#160;<br/><b>&#160;</b></p>
+<p style="position:absolute;top:603px;left:282px;white-space:nowrap" class="ft63"><b>&#160;</b></p>
+</div>
+<!-- Page 7 -->
+<a name="7"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft716{font-size:27px;font-family:GAAAAA+GoogleSans;color:#000000;}
+	.ft717{font-size:21px;font-family:GAAAAA+GoogleSans;color:#000000;}
+-->
+</style>
+<div id="page7-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual007.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft713"><b>7.&#160;Unit&#160;5:&#160;Somatic&#160;Division&#160;&amp;&#160;Fair-Share&#160;Allocation&#160;<br/>(<i>Ayni</i></b><b>)&#160;</b></p>
+<p style="position:absolute;top:199px;left:108px;white-space:nowrap" class="ft74"><b>Pedagogical&#160;Foundations&#160;of&#160;<i>Ayni&#160;</i></b></p>
+<p style="position:absolute;top:246px;left:108px;white-space:nowrap" class="ft710">In&#160;Andean&#160;culture,&#160;<i>Ayni</i>&#160;represents&#160;reciprocal&#160;community&#160;exchange&#160;and&#160;fair-share&#160;distribution.&#160;<br/>Somatic&#160;division&#160;models&#160;this&#160;directly:&#160;a&#160;total&#160;communal&#160;harvest&#160;(dividend)&#160;is&#160;systematically&#160;<br/>partitioned&#160;into&#160;equal&#160;family&#160;allotments&#160;(divisor).&#160;<br/>&#160;<br/>Division&#160;on&#160;the&#160;Yupana&#160;is&#160;the&#160;<b>exact&#160;inverse&#160;of&#160;the&#160;Multiplier&#160;Loom</b>.&#160;Instead&#160;of&#160;shifting&#160;a&#160;<br/>multiplicand&#160;UP&#160;the&#160;board&#160;to&#160;build&#160;a&#160;product,&#160;division&#160;tests&#160;how&#160;many&#160;full&#160;divisor&#160;units&#160;can&#160;be&#160;<br/>&#34;harvested&#34;&#160;(subtracted)&#160;from&#160;the&#160;dividend,&#160;tier&#160;by&#160;tier,&#160;working&#160;from&#160;the&#160;top&#160;down.&#160;<br/><b>The&#160;4-Step&#160;Somatic&#160;Division&#160;Protocol&#160;</b></p>
+<p style="position:absolute;top:451px;left:108px;white-space:nowrap" class="ft75">&#160;</p>
+<p style="position:absolute;top:484px;left:122px;white-space:nowrap" class="ft71"><b>STEP&#160;</b></p>
+<p style="position:absolute;top:484px;left:356px;white-space:nowrap" class="ft71"><b>ACTION&#160;</b></p>
+<p style="position:absolute;top:484px;left:590px;white-space:nowrap" class="ft71"><b>DESCRIPTION&#160;</b></p>
+<p style="position:absolute;top:534px;left:122px;white-space:nowrap" class="ft71"><b>1&#160;</b></p>
+<p style="position:absolute;top:534px;left:356px;white-space:nowrap" class="ft71"><b>Board&#160;Setup&#160;</b></p>
+<p style="position:absolute;top:534px;left:590px;white-space:nowrap" class="ft710">Place&#160;the&#160;total&#160;dividend&#160;on&#160;<br/>the&#160;main&#160;Yupana&#160;grid.&#160;Keep&#160;<br/>the&#160;divisor&#160;to&#160;the&#160;side&#160;as&#160;a&#160;<br/>reference&#160;template.&#160;</p>
+<p style="position:absolute;top:643px;left:122px;white-space:nowrap" class="ft71"><b>2&#160;</b></p>
+<p style="position:absolute;top:643px;left:356px;white-space:nowrap" class="ft71"><b>Test&#160;Capacity&#160;</b></p>
+<p style="position:absolute;top:643px;left:590px;white-space:nowrap" class="ft710">Test&#160;if&#160;a&#160;full&#160;unit&#160;of&#160;the&#160;<br/>divisor&#160;(scaled&#160;to&#160;the&#160;<br/>highest&#160;occupied&#160;tier)&#160;fits&#160;<br/>into&#160;the&#160;dividend.&#160;</p>
+<p style="position:absolute;top:753px;left:122px;white-space:nowrap" class="ft71"><b>3&#160;</b></p>
+<p style="position:absolute;top:753px;left:356px;white-space:nowrap" class="ft71"><b>Harvest&#160;&amp;&#160;Allot&#160;</b></p>
+<p style="position:absolute;top:753px;left:590px;white-space:nowrap" class="ft710">Subtract&#160;the&#160;divisor's&#160;<br/>pattern&#160;from&#160;the&#160;board&#160;and&#160;<br/>record&#160;1&#160;count&#160;in&#160;the&#160;<br/>Quotient&#160;row&#160;for&#160;that&#160;tier.&#160;</p>
+<p style="position:absolute;top:862px;left:122px;white-space:nowrap" class="ft71"><b>4&#160;</b></p>
+<p style="position:absolute;top:862px;left:356px;white-space:nowrap" class="ft71"><b>Step-Down&#160;</b></p>
+<p style="position:absolute;top:862px;left:590px;white-space:nowrap" class="ft715">Unweave&#160;remaining&#160;beans&#160;<br/>down&#160;(</p>
+<p style="position:absolute;top:890px;left:733px;white-space:nowrap" class="ft75">&#160;in&#160;</p>
+<p style="position:absolute;top:893px;left:640px;white-space:nowrap" class="ft711">10</p>
+<p style="position:absolute;top:886px;left:659px;white-space:nowrap" class="ft712">𝑛</p>
+<p style="position:absolute;top:893px;left:670px;white-space:nowrap" class="ft711">→&#160;5&#160;+&#160;5</p>
+<p style="position:absolute;top:893px;left:753px;white-space:nowrap" class="ft711">10</p>
+<p style="position:absolute;top:886px;left:771px;white-space:nowrap" class="ft712">𝑛−1</p>
+<p style="position:absolute;top:912px;left:590px;white-space:nowrap" class="ft710">)&#160;and&#160;repeat&#160;until&#160;Units&#160;are&#160;<br/>complete.&#160;</p>
+<p style="position:absolute;top:967px;left:108px;white-space:nowrap" class="ft74"><b>&#160;</b></p>
+<p style="position:absolute;top:1015px;left:108px;white-space:nowrap" class="ft74"><b>&#160;</b></p>
+</div>
+<!-- Page 8 -->
+<a name="8"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft818{font-size:18px;font-family:AAAAAA+GoogleSans;color:#000000;}
+	.ft819{font-size:18px;font-family:EAAAAA+CambriaMath;color:#000000;}
+-->
+</style>
+<div id="page8-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual008.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft84"><b>Detailed&#160;Division&#160;Walkthrough&#160;1:&#160;4,800&#160;/&#160;32&#160;=&#160;150&#160;</b></p>
+<p style="position:absolute;top:156px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:155px;left:153px;white-space:nowrap" class="ft810"><b>Initial&#160;Board&#160;State:</b>&#160;4,800&#160;on&#160;board&#160;(Thousands:&#160;[3]+[1],&#160;Hundreds:&#160;[5]+[3]).&#160;Divisor&#160;<br/>reference&#160;=&#160;32&#160;(3&#160;Tens,&#160;2&#160;Units).&#160;</p>
+<p style="position:absolute;top:200px;left:108px;white-space:nowrap" class="ft818"><b>Step&#160;1:&#160;Test&#160;Hundreds&#160;Tier&#160;(Scaling&#160;Divisor&#160;by&#160;100&#160;&#160;&#160;3,200)&#160;</b></p>
+<p style="position:absolute;top:204px;left:534px;white-space:nowrap" class="ft819">→</p>
+<p style="position:absolute;top:245px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:244px;left:153px;white-space:nowrap" class="ft85">Can&#160;we&#160;remove&#160;3,200&#160;(3&#160;Thousands,&#160;2&#160;Hundreds)&#160;from&#160;4,800?&#160;<b>YES!&#160;</b></p>
+<p style="position:absolute;top:268px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:267px;left:153px;white-space:nowrap" class="ft81"><b>Action:</b>&#160;Remove&#160;3&#160;beans&#160;from&#160;Thousands&#160;row,&#160;2&#160;beans&#160;from&#160;Hundreds&#160;row.&#160;</p>
+<p style="position:absolute;top:290px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:289px;left:153px;white-space:nowrap" class="ft81"><b>Board&#160;Remaining:</b>&#160;1,600&#160;(Thousands:&#160;[1],&#160;Hundreds:&#160;[5]+[1]).&#160;</p>
+<p style="position:absolute;top:313px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:312px;left:153px;white-space:nowrap" class="ft81"><b>Quotient&#160;Recorded:</b>&#160;1&#160;Hundred&#160;(100).&#160;</p>
+<p style="position:absolute;top:334px;left:108px;white-space:nowrap" class="ft818"><b>Step&#160;2:&#160;Test&#160;Hundreds&#160;Tier&#160;Again&#160;</b></p>
+<p style="position:absolute;top:379px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:378px;left:153px;white-space:nowrap" class="ft85">Can&#160;we&#160;remove&#160;another&#160;3,200&#160;from&#160;1,600?&#160;<b>NO.&#160;</b></p>
+<p style="position:absolute;top:401px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:400px;left:153px;white-space:nowrap" class="ft810"><b>Unweave&#160;Thousands:</b>&#160;Take&#160;1&#160;bean&#160;from&#160;Thousands&#160;[1]&#160;and&#160;unweave&#160;it&#160;into&#160;TWO&#160;[5]&#160;<br/>beans&#160;in&#160;Hundreds&#160;row.&#160;</p>
+<p style="position:absolute;top:446px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:445px;left:153px;white-space:nowrap" class="ft81"><b>Board&#160;Hundreds&#160;Row&#160;now&#160;holds:</b>&#160;[5],&#160;[5],&#160;[5],&#160;[1]&#160;(=&#160;1,600).&#160;</p>
+<p style="position:absolute;top:468px;left:108px;white-space:nowrap" class="ft818"><b>Step&#160;3:&#160;Test&#160;Tens&#160;Tier&#160;(Scaling&#160;Divisor&#160;by&#160;10&#160;&#160;&#160;320)&#160;</b></p>
+<p style="position:absolute;top:471px;left:479px;white-space:nowrap" class="ft819">→</p>
+<p style="position:absolute;top:513px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:512px;left:153px;white-space:nowrap" class="ft85">How&#160;many&#160;320s&#160;(3&#160;Hundreds,&#160;2&#160;Tens)&#160;fit&#160;into&#160;1,600?&#160;</p>
+<p style="position:absolute;top:535px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:534px;left:198px;white-space:nowrap" class="ft85">1st&#160;allotment&#160;(-320):&#160;Board&#160;=&#160;1,280.&#160;Quotient&#160;+=&#160;10.&#160;</p>
+<p style="position:absolute;top:558px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:557px;left:198px;white-space:nowrap" class="ft85">2nd&#160;allotment&#160;(-320):&#160;Board&#160;=&#160;960.&#160;Quotient&#160;+=&#160;10.&#160;</p>
+<p style="position:absolute;top:580px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:579px;left:198px;white-space:nowrap" class="ft85">3rd&#160;allotment&#160;(-320):&#160;Board&#160;=&#160;640.&#160;Quotient&#160;+=&#160;10.&#160;</p>
+<p style="position:absolute;top:603px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:602px;left:198px;white-space:nowrap" class="ft85">4th&#160;allotment&#160;(-320):&#160;Board&#160;=&#160;320.&#160;Quotient&#160;+=&#160;10.&#160;</p>
+<p style="position:absolute;top:625px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:624px;left:198px;white-space:nowrap" class="ft85">5th&#160;allotment&#160;(-320):&#160;Board&#160;=&#160;0.&#160;Quotient&#160;+=&#160;10.&#160;</p>
+<p style="position:absolute;top:648px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:647px;left:153px;white-space:nowrap" class="ft81"><b>Total&#160;Tens&#160;Allotment:</b>&#160;50.&#160;</p>
+<p style="position:absolute;top:669px;left:108px;white-space:nowrap" class="ft81"><b>FINAL&#160;RESULT:</b>&#160;</p>
+<p style="position:absolute;top:669px;left:350px;white-space:nowrap" class="ft85">&#160;<i>(Exact&#160;Distribution,&#160;0&#160;Remainder)&#160;</i></p>
+<p style="position:absolute;top:672px;left:226px;white-space:nowrap" class="ft811">100&#160;+&#160;50&#160;=&#160;150</p>
+<p style="position:absolute;top:692px;left:108px;white-space:nowrap" class="ft89"><i>&#160;<br/></i><b>Detailed&#160;Division&#160;Walkthrough&#160;2:&#160;1,472&#160;/&#160;23&#160;=&#160;64&#160;</b></p>
+<p style="position:absolute;top:763px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:762px;left:153px;white-space:nowrap" class="ft810"><b>Initial&#160;Board&#160;State:</b>&#160;1,472&#160;on&#160;board&#160;(Thousands:&#160;[1],&#160;Hundreds:&#160;[3]+[1],&#160;Tens:&#160;[5]+[2],&#160;Units:&#160;<br/>[2]).&#160;Divisor&#160;reference&#160;=&#160;23&#160;(2&#160;Tens,&#160;3&#160;Units).&#160;</p>
+<p style="position:absolute;top:807px;left:108px;white-space:nowrap" class="ft818"><b>Step&#160;1:&#160;Test&#160;Hundreds&#160;Tier&#160;(Scaling&#160;Divisor&#160;by&#160;100&#160;&#160;&#160;2,300)&#160;</b></p>
+<p style="position:absolute;top:810px;left:534px;white-space:nowrap" class="ft819">→</p>
+<p style="position:absolute;top:851px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:850px;left:153px;white-space:nowrap" class="ft85">Can&#160;we&#160;remove&#160;2,300&#160;from&#160;1,472?&#160;<b>NO.&#160;</b></p>
+<p style="position:absolute;top:874px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:873px;left:153px;white-space:nowrap" class="ft810"><b>Unweave&#160;Thousands:</b>&#160;Take&#160;1&#160;bean&#160;from&#160;Thousands&#160;[1]&#160;and&#160;unweave&#160;into&#160;TWO&#160;[5]&#160;beans&#160;<br/>in&#160;Hundreds&#160;row.&#160;</p>
+<p style="position:absolute;top:919px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:918px;left:153px;white-space:nowrap" class="ft81"><b>Hundreds&#160;row&#160;now&#160;holds:</b>&#160;1,400&#160;(two&#160;[5]s,&#160;one&#160;[3],&#160;one&#160;[1]).&#160;</p>
+<p style="position:absolute;top:940px;left:108px;white-space:nowrap" class="ft818"><b>Step&#160;2:&#160;Test&#160;Tens&#160;Tier&#160;(Scaling&#160;Divisor&#160;by&#160;10&#160;&#160;&#160;230)&#160;</b></p>
+<p style="position:absolute;top:944px;left:479px;white-space:nowrap" class="ft819">→</p>
+<p style="position:absolute;top:985px;left:126px;white-space:nowrap" class="ft86">●&#160;</p>
+<p style="position:absolute;top:984px;left:153px;white-space:nowrap" class="ft85">How&#160;many&#160;230s&#160;(2&#160;Hundreds,&#160;3&#160;Tens)&#160;fit&#160;into&#160;1,472?&#160;</p>
+<p style="position:absolute;top:1008px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:1007px;left:198px;white-space:nowrap" class="ft85">Test&#160;60&#160;allotments&#160;(</p>
+<p style="position:absolute;top:1007px;left:473px;white-space:nowrap" class="ft85">):&#160;</p>
+<p style="position:absolute;top:1010px;left:342px;white-space:nowrap" class="ft811">6&#160;×&#160;230&#160;=&#160;1,&#160;380</p>
+<p style="position:absolute;top:1030px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:1029px;left:198px;white-space:nowrap" class="ft85">Subtract&#160;1,380&#160;(13&#160;Hundreds,&#160;8&#160;Tens)&#160;from&#160;board.&#160;</p>
+<p style="position:absolute;top:1053px;left:171px;white-space:nowrap" class="ft86">○&#160;</p>
+<p style="position:absolute;top:1052px;left:198px;white-space:nowrap" class="ft81"><b>Board&#160;Remaining:</b>&#160;92&#160;(Tens:&#160;[5]+[3]+[1],&#160;Units:&#160;[2]).&#160;</p>
+</div>
+<!-- Page 9 -->
+<a name="9"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page9-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual009.png" alt="background image"/>
+<p style="position:absolute;top:109px;left:171px;white-space:nowrap" class="ft96">○&#160;</p>
+<p style="position:absolute;top:108px;left:198px;white-space:nowrap" class="ft91"><b>Quotient&#160;Recorded:</b>&#160;60.&#160;</p>
+<p style="position:absolute;top:130px;left:108px;white-space:nowrap" class="ft918"><b>Step&#160;3:&#160;Test&#160;Units&#160;Tier&#160;(Divisor&#160;&#160;&#160;23)&#160;</b></p>
+<p style="position:absolute;top:134px;left:368px;white-space:nowrap" class="ft919">→</p>
+<p style="position:absolute;top:175px;left:126px;white-space:nowrap" class="ft96">●&#160;</p>
+<p style="position:absolute;top:174px;left:153px;white-space:nowrap" class="ft95">How&#160;many&#160;23s&#160;(2&#160;Tens,&#160;3&#160;Units)&#160;fit&#160;into&#160;92?&#160;</p>
+<p style="position:absolute;top:198px;left:171px;white-space:nowrap" class="ft96">○&#160;</p>
+<p style="position:absolute;top:197px;left:198px;white-space:nowrap" class="ft95">Unweave&#160;Tens&#160;if&#160;needed&#160;to&#160;expose&#160;unit&#160;beans.&#160;</p>
+<p style="position:absolute;top:220px;left:171px;white-space:nowrap" class="ft96">○&#160;</p>
+<p style="position:absolute;top:219px;left:198px;white-space:nowrap" class="ft95">4&#160;allotments&#160;(</p>
+<p style="position:absolute;top:219px;left:394px;white-space:nowrap" class="ft95">).&#160;</p>
+<p style="position:absolute;top:222px;left:298px;white-space:nowrap" class="ft911">4&#160;×&#160;23&#160;=&#160;92</p>
+<p style="position:absolute;top:243px;left:171px;white-space:nowrap" class="ft96">○&#160;</p>
+<p style="position:absolute;top:242px;left:198px;white-space:nowrap" class="ft95">Subtract&#160;92&#160;from&#160;board.&#160;<b>Board&#160;Remaining:</b>&#160;0.&#160;</p>
+<p style="position:absolute;top:265px;left:171px;white-space:nowrap" class="ft96">○&#160;</p>
+<p style="position:absolute;top:264px;left:198px;white-space:nowrap" class="ft91"><b>Quotient&#160;Recorded:</b>&#160;4.&#160;</p>
+<p style="position:absolute;top:287px;left:108px;white-space:nowrap" class="ft91"><b>FINAL&#160;RESULT:</b>&#160;</p>
+<p style="position:absolute;top:287px;left:323px;white-space:nowrap" class="ft95">&#160;<i>(Exact&#160;Distribution)&#160;</i></p>
+<p style="position:absolute;top:290px;left:226px;white-space:nowrap" class="ft911">60&#160;+&#160;4&#160;=&#160;64</p>
+<p style="position:absolute;top:309px;left:108px;white-space:nowrap" class="ft93"><b>&#160;</b></p>
+<p style="position:absolute;top:363px;left:108px;white-space:nowrap" class="ft93"><b>8.&#160;Unit&#160;6:&#160;The&#160;Khipu&#160;Archive&#160;(Database&#160;Commits)&#160;</b></p>
+<p style="position:absolute;top:417px;left:108px;white-space:nowrap" class="ft95">Once&#160;a&#160;calculation&#160;settles&#160;on&#160;the&#160;Yupana,&#160;the&#160;state&#160;is&#160;committed&#160;into&#160;a&#160;<b>Khipu&#160;pendant&#160;cord</b>:&#160;</p>
+<p style="position:absolute;top:450px;left:122px;white-space:nowrap" class="ft98"><b>PRIMARY&#160;CORD&#160;<br/>(MAIN&#160;RAIL)&#160;</b></p>
+<p style="position:absolute;top:450px;left:297px;white-space:nowrap" class="ft91"><b>Pendant&#160;1&#160;</b></p>
+<p style="position:absolute;top:450px;left:473px;white-space:nowrap" class="ft91"><b>Pendant&#160;2&#160;</b></p>
+<p style="position:absolute;top:450px;left:648px;white-space:nowrap" class="ft91"><b>Pendant&#160;3&#160;</b></p>
+<p style="position:absolute;top:529px;left:122px;white-space:nowrap" class="ft91"><b>Thousands&#160;(</b></p>
+<p style="position:absolute;top:529px;left:241px;white-space:nowrap" class="ft91"><b>)&#160;</b></p>
+<p style="position:absolute;top:532px;left:217px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:525px;left:235px;white-space:nowrap" class="ft912">3</p>
+<p style="position:absolute;top:523px;left:297px;white-space:nowrap" class="ft95">(&#160;S&#160;)&#160;</p>
+<p style="position:absolute;top:523px;left:473px;white-space:nowrap" class="ft95">(&#160;)&#160;</p>
+<p style="position:absolute;top:523px;left:648px;white-space:nowrap" class="ft95">(&#160;L3&#160;)&#160;3,000&#160;</p>
+<p style="position:absolute;top:585px;left:122px;white-space:nowrap" class="ft91"><b>Hundreds&#160;(</b></p>
+<p style="position:absolute;top:585px;left:233px;white-space:nowrap" class="ft91"><b>)&#160;</b></p>
+<p style="position:absolute;top:588px;left:208px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:581px;left:227px;white-space:nowrap" class="ft912">2</p>
+<p style="position:absolute;top:579px;left:297px;white-space:nowrap" class="ft95">(&#160;L7&#160;)&#160;</p>
+<p style="position:absolute;top:579px;left:473px;white-space:nowrap" class="ft95">(&#160;S&#160;)&#160;Tens&#160;</p>
+<p style="position:absolute;top:579px;left:648px;white-space:nowrap" class="ft95">(&#160;)&#160;</p>
+<p style="position:absolute;top:641px;left:122px;white-space:nowrap" class="ft91"><b>Units&#160;(</b></p>
+<p style="position:absolute;top:641px;left:196px;white-space:nowrap" class="ft91"><b>)&#160;</b></p>
+<p style="position:absolute;top:644px;left:172px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:638px;left:190px;white-space:nowrap" class="ft912">0</p>
+<p style="position:absolute;top:636px;left:297px;white-space:nowrap" class="ft95">(&#160;E&#160;)&#160;</p>
+<p style="position:absolute;top:636px;left:473px;white-space:nowrap" class="ft95">(&#160;L4&#160;)&#160;</p>
+<p style="position:absolute;top:636px;left:648px;white-space:nowrap" class="ft95">(&#160;E&#160;)&#160;</p>
+<p style="position:absolute;top:692px;left:122px;white-space:nowrap" class="ft98"><b>COMMITTED&#160;<br/>VALUE&#160;</b></p>
+<p style="position:absolute;top:692px;left:297px;white-space:nowrap" class="ft91"><b>1,701&#160;</b></p>
+<p style="position:absolute;top:692px;left:473px;white-space:nowrap" class="ft91"><b>14&#160;</b></p>
+<p style="position:absolute;top:692px;left:648px;white-space:nowrap" class="ft91"><b>3,001&#160;</b></p>
+<p style="position:absolute;top:774px;left:108px;white-space:nowrap" class="ft94"><b>Knot&#160;Metric&#160;Encoding&#160;</b></p>
+<p style="position:absolute;top:828px;left:126px;white-space:nowrap" class="ft96">1.&#160;</p>
+<p style="position:absolute;top:827px;left:153px;white-space:nowrap" class="ft91"><b>Single&#160;Knots&#160;(S):</b>&#160;Used&#160;in&#160;Thousands&#160;(</p>
+<p style="position:absolute;top:827px;left:457px;white-space:nowrap" class="ft95">)&#160;tier&#160;and&#160;higher.&#160;</p>
+<p style="position:absolute;top:830px;left:432px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:823px;left:450px;white-space:nowrap" class="ft912">3</p>
+<p style="position:absolute;top:856px;left:126px;white-space:nowrap" class="ft96">2.&#160;</p>
+<p style="position:absolute;top:855px;left:153px;white-space:nowrap" class="ft91"><b>Long&#160;Knots&#160;(L):</b>&#160;Used&#160;in&#160;Tens&#160;(</p>
+<p style="position:absolute;top:855px;left:401px;white-space:nowrap" class="ft95">)&#160;and&#160;Hundreds&#160;(</p>
+<p style="position:absolute;top:855px;left:548px;white-space:nowrap" class="ft95">)&#160;tiers.&#160;The&#160;number&#160;of&#160;finger-turns&#160;</p>
+<p style="position:absolute;top:858px;left:376px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:851px;left:394px;white-space:nowrap" class="ft912">1</p>
+<p style="position:absolute;top:858px;left:523px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:851px;left:541px;white-space:nowrap" class="ft912">2</p>
+<p style="position:absolute;top:877px;left:153px;white-space:nowrap" class="ft95">in&#160;the&#160;knot&#160;equals&#160;the&#160;digit&#160;(e.g.,&#160;</p>
+<p style="position:absolute;top:877px;left:444px;white-space:nowrap" class="ft95">).&#160;</p>
+<p style="position:absolute;top:880px;left:391px;white-space:nowrap" class="ft911">𝐿7&#160;=&#160;7</p>
+<p style="position:absolute;top:907px;left:126px;white-space:nowrap" class="ft96">3.&#160;</p>
+<p style="position:absolute;top:906px;left:153px;white-space:nowrap" class="ft91"><b>Figure-Eight&#160;Knots&#160;(E):</b>&#160;Used&#160;exclusively&#160;in&#160;the&#160;Units&#160;(</p>
+<p style="position:absolute;top:906px;left:575px;white-space:nowrap" class="ft95">)&#160;tier&#160;to&#160;represent&#160;a&#160;&#160;.&#160;</p>
+<p style="position:absolute;top:909px;left:550px;white-space:nowrap" class="ft911">10</p>
+<p style="position:absolute;top:902px;left:568px;white-space:nowrap" class="ft912">0</p>
+<p style="position:absolute;top:909px;left:720px;white-space:nowrap" class="ft911">1</p>
+<p style="position:absolute;top:929px;left:126px;white-space:nowrap" class="ft96">4.&#160;</p>
+<p style="position:absolute;top:928px;left:153px;white-space:nowrap" class="ft91"><b>Empty&#160;Cord&#160;Space:</b>&#160;Represents&#160;a&#160;&#160;&#160;placeholder&#160;for&#160;that&#160;positional&#160;tier.&#160;</p>
+<p style="position:absolute;top:931px;left:407px;white-space:nowrap" class="ft911">0</p>
+<p style="position:absolute;top:951px;left:108px;white-space:nowrap" class="ft910">&#160;<br/><b>Note:</b>&#160;The&#160;tying&#160;of&#160;the&#160;knot&#160;types&#160;is&#160;not&#160;something&#160;we&#160;have&#160;enough&#160;skill&#160;to&#160;teach&#160;effectively,&#160;<br/>but&#160;we&#160;are&#160;decoding&#160;with&#160;these&#160;baselines.&#160;Supplying&#160;thread&#160;to&#160;the&#160;students&#160;may&#160;allow&#160;them&#160;to&#160;<br/>discover&#160;this&#160;system&#160;on&#160;their&#160;own,&#160;as&#160;it&#160;is&#160;a&#160;discoverable&#160;method&#160;of&#160;storing&#160;software.&#160;There&#160;are&#160;<br/>colors&#160;involved&#160;in&#160;some&#160;of&#160;the&#160;later&#160;khipu&#160;encoding&#160;schemes,&#160;as&#160;well,&#160;and&#160;this&#160;system&#160;does&#160;not&#160;</p>
+</div>
+<!-- Page 10 -->
+<a name="10"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1020{font-size:17px;line-height:19px;font-family:EAAAAA+CambriaMath;color:#000000;}
+	.ft1021{font-size:17px;line-height:22px;font-family:EAAAAA+CambriaMath;color:#000000;}
+-->
+</style>
+<div id="page10-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual010.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft1010">exhaust&#160;the&#160;complete&#160;compute&#160;ecosystem&#160;of&#160;the&#160;Andean&#160;khipu&#160;tradition.&#160;There&#160;is&#160;evidence&#160;of&#160;<br/>more&#160;advanced&#160;Yupana&#160;board&#160;configurations,&#160;perhaps&#160;used&#160;to&#160;track&#160;advanced&#160;or&#160;remote&#160;state.&#160;<br/>There&#160;are&#160;also&#160;items&#160;that&#160;appear&#160;to&#160;be&#160;something&#160;akin&#160;to&#160;smart&#160;contracts.&#160;We&#160;will&#160;continue&#160;<br/>publishing&#160;and&#160;distributing&#160;materials&#160;as&#160;we&#160;learn&#160;more.&#160;<br/><b>&#160;</b></p>
+<p style="position:absolute;top:252px;left:108px;white-space:nowrap" class="ft103"><b>&#160;</b></p>
+<p style="position:absolute;top:306px;left:108px;white-space:nowrap" class="ft103"><b>9.&#160;Educator's&#160;Assessment&#160;&amp;&#160;Verification&#160;Rubric&#160;</b></p>
+<p style="position:absolute;top:360px;left:108px;white-space:nowrap" class="ft105">&#160;</p>
+<p style="position:absolute;top:393px;left:122px;white-space:nowrap" class="ft101"><b>Skill&#160;/&#160;Objective&#160;</b></p>
+<p style="position:absolute;top:393px;left:297px;white-space:nowrap" class="ft101"><b>Novice&#160;(1-2&#160;pts)&#160;</b></p>
+<p style="position:absolute;top:393px;left:473px;white-space:nowrap" class="ft108"><b>Proficient&#160;(3-4&#160;<br/>pts)&#160;</b></p>
+<p style="position:absolute;top:393px;left:648px;white-space:nowrap" class="ft101"><b>Master&#160;(5&#160;pts)&#160;</b></p>
+<p style="position:absolute;top:466px;left:122px;white-space:nowrap" class="ft101"><b>Digit&#160;Encoding&#160;</b></p>
+<p style="position:absolute;top:466px;left:297px;white-space:nowrap" class="ft105">Uses&#160;</p>
+<p style="position:absolute;top:466px;left:365px;white-space:nowrap" class="ft105">&#160;beans&#160;per&#160;</p>
+<p style="position:absolute;top:469px;left:337px;white-space:nowrap" class="ft1011">&gt;&#160;3</p>
+<p style="position:absolute;top:488px;left:297px;white-space:nowrap" class="ft1010">row&#160;or&#160;violates&#160;the&#160;<br/>Golden&#160;Rule.&#160;</p>
+<p style="position:absolute;top:466px;left:473px;white-space:nowrap" class="ft1010">Encodes&#160;digits&#160;<br/>$0\dots9$&#160;correctly&#160;<br/>using&#160;the&#160;Golden&#160;<br/>Rule.&#160;</p>
+<p style="position:absolute;top:466px;left:648px;white-space:nowrap" class="ft1010">Instantly&#160;sets&#160;any&#160;<br/>4-digit&#160;number&#160;with&#160;<br/>minimal&#160;bean&#160;<br/>counts.&#160;</p>
+<p style="position:absolute;top:575px;left:122px;white-space:nowrap" class="ft108"><b>Addition&#160;&amp;&#160;Clock&#160;<br/>Step&#160;</b></p>
+<p style="position:absolute;top:575px;left:297px;white-space:nowrap" class="ft1010">Forgets&#160;to&#160;fuse&#160;<br/>beans&#160;or&#160;misses&#160;<br/>carry-ups&#160;across&#160;<br/>rows&#160;during&#160;the&#160;<br/>clock&#160;step.&#160;</p>
+<p style="position:absolute;top:575px;left:473px;white-space:nowrap" class="ft1010">Executes&#160;In-Row&#160;<br/>Fusions&#160;and&#160;Bean&#160;<br/>Avalanches&#160;<br/>accurately&#160;on&#160;<br/>board.&#160;</p>
+<p style="position:absolute;top:575px;left:648px;white-space:nowrap" class="ft1010">Demonstrates&#160;fluid&#160;<br/>multi-row&#160;<br/>avalanches&#160;without&#160;<br/>prompting.&#160;</p>
+<p style="position:absolute;top:706px;left:122px;white-space:nowrap" class="ft108"><b>Subtraction&#160;&amp;&#160;<br/>Unweaving&#160;</b></p>
+<p style="position:absolute;top:706px;left:297px;white-space:nowrap" class="ft1010">Attempts&#160;to&#160;<br/>subtract&#160;from&#160;<br/>empty&#160;cups&#160;without&#160;<br/>unweaving&#160;higher&#160;<br/>tiers.&#160;</p>
+<p style="position:absolute;top:706px;left:473px;white-space:nowrap" class="ft1010">Unweaves&#160;<br/>higher-tier&#160;beans&#160;(</p>
+<p style="position:absolute;top:751px;left:558px;white-space:nowrap" class="ft105">)&#160;</p>
+<p style="position:absolute;top:754px;left:473px;white-space:nowrap" class="ft1020">10&#160;→&#160;5&#160;+&#160;5<br/>correctly.&#160;</p>
+<p style="position:absolute;top:706px;left:648px;white-space:nowrap" class="ft1010">Performs&#160;multi-tier&#160;<br/>unweaving&#160;<br/>smoothly&#160;during&#160;<br/>complex&#160;problems.&#160;</p>
+<p style="position:absolute;top:838px;left:122px;white-space:nowrap" class="ft101"><b>Ayni&#160;Division&#160;</b></p>
+<p style="position:absolute;top:838px;left:297px;white-space:nowrap" class="ft1010">Struggles&#160;to&#160;scale&#160;<br/>divisor&#160;tiers&#160;or&#160;track&#160;<br/>subtractive&#160;<br/>allotments.&#160;</p>
+<p style="position:absolute;top:838px;left:473px;white-space:nowrap" class="ft1010">Executes&#160;top-down&#160;<br/>harvesting&#160;and&#160;<br/>unweaving&#160;to&#160;find&#160;<br/>exact&#160;quotients.&#160;</p>
+<p style="position:absolute;top:838px;left:648px;white-space:nowrap" class="ft1010">Demonstrates&#160;fluid&#160;<br/>division&#160;and&#160;<br/>explains&#160;<i>Ayni</i>&#160;<br/>resource&#160;allocation.&#160;</p>
+<p style="position:absolute;top:947px;left:122px;white-space:nowrap" class="ft101"><b>Database&#160;Commit&#160;</b></p>
+<p style="position:absolute;top:947px;left:297px;white-space:nowrap" class="ft1010">Confuses&#160;knot&#160;<br/>types&#160;or&#160;positional&#160;<br/>tiers&#160;on&#160;the&#160;<br/>pendant&#160;cord.&#160;</p>
+<p style="position:absolute;top:947px;left:473px;white-space:nowrap" class="ft1021">Accurately&#160;<br/>translates&#160;Yupana&#160;<br/>values&#160;onto&#160;Khipu&#160;<br/>cord&#160;metrics&#160;(𝑠,&#160;𝐿,&#160;𝐸<br/>).&#160;</p>
+<p style="position:absolute;top:947px;left:648px;white-space:nowrap" class="ft1010">Explains&#160;how&#160;<br/>Yupana&#160;state&#160;<br/>transfers&#160;non-lossy&#160;<br/>into&#160;Khipu&#160;storage.&#160;</p>
+</div>
+<!-- Page 11 -->
+<a name="11"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}-->
+</style>
+<div id="page11-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual011.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft113"><b>&#160;</b></p>
+<p style="position:absolute;top:162px;left:108px;white-space:nowrap" class="ft113"><b>&#160;</b></p>
+<p style="position:absolute;top:216px;left:108px;white-space:nowrap" class="ft113"><b>&#160;</b></p>
+<p style="position:absolute;top:270px;left:108px;white-space:nowrap" class="ft113"><b>&#160;</b></p>
+<p style="position:absolute;top:324px;left:108px;white-space:nowrap" class="ft113"><b>10.&#160;Updated&#160;Sample&#160;Student&#160;Worksheets&#160;</b></p>
+<p style="position:absolute;top:378px;left:108px;white-space:nowrap" class="ft114"><b>Worksheet&#160;1:&#160;Digit&#160;Encoding&#160;Practice&#160;</b></p>
+<p style="position:absolute;top:425px;left:108px;white-space:nowrap" class="ft112"><i>Mark&#160;or&#160;place&#160;the&#160;beans&#160;in&#160;the&#160;cups&#160;for&#160;each&#160;number&#160;according&#160;to&#160;the&#160;Golden&#160;Rule:&#160;</i></p>
+<p style="position:absolute;top:449px;left:126px;white-space:nowrap" class="ft116">1.&#160;</p>
+<p style="position:absolute;top:448px;left:153px;white-space:nowrap" class="ft111"><b>Number:&#160;382&#160;</b></p>
+<p style="position:absolute;top:477px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:476px;left:198px;white-space:nowrap" class="ft115">Hundreds&#160;(</p>
+<p style="position:absolute;top:476px;left:304px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(&#160;)&#160;[3]&#160;(●)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(&#160;)&#160;</p>
+<p style="position:absolute;top:479px;left:280px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:472px;left:298px;white-space:nowrap" class="ft1112">2</p>
+<p style="position:absolute;top:499px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:527px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:526px;left:198px;white-space:nowrap" class="ft115">Tens&#160;(</p>
+<p style="position:absolute;top:526px;left:266px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(●)&#160;[3]&#160;(●)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(&#160;)&#160;</p>
+<p style="position:absolute;top:530px;left:241px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:523px;left:259px;white-space:nowrap" class="ft1112">1</p>
+<p style="position:absolute;top:550px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:578px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:577px;left:198px;white-space:nowrap" class="ft115">Units&#160;(</p>
+<p style="position:absolute;top:577px;left:269px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(&#160;)&#160;[3]&#160;(&#160;)&#160;[2]&#160;(●)&#160;[1]&#160;(&#160;)&#160;</p>
+<p style="position:absolute;top:580px;left:244px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:574px;left:263px;white-space:nowrap" class="ft1112">0</p>
+<p style="position:absolute;top:601px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:623px;left:126px;white-space:nowrap" class="ft116">2.&#160;</p>
+<p style="position:absolute;top:622px;left:153px;white-space:nowrap" class="ft111"><b>Number:&#160;1,509&#160;</b></p>
+<p style="position:absolute;top:651px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:650px;left:198px;white-space:nowrap" class="ft115">Thousands&#160;(</p>
+<p style="position:absolute;top:650px;left:312px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(&#160;)&#160;[3]&#160;(&#160;)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(●)&#160;</p>
+<p style="position:absolute;top:653px;left:288px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:647px;left:306px;white-space:nowrap" class="ft1112">3</p>
+<p style="position:absolute;top:674px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:702px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:701px;left:198px;white-space:nowrap" class="ft115">Hundreds&#160;(</p>
+<p style="position:absolute;top:701px;left:304px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(●)&#160;[3]&#160;(&#160;)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(&#160;)&#160;</p>
+<p style="position:absolute;top:704px;left:280px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:697px;left:298px;white-space:nowrap" class="ft1112">2</p>
+<p style="position:absolute;top:724px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:752px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:751px;left:198px;white-space:nowrap" class="ft115">Tens&#160;(</p>
+<p style="position:absolute;top:751px;left:266px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(&#160;)&#160;[3]&#160;(&#160;)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(&#160;)&#160;<i>(Empty)</i>&#160;</p>
+<p style="position:absolute;top:755px;left:241px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:748px;left:259px;white-space:nowrap" class="ft1112">1</p>
+<p style="position:absolute;top:775px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:803px;left:171px;white-space:nowrap" class="ft116">○&#160;</p>
+<p style="position:absolute;top:802px;left:198px;white-space:nowrap" class="ft115">Units&#160;(</p>
+<p style="position:absolute;top:802px;left:269px;white-space:nowrap" class="ft115">):&#160;[5]&#160;(●)&#160;[3]&#160;(●)&#160;[2]&#160;(&#160;)&#160;[1]&#160;(●)&#160;</p>
+<p style="position:absolute;top:805px;left:244px;white-space:nowrap" class="ft1111">10</p>
+<p style="position:absolute;top:799px;left:263px;white-space:nowrap" class="ft1112">0</p>
+<p style="position:absolute;top:826px;left:198px;white-space:nowrap" class="ft116">&#160;</p>
+<p style="position:absolute;top:847px;left:282px;white-space:nowrap" class="ft114"><b>&#160;</b></p>
+</div>
+<!-- Page 12 -->
+<a name="12"></a>
+<style type="text/css">
+<!--
+	p {margin: 0; padding: 0;}	.ft1222{font-size:17px;line-height:23px;font-family:DAAAAA+ArialMT;color:#000000;}
+-->
+</style>
+<div id="page12-div" style="position:relative;width:918px;height:1188px;">
+<img width="918" height="1188" src="../assets/khipu-field-manual/khipu-manual012.png" alt="background image"/>
+<p style="position:absolute;top:108px;left:108px;white-space:nowrap" class="ft124"><b>Worksheet&#160;2:&#160;Somatic&#160;Problem&#160;Set&#160;(On-Board&#160;Operations)&#160;</b></p>
+<p style="position:absolute;top:155px;left:108px;white-space:nowrap" class="ft129"><i>Solve&#160;using&#160;your&#160;physical&#160;Yupana&#160;board&#160;(no&#160;external&#160;stacks!).&#160;Record&#160;your&#160;intermediate&#160;steps&#160;<br/>and&#160;final&#160;board&#160;state:&#160;<br/></i><b>Problem&#160;1:&#160;Addition&#160;</b></p>
+<p style="position:absolute;top:244px;left:207px;white-space:nowrap" class="ft121"><b>&#160;_____&#160;</b></p>
+<p style="position:absolute;top:247px;left:108px;white-space:nowrap" class="ft1211">247&#160;+&#160;385&#160;=</p>
+<p style="position:absolute;top:268px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:267px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;A:</i>&#160;Set&#160;247&#160;on&#160;board.&#160;</p>
+<p style="position:absolute;top:290px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:289px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;B:</i>&#160;Drop&#160;385&#160;directly&#160;into&#160;corresponding&#160;tier&#160;cups.&#160;</p>
+<p style="position:absolute;top:313px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:312px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;C&#160;(Clock&#160;Step):</i>&#160;Resolve&#160;fusions&#160;and&#160;avalanches.&#160;</p>
+<p style="position:absolute;top:335px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:334px;left:153px;white-space:nowrap" class="ft1222"><b>Target&#160;Answer:&#160;632</b>&#160;<i>(Hundreds:&#160;[5]+[1],&#160;Tens:&#160;[3],&#160;Units:&#160;[2])</i>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:379px;left:108px;white-space:nowrap" class="ft1218"><b>Problem&#160;2:&#160;Subtraction&#160;</b></p>
+<p style="position:absolute;top:423px;left:223px;white-space:nowrap" class="ft121"><b>&#160;_____&#160;</b></p>
+<p style="position:absolute;top:426px;left:108px;white-space:nowrap" class="ft1211">1,&#160;204&#160;−&#160;531&#160;=</p>
+<p style="position:absolute;top:446px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:445px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;A:</i>&#160;Set&#160;1,204&#160;on&#160;board.&#160;</p>
+<p style="position:absolute;top:469px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:468px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;B:</i>&#160;Unweave&#160;Thousands&#160;tier&#160;(</p>
+<p style="position:absolute;top:468px;left:545px;white-space:nowrap" class="ft125">&#160;in&#160;Hundreds).&#160;</p>
+<p style="position:absolute;top:471px;left:398px;white-space:nowrap" class="ft1211">1,&#160;000&#160;→&#160;500&#160;+&#160;500</p>
+<p style="position:absolute;top:491px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:490px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;C:</i>&#160;Remove&#160;531&#160;directly.&#160;</p>
+<p style="position:absolute;top:514px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:513px;left:153px;white-space:nowrap" class="ft1222"><b>Target&#160;Answer:&#160;673</b>&#160;<i>(Hundreds:&#160;[5]+[1],&#160;Tens:&#160;[5]+[2],&#160;Units:&#160;[3])</i>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:558px;left:108px;white-space:nowrap" class="ft1218"><b>Problem&#160;3:&#160;Multiplication&#160;(Loom&#160;Shift)&#160;</b></p>
+<p style="position:absolute;top:602px;left:188px;white-space:nowrap" class="ft121"><b>&#160;_____&#160;</b></p>
+<p style="position:absolute;top:605px;left:108px;white-space:nowrap" class="ft1211">64&#160;×&#160;23&#160;=</p>
+<p style="position:absolute;top:625px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:624px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;A:</i>&#160;Decompose&#160;multiplier&#160;</p>
+<p style="position:absolute;top:624px;left:473px;white-space:nowrap" class="ft125">.&#160;</p>
+<p style="position:absolute;top:627px;left:376px;white-space:nowrap" class="ft1211">23&#160;=&#160;20&#160;+&#160;3</p>
+<p style="position:absolute;top:648px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:647px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;B:</i>&#160;Place&#160;</p>
+<p style="position:absolute;top:647px;left:304px;white-space:nowrap" class="ft125">&#160;shifted&#160;up&#160;1&#160;row&#160;(</p>
+<p style="position:absolute;top:647px;left:477px;white-space:nowrap" class="ft125">).&#160;</p>
+<p style="position:absolute;top:650px;left:252px;white-space:nowrap" class="ft1211">64&#160;×&#160;2</p>
+<p style="position:absolute;top:650px;left:433px;white-space:nowrap" class="ft1211">1,&#160;280</p>
+<p style="position:absolute;top:670px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:669px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;C:</i>&#160;Place&#160;</p>
+<p style="position:absolute;top:669px;left:306px;white-space:nowrap" class="ft125">&#160;in&#160;same&#160;row&#160;(</p>
+<p style="position:absolute;top:669px;left:435px;white-space:nowrap" class="ft125">).&#160;</p>
+<p style="position:absolute;top:672px;left:254px;white-space:nowrap" class="ft1211">64&#160;×&#160;3</p>
+<p style="position:absolute;top:672px;left:408px;white-space:nowrap" class="ft1211">192</p>
+<p style="position:absolute;top:693px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:692px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;D&#160;(Clock&#160;Step):</i>&#160;Resolve&#160;all&#160;fusions/avalanches.&#160;</p>
+<p style="position:absolute;top:715px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:714px;left:153px;white-space:nowrap" class="ft1222"><b>Target&#160;Answer:&#160;1,472</b>&#160;<i>(Thousands:&#160;[1],&#160;Hundreds:&#160;[3]+[1],&#160;Tens:&#160;[5]+[2],&#160;Units:&#160;[2])</i>&#160;<br/>&#160;</p>
+<p style="position:absolute;top:759px;left:108px;white-space:nowrap" class="ft1218"><b>Problem&#160;4:&#160;Ayni&#160;Division&#160;(Fair-Share&#160;Allocation)&#160;</b></p>
+<p style="position:absolute;top:803px;left:196px;white-space:nowrap" class="ft121"><b>&#160;_____&#160;</b></p>
+<p style="position:absolute;top:806px;left:108px;white-space:nowrap" class="ft1211">3,&#160;600/24&#160;=</p>
+<p style="position:absolute;top:827px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:826px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;A:</i>&#160;Set&#160;3,600&#160;on&#160;board.&#160;Divisor&#160;=&#160;24.&#160;</p>
+<p style="position:absolute;top:849px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:848px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;B&#160;(Hundreds&#160;Tier):</i>&#160;Test&#160;240s&#160;(</p>
+<p style="position:absolute;top:848px;left:468px;white-space:nowrap" class="ft125">).&#160;Subtract&#160;</p>
+<p style="position:absolute;top:848px;left:592px;white-space:nowrap" class="ft125">&#160;(</p>
+<p style="position:absolute;top:848px;left:671px;white-space:nowrap" class="ft125">).&#160;Remaining&#160;=&#160;</p>
+<p style="position:absolute;top:851px;left:407px;white-space:nowrap" class="ft1211">24&#160;×&#160;10</p>
+<p style="position:absolute;top:851px;left:548px;white-space:nowrap" class="ft1211">2,&#160;400&#160;1&#160;×&#160;2400</p>
+<p style="position:absolute;top:871px;left:196px;white-space:nowrap" class="ft125">.&#160;Quotient&#160;Hundreds&#160;=&#160;100.&#160;</p>
+<p style="position:absolute;top:874px;left:153px;white-space:nowrap" class="ft1211">1,&#160;200</p>
+<p style="position:absolute;top:894px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:893px;left:153px;white-space:nowrap" class="ft122"><i>Step&#160;C&#160;(Tens&#160;Tier):</i>&#160;Unweave&#160;</p>
+<p style="position:absolute;top:893px;left:405px;white-space:nowrap" class="ft125">&#160;into&#160;Tens/Hundreds.&#160;Test&#160;24s&#160;(</p>
+<p style="position:absolute;top:893px;left:690px;white-space:nowrap" class="ft125">).&#160;Subtract&#160;</p>
+<p style="position:absolute;top:896px;left:362px;white-space:nowrap" class="ft1211">1,&#160;200</p>
+<p style="position:absolute;top:896px;left:629px;white-space:nowrap" class="ft1211">24&#160;×&#160;10</p>
+<p style="position:absolute;top:916px;left:196px;white-space:nowrap" class="ft125">&#160;(</p>
+<p style="position:absolute;top:916px;left:267px;white-space:nowrap" class="ft125">).&#160;Remaining&#160;=&#160;0.&#160;Quotient&#160;Tens&#160;=&#160;50.&#160;</p>
+<p style="position:absolute;top:919px;left:153px;white-space:nowrap" class="ft1211">1,&#160;200&#160;5&#160;×&#160;240</p>
+<p style="position:absolute;top:939px;left:126px;white-space:nowrap" class="ft126">●&#160;</p>
+<p style="position:absolute;top:938px;left:153px;white-space:nowrap" class="ft1222"><b>Target&#160;Answer:&#160;150</b>&#160;<i>(Quotient:&#160;Hundreds&#160;[1],&#160;Tens&#160;[5])</i>&#160;<br/>&#160;</p>
+</div>
+<a name="outline"></a><h1>Document Outline</h1>
+<ul>
+<li><a href="khipu-manual.html#1">Educator's Field Manual: The Inka Khipu Arcade &amp; Somatic Compute System&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#1">1. Executive Summary &amp; Pedagogical Foundations&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#1">Objective&#160;</a></li>
+<li><a href="khipu-manual.html#1">Core Philosophy: Somatic Computing &amp; Discrete Phase Space&#160;</a></li>
+<li><a href="khipu-manual.html#1">Key Learning Outcomes&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#2">&#160;</a></li>
+<li><a href="khipu-manual.html#2">2. Materials &amp; Physical Set-Up&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#2">Classroom Materials Required (Per Student or Pair)&#160;</a></li>
+<li><a href="khipu-manual.html#2">The Board Topology&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#2">&#160;</a></li>
+<li><a href="khipu-manual.html#3">&#160;</a></li>
+<li><a href="khipu-manual.html#3">3. Unit 1: Digit Representation &amp; The Golden Rule&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#3">Lesson Concept&#160;</a></li>
+<li><a href="khipu-manual.html#3">Teacher's Digit Encoding Reference Chart&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#3">&#160;</a></li>
+<li><a href="khipu-manual.html#4">&#160;</a></li>
+<li><a href="khipu-manual.html#4">4. Unit 2: Somatic Addition &amp; The Clock-Step Avalanche&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#4">Mechanical Principles: Phase Space &amp; Clock Steps&#160;</a></li>
+<li><a href="khipu-manual.html#4">Direct On-Board Addition Procedure (A + B)&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#5">&#160;</a></li>
+<li><a href="khipu-manual.html#5">5. Unit 3: Somatic Subtraction &amp; Unweaving (Borrowing)&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#5">Mechanical Principle&#160;</a></li>
+<li><a href="khipu-manual.html#5">Direct Subtraction Procedure (A - B)&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#5">&#160;</a></li>
+<li><a href="khipu-manual.html#6">6. Unit 4: Tactile Multiplication (The Multiplier Loom)&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#6">Mechanical Principle&#160;</a></li>
+<li><a href="khipu-manual.html#6">Spatial Shift Rules&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#6">&#160;</a></li>
+<li><a href="khipu-manual.html#6">&#160;</a></li>
+<li><a href="khipu-manual.html#7">7. Unit 5: Somatic Division &amp; Fair-Share Allocation (Ayni)&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#7">Pedagogical Foundations of Ayni&#160;</a></li>
+<li><a href="khipu-manual.html#7">The 4-Step Somatic Division Protocol&#160;</a></li>
+<li><a href="khipu-manual.html#7">&#160;</a></li>
+<li><a href="khipu-manual.html#7">&#160;</a></li>
+<li><a href="khipu-manual.html#8">Detailed Division Walkthrough 1: 4,800 / 32 = 150&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#8">Step 1: Test Hundreds Tier (Scaling Divisor by 100 → 3,200)&#160;</a></li>
+<li><a href="khipu-manual.html#8">Step 2: Test Hundreds Tier Again&#160;</a></li>
+<li><a href="khipu-manual.html#8">Step 3: Test Tens Tier (Scaling Divisor by 10 → 320)&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#8">Detailed Division Walkthrough 2: 1,472 / 23 = 64&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#8">Step 1: Test Hundreds Tier (Scaling Divisor by 100 → 2,300)&#160;</a></li>
+<li><a href="khipu-manual.html#8">Step 2: Test Tens Tier (Scaling Divisor by 10 → 230)&#160;</a></li>
+<li><a href="khipu-manual.html#9">Step 3: Test Units Tier (Divisor → 23)&#160;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#9">&#160;</a></li>
+<li><a href="khipu-manual.html#9">8. Unit 6: The Khipu Archive (Database Commits)&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#9">Knot Metric Encoding&#160;</a></li>
+</ul>
+</li>
+<li><a href="khipu-manual.html#10">&#160;</a></li>
+<li><a href="khipu-manual.html#10">&#160;</a></li>
+<li><a href="khipu-manual.html#10">9. Educator's Assessment &amp; Verification Rubric&#160;</a></li>
+<li><a href="khipu-manual.html#11">&#160;</a></li>
+<li><a href="khipu-manual.html#11">&#160;</a></li>
+<li><a href="khipu-manual.html#11">&#160;</a></li>
+<li><a href="khipu-manual.html#11">&#160;</a></li>
+<li><a href="khipu-manual.html#11">10. Updated Sample Student Worksheets&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#11">Worksheet 1: Digit Encoding Practice&#160;</a></li>
+<li><a href="khipu-manual.html#11">&#160;</a></li>
+<li><a href="khipu-manual.html#12">Worksheet 2: Somatic Problem Set (On-Board Operations)&#160;</a>
+<ul>
+<li><a href="khipu-manual.html#12">Problem 1: Addition&#160;</a></li>
+<li><a href="khipu-manual.html#12">Problem 2: Subtraction&#160;</a></li>
+<li><a href="khipu-manual.html#12">Problem 3: Multiplication (Loom Shift)&#160;</a></li>
+<li><a href="khipu-manual.html#12">Problem 4: Ayni Division (Fair-Share Allocation)&#160;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<p class="footer">The Urania Ephemeris · a sky that returns · <a href="https://magesguild.io">Mage's Guild Psychonautics</a> · Basin Game Studios</p></main></body>
 </html>
