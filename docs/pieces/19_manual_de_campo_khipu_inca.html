@@ -5,61 +5,801 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manual de Campo del Khipu Inca — The Urania Ephemeris</title>
 <link rel="stylesheet" href="../assets/ephemeris.css">
+<style>.manual{max-width:980px;margin:0 auto}.manual table{display:table;width:100%;overflow-x:auto}.manual td,.manual th{white-space:normal} .manual .math{white-space:nowrap}</style>
 </head>
 <body>
-<main>
+<main class="manual">
 <p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
-<p class="series">Urania Ephemera</p>
-<h1>Manual de Campo del Khipu Inca</h1>
-<h2>Guía práctica de aritmética Yupana y registros Khipu</h2>
-<p><strong>Basin Game Studios · Mage's Guild Psychonautics</strong><br><em>Edición en español · 2026 · Licencia MIT</em></p>
-<blockquote><p>Esta es la edición web del PDF suministrado, <em>Manual de Campo para Educadores: El Sistema Arcade Khipu Inca e Informática Somática</em>. Conserva su modelo pedagógico y lo presenta como una reconstrucción y adaptación moderna, no como una descripción histórica definitiva de las prácticas andinas antiguas.</p></blockquote>
-<blockquote><p><strong>Convención numérica:</strong> esta edición usa la convención latinoamericana: el punto separa millares y la coma separa decimales. Por ejemplo, <strong>1.000.000,05</strong>.</p></blockquote>
+<h1
+id="manual-de-campo-para-educadores-el-sistema-arcade-khipu-inca-e-informática-somática"><strong>Manual
+de Campo para Educadores: El Sistema Arcade Khipu Inca e Informática
+Somática</strong></h1>
+<p><strong>Guía Pedagógica Completa para la Aritmética Andina
+Táctil</strong></p>
+<p><em>Basin Game Studios / Mage's Guild Psychonautics (c) 2026</em></p>
+<p><em>MIT LICENSE - LIBRE</em></p>
+<h2 id="resumen-ejecutivo-y-fundamentos-pedagógicos">1. Resumen
+Ejecutivo y Fundamentos Pedagógicos</h2>
+<h3 id="objetivo">Objetivo</h3>
+<p>Enseñar a los estudiantes aritmética decimal posicional,
+descomposición matricial espacial y lógica digital sin pérdidas, sin
+depender de la memorización abstracta, pilas de datos externas ni
+cálculos electrónicos.</p>
+<h3
+id="filosofía-central-computación-somática-y-espacio-de-fases-discreto">Filosofía
+Central: Computación Somática y Espacio de Fases Discreto</h3>
+<p>La <strong>Yupana</strong> (tablero de conteo incaico) y el
+<strong>Khipu</strong> (archivo de cuerdas con nudos) forman una
+arquitectura unificada de procesamiento táctil de información:</p>
+<ul>
+<li><p><strong>La Yupana es la ALU / Memoria RAM:</strong> Un tablero
+físico y dinámico donde los cálculos se realizan en tiempo real moviendo
+fichas (granos de quinua, maíz o piedras) directamente dentro de los
+receptáculos o vasijas.</p></li>
+<li><p><strong>El Khipu es el Almacenamiento de Software No
+Volátil:</strong> Un registro físico permanente donde los estados
+finales de la Yupana se guardan en redes de cuerdas mediante métricas de
+nudos posicionales.</p></li>
+<li><p><strong>Ejecución por Pasos de Reloj (Espacio de Fases):</strong>
+En lugar de realizar cálculos mentales rígidos por cada grano
+individual, el operador usa sus manos para instanciar estados físicos
+colocando múltiples granos en las vasijas. En un "paso de reloj" elegido
+(un barrido manual deliberado a través del tablero), el operador aplica
+reglas locales simples (fusiones, avalanchas, destejidos) para permitir
+que el sistema se "asiente" en su camino de menor resistencia, su
+atractor gravitacional natural.</p></li>
+</ul>
+<h3 id="objetivos-de-aprendizaje">Objetivos de Aprendizaje</h3>
+<p>Al completar este módulo, los estudiantes podrán:</p>
+<ol type="1">
+<li><p>Representar cualquier número decimal del 0…9.999 en una
+cuadrícula geométrica de 4 vasijas utilizando no más de 3 fichas físicas
+por fila.</p></li>
+<li><p>Realizar sumas y restas mediante "fusiones", "avalanchas" y
+"destejidos" fluidos en lugar de algoritmos memorizados de acarreo o
+préstamo.</p></li>
+<li><p>Ejecutar multiplicaciones y divisiones de varios dígitos
+completamente en el tablero mediante desplazamientos espaciales y
+asignación equitativa (<em>Ayni</em>).</p></li>
+<li><p>Comprender cómo los sistemas táctiles no basados en silicio
+procesan cargas de trabajo computacionales complejas de forma
+determinista.</p></li>
+</ol>
+<h2 id="materiales-y-configuración-física">2. Materiales y Configuración
+Física</h2>
+<h3 id="materiales-requeridos-por-estudiante-o-pareja">Materiales
+Requeridos (Por Estudiante o Pareja)</h3>
+<ol type="1">
+<li><p><strong>1 × Tablero Yupana:</strong> Una cuadrícula de 5 filas
+por 4 columnas geométricas.</p>
+<ul>
+<li><p><em>Alternativas de Aula:</em> Cartones de huevos (una cuadrícula
+de 5×4 huecos) o cuadrículas dibujadas en papel/pizarra.</p></li>
+</ul></li>
+<li><p><strong>30–40 Fichas Físicas:</strong> Granos de quinua, maíz
+seco, piedras pequeñas o fichas de plástico. <em>(¡No se requieren
+tarjetas, pilas de papel ni rastreadores de estado
+externos!)</em></p></li>
+</ol>
+<h3 id="topología-del-tablero">Topología del Tablero</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>NIVEL / FILA</strong></th>
+<th><strong>[5]</strong></th>
+<th><strong>[3]</strong></th>
+<th><strong>[2]</strong></th>
+<th><strong>[1]</strong></th>
+<th><strong>VALOR DEL NIVEL</strong></th>
+</tr>
+<tr class="odd">
+<th><span class="math inline">10<sup>4</sup></span>
+<strong>(10.000)</strong></th>
+<th>( )</th>
+<th>( )</th>
+<th>( )</th>
+<th>( )</th>
+<th>= 0</th>
+</tr>
+<tr class="header">
+<th><span class="math inline">10<sup>3</sup></span>
+<strong>(1.000)</strong></th>
+<th>( )</th>
+<th>( )</th>
+<th>( )</th>
+<th>( )</th>
+<th>= 0</th>
+</tr>
+<tr class="odd">
+<th><span class="math inline">10<sup>2</sup></span>
+<strong>(100)</strong></th>
+<th>(●)</th>
+<th>( )</th>
+<th>(●)</th>
+<th>( )</th>
+<th>= <strong>700</strong> <em>[(5 + 2) × 100]</em></th>
+</tr>
+<tr class="header">
+<th><span class="math inline">10<sup>1</sup></span>
+<strong>(10)</strong></th>
+<th>( )</th>
+<th>(●)</th>
+<th>( )</th>
+<th>(●)</th>
+<th>= <strong>40</strong> <em>[(3 + 1) × 10]</em></th>
+</tr>
+<tr class="odd">
+<th><span class="math inline">10<sup>0</sup></span>
+<strong>(1)</strong></th>
+<th>(●)</th>
+<th>(●)</th>
+<th>( )</th>
+<th>(●)</th>
+<th>= <strong>9</strong> <em>[(5 + 3 + 1) × 1]</em></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<ul>
+<li><p><strong>Eje Vertical (Potencias de 10):</strong> La fila inferior
+corresponde a las Unidades (<span
+class="math inline">10<sup>0</sup></span>), subiendo a Decenas (<span
+class="math inline">10<sup>1</sup></span>), Centenas (<span
+class="math inline">10<sup>2</sup></span>), Unidades de Millar (<span
+class="math inline">10<sup>3</sup></span>) y Decenas de Millar (<span
+class="math inline">10<sup>4</sup></span>).</p></li>
+<li><p><strong>Eje Horizontal (Las 4 Vasijas Mágicas):</strong> Cada
+fila contiene cuatro receptáculos físicos con valores de
+<strong>[5]</strong>, <strong>[3]</strong>, <strong>[2]</strong> y
+<strong>[1]</strong>.</p></li>
+</ul>
+<h2 id="unidad-1-representación-de-dígitos-y-la-regla-de-oro">3. Unidad
+1: Representación de Dígitos y la Regla de Oro</h2>
+<h3 id="concepto-de-la-lección">Concepto de la Lección</h3>
+<p>Cualquier dígito decimal (0…9) se forma en una sola fila sumando los
+valores de las vasijas que contienen granos.</p>
+<p><strong>La Regla de Oro:</strong> Coloca siempre los granos en la
+vasija disponible de mayor valor que quepa dentro del resto del
+número.</p>
+<p>Esta regla garantiza que <strong>ningún dígito requiera jamás más de
+3 granos</strong> cuando el tablero está en estado de reposo.</p>
+<h3 id="tabla-de-referencia-de-codificación-para-educadores">Tabla de
+Referencia de Codificación para Educadores</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Dígito</strong></th>
+<th><strong>Combinación de Vasijas</strong></th>
+<th><strong>Total de Granos</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>0</strong></th>
+<th>Fila Vacía</th>
+<th>0</th>
+</tr>
+<tr class="header">
+<th><strong>1</strong></th>
+<th>[1]</th>
+<th>1</th>
+</tr>
+<tr class="odd">
+<th><strong>2</strong></th>
+<th>[2]</th>
+<th>1</th>
+</tr>
+<tr class="header">
+<th><strong>3</strong></th>
+<th>[3]</th>
+<th>1</th>
+</tr>
+<tr class="odd">
+<th><strong>4</strong></th>
+<th>[3] + [1]</th>
+<th>2</th>
+</tr>
+<tr class="header">
+<th><strong>5</strong></th>
+<th>[5]</th>
+<th>1</th>
+</tr>
+<tr class="odd">
+<th><strong>6</strong></th>
+<th>[5] + [1]</th>
+<th>2</th>
+</tr>
+<tr class="header">
+<th><strong>7</strong></th>
+<th>[5] + [2]</th>
+<th>2</th>
+</tr>
+<tr class="odd">
+<th><strong>8</strong></th>
+<th>[5] + [3]</th>
+<th>2</th>
+</tr>
+<tr class="header">
+<th><strong>9</strong></th>
+<th>[5] + [3] + [1]</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="section"></h2>
+<h2 id="unidad-2-suma-somática-y-la-avalancha-por-pasos-de-reloj">4.
+Unidad 2: Suma Somática y la Avalancha por Pasos de Reloj</h2>
+<h3
+id="principios-mecánicos-espacio-de-fases-y-pasos-de-reloj">Principios
+Mecánicos: Espacio de Fases y Pasos de Reloj</h3>
+<p>En la informática somática, la suma se realiza colocando los granos
+del nuevo sumando directamente en el tablero junto al valor existente.
+No es necesario calcular azares o aterrízajes inmediatamente mientras se
+colocan los granos. El operador humano puebla las vasijas (instanciando
+el espacio de fases no asentado) y luego "da un paso de reloj" barriendo
+sus manos por el tablero para aplicar las reglas locales:</p>
+<ol type="1">
+<li><p><strong>Fusión en la Fila (Atracción Gravitacional):</strong></p>
+<ul>
+<li><p><strong>Dos granos [1] en la vasija [1]:</strong> En el paso de
+reloj, se fusionan en un grano en la vasija [2].</p></li>
+<li><p><strong>Un grano [1] y un grano [2]:</strong> En el paso de
+reloj, se fusionan en un grano en la vasija [3].</p></li>
+<li><p><strong>Un grano [2] y un grano [3]:</strong> En el paso de
+reloj, caen por el camino de menor resistencia <span
+class="math inline">→</span> se fusionan en un grano en la vasija
+[5].</p></li>
+</ul></li>
+<li><p><strong>La Gran Avalancha de Granos (Regla de
+Acarreo):</strong></p>
+<ul>
+<li><p>Cuando la vasija [5] acumula <strong>dos granos</strong> (<span
+class="math inline">5 + 5 = 10</span>), ambos granos se fusionan y
+<strong>saltan al nivel superior como un solo grano en [1]</strong>
+(<span class="math inline">+10</span>). La vasija [5] de la fila actual
+queda en <span class="math inline">0</span>.</p></li>
+</ul></li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>NIVEL</strong></th>
+<th><strong>[5]</strong></th>
+<th><strong>[3]</strong></th>
+<th><strong>[2]</strong></th>
+<th><strong>[1]</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Nivel Superior (10s)</strong></th>
+<th>( )</th>
+<th>( )</th>
+<th>( )</th>
+<th><strong>(●)</strong> <em>(Gran llevado +1 a la vasija [1])</em></th>
+</tr>
+<tr class="header">
+<th><strong>Activador de Avalancha</strong></th>
+<th>\</th>
+<th>\</th>
+<th>\</th>
+<th><strong>▲ (5 + 5 = 10 Avalancha)</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Nivel de Unidades (1s)</strong></th>
+<th><strong>(●) + (●)</strong></th>
+<th>( )</th>
+<th>( )</th>
+<th><strong>La vasija [5] se vacía a 0</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="procedimiento-directo-de-suma-en-tablero-a-b">Procedimiento
+Directo de Suma en Tablero (A + B)</h3>
+<ol type="1">
+<li><p>Configure el número inicial A en la Yupana según la Regla de
+Oro.</p></li>
+<li><p>Tome los granos correspondientes al número B en su mano.</p></li>
+<li><p>Deposite los granos de B directamente en las vasijas
+correspondientes donde se encuentra A (por ejemplo, si B tiene un 5 en
+las unidades, coloque un grano en la vasija [5] de la fila de
+unidades).</p></li>
+<li><p><strong>Paso de Reloj:</strong> Barra con sus manos desde la fila
+de unidades (<span class="math inline">10<sup>0</sup></span>) hacia
+arriba, resolviendo fusiones y avalanchas hasta que cada fila cumpla con
+la Regla de Oro.</p></li>
+</ol>
+<h2 id="section-1"></h2>
+<h2 id="unidad-3-resta-somática-y-destejido-préstamo">5. Unidad 3: Resta
+Somática y Destejido (Préstamo)</h2>
+<h3 id="principio-mecánico">Principio Mecánico</h3>
+<p>La resta es la eliminación física de granos directamente del tablero.
+Si una vasija no contiene suficientes granos para retirar el valor del
+sustraendo, el operador <strong>desteje</strong> un grano de un nivel
+superior para proporcionar la energía necesaria.</p>
+<p><strong>Regla del Destejido (Préstamo):</strong> Retire 1 grano de la
+vasija [1] del nivel superior (<span
+class="math inline">10<sup><em>n</em> + 1</sup></span>) y reemplácelo
+por DOS granos en la vasija [5] del nivel actual (<span
+class="math inline">10<sup><em>n</em></sup></span>). (<span
+class="math inline">10 = 5 + 5</span>).</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>NIVEL</strong></th>
+<th><strong>ACCIÓN / ESTADO DEL GRANO</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Nivel Superior (10s)</strong></th>
+<th><strong>(●)</strong> <span class="math inline">→</span> <em>Retirar
+1 grano (-10)</em></th>
+</tr>
+<tr class="header">
+<th><strong>Flujo de Destejido</strong></th>
+<th><strong>│</strong> <span class="math inline">→</span> <strong>▼ (Se
+desteje en 5 + 5)</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Nivel de Unidades (1s)</strong></th>
+<th><strong>(●) (●) en la vasija [5]</strong> <span
+class="math inline">→</span> <em>¡Restar libremente!</em></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="procedimiento-directo-de-resta-en-tablero-a---b">Procedimiento
+Directo de Resta en Tablero (A - B)</h3>
+<ol type="1">
+<li><p>Configure el minuendo A en la Yupana.</p></li>
+<li><p>Identifique el valor del sustraendo B dígito por dígito.</p></li>
+<li><p>Retire los granos correspondientes a B comenzando desde el nivel
+más alto hacia abajo. Si a una vasija le falta el grano necesario,
+desteja un grano del nivel superior convirtiéndolo en dos granos [5] en
+el nivel actual, y luego retire la cantidad requerida.</p></li>
+</ol>
+<h2 id="section-2"></h2>
+<h2 id="unidad-4-multiplicación-táctil-el-telar-multiplicador">6. Unidad
+4: Multiplicación Táctil (El Telar Multiplicador)</h2>
+<h3 id="principio-mecánico-1">Principio Mecánico</h3>
+<p>La multiplicación en la Yupana utiliza la traducción espacial entre
+filas, tratando los niveles verticales del tablero como "rieles del
+telar". No es necesario memorizar las tablas de multiplicar.</p>
+<h3 id="reglas-de-desplazamiento-espacial">Reglas de Desplazamiento
+Espacial</h3>
+<p>Descomponga el multiplicador en sus vasijas componentes individuales
+(<span class="math inline">[5], [3], [2], [1]</span> a través de sus
+respectivas filas). Para cada componente:</p>
+<ul>
+<li><p><strong>Multiplicar por [1]:</strong> Replique el patrón del
+multiplicando en la misma fila.</p></li>
+<li><p><strong>Multiplicar por [2]:</strong> Duplique el patrón del
+multiplicando en la misma fila.</p></li>
+<li><p><strong>Multiplicar por [3]:</strong> Triplique el patrón del
+multiplicando en la misma fila.</p></li>
+<li><p><strong>Multiplicar por [5]:</strong> Desplace el patrón del
+multiplicando UN nivel de fila hacia arriba (equivalente a <span
+class="math inline">×10</span>) y tome la mitad, O colóquelo en las
+vasijas [5] de la fila desplazada.</p></li>
+<li><p><strong>Multiplicar por Decenas / Centenas (10, 30,
+etc.):</strong> Desplace todo el patrón HACIA ARRIBA 1 o 2 niveles de
+fila.</p></li>
+</ul>
+<p>Después de colocar todos los granos de los productos parciales
+directamente en el tablero, ejecute un solo <strong>Paso de
+Reloj</strong> para resolver todas las fusiones y avalanchas hasta que
+el tablero se asiente.</p>
+<h2 id="section-3"><br />
+</h2>
+<h2 id="section-4"></h2>
+<h2 id="unidad-5-división-somática-y-reparto-equitativo-ayni">7. Unidad
+5: División Somática y Reparto Equitativo
+(<em><strong>Ayni</strong></em>)</h2>
+<h3 id="fundamentos-pedagógicos-del-ayni">Fundamentos Pedagógicos del
+<em><strong>Ayni</strong></em></h3>
+<p>En la cultura andina, el <em>Ayni</em> representa el intercambio
+comunitario recíproco y la distribución equitativa. La división somática
+modela esto directamente: una cosecha comunitaria total (dividendo) se
+divide sistemáticamente en asignaciones familiares iguales
+(divisor).</p>
+<p>La división en la Yupana es el <strong>inverso exacto del Telar
+Multiplicador</strong>. En lugar de desplazar un multiplicando HACIA
+ARRIBA para construir un producto, la división prueba cuántas unidades
+completas del divisor se pueden "cosechar" (restar) del dividendo, nivel
+por nivel, trabajando de arriba hacia abajo.</p>
+<h3 id="el-protocolo-de-división-somática-de-4-pasos">El Protocolo de
+División Somática de 4 Pasos</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>PASO</strong></th>
+<th><strong>ACCIÓN</strong></th>
+<th><strong>DESCRIPCIÓN</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>1</strong></th>
+<th><strong>Configuración</strong></th>
+<th>Coloque el dividendo total en la Yupana. Mantenga el divisor a un
+lado como plantilla de referencia.</th>
+</tr>
+<tr class="header">
+<th><strong>2</strong></th>
+<th><strong>Probar Capacidad</strong></th>
+<th>Pruebe si una unidad completa del divisor (escalada al nivel ocupado
+más alto) cabe en el dividendo.</th>
+</tr>
+<tr class="odd">
+<th><strong>3</strong></th>
+<th><strong>Cosechar y Asignar</strong></th>
+<th>Reste el patrón del divisor del tablero y anote 1 conteo en la fila
+del Cociente para ese nivel.</th>
+</tr>
+<tr class="header">
+<th><strong>4</strong></th>
+<th><strong>Paso Hacia Abajo</strong></th>
+<th>Desteja los granos restantes hacia abajo (<span
+class="math inline">10<sup><em>n</em></sup> → 5 + 5</span> en <span
+class="math inline">10<sup><em>n</em> − 1</sup></span>) y repita hasta
+completar las Unidades.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="ejemplo-detallado-de-división-1-4.800-32-150">Ejemplo Detallado
+de División 1: 4.800 / 32 = 150</h3>
+<ul>
+<li><p><strong>Estado Inicial:</strong> 4.800 en el tablero (Millares:
+[3]+[1], Centenas: [5]+[3]). Divisor de referencia = 32 (3 Decenas, 2
+Unidades).</p></li>
+</ul>
+<h4
+id="paso-1-probar-nivel-de-centenas-escalando-divisor-por-100-rightarrow-3.200">Paso
+1: Probar Nivel de Centenas (Escalando Divisor por 100 <span
+class="math inline">→</span> 3.200)</h4>
+<ul>
+<li><p>¿Podemos restar 3.200 (3 Millares, 2 Centenas) de 4.800?
+<strong>¡SÍ!</strong></p></li>
+<li><p><strong>Acción:</strong> Retire 3 granos de la fila de Millares,
+2 granos de la fila de Centenas.</p></li>
+<li><p><strong>Restante en Tablero:</strong> 1.600 (Millares: [1],
+Centenas: [5]+[1]).</p></li>
+<li><p><strong>Cociente Registrado:</strong> 1 Centena (100).</p></li>
+</ul>
+<h4 id="paso-2-probar-nivel-de-centenas-nuevamente">Paso 2: Probar Nivel
+de Centenas Nuevamente</h4>
+<ul>
+<li><p>¿Podemos restar otros 3.200 de 1.600?
+<strong>NO.</strong></p></li>
+<li><p><strong>Destejer Millares:</strong> Tome 1 grano de Millares [1]
+y destéjalo en DOS granos [5] en la fila de Centenas.</p></li>
+<li><p><strong>La fila de Centenas ahora tiene:</strong> [5], [5], [5],
+[1] (= 1.600).</p></li>
+</ul>
+<h4
+id="paso-3-probar-nivel-de-decenas-escalando-divisor-por-10-rightarrow-320">Paso
+3: Probar Nivel de Decenas (Escalando Divisor por 10 <span
+class="math inline">→</span> 320)</h4>
+<ul>
+<li><p>¿Cuántos 320 (3 Centenas, 2 Decenas) caben en 1.600?</p>
+<ul>
+<li><p>1.ª asignación (-320): Quedan = 1.280. Cociente += 10.</p></li>
+<li><p>2.ª asignación (-320): Quedan = 960. Cociente += 10.</p></li>
+<li><p>3.ª asignación (-320): Quedan = 640. Cociente += 10.</p></li>
+<li><p>4.ª asignación (-320): Quedan = 320. Cociente += 10.</p></li>
+<li><p>5.ª asignación (-320): Quedan = 0. Cociente += 10.</p></li>
+</ul></li>
+<li><p><strong>Asignación Total de Decenas:</strong> 50.</p></li>
+</ul>
+<p><strong>RESULTADO FINAL:</strong> <span
+class="math inline">100 + 50 = 150</span> <em>(Distribución exacta,
+resto 0)</em></p>
+<h3 id="ejemplo-detallado-de-división-2-1.472-23-64">Ejemplo Detallado
+de División 2: 1.472 / 23 = 64</h3>
+<ul>
+<li><p><strong>Estado Inicial:</strong> 1.472 en el tablero (Millares:
+[1], Centenas: [3]+[1], Decenas: [5]+[2], Unidades: [2]). Divisor de
+referencia = 23 (2 Decenas, 3 Unidades).</p></li>
+</ul>
+<h4
+id="paso-1-probar-nivel-de-centenas-escalando-divisor-por-100-rightarrow-2.300">Paso
+1: Probar Nivel de Centenas (Escalando Divisor por 100 <span
+class="math inline">→</span> 2.300)</h4>
+<ul>
+<li><p>¿Podemos restar 2.300 de 1.472? <strong>NO.</strong></p></li>
+<li><p><strong>Destejer Millares:</strong> Tome 1 grano de Millares [1]
+y destéjalo en DOS granos [5] en la fila de Centenas.</p></li>
+<li><p><strong>La fila de Centenas ahora tiene:</strong> 1.400 (dos [5],
+un [3], un [1]).</p></li>
+</ul>
+<h4
+id="paso-2-probar-nivel-de-decenas-escalando-divisor-por-10-rightarrow-230">Paso
+2: Probar Nivel de Decenas (Escalando Divisor por 10 <span
+class="math inline">→</span> 230)</h4>
+<ul>
+<li><p>¿Cuántos 230 (2 Centenas, 3 Decenas) caben en 1.472?</p>
+<ul>
+<li><p>Probar 60 asignaciones (<span
+class="math inline">6 × 230 = 1, 380</span>):</p></li>
+<li><p>Restar 1.380 (13 Centenas, 8 Decenas) del tablero.</p></li>
+<li><p><strong>Restante en Tablero:</strong> 92 (Decenas: [5]+[3]+[1],
+Unidades: [2]).</p></li>
+<li><p><strong>Cociente Registrado:</strong> 60.</p></li>
+</ul></li>
+</ul>
+<h4 id="paso-3-probar-nivel-de-unidades-divisor-rightarrow-23">Paso 3:
+Probar Nivel de Unidades (Divisor <span class="math inline">→</span>
+23)</h4>
+<ul>
+<li><p>¿Cuántos 23 (2 Decenas, 3 Unidades) caben en 92?</p>
+<ul>
+<li><p>Destejer Decenas si es necesario para exponer granos de
+unidades.</p></li>
+<li><p>4 asignaciones (<span
+class="math inline">4 × 23 = 92</span>).</p></li>
+<li><p>Restar 92 del tablero. <strong>Restante en Tablero:</strong>
+0.</p></li>
+<li><p><strong>Cociente Registrado:</strong> 4.</p></li>
+</ul></li>
+</ul>
+<p><strong>RESULTADO FINAL:</strong> <span
+class="math inline">60 + 4 = 64</span> <em>(Distribución
+exacta)</em></p>
+<h2 id="unidad-6-el-archivo-khipu-persistencia-de-datos">8. Unidad 6: El
+Archivo Khipu (Persistencia de Datos)</h2>
+<p>Una vez que un cálculo se asienta en la Yupana, el estado se registra
+permanentemente en una <strong>cuerda colgante de Khipu</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>CUERDA PRINCIPAL</strong></th>
+<th><strong>Pendiente 1</strong></th>
+<th><strong>Pendiente 2</strong></th>
+<th><strong>Pendiente 3</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Millares (</strong><span
+class="math inline">10<sup>3</sup></span><strong>)</strong></th>
+<th>( S )</th>
+<th>( )</th>
+<th>( L3 ) 3.000</th>
+</tr>
+<tr class="header">
+<th><strong>Centenas (</strong><span
+class="math inline">10<sup>2</sup></span><strong>)</strong></th>
+<th>( L7 )</th>
+<th>( S ) Decenas</th>
+<th>( )</th>
+</tr>
+<tr class="odd">
+<th><strong>Unidades (</strong><span
+class="math inline">10<sup>0</sup></span><strong>)</strong></th>
+<th>( E )</th>
+<th>( L4 )</th>
+<th>( E )</th>
+</tr>
+<tr class="header">
+<th><strong>VALOR REGISTRADO</strong></th>
+<th><strong>1.701</strong></th>
+<th><strong>14</strong></th>
+<th><strong>3.001</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="codificación-de-nudos">Codificación de Nudos</h3>
+<ol type="1">
+<li><p><strong>Nudos Simples (S):</strong> Utilizados en el nivel de
+Millares (<span class="math inline">10<sup>3</sup></span>) o
+superior.</p></li>
+<li><p><strong>Nudos Largos (L):</strong> Utilizados en Decenas (<span
+class="math inline">10<sup>1</sup></span>) y Centenas (<span
+class="math inline">10<sup>2</sup></span>). El número de vueltas en el
+nudo equivale al dígito (ej. <span
+class="math inline"><em>L</em>7 = 7</span>).</p></li>
+<li><p><strong>Nudos en Forma de Ocho (E):</strong> Reservados
+exclusivamente para el nivel de Unidades (<span
+class="math inline">10<sup>0</sup></span>) para representar el valor
+<span class="math inline">1</span>.</p></li>
+<li><p><strong>Espacio Vacío:</strong> Representa un <span
+class="math inline">0</span> en la posición posicional
+correspondiente.</p></li>
+</ol>
+<h2 id="rúbrica-de-evaluación-y-verificación-para-educadores">9. Rúbrica
+de Evaluación y Verificación para Educadores</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Habilidad / Objetivo</strong></th>
+<th><strong>Principiante (1-2 pts)</strong></th>
+<th><strong>Competente (3-4 pts)</strong></th>
+<th><strong>Maestro (5 pts)</strong></th>
+</tr>
+<tr class="odd">
+<th><strong>Codificación de Dígitos</strong></th>
+<th>Usa <span class="math inline"> &gt; 3</span> granos por fila o
+incumple la Regla de Oro.</th>
+<th>Codifica dígitos $0\dots9$ correctamente con la Regla de Oro.</th>
+<th>Representa cualquier número de 4 dígitos con el mínimo de
+granos.</th>
+</tr>
+<tr class="header">
+<th><strong>Suma y Paso de Reloj</strong></th>
+<th>Olvida fusionar granos o no realiza las avalanchas entre filas
+durante el paso de reloj.</th>
+<th>Ejecuta fusiones y avalanchas con precisión en el tablero.</th>
+<th>Realiza avalanchas múltiples de forma fluida y autónoma.</th>
+</tr>
+<tr class="odd">
+<th><strong>Resta y Destejido</strong></th>
+<th>Intenta restar en vasijas vacías sin destejer niveles
+superiores.</th>
+<th>Desteje correctamente granos de niveles superiores (<span
+class="math inline">10 → 5 + 5</span>).</th>
+<th>Realiza destejidos de varios niveles sin vacilación.</th>
+</tr>
+<tr class="header">
+<th><strong>División Ayni</strong></th>
+<th>Le cuesta escalar niveles de divisores o seguir las asignaciones de
+resta.</th>
+<th>Ejecuta cosechas de arriba hacia abajo y destejidos para hallar
+cocientes exactos.</th>
+<th>Demuestra división fluida y explica la asignación de recursos
+<em>Ayni</em>.</th>
+</tr>
+<tr class="odd">
+<th><strong>Registro en Khipu</strong></th>
+<th>Confunde tipos de nudos o niveles posicionales en la cuerda.</th>
+<th>Traduce valores de la Yupana a nudos de Khipu (<span
+class="math inline"><em>s</em>, <em>L</em>, <em>E</em></span>) con
+precisión.</th>
+<th>Explica cómo la información pasa de la Yupana al Khipu sin
+pérdidas.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="hojas-de-trabajo-de-ejemplo-actualizadas">10. Hojas de Trabajo
+de Ejemplo Actualizadas</h2>
+<h3 id="hoja-de-trabajo-1-práctica-de-codificación">Hoja de Trabajo 1:
+Práctica de Codificación</h3>
+<p><em>Marque o coloque los granos en las vasijas para cada número según
+la Regla de Oro:</em></p>
+<ol type="1">
+<li><p><strong>Número: 382</strong></p>
+<ul>
+<li><p>Centenas (<span class="math inline">10<sup>2</sup></span>): [5] (
+) [3] (●) [2] ( ) [1] ( )</p></li>
+<li><p>Decenas (<span class="math inline">10<sup>1</sup></span>): [5]
+(●) [3] (●) [2] ( ) [1] ( )</p></li>
+<li><p>Unidades (<span class="math inline">10<sup>0</sup></span>): [5] (
+) [3] ( ) [2] (●) [1] ( )</p></li>
+</ul></li>
+<li><p><strong>Número: 1.509</strong></p>
+<ul>
+<li><p>Millares (<span class="math inline">10<sup>3</sup></span>): [5] (
+) [3] ( ) [2] ( ) [1] (●)</p></li>
+<li><p>Centenas (<span class="math inline">10<sup>2</sup></span>): [5]
+(●) [3] ( ) [2] ( ) [1] ( )</p></li>
+<li><p>Decenas (<span class="math inline">10<sup>1</sup></span>): [5] (
+) [3] ( ) [2] ( ) [1] ( ) <em>(Vacío)</em></p></li>
+<li><p>Unidades (<span class="math inline">10<sup>0</sup></span>): [5]
+(●) [3] (●) [2] ( ) [1] (●)</p></li>
+</ul></li>
+</ol>
+<h3
+id="hoja-de-trabajo-2-problemas-somáticos-operaciones-en-tablero">Hoja
+de Trabajo 2: Problemas Somáticos (Operaciones en Tablero)</h3>
+<p><em>Resuelva utilizando su tablero Yupana físico (¡sin pilas
+externas!). Registre sus pasos intermedios y el estado final del
+tablero:</em></p>
+<h4 id="problema-1-suma">Problema 1: Suma</h4>
+<p><span class="math inline">247 + 385=</span>
+<strong>_____</strong></p>
+<ul>
+<li><p><em>Paso A:</em> Coloque 247 en el tablero.</p></li>
+<li><p><em>Paso B:</em> Agregue 385 directamente en las vasijas
+correspondientes.</p></li>
+<li><p><em>Paso C (Paso de Reloj):</em> Resuelva fusiones y
+avalanchas.</p></li>
+<li><p><strong>Respuesta Esperada: 632</strong> <em>(Centenas: [5]+[1],
+Decenas: [3], Unidades: [2])</em></p></li>
+</ul>
+<h4 id="problema-2-resta">Problema 2: Resta</h4>
+<p><span class="math inline">1.204 − 531=</span>
+<strong>_____</strong></p>
+<ul>
+<li><p><em>Paso A:</em> Coloque 1.204 en el tablero.</p></li>
+<li><p><em>Paso B:</em> Desteja el nivel de Millares (<span
+class="math inline">1.000 → 500 + 500</span> en Centenas).</p></li>
+<li><p><em>Paso C:</em> Retire 531 directamente.</p></li>
+<li><p><strong>Respuesta Esperada: 673</strong> <em>(Centenas: [5]+[1],
+Decenas: [5]+[2], Unidades: [3])</em></p></li>
+</ul>
+<h4 id="problema-3-multiplicación-telar-multiplicador">Problema 3:
+Multiplicación (Telar Multiplicador)</h4>
+<p><span class="math inline">64 × 23=</span> <strong>_____</strong></p>
+<ul>
+<li><p><em>Paso A:</em> Descomponga el multiplicador <span
+class="math inline">23 = 20 + 3</span>.</p></li>
+<li><p><em>Paso B:</em> Coloque <span class="math inline">64 × 2</span>
+desplazado 1 fila hacia arriba (<span
+class="math inline">1.280</span>).</p></li>
+<li><p><em>Paso C:</em> Coloque <span class="math inline">64 × 3</span>
+en la misma fila (<span class="math inline">192</span>).</p></li>
+<li><p><em>Paso D (Paso de Reloj):</em> Resuelva todas las
+fusiones/avalanchas.</p></li>
+<li><p><strong>Respuesta Esperada: 1.472</strong> <em>(Millares: [1],
+Centenas: [3]+[1], Decenas: [5]+[2], Unidades: [2])</em></p></li>
+</ul>
+<h4 id="problema-4-división-ayni-reparto-equitativo">Problema 4:
+División Ayni (Reparto Equitativo)</h4>
+<p><span class="math inline">3, 600/24=</span>
+<strong>_____</strong></p>
+<ul>
+<li><p><em>Paso A:</em> Coloque 3.600 en el tablero. Divisor =
+24.</p></li>
+<li><p><em>Paso B (Nivel de Centenas):</em> Pruebe con 240 (<span
+class="math inline">24 × 10</span>). Reste <span
+class="math inline">2.400</span> (<span
+class="math inline">1 × 2.400</span>). Restante = <span
+class="math inline">1, 200</span>. Cociente en Centenas = 100.</p></li>
+<li><p><em>Paso C (Nivel de Decenas):</em> Desteja <span
+class="math inline">1.200</span> en Decenas/Centenas. Pruebe con 24
+(<span class="math inline">24 × 10</span>). Reste <span
+class="math inline">1.200</span> (<span
+class="math inline">5 × 240</span>). Restante = 0. Cociente en Decenas =
+50.</p></li>
+<li><p><strong>Respuesta Esperada: 150</strong> <em>(Cociente: Centenas
+[1], Decenas [5])</em></p></li>
+</ul>
 
-<h2>1. Propósito y fundamentos pedagógicos</h2>
-<p>El manual enseña aritmética decimal posicional, descomposición matricial espacial y lógica determinista sin depender de la memorización abstracta, pilas de datos externas ni cálculos electrónicos.</p>
-<ul><li><strong>La Yupana</strong> es el espacio de trabajo activo: un tablero físico donde las fichas se mueven entre vasijas.</li><li><strong>El Khipu</strong> es el registro duradero: un archivo físico de cuerdas donde puede registrarse un estado asentado.</li><li><strong>El paso de reloj</strong> es un barrido manual deliberado que aplica fusiones, avalanchas y destejidos hasta que el tablero se asienta.</li></ul>
-<p>El manual llama a esto <strong>computación somática</strong>: las manos, el tablero, las fichas y quien observa forman juntos el aparato computacional. Es una lente pedagógica moderna, no una demostración de que los khipukamayuq históricos usaran exactamente este vocabulario o procedimiento.</p>
-<h3>Objetivos de aprendizaje</h3><ol><li>Representar del 0 al 9.999 en una cuadrícula de cuatro vasijas, con no más de tres fichas por fila en reposo.</li><li>Realizar sumas y restas mediante fusiones, avalanchas y destejidos.</li><li>Explorar la multiplicación como desplazamiento espacial del telar y la división como reparto equitativo.</li><li>Explicar cómo un sistema táctil sin silicio procesa una carga determinista.</li></ol>
-
-<h2>2. Materiales y configuración física</h2>
-<p>Por estudiante o pareja: un tablero Yupana de cinco filas por cuatro columnas y entre 30 y 40 fichas—granos de quinua, maíz seco, piedras pequeñas o fichas. Un cartón de huevos o una cuadrícula dibujada de 5 × 4 sirve para la primera lección.</p>
-<table><thead><tr><th>Fila</th><th>Posición</th><th>Valor</th></tr></thead><tbody><tr><td>0</td><td>Unidades</td><td>10⁰ = 1</td></tr><tr><td>1</td><td>Decenas</td><td>10¹ = 10</td></tr><tr><td>2</td><td>Centenas</td><td>10² = 100</td></tr><tr><td>3</td><td>Millares</td><td>10³ = 1.000</td></tr><tr><td>4</td><td>Decenas de millar</td><td>10⁴ = 10.000</td></tr></tbody></table>
-<p>Cada fila contiene cuatro vasijas con valores <strong>[5], [3], [2], [1]</strong>. Un 7 en la fila de centenas es [5] + [2], es decir, 700.</p>
-
-<h2>3. Representación de dígitos</h2>
-<p>La <strong>Regla de Oro</strong> es: coloca siempre las fichas en la vasija disponible de mayor valor que quepa en el resto. En reposo, cada dígito usa como máximo tres fichas.</p>
-<table><thead><tr><th>Dígito</th><th>Combinación</th><th>Fichas</th></tr></thead><tbody><tr><td>0</td><td>fila vacía</td><td>0</td></tr><tr><td>1</td><td>[1]</td><td>1</td></tr><tr><td>2</td><td>[2]</td><td>1</td></tr><tr><td>3</td><td>[3]</td><td>1</td></tr><tr><td>4</td><td>[3] + [1]</td><td>2</td></tr><tr><td>5</td><td>[5]</td><td>1</td></tr><tr><td>6</td><td>[5] + [1]</td><td>2</td></tr><tr><td>7</td><td>[5] + [2]</td><td>2</td></tr><tr><td>8</td><td>[5] + [3]</td><td>2</td></tr><tr><td>9</td><td>[5] + [3] + [1]</td><td>3</td></tr></tbody></table>
-
-<h2>4. Suma y avalancha por paso de reloj</h2>
-<p>Configura el primer número y coloca las fichas del segundo en las filas correspondientes sin hacer el acarreo todavía. En el paso de reloj, barre desde las unidades hacia arriba: dos [1] se fusionan en [2]; [1] + [2] en [3]; [2] + [3] en [5]; y dos [5] suben como una [1] a la fila siguiente.</p>
-<p>Para <strong>247 + 385</strong>, configura 247, agrega 385 y asienta el tablero. El resultado esperado es <strong>632</strong>: centenas [5] + [1], decenas [3], unidades [2].</p>
-
-<h2>5. Resta y destejido</h2>
-<p>Cuando una fila no contiene la ficha necesaria para restar, retira una [1] de la fila superior y reemplázala por dos fichas [5] en la fila inferior. Para <strong>1.204 − 531</strong>, desteje el [1] de millares, retira 531 y asienta en <strong>673</strong>.</p>
-
-<h2>6. Multiplicación como telar</h2>
-<p>Las filas verticales funcionan como rieles del telar. ×1 replica un patrón; ×2 lo duplica; ×3 lo triplica; ×5 lo desplaza una fila hacia arriba, equivalente a ×10; y las decenas y centenas desplazan el patrón completo. El ejemplo es <strong>64 × 23 = 1.472</strong>.</p>
-
-<h2>7. División y reparto equitativo Ayni</h2>
-<p>La división es la inversa del telar multiplicador. Usa <strong>Ayni</strong>, intercambio recíproco o reparto equitativo, como marco pedagógico: un total comunitario se divide en asignaciones iguales.</p>
-<ol><li><strong>Configurar:</strong> coloca el dividendo y conserva el divisor como referencia.</li><li><strong>Probar capacidad:</strong> escala el divisor a la fila superior ocupada.</li><li><strong>Cosechar y asignar:</strong> resta una unidad del divisor y registra un conteo del cociente.</li><li><strong>Bajar:</strong> desteje hacia las filas inferiores y repite.</li></ol>
-<p>El manual desarrolla <strong>4.800 ÷ 32 = 150</strong> y <strong>1.472 ÷ 23 = 64</strong> como secuencias visibles de pruebas, restas, destejidos y registros del cociente.</p>
-
-<h2>8. El archivo Khipu</h2>
-<p>Cuando el cálculo se asienta en la Yupana, el manual propone registrarlo en una cuerda pendiente. Es una base introductoria:</p>
-<table><thead><tr><th>Elemento</th><th>Uso pedagógico</th></tr></thead><tbody><tr><td>Nudo simple (S)</td><td>Millares y posiciones superiores</td></tr><tr><td>Nudo largo (L)</td><td>Decenas y centenas; las vueltas dan el dígito, por ejemplo L7</td></tr><tr><td>Nudo en forma de ocho (E)</td><td>Un 1 en unidades</td></tr><tr><td>Espacio vacío</td><td>Marcador de cero</td></tr></tbody></table>
-<p>El manual ofrece los valores de ejemplo 1.701, 14 y 3.001. También señala que los colores y otros rasgos pertenecen a la tradición andina más amplia. No afirma que todo khipu histórico use esta codificación exacta ni que un ejercicio de aula revele el significado de un espécimen arqueológico.</p>
-
-<h2>9. Evaluación y hojas de trabajo</h2>
-<p>Evalúa la codificación de dígitos, fusiones, avalanchas, destejidos, división Ayni y traducción de un estado Yupana a un registro khipu propuesto. Problemas:</p>
-<ol><li>247 + 385 = 632</li><li>1.204 − 531 = 673</li><li>64 × 23 = 1.472</li><li>3.600 ÷ 24 = 150</li></ol>
-<p>Muestra la colocación inicial, cada fusión o destejido, cada avalancha y el tablero final. El camino forma parte de la lección.</p>
-
-<h2>Procedencia y límites</h2>
-<ul><li><strong>Fuente:</strong> PDF suministrado, <em>Manual de Campo para Educadores: El Sistema Arcade Khipu Inca e Informática Somática</em>, edición en español, 12 páginas, 2026.</li><li><strong>Conservado:</strong> topología, valores, Regla de Oro, operaciones, métricas de nudos propuestas, rúbrica y hojas de trabajo.</li><li><strong>Interpretado:</strong> “ALU / Memoria RAM”, “almacenamiento de software no volátil”, “ejecución por pasos de reloj”, “atractor gravitacional” y “persistencia de datos” son metáforas computacionales pedagógicas modernas.</li><li><strong>Abierto:</strong> el alcance histórico de cualquier configuración Yupana, la semántica de los rasgos khipu no numéricos y su relación con especímenes arqueológicos individuales.</li></ul>
-<p>La invitación más fuerte del manual es práctica: coloca fichas en un tablero, deja que el estado se vuelva visible y permite que el estudiante descubra que la aritmética puede tocarse.</p>
-<hr><p class="footer">The Urania Ephemeris · a sky that returns · <a href="https://magesguild.io">Mage's Guild Psychonautics</a> · Basin Game Studios</p>
+<hr>
+<p class="footer">The Urania Ephemeris · a sky that returns · Mage's Guild Psychonautics · Basin Game Studios</p>
 </main>
 </body>
 </html>
