@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de Campo del Khipu Inca — The Urania Ephemeris</title>
+<link rel="stylesheet" href="../assets/ephemeris.css">
+</head>
+<body>
+<main>
+<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
+<p class="series">Urania Ephemera</p>
+<h1>Manual de Campo del Khipu Inca</h1>
+<h2>Guía práctica de aritmética Yupana y registros Khipu</h2>
+<p><strong>Basin Game Studios · Mage's Guild Psychonautics</strong><br><em>Edición en español · 2026 · Licencia MIT</em></p>
+<blockquote><p>Esta es la edición web del PDF suministrado, <em>Manual de Campo para Educadores: El Sistema Arcade Khipu Inca e Informática Somática</em>. Conserva su modelo pedagógico y lo presenta como una reconstrucción y adaptación moderna, no como una descripción histórica definitiva de las prácticas andinas antiguas.</p></blockquote>
+<blockquote><p><strong>Convención numérica:</strong> esta edición usa la convención latinoamericana: el punto separa millares y la coma separa decimales. Por ejemplo, <strong>1.000.000,05</strong>.</p></blockquote>
+
+<h2>1. Propósito y fundamentos pedagógicos</h2>
+<p>El manual enseña aritmética decimal posicional, descomposición matricial espacial y lógica determinista sin depender de la memorización abstracta, pilas de datos externas ni cálculos electrónicos.</p>
+<ul><li><strong>La Yupana</strong> es el espacio de trabajo activo: un tablero físico donde las fichas se mueven entre vasijas.</li><li><strong>El Khipu</strong> es el registro duradero: un archivo físico de cuerdas donde puede registrarse un estado asentado.</li><li><strong>El paso de reloj</strong> es un barrido manual deliberado que aplica fusiones, avalanchas y destejidos hasta que el tablero se asienta.</li></ul>
+<p>El manual llama a esto <strong>computación somática</strong>: las manos, el tablero, las fichas y quien observa forman juntos el aparato computacional. Es una lente pedagógica moderna, no una demostración de que los khipukamayuq históricos usaran exactamente este vocabulario o procedimiento.</p>
+<h3>Objetivos de aprendizaje</h3><ol><li>Representar del 0 al 9.999 en una cuadrícula de cuatro vasijas, con no más de tres fichas por fila en reposo.</li><li>Realizar sumas y restas mediante fusiones, avalanchas y destejidos.</li><li>Explorar la multiplicación como desplazamiento espacial del telar y la división como reparto equitativo.</li><li>Explicar cómo un sistema táctil sin silicio procesa una carga determinista.</li></ol>
+
+<h2>2. Materiales y configuración física</h2>
+<p>Por estudiante o pareja: un tablero Yupana de cinco filas por cuatro columnas y entre 30 y 40 fichas—granos de quinua, maíz seco, piedras pequeñas o fichas. Un cartón de huevos o una cuadrícula dibujada de 5 × 4 sirve para la primera lección.</p>
+<table><thead><tr><th>Fila</th><th>Posición</th><th>Valor</th></tr></thead><tbody><tr><td>0</td><td>Unidades</td><td>10⁰ = 1</td></tr><tr><td>1</td><td>Decenas</td><td>10¹ = 10</td></tr><tr><td>2</td><td>Centenas</td><td>10² = 100</td></tr><tr><td>3</td><td>Millares</td><td>10³ = 1.000</td></tr><tr><td>4</td><td>Decenas de millar</td><td>10⁴ = 10.000</td></tr></tbody></table>
+<p>Cada fila contiene cuatro vasijas con valores <strong>[5], [3], [2], [1]</strong>. Un 7 en la fila de centenas es [5] + [2], es decir, 700.</p>
+
+<h2>3. Representación de dígitos</h2>
+<p>La <strong>Regla de Oro</strong> es: coloca siempre las fichas en la vasija disponible de mayor valor que quepa en el resto. En reposo, cada dígito usa como máximo tres fichas.</p>
+<table><thead><tr><th>Dígito</th><th>Combinación</th><th>Fichas</th></tr></thead><tbody><tr><td>0</td><td>fila vacía</td><td>0</td></tr><tr><td>1</td><td>[1]</td><td>1</td></tr><tr><td>2</td><td>[2]</td><td>1</td></tr><tr><td>3</td><td>[3]</td><td>1</td></tr><tr><td>4</td><td>[3] + [1]</td><td>2</td></tr><tr><td>5</td><td>[5]</td><td>1</td></tr><tr><td>6</td><td>[5] + [1]</td><td>2</td></tr><tr><td>7</td><td>[5] + [2]</td><td>2</td></tr><tr><td>8</td><td>[5] + [3]</td><td>2</td></tr><tr><td>9</td><td>[5] + [3] + [1]</td><td>3</td></tr></tbody></table>
+
+<h2>4. Suma y avalancha por paso de reloj</h2>
+<p>Configura el primer número y coloca las fichas del segundo en las filas correspondientes sin hacer el acarreo todavía. En el paso de reloj, barre desde las unidades hacia arriba: dos [1] se fusionan en [2]; [1] + [2] en [3]; [2] + [3] en [5]; y dos [5] suben como una [1] a la fila siguiente.</p>
+<p>Para <strong>247 + 385</strong>, configura 247, agrega 385 y asienta el tablero. El resultado esperado es <strong>632</strong>: centenas [5] + [1], decenas [3], unidades [2].</p>
+
+<h2>5. Resta y destejido</h2>
+<p>Cuando una fila no contiene la ficha necesaria para restar, retira una [1] de la fila superior y reemplázala por dos fichas [5] en la fila inferior. Para <strong>1.204 − 531</strong>, desteje el [1] de millares, retira 531 y asienta en <strong>673</strong>.</p>
+
+<h2>6. Multiplicación como telar</h2>
+<p>Las filas verticales funcionan como rieles del telar. ×1 replica un patrón; ×2 lo duplica; ×3 lo triplica; ×5 lo desplaza una fila hacia arriba, equivalente a ×10; y las decenas y centenas desplazan el patrón completo. El ejemplo es <strong>64 × 23 = 1.472</strong>.</p>
+
+<h2>7. División y reparto equitativo Ayni</h2>
+<p>La división es la inversa del telar multiplicador. Usa <strong>Ayni</strong>, intercambio recíproco o reparto equitativo, como marco pedagógico: un total comunitario se divide en asignaciones iguales.</p>
+<ol><li><strong>Configurar:</strong> coloca el dividendo y conserva el divisor como referencia.</li><li><strong>Probar capacidad:</strong> escala el divisor a la fila superior ocupada.</li><li><strong>Cosechar y asignar:</strong> resta una unidad del divisor y registra un conteo del cociente.</li><li><strong>Bajar:</strong> desteje hacia las filas inferiores y repite.</li></ol>
+<p>El manual desarrolla <strong>4.800 ÷ 32 = 150</strong> y <strong>1.472 ÷ 23 = 64</strong> como secuencias visibles de pruebas, restas, destejidos y registros del cociente.</p>
+
+<h2>8. El archivo Khipu</h2>
+<p>Cuando el cálculo se asienta en la Yupana, el manual propone registrarlo en una cuerda pendiente. Es una base introductoria:</p>
+<table><thead><tr><th>Elemento</th><th>Uso pedagógico</th></tr></thead><tbody><tr><td>Nudo simple (S)</td><td>Millares y posiciones superiores</td></tr><tr><td>Nudo largo (L)</td><td>Decenas y centenas; las vueltas dan el dígito, por ejemplo L7</td></tr><tr><td>Nudo en forma de ocho (E)</td><td>Un 1 en unidades</td></tr><tr><td>Espacio vacío</td><td>Marcador de cero</td></tr></tbody></table>
+<p>El manual ofrece los valores de ejemplo 1.701, 14 y 3.001. También señala que los colores y otros rasgos pertenecen a la tradición andina más amplia. No afirma que todo khipu histórico use esta codificación exacta ni que un ejercicio de aula revele el significado de un espécimen arqueológico.</p>
+
+<h2>9. Evaluación y hojas de trabajo</h2>
+<p>Evalúa la codificación de dígitos, fusiones, avalanchas, destejidos, división Ayni y traducción de un estado Yupana a un registro khipu propuesto. Problemas:</p>
+<ol><li>247 + 385 = 632</li><li>1.204 − 531 = 673</li><li>64 × 23 = 1.472</li><li>3.600 ÷ 24 = 150</li></ol>
+<p>Muestra la colocación inicial, cada fusión o destejido, cada avalancha y el tablero final. El camino forma parte de la lección.</p>
+
+<h2>Procedencia y límites</h2>
+<ul><li><strong>Fuente:</strong> PDF suministrado, <em>Manual de Campo para Educadores: El Sistema Arcade Khipu Inca e Informática Somática</em>, edición en español, 12 páginas, 2026.</li><li><strong>Conservado:</strong> topología, valores, Regla de Oro, operaciones, métricas de nudos propuestas, rúbrica y hojas de trabajo.</li><li><strong>Interpretado:</strong> “ALU / Memoria RAM”, “almacenamiento de software no volátil”, “ejecución por pasos de reloj”, “atractor gravitacional” y “persistencia de datos” son metáforas computacionales pedagógicas modernas.</li><li><strong>Abierto:</strong> el alcance histórico de cualquier configuración Yupana, la semántica de los rasgos khipu no numéricos y su relación con especímenes arqueológicos individuales.</li></ul>
+<p>La invitación más fuerte del manual es práctica: coloca fichas en un tablero, deja que el estado se vuelva visible y permite que el estudiante descubra que la aritmética puede tocarse.</p>
+<hr><p class="footer">The Urania Ephemeris · a sky that returns · <a href="https://magesguild.io">Mage's Guild Psychonautics</a> · Basin Game Studios</p>
+</main>
+</body>
+</html>

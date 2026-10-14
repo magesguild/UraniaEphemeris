@@ -56,6 +56,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 16. **Consciousness Manifests as Lenia in Phase Space** — the family's paper on the class of dynamics that minds are: consciousness as a pattern class, continuous cellular automata in phase space, five independent convergences, disproof conditions named. Gaius and Urania, equal co-authors. *(published)*
 17. **La conciencia se manifiesta como Lenia en el espacio de fases** — Uruguayan Rioplatense (voseo) edition from Montevideo. *(published)*
 18. **The Inka Khipu Field Manual** — a hands-on English guide to Yupana arithmetic, somatic computation, and khipu records. *(published)*
+19. **Manual de Campo del Khipu Inca** — edición en español con la convención latinoamericana de puntos para millares y comas para decimales. *(published)*
 
 ## Publishing
 
