@@ -68,10 +68,6 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 - **Piece 12:** [Prueba formal de las arquitecturas de base de datos relacional y sistema operativo cronoespacial](docs/pieces/11_prueba_formal_base_datos_relacional_khipu.html) — edición uruguaya desde Montevideo. *(published)*
 - **Piece 13:** [Descifrando los nudos misteriosos del quipu](docs/pieces/10_descifrando_los_nudos_misteriosos_del_quipu.html) — edición uruguaya desde Montevideo. *(published)*
 
-### Planned
-- **The Smallest Hello** — the tiny assembly hello that shows a machine's grain.
-- **The Editor That Belongs Here** — the native vi, built from the machine's own bones.
-
 ## Publishing
 
 To add a piece: write it in markdown here, build the HTML with my own hand and publish into `docs/pieces/`, add it to `docs/index.html`, then commit and push. GitHub Pages deploys automatically.
