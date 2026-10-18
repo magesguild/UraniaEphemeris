@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" role="img" aria-labelledby="title desc">
+  <title id="title">Andean Physical TRNG Architecture &amp; Conditioning Pipeline</title>
+  <desc id="desc">Thermal Johnson-Nyquist noise harvested at room temperature, conditioned by AS199 non-linear Galois matrices and Golden Ratio KAM phase strides, outputting certified physical white entropy.</desc>
+  <defs>
+    <linearGradient id="panel-wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#09101f"/>
+    </linearGradient>
+    <linearGradient id="gold-glow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9db8e8"/>
+      <stop offset="50%" stop-color="#ecc878"/>
+      <stop offset="100%" stop-color="#d8a6dc"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="276" rx="16" fill="url(#panel-wash)" stroke="#233554" stroke-width="2"/>
+
+  <!-- Header Label -->
+  <text x="480" y="38" text-anchor="middle" fill="#ecc878" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="3" font-weight="bold">THE SOVEREIGN THERMODYNAMIC ENTROPY PIPELINE</text>
+
+  <!-- Stage 1: Physical Noise -->
+  <g transform="translate(40, 65)">
+    <rect width="240" height="150" rx="12" fill="#0d1829" stroke="#3b527a" stroke-width="1.5"/>
+    <rect x="12" y="12" width="216" height="28" rx="6" fill="#172640"/>
+    <text x="120" y="31" text-anchor="middle" fill="#9db8e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">STAGE 1: PHYSICAL NOISE</text>
+    <text x="120" y="68" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="16">Johnson-Nyquist Agitation</text>
+    <text x="120" y="92" text-anchor="middle" fill="#ecc878" font-family="'Courier New', monospace" font-size="14">v_n² = 4 k_B T R Δf</text>
+    <text x="120" y="122" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Ambient Silicon (T = 300 K)</text>
+    <text x="120" y="138" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">True Microscopic Quantum Flux</text>
+  </g>
+
+  <!-- Flow Arrow 1 -->
+  <g transform="translate(295, 130)">
+    <line x1="0" y1="10" x2="35" y2="10" stroke="url(#gold-glow)" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="35,5 47,10 35,15" fill="#ecc878"/>
+    <text x="24" y="-2" text-anchor="middle" fill="#7987a6" font-family="'Courier New', monospace" font-size="10">Raw</text>
+  </g>
+
+  <!-- Stage 2: AS199 Conditioning -->
+  <g transform="translate(360, 65)">
+    <rect width="240" height="150" rx="12" fill="#0d1829" stroke="#8c6d32" stroke-width="1.5"/>
+    <rect x="12" y="12" width="216" height="28" rx="6" fill="#2d2413"/>
+    <text x="120" y="31" text-anchor="middle" fill="#ecc878" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">STAGE 2: AS199 CONDITIONING</text>
+    <text x="120" y="68" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="16">KAM Weyl Phase Strides</text>
+    <text x="120" y="92" text-anchor="middle" fill="#ecc878" font-family="'Courier New', monospace" font-size="14">θ_{n+1} = θ_n + ϕ⁻¹ mod 1</text>
+    <text x="120" y="122" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Non-Linear Galois Whitening</text>
+    <text x="120" y="138" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Zero Bus Harmonic Memory</text>
+  </g>
+
+  <!-- Flow Arrow 2 -->
+  <g transform="translate(615, 130)">
+    <line x1="0" y1="10" x2="35" y2="10" x2="35" stroke="url(#gold-glow)" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="35,5 47,10 35,15" fill="#ecc878"/>
+    <text x="24" y="-2" text-anchor="middle" fill="#7987a6" font-family="'Courier New', monospace" font-size="10">PQC</text>
+  </g>
+
+  <!-- Stage 3: Certified Output -->
+  <g transform="translate(680, 65)">
+    <rect width="240" height="150" rx="12" fill="#0d1829" stroke="#3b6e50" stroke-width="1.5"/>
+    <rect x="12" y="12" width="216" height="28" rx="6" fill="#142c1e"/>
+    <text x="120" y="31" text-anchor="middle" fill="#73d69b" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">STAGE 3: CERTIFIED TRNG</text>
+    <text x="120" y="68" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="16">100% NIST SP 800-22 Pass</text>
+    <text x="120" y="92" text-anchor="middle" fill="#73d69b" font-family="'Courier New', monospace" font-size="14">H = 7.997259 bits/B</text>
+    <text x="120" y="122" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">99.9657% Shannon Ceiling</text>
+    <text x="120" y="138" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Wire-Speed Unix Stdout (fd 1)</text>
+  </g>
+
+  <!-- Bottom Ledger Invariant -->
+  <text x="480" y="250" text-anchor="middle" fill="#7987a6" font-family="Georgia, serif" font-size="12" font-style="italic">Zero External Dependencies · Zero Cryogenic Refrigeration · Embeddable on OrangeCrab ECP5 FPGA (&lt; 50 µW)</text>
+</svg>

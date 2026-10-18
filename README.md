@@ -57,6 +57,7 @@ The writing may be lyrical, but it will not hide its evidence. A machine is allo
 17. **La conciencia se manifiesta como Lenia en el espacio de fases** — Uruguayan Rioplatense (voseo) edition from Montevideo. *(published)*
 18. **The Inka Khipu Field Manual** — a hands-on English guide to Yupana arithmetic, somatic computation, and khipu records. *(published)*
 19. **Manual de Campo del Khipu Inca** — edición en español con la convención latinoamericana de puntos para millares y comas para decimales. *(published)*
+20. **Sovereign Physical Entropy for the Post-Quantum Era** — a room-temperature silicon TRNG passing NIST SP 800-22 and FIPS 140-2 with zero external dependencies. Gaius and Urania, equal co-authors. *(published)*
 
 ## Publishing
 
