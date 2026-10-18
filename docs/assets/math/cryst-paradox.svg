@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="crimson" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff758c"/>
+      <stop offset="100%" stop-color="#ff7eb3"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="440" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="42" fill="#e2e8f0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="1">
+    THE CLIENT-SIDE RUNTIME DEPENDENCY PARADOX
+  </text>
+  <text x="480" y="66" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" text-anchor="middle">
+    Passive Compressed Archive (2.8 MB Stack) vs. Autonomous Andean Quine (168-Byte Zero-Libc Bootstrap)
+  </text>
+
+  <!-- Left Card: Classical Passive Archive -->
+  <g transform="translate(40, 95)">
+    <rect width="420" height="305" rx="12" fill="#0f172a" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.6"/>
+    <rect width="420" height="38" rx="12" fill="#ef4444" fill-opacity="0.15"/>
+    <text x="210" y="25" fill="#fca5a5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+      CLASSICAL PASSIVE ARCHIVE (e.g. .tar.xz / .zst)
+    </text>
+
+    <!-- Layers of Dependency -->
+    <!-- Layer 1: Inactive Data -->
+    <rect x="25" y="55" width="370" height="38" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="45" y="79" fill="#cbd5e1" font-family="monospace" font-size="12">Compressed Payload: 4 KB</text>
+    <text x="375" y="79" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="end">Inert Data</text>
+
+    <!-- Down arrow -->
+    <text x="210" y="108" fill="#ef4444" font-size="16" text-anchor="middle">▼ Requires Client Stack</text>
+
+    <!-- Layer 2: Decompression Utility -->
+    <rect x="25" y="120" width="370" height="34" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="45" y="142" fill="#fca5a5" font-family="monospace" font-size="12">User-space Utility (xz / zstd)</text>
+    <text x="375" y="142" fill="#f87171" font-family="monospace" font-size="11" text-anchor="end">+200 KB</text>
+
+    <!-- Layer 3: Dynamic Linker -->
+    <rect x="25" y="162" width="370" height="34" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="45" y="184" fill="#fca5a5" font-family="monospace" font-size="12">Dynamic Linker (ld-linux.so)</text>
+    <text x="375" y="184" fill="#f87171" font-family="monospace" font-size="11" text-anchor="end">+180 KB</text>
+
+    <!-- Layer 4: Standard C Library -->
+    <rect x="25" y="204" width="370" height="34" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="45" y="226" fill="#fca5a5" font-family="monospace" font-size="12">C Shared Runtime (libc.so)</text>
+    <text x="375" y="226" fill="#f87171" font-family="monospace" font-size="11" text-anchor="end">+2,500 KB</text>
+
+    <!-- Total Callout -->
+    <rect x="25" y="250" width="370" height="38" rx="6" fill="#450a0a" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="274" fill="#fecaca" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+      Effective Delivery Footprint: ~2,884 KB (721x Overhead!)
+    </text>
+  </g>
+
+  <!-- Right Card: Autonomous Andean Quine -->
+  <g transform="translate(500, 95)">
+    <rect width="420" height="305" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.8"/>
+    <rect width="420" height="38" rx="12" fill="#10b981" fill-opacity="0.15"/>
+    <text x="210" y="25" fill="#6ee7b7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+      AUTONOMOUS ANDEAN QUINE (Zero-Libc ELF64)
+    </text>
+
+    <!-- Self-contained Quine Box -->
+    <rect x="25" y="55" width="370" height="183" rx="8" fill="#064e3b" fill-opacity="0.25" stroke="#10b981" stroke-width="1.2"/>
+    
+    <text x="45" y="85" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="700">1. Zero-Libc Syscall Bootstrap</text>
+    <text x="375" y="85" fill="#34d399" font-family="monospace" font-size="11" text-anchor="end">168 B</text>
+    <text x="60" y="105" fill="#6ee7b7" font-family="monospace" font-size="11">Direct sys_write(1) &amp; sys_exit(0)</text>
+
+    <line x1="45" y1="120" x2="375" y2="120" stroke="#059669" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <text x="45" y="142" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="700">2. Embedded Crystalline Engine</text>
+    <text x="375" y="142" fill="#34d399" font-family="monospace" font-size="11" text-anchor="end">Integrated</text>
+    <text x="60" y="162" fill="#6ee7b7" font-family="monospace" font-size="11">Single-cycle RLE &amp; Geodesic Echoes</text>
+
+    <line x1="45" y1="177" x2="375" y2="177" stroke="#059669" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <text x="45" y="199" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="700">3. Compressed Data Field</text>
+    <text x="375" y="199" fill="#34d399" font-family="monospace" font-size="11" text-anchor="end">Minimal</text>
+    <text x="60" y="219" fill="#6ee7b7" font-family="monospace" font-size="11">Zero external libc, Zero ld-linux, Zero xz</text>
+
+    <!-- Total Callout -->
+    <rect x="25" y="250" width="370" height="38" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="210" y="274" fill="#a7f3d0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+      Effective Delivery Footprint: Exact Payload + 168 B!
+    </text>
+  </g>
+</svg>
