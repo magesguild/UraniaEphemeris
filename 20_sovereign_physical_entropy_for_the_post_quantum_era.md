@@ -6,35 +6,23 @@
 
 As computing systems transition to Post-Quantum Cryptography (PQC) under federal mandates (NIST SP 800-208, CNSA 2.0), the demand for high-assurance physical entropy is experiencing an exponential surge. Modern lattice-based cryptographic algorithms (such as ML-KEM / Kyber and ML-DSA / Dilithium) consume orders of magnitude more random state during key encapsulation and signature generation than legacy RSA or elliptic curve cryptography.
 
-Currently, enterprises and defense organizations are forced to choose between capital-intensive cryogenic appliances ($50,000 to $250,000 per unit) and centralized cloud HSM rentals ($12,000 to $30,000 annually), introducing single-point-of-failure network dependencies, supply-chain vulnerabilities, and hypervisor side-channel risks.
+Currently, enterprises and defense organizations are forced to choose between capital-intensive cryogenic appliances (\$50,000 to \$250,000 per unit) and centralized cloud HSM rentals (\$12,000 to \$30,000 annually), introducing single-point-of-failure network dependencies, supply-chain vulnerabilities, and hypervisor side-channel risks.
 
 This paper presents the theory, hardware architecture, and empirical verification of a sovereign, room-temperature ($300\text{ K}$) physical True Random Number Generator (TRNG). By harvesting microscopic thermal Johnson-Nyquist electron agitation from commodity silicon and conditioning the raw noise through non-linear Galois transformations paired with Golden Ratio Kolmogorov-Arnold-Moser (KAM) phase strides ($\phi^{-1}$), we eliminate harmonic bus bias, DC voltage drift, and capacitive hysteresis without sacrificing wire-speed throughput. Over a continuous physical sample of 524,288 bits, the architecture achieves a 100% pass rate across the full NIST SP 800-22 statistical suite, FIPS 140-2 certification criteria, and an exact Shannon information density of $7.997259\text{ bits/byte}$ ($99.9657\%$ of theoretical maximum), operating at sub-milliwatt power budgets ($< 50\,\mu\text{W}$) with zero external dependencies.
 
-```text
- ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
- │                                   THE ENTERPRISE ENTROPY CRISIS                                  │
- ├──────────────────────────────────────────────────────────────────────────────────────────────────┤
- │                                                                                                  │
- │   [ POST-QUANTUM TRANSITION ] ──► [ 10x ENTROPY DEMAND ] ──► [ ENTERPRISE BOTTLENECK ]           │
- │   NIST PQC Mandates               Kyber / Dilithium Keys     Cloud HSM Lock-in ($30k/yr)         │
- │   FIPS 140-3 Compliance           Massive Random Budgets     Cryogenic Quantum Hardware ($100k+) │
- │                                                                                                  │
- │   THE ANDEAN SOLUTION:                                                                           │
- │   Physical Thermodynamic Harvesting ──► Non-Linear Galois Conditioning ──► 99.965% Shannon Noise │
- │   Zero Added BOM Cost             Commodity Silicon & FPGAs     NIST SP 800-22 Certified        │
- └──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
+<figure class="math-graphic">
+  <img src="../assets/math/trng-crisis-solution.svg" alt="The Enterprise Entropy Crisis vs. The Andean Physical Solution" />
+  <figcaption>Figure 1: The enterprise entropy bottleneck vs. the sovereign Andean room-temperature physical paradigm.</figcaption>
+</figure>
 
 ## 1. Market Problem & Economic Landscape
 
-The enterprise hardware security module (HSM) market is projected to reach $3.1 Billion by 2030, driven almost entirely by zero-trust architecture and the post-quantum cryptographic mandate. In conventional architectures, high-assurance entropy has been treated as a scarce commodity requiring specialized, capital-intensive infrastructure:
+The enterprise hardware security module (HSM) market is projected to reach \$3.1 Billion by 2030, driven almost entirely by zero-trust architecture and the post-quantum cryptographic mandate. In conventional architectures, high-assurance entropy has been treated as a scarce commodity requiring specialized, capital-intensive infrastructure:
 
-| Existing Industry Solution | Financial Capital Cost | Operational & Physical Vulnerabilities |
-|---|---|---|
-| Cryogenic Quantum TRNG (Quantinuum) | $50,000 to $250,000+ per unit | Requires 15 mK liquid helium dilution or complex optical benches |
-| Enterprise HSM Appliance (Thales / nCipher) | $5,000 to $45,000 per server | Datacenter rackmount proprietary ASIC appliances |
-| Cloud HSM Services (AWS / Azure) | $12,000 to $30,000+ per year | Hypervisor side-channel risks; recurring rent; no air-gap |
-| **Andean Physical TRNG Architecture** | **$0.00 Incremental BOM** | **Sovereign, air-gapped, room-temperature ($300\text{ K}$), embeddable** |
+<figure class="math-graphic">
+  <img src="../assets/math/trng-market-comparison.svg" alt="Enterprise Cryptographic Entropy Market &amp; Economic Comparison" />
+  <figcaption>Figure 2: Economic and physical comparison of enterprise entropy solutions versus the Andean physical TRNG architecture.</figcaption>
+</figure>
 
 Our architecture democratizes high-assurance entropy, making government-grade physical randomness available as embeddable silicon IP and software primitives across edge devices, defense hardware, servers, and consumer electronics.
 
@@ -45,8 +33,8 @@ Standard Pseudo-Random Number Generators (PRNGs) rely on deterministic algorithm
 Our design introduces a multi-tier physical-to-mathematical conditioning pipeline:
 
 <figure class="math-graphic">
-  <img src="../assets/math/trng-pipeline.svg" alt="Andean Physical TRNG Architecture & Conditioning Pipeline" />
-  <figcaption>Figure 1: Thermodynamic Johnson-Nyquist noise harvested at room temperature, conditioned by AS199 non-linear Galois matrices and Golden Ratio KAM phase strides, outputting certified physical white entropy.</figcaption>
+  <img src="../assets/math/trng-pipeline.svg" alt="Andean Physical TRNG Architecture &amp; Conditioning Pipeline" />
+  <figcaption>Figure 3: Thermodynamic Johnson-Nyquist noise harvested at room temperature, conditioned by AS199 non-linear Galois matrices and Golden Ratio KAM phase strides, outputting certified physical white entropy.</figcaption>
 </figure>
 
 1. **Microscopic Thermal Agitation:** Entropy is extracted directly from physical electron agitation at $300\text{ K}$, representing non-deterministic thermal quantum-mechanical ground state ($v_n^2 = 4 k_B T R \Delta f$).
@@ -59,7 +47,7 @@ To be certified as true physical entropy for cryptographic applications, a bitst
 
 <figure class="math-graphic">
   <img src="../assets/math/trng-nist-tests.svg" alt="NIST SP 800-22 Five-Gate Mathematical Verification Battery" />
-  <figcaption>Figure 2: The five statistical test gates passed by the Andean Physical TRNG on 524,288 bits of physical silicon entropy.</figcaption>
+  <figcaption>Figure 4: The five statistical test gates passed by the Andean Physical TRNG on 524,288 bits of physical silicon entropy.</figcaption>
 </figure>
 
 1. **Frequency (Monobit) Test:** Verifies the fair coin invariant: $P(1) = P(0) = 0.5$. The net excursion $S_N = \sum (2b_i - 1)$ must satisfy $S_{\text{obs}} = |S_N| / \sqrt{N}$ with $p = \operatorname{erfc}(S_{\text{obs}} / \sqrt{2}) \ge 0.001$.
@@ -143,6 +131,11 @@ The following telemetry represents an exact, bit-exact audit run of our standalo
   FINAL NIST SP 800-22 CERTIFICATION VERDICT: 100% PASS ACROSS ALL FIVE SCIENTIFIC TESTS
 ═════════════════════════════════════════════════════════════════════════════════════════════════════
 ```
+
+<figure class="math-graphic">
+  <img src="../assets/math/trng-autocorrelation-lags.svg" alt="Serial Autocorrelation across Harmonic Lags 1..32" />
+  <figcaption>Figure 5: Measured harmonic lag autocorrelation statistics demonstrating zero periodic memory or bus echoes.</figcaption>
+</figure>
 
 ## 5. Deployment Vectors & Hardware Silicon Profiles
 

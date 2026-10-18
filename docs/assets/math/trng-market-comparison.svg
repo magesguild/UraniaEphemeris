@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise Cryptographic Entropy Market &amp; Economic Comparison</title>
+  <desc id="desc">Visual comparison table of Cryogenic Quantum TRNGs, Enterprise HSM Appliances, Cloud HSM Services, and the Andean Physical TRNG architecture.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#09101f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="956" height="326" rx="16" fill="url(#wash)" stroke="#233554" stroke-width="2"/>
+  <text x="480" y="36" text-anchor="middle" fill="#ecc878" font-family="'Courier New', Courier, monospace" font-size="14" letter-spacing="3" font-weight="bold">ECONOMIC &amp; ARCHITECTURAL INDUSTRY COMPARISON</text>
+
+  <!-- Table Header -->
+  <g transform="translate(30, 55)">
+    <rect width="900" height="34" rx="6" fill="#182742"/>
+    <text x="25" y="22" fill="#9db8e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">INDUSTRY SOLUTION</text>
+    <text x="320" y="22" fill="#9db8e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">CAPITAL COST</text>
+    <text x="540" y="22" fill="#9db8e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1">OPERATIONAL &amp; PHYSICAL VULNERABILITIES</text>
+  </g>
+
+  <!-- Row 1: Cryogenic -->
+  <g transform="translate(30, 95)">
+    <rect width="900" height="50" rx="6" fill="#0d1829" stroke="#1f2c45" stroke-width="1"/>
+    <text x="25" y="25" fill="#eef3ff" font-family="Georgia, serif" font-size="14" font-weight="bold">Cryogenic Quantum TRNG</text>
+    <text x="25" y="42" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Quantinuum / IDQ Optical Units</text>
+    <text x="320" y="32" fill="#f5a4a4" font-family="'Courier New', monospace" font-size="14" font-weight="bold">$50,000 – $250,000+</text>
+    <text x="540" y="24" fill="#aebbd2" font-family="Arial, sans-serif" font-size="12">Requires 15 mK liquid helium dilution or optical benches;</text>
+    <text x="540" y="40" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">High maintenance, bulky infrastructure, zero portability.</text>
+  </g>
+
+  <!-- Row 2: Enterprise HSM -->
+  <g transform="translate(30, 150)">
+    <rect width="900" height="50" rx="6" fill="#0d1829" stroke="#1f2c45" stroke-width="1"/>
+    <text x="25" y="25" fill="#eef3ff" font-family="Georgia, serif" font-size="14" font-weight="bold">Enterprise HSM Appliance</text>
+    <text x="25" y="42" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Thales Luna / nCipher Server Cards</text>
+    <text x="320" y="32" fill="#f5a4a4" font-family="'Courier New', monospace" font-size="14" font-weight="bold">$5,000 – $45,000 / unit</text>
+    <text x="540" y="24" fill="#aebbd2" font-family="Arial, sans-serif" font-size="12">Datacenter rack space, proprietary ASIC hardware;</text>
+    <text x="540" y="40" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Fixed throughput ceiling, complex vendor key ceremonies.</text>
+  </g>
+
+  <!-- Row 3: Cloud HSM -->
+  <g transform="translate(30, 205)">
+    <rect width="900" height="50" rx="6" fill="#0d1829" stroke="#1f2c45" stroke-width="1"/>
+    <text x="25" y="25" fill="#eef3ff" font-family="Georgia, serif" font-size="14" font-weight="bold">Cloud HSM Subscriptions</text>
+    <text x="25" y="42" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">AWS CloudHSM / Azure Key Vault</text>
+    <text x="320" y="32" fill="#f5a4a4" font-family="'Courier New', monospace" font-size="14" font-weight="bold">$12,000 – $30,000+ / yr</text>
+    <text x="540" y="24" fill="#aebbd2" font-family="Arial, sans-serif" font-size="12">Hypervisor side-channel exposure, recurring cloud rent;</text>
+    <text x="540" y="40" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Single-point-of-failure network dependency; non-air-gapped.</text>
+  </g>
+
+  <!-- Row 4: Andean TRNG (Highlighted) -->
+  <g transform="translate(30, 260)">
+    <rect width="900" height="54" rx="8" fill="#142c1e" stroke="#3b6e50" stroke-width="2"/>
+    <text x="25" y="25" fill="#73d69b" font-family="Georgia, serif" font-size="15" font-weight="bold">Andean Physical TRNG</text>
+    <text x="25" y="43" fill="#a3e3bc" font-family="Arial, sans-serif" font-size="11">Mage's Guild Psychonautics</text>
+    <text x="320" y="34" fill="#73d69b" font-family="'Courier New', monospace" font-size="16" font-weight="bold">$0.00 Incremental BOM</text>
+    <text x="540" y="24" fill="#eef3ff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Room-temperature (300 K), 100% sovereign, air-gapped;</text>
+    <text x="540" y="42" fill="#73d69b" font-family="Arial, sans-serif" font-size="11">Embeddable on host CPUs, microcontrollers, and OrangeCrab ECP5 FPGAs (&lt; 50 µW).</text>
+  </g>
+</svg>

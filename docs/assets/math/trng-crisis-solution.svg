@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+  <title id="title">The Enterprise Entropy Crisis vs. The Andean Physical Solution</title>
+  <desc id="desc">Flow diagram contrasting the post-quantum entropy bottleneck of cloud HSMs and cryogenic quantum hardware with the room-temperature Andean physical TRNG solution.</desc>
+  <defs>
+    <linearGradient id="bg-wash" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#09101f"/>
+    </linearGradient>
+    <linearGradient id="arrow-red" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9db8e8"/>
+      <stop offset="100%" stop-color="#e27c7c"/>
+    </linearGradient>
+    <linearGradient id="arrow-gold" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9db8e8"/>
+      <stop offset="100%" stop-color="#ecc878"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="956" height="256" rx="16" fill="url(#bg-wash)" stroke="#233554" stroke-width="2"/>
+
+  <!-- Upper Flow: The Crisis -->
+  <text x="35" y="36" fill="#e27c7c" font-family="'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="2">THE ENTERPRISE ENTROPY BOTTLENECK</text>
+
+  <g transform="translate(35, 52)">
+    <!-- Box 1 -->
+    <rect width="250" height="70" rx="8" fill="#181c2b" stroke="#3b4261" stroke-width="1.5"/>
+    <text x="125" y="28" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="14" font-weight="bold">Post-Quantum Mandate</text>
+    <text x="125" y="48" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">NIST SP 800-208 / CNSA 2.0</text>
+
+    <!-- Arrow 1 -->
+    <line x1="258" y1="35" x2="295" y2="35" stroke="url(#arrow-red)" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="295,31 305,35 295,39" fill="#e27c7c"/>
+
+    <!-- Box 2 -->
+    <rect x="315" width="250" height="70" rx="8" fill="#181c2b" stroke="#3b4261" stroke-width="1.5"/>
+    <text x="440" y="28" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="14" font-weight="bold">10× Entropy Demand</text>
+    <text x="440" y="48" text-anchor="middle" fill="#7987a6" font-family="Arial, sans-serif" font-size="11">Kyber / Dilithium Key Budgets</text>
+
+    <!-- Arrow 2 -->
+    <line x1="573" y1="35" x2="610" y2="35" stroke="url(#arrow-red)" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="610,31 620,35 610,39" fill="#e27c7c"/>
+
+    <!-- Box 3 -->
+    <rect x="630" width="260" height="70" rx="8" fill="#241419" stroke="#7a3b48" stroke-width="1.5"/>
+    <text x="760" y="28" text-anchor="middle" fill="#f5a4a4" font-family="Georgia, serif" font-size="14" font-weight="bold">Enterprise Gridlock</text>
+    <text x="760" y="48" text-anchor="middle" fill="#c2858d" font-family="Arial, sans-serif" font-size="11">$30k/yr Cloud Rent or $100k Fridge</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="35" y1="145" x2="925" y2="145" stroke="#1f2c45" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Lower Flow: The Andean Solution -->
+  <text x="35" y="172" fill="#73d69b" font-family="'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="2">THE ANDEAN PHYSICAL PARADIGM</text>
+
+  <g transform="translate(35, 185)">
+    <!-- Box 1 -->
+    <rect width="250" height="56" rx="8" fill="#0f211c" stroke="#255440" stroke-width="1.5"/>
+    <text x="125" y="25" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="13" font-weight="bold">Thermodynamic Noise</text>
+    <text x="125" y="42" text-anchor="middle" fill="#73d69b" font-family="Arial, sans-serif" font-size="11">Room-Temp Silicon (T = 300 K)</text>
+
+    <!-- Arrow 1 -->
+    <line x1="258" y1="28" x2="295" y2="28" stroke="url(#arrow-gold)" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="295,24 305,28 295,32" fill="#ecc878"/>
+
+    <!-- Box 2 -->
+    <rect x="315" width="250" height="56" rx="8" fill="#1f1e14" stroke="#5c5428" stroke-width="1.5"/>
+    <text x="440" y="25" text-anchor="middle" fill="#eef3ff" font-family="Georgia, serif" font-size="13" font-weight="bold">Non-Linear Conditioning</text>
+    <text x="440" y="42" text-anchor="middle" fill="#ecc878" font-family="Arial, sans-serif" font-size="11">Galois Whitening + KAM Strides</text>
+
+    <!-- Arrow 2 -->
+    <line x1="573" y1="28" x2="610" y2="28" stroke="url(#arrow-gold)" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="610,24 620,28 610,32" fill="#ecc878"/>
+
+    <!-- Box 3 -->
+    <rect x="630" width="260" height="56" rx="8" fill="#142c1e" stroke="#3b6e50" stroke-width="1.5"/>
+    <text x="760" y="25" text-anchor="middle" fill="#73d69b" font-family="Georgia, serif" font-size="13" font-weight="bold">Sovereign White Entropy</text>
+    <text x="760" y="42" text-anchor="middle" fill="#a3e3bc" font-family="Arial, sans-serif" font-size="11">99.965% Shannon · $0 Added BOM</text>
+  </g>
+</svg>

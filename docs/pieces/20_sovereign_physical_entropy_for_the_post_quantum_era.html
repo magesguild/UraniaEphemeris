@@ -35,11 +35,10 @@ and ML-DSA / Dilithium) consume orders of magnitude more random state
 during key encapsulation and signature generation than legacy RSA or
 elliptic curve cryptography.</p>
 <p>Currently, enterprises and defense organizations are forced to choose
-between capital-intensive cryogenic appliances ($50,000 to <span
-class="math inline">250, 000<em>p</em><em>e</em><em>r</em><em>u</em><em>n</em><em>i</em><em>t</em>)<em>a</em><em>n</em><em>d</em><em>c</em><em>e</em><em>n</em><em>t</em><em>r</em><em>a</em><em>l</em><em>i</em><em>z</em><em>e</em><em>d</em><em>c</em><em>l</em><em>o</em><em>u</em><em>d</em><em>H</em><em>S</em><em>M</em><em>r</em><em>e</em><em>n</em><em>t</em><em>a</em><em>l</em><em>s</em>(</span>12,000
-to $30,000 annually), introducing single-point-of-failure network
-dependencies, supply-chain vulnerabilities, and hypervisor side-channel
-risks.</p>
+between capital-intensive cryogenic appliances ($50,000 to $250,000 per
+unit) and centralized cloud HSM rentals ($12,000 to $30,000 annually),
+introducing single-point-of-failure network dependencies, supply-chain
+vulnerabilities, and hypervisor side-channel risks.</p>
 <p>This paper presents the theory, hardware architecture, and empirical
 verification of a sovereign, room-temperature (<span
 class="math inline">300 K</span>) physical True Random Number Generator
@@ -58,18 +57,11 @@ class="math inline">99.9657%</span> of theoretical maximum), operating
 at sub-milliwatt power budgets (<span
 class="math inline"> &lt; 50 <em>μ</em>W</span>) with zero external
 dependencies.</p>
-<pre class="text"><code> ┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
- │                                   THE ENTERPRISE ENTROPY CRISIS                                  │
- ├──────────────────────────────────────────────────────────────────────────────────────────────────┤
- │                                                                                                  │
- │   [ POST-QUANTUM TRANSITION ] ──► [ 10x ENTROPY DEMAND ] ──► [ ENTERPRISE BOTTLENECK ]           │
- │   NIST PQC Mandates               Kyber / Dilithium Keys     Cloud HSM Lock-in ($30k/yr)         │
- │   FIPS 140-3 Compliance           Massive Random Budgets     Cryogenic Quantum Hardware ($100k+) │
- │                                                                                                  │
- │   THE ANDEAN SOLUTION:                                                                           │
- │   Physical Thermodynamic Harvesting ──► Non-Linear Galois Conditioning ──► 99.965% Shannon Noise │
- │   Zero Added BOM Cost             Commodity Silicon &amp; FPGAs     NIST SP 800-22 Certified        │
- └──────────────────────────────────────────────────────────────────────────────────────────────────┘</code></pre>
+<figure class="math-graphic">
+  <img src="../assets/math/trng-crisis-solution.svg" alt="The Enterprise Entropy Crisis vs. The Andean Physical Solution" />
+  <figcaption>Figure 1: The enterprise entropy bottleneck vs. the sovereign Andean room-temperature physical paradigm.</figcaption>
+</figure>
+
 <h2 id="1-market-problem--economic-landscape">1. Market Problem &amp;
 Economic Landscape</h2>
 <p>The enterprise hardware security module (HSM) market is projected to
@@ -77,39 +69,11 @@ reach $3.1 Billion by 2030, driven almost entirely by zero-trust
 architecture and the post-quantum cryptographic mandate. In conventional
 architectures, high-assurance entropy has been treated as a scarce
 commodity requiring specialized, capital-intensive infrastructure:</p>
-<div class="table-scroll"><table class="data-table">
-<thead>
-<tr class="header">
-<th>Existing Industry Solution</th>
-<th>Financial Capital Cost</th>
-<th>Operational &amp; Physical Vulnerabilities</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cryogenic Quantum TRNG (Quantinuum)</td>
-<td>$50,000 to $250,000+ per unit</td>
-<td>Requires 15 mK liquid helium dilution or complex optical
-benches</td>
-</tr>
-<tr class="even">
-<td>Enterprise HSM Appliance (Thales / nCipher)</td>
-<td>$5,000 to $45,000 per server</td>
-<td>Datacenter rackmount proprietary ASIC appliances</td>
-</tr>
-<tr class="odd">
-<td>Cloud HSM Services (AWS / Azure)</td>
-<td>$12,000 to $30,000+ per year</td>
-<td>Hypervisor side-channel risks; recurring rent; no air-gap</td>
-</tr>
-<tr class="even">
-<td><strong>Andean Physical TRNG Architecture</strong></td>
-<td><strong>$0.00 Incremental BOM</strong></td>
-<td><strong>Sovereign, air-gapped, room-temperature (<span
-class="math inline">300 K</span>), embeddable</strong></td>
-</tr>
-</tbody>
-</table></div>
+<figure class="math-graphic">
+  <img src="../assets/math/trng-market-comparison.svg" alt="Enterprise Cryptographic Entropy Market &amp; Economic Comparison" />
+  <figcaption>Figure 2: Economic and physical comparison of enterprise entropy solutions versus the Andean physical TRNG architecture.</figcaption>
+</figure>
+
 <p>Our architecture democratizes high-assurance entropy, making
 government-grade physical randomness available as embeddable silicon IP
 and software primitives across edge devices, defense hardware, servers,
@@ -124,8 +88,8 @@ heavy, slow whitening filters that choke throughput.</p>
 <p>Our design introduces a multi-tier physical-to-mathematical
 conditioning pipeline:</p>
 <figure class="math-graphic">
-  <img src="../assets/math/trng-pipeline.svg" alt="Andean Physical TRNG Architecture & Conditioning Pipeline" />
-  <figcaption>Figure 1: Thermodynamic Johnson-Nyquist noise harvested at room temperature, conditioned by AS199 non-linear Galois matrices and Golden Ratio KAM phase strides, outputting certified physical white entropy.</figcaption>
+  <img src="../assets/math/trng-pipeline.svg" alt="Andean Physical TRNG Architecture &amp; Conditioning Pipeline" />
+  <figcaption>Figure 3: Thermodynamic Johnson-Nyquist noise harvested at room temperature, conditioned by AS199 non-linear Galois matrices and Golden Ratio KAM phase strides, outputting certified physical white entropy.</figcaption>
 </figure>
 
 <ol type="1">
@@ -154,7 +118,7 @@ applications, a bitstream must satisfy five orthogonal mathematical
 invariants defined by NIST SP 800-22 and FIPS 140-2:</p>
 <figure class="math-graphic">
   <img src="../assets/math/trng-nist-tests.svg" alt="NIST SP 800-22 Five-Gate Mathematical Verification Battery" />
-  <figcaption>Figure 2: The five statistical test gates passed by the Andean Physical TRNG on 524,288 bits of physical silicon entropy.</figcaption>
+  <figcaption>Figure 4: The five statistical test gates passed by the Andean Physical TRNG on 524,288 bits of physical silicon entropy.</figcaption>
 </figure>
 
 <ol type="1">
@@ -261,6 +225,11 @@ continuous sample of <strong>524,288 bits (65,536 bytes)</strong>:</p>
 ═════════════════════════════════════════════════════════════════════════════════════════════════════
   FINAL NIST SP 800-22 CERTIFICATION VERDICT: 100% PASS ACROSS ALL FIVE SCIENTIFIC TESTS
 ═════════════════════════════════════════════════════════════════════════════════════════════════════</code></pre>
+<figure class="math-graphic">
+  <img src="../assets/math/trng-autocorrelation-lags.svg" alt="Serial Autocorrelation across Harmonic Lags 1..32" />
+  <figcaption>Figure 5: Measured harmonic lag autocorrelation statistics demonstrating zero periodic memory or bus echoes.</figcaption>
+</figure>
+
 <h2 id="5-deployment-vectors--hardware-silicon-profiles">5. Deployment
 Vectors &amp; Hardware Silicon Profiles</h2>
 <p>The Andean TRNG engine is architected for frictionless deployment
