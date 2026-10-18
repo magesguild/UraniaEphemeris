@@ -130,42 +130,39 @@ class="math inline">$\frac{\partial d}{\partial t} = 0$</span>), the
 data occupies a zero-temperature ground state (<span
 class="math inline"><em>T</em> = 0</span>). While classical
 sliding-window compressors (Deflate, LZ77) must emit multiple
-length-limited back-references, the Andean engine collapses an entire
-10,000-byte monocrystal into a single <strong>4-byte</strong> bytecode:
-<span
-class="math display">ℰ<sub>solid</sub>(<em>b</em>, <em>k</em>) = [<strong>0</strong><strong>x</strong><strong>01</strong> ∣ <em>b</em> ∣ LEB128(<em>k</em>)]</span>
-yielding an empirical compression ratio of <span
+length-limited back-references that consume dozens of bytes, the Andean
+engine recognizes the macroscopic crystal lattice directly, collapsing
+an entire 10,000-byte monocrystal into a tiny, sub-word physical
+invariant—yielding an empirical compression ratio of <span
 class="math inline">99.89%</span>.</p>
 <h3 id="b.-coherent-phase-harmonic-kam-strides">B. Coherent Phase:
 Harmonic &amp; KAM Strides</h3>
 <p>Linear arithmetic progressions, continuous ramps, and
 Kolmogorov-Arnold-Moser (KAM) golden-ratio strides (<span
 class="math inline"><em>θ</em><sub><em>n</em> + 1</sub> = <em>θ</em><sub><em>n</em></sub> + <em>ϕ</em><sup>−1</sup> (mod  1)</span>)
-represent coherent fluid flow along invariant phase-space tori. The
-engine captures the underlying affine generator: <span
+represent coherent fluid flow along invariant phase-space tori. Rather
+than parsing these sequences as unrelated scalar symbols, the engine
+identifies the underlying affine generator: <span
 class="math display"><em>d</em><sub><em>i</em></sub> = <em>d</em><sub>0</sub> + <em>i</em> ⋅ <em>δ</em> (mod  256)</span>
-storing it as a compact 5-byte instruction <span
-class="math inline">[<strong>0</strong><strong>x</strong><strong>02</strong> ∣ <em>d</em><sub>0</sub> ∣ <em>δ</em> ∣ LEB128(<em>k</em>)]</span>.</p>
+preserving the trajectory as a compact geodesic operator rather than
+individual symbol points.</p>
 <h3 id="c.-attractor-basins-global-semantic-centroids">C. Attractor
 Basins: Global Semantic Centroids</h3>
 <p>Recurring multi-byte structures (protocol headers, method signatures,
 mathematical formulations) act as gravitational attractors, warping the
-semantic metric of the file. The engine mines high-mass substrings whose
-net gravitational savings exceed their dictionary serialization tax:
-<span
-class="math display">𝒮(<em>W</em>) = (<em>c</em><sub><em>W</em></sub> − 1) ⋅ |<em>W</em>| − (|<em>W</em>| + <em>κ</em>) &gt; <em>τ</em></span>
-Occurrences of attractor <span
-class="math inline"><em>W</em><sub><em>i</em></sub></span> (<span
-class="math inline"><em>i</em> &lt; 64</span>) are folded into a single
-byte (<span class="math inline">0 × 40 ∣ <em>i</em></span>).</p>
+semantic metric of the file. The engine calculates the gravitational
+potential of candidate attractors, identifying high-mass centroids that
+provide substantial net free-energy reductions across the entire corpus.
+Once identified, these attractors serve as fixed gravitational reference
+wells across the phase space.</p>
 <h3 id="d.-vapor-phase-thermalized-fluctuations-local-echoes">D. Vapor
 Phase: Thermalized Fluctuations &amp; Local Echoes</h3>
 <p>Unstructured, high-entropy segments that exhibit neither
 monocrystalline unity nor harmonic coherence reside in the vapor phase.
-Short literal sequences are bit-packed using a dedicated tag regime
-(<span class="math inline">0 × 80 ∣ (<em>L</em> − 1)</span> for lengths
-up to 64), while local recurring echoes within a 64 KB horizon are
-resolved via geodesic back-references.</p>
+The engine dynamically bounds literal transmissions while tracking local
+geodesic echoes across the temporal horizon. When exposed to true
+physical quantum noise, the engine naturally respects the Second Law of
+Thermodynamics, preventing false compression artifacts.</p>
 <hr />
 <h2 id="empirical-benchmarks-beating-the-industry-standards">3.
 Empirical Benchmarks: Beating the Industry Standards</h2>

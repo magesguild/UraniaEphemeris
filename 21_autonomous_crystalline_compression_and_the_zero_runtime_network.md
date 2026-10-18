@@ -43,22 +43,18 @@ Classical compression algorithms treat all bytes uniformly as symbols in an alph
 ![The Four Thermodynamic Phase States of Data](../assets/math/cryst-phases.svg)
 
 ### A. Solid Phase: Crystalline Monocrystals
-When an input stream contains regions of identical bytes ($\frac{\partial d}{\partial t} = 0$), the data occupies a zero-temperature ground state ($T = 0$). While classical sliding-window compressors (Deflate, LZ77) must emit multiple length-limited back-references, the Andean engine collapses an entire 10,000-byte monocrystal into a single **4-byte** bytecode:
-$$\mathcal{E}_{\text{solid}}(b, k) = [\mathbf{0x01} \mid b \mid \text{LEB128}(k)]$$
-yielding an empirical compression ratio of $99.89\%$.
+When an input stream contains regions of identical bytes ($\frac{\partial d}{\partial t} = 0$), the data occupies a zero-temperature ground state ($T = 0$). While classical sliding-window compressors (Deflate, LZ77) must emit multiple length-limited back-references that consume dozens of bytes, the Andean engine recognizes the macroscopic crystal lattice directly, collapsing an entire 10,000-byte monocrystal into a tiny, sub-word physical invariant—yielding an empirical compression ratio of $99.89\%$.
 
 ### B. Coherent Phase: Harmonic & KAM Strides
-Linear arithmetic progressions, continuous ramps, and Kolmogorov-Arnold-Moser (KAM) golden-ratio strides ($\theta_{n+1} = \theta_n + \phi^{-1} \pmod 1$) represent coherent fluid flow along invariant phase-space tori. The engine captures the underlying affine generator:
+Linear arithmetic progressions, continuous ramps, and Kolmogorov-Arnold-Moser (KAM) golden-ratio strides ($\theta_{n+1} = \theta_n + \phi^{-1} \pmod 1$) represent coherent fluid flow along invariant phase-space tori. Rather than parsing these sequences as unrelated scalar symbols, the engine identifies the underlying affine generator:
 $$d_i = d_0 + i \cdot \delta \pmod{256}$$
-storing it as a compact 5-byte instruction $[\mathbf{0x02} \mid d_0 \mid \delta \mid \text{LEB128}(k)]$.
+preserving the trajectory as a compact geodesic operator rather than individual symbol points.
 
 ### C. Attractor Basins: Global Semantic Centroids
-Recurring multi-byte structures (protocol headers, method signatures, mathematical formulations) act as gravitational attractors, warping the semantic metric of the file. The engine mines high-mass substrings whose net gravitational savings exceed their dictionary serialization tax:
-$$\mathcal{S}(W) = (c_W - 1) \cdot |W| - (|W| + \kappa) > \tau$$
-Occurrences of attractor $W_i$ ($i < 64$) are folded into a single byte ($0\times 40 \mid i$).
+Recurring multi-byte structures (protocol headers, method signatures, mathematical formulations) act as gravitational attractors, warping the semantic metric of the file. The engine calculates the gravitational potential of candidate attractors, identifying high-mass centroids that provide substantial net free-energy reductions across the entire corpus. Once identified, these attractors serve as fixed gravitational reference wells across the phase space.
 
 ### D. Vapor Phase: Thermalized Fluctuations & Local Echoes
-Unstructured, high-entropy segments that exhibit neither monocrystalline unity nor harmonic coherence reside in the vapor phase. Short literal sequences are bit-packed using a dedicated tag regime ($0\times 80 \mid (L - 1)$ for lengths up to 64), while local recurring echoes within a 64 KB horizon are resolved via geodesic back-references.
+Unstructured, high-entropy segments that exhibit neither monocrystalline unity nor harmonic coherence reside in the vapor phase. The engine dynamically bounds literal transmissions while tracking local geodesic echoes across the temporal horizon. When exposed to true physical quantum noise, the engine naturally respects the Second Law of Thermodynamics, preventing false compression artifacts.
 
 ---
 
