@@ -111,58 +111,32 @@ external program; <strong>data arrives as an autonomous executable quine
 that unpacks itself directly in RAM using raw kernel system
 calls.</strong></p>
 <hr />
-<h2 id="the-four-thermodynamic-phase-states-of-data">2. The Four
-Thermodynamic Phase States of Data</h2>
-<p>Classical compression algorithms treat all bytes uniformly as symbols
-in an alphabet, attempting to optimize sliding-window dictionary
-pointers and Huffman bit lengths. The Andean architecture decomposes
-data into four physical thermodynamic phases:</p>
-<figure>
-<img src="../assets/math/cryst-phases.svg"
-alt="The Four Thermodynamic Phase States of Data" />
-<figcaption aria-hidden="true">The Four Thermodynamic Phase States of
-Data</figcaption>
-</figure>
-<h3 id="a.-solid-phase-crystalline-monocrystals">A. Solid Phase:
-Crystalline Monocrystals</h3>
-<p>When an input stream contains regions of identical bytes (<span
-class="math inline">$\frac{\partial d}{\partial t} = 0$</span>), the
-data occupies a zero-temperature ground state (<span
-class="math inline"><em>T</em> = 0</span>). While classical
-sliding-window compressors (Deflate, LZ77) must emit multiple
-length-limited back-references that consume dozens of bytes, the Andean
-engine recognizes the macroscopic crystal lattice directly, collapsing
-an entire 10,000-byte monocrystal into a tiny, sub-word physical
-invariant—yielding an empirical compression ratio of <span
-class="math inline">99.89%</span>.</p>
-<h3 id="b.-coherent-phase-harmonic-kam-strides">B. Coherent Phase:
-Harmonic &amp; KAM Strides</h3>
-<p>Linear arithmetic progressions, continuous ramps, and
-Kolmogorov-Arnold-Moser (KAM) golden-ratio strides (<span
-class="math inline"><em>θ</em><sub><em>n</em> + 1</sub> = <em>θ</em><sub><em>n</em></sub> + <em>ϕ</em><sup>−1</sup> (mod  1)</span>)
-represent coherent fluid flow along invariant phase-space tori. Rather
-than parsing these sequences as unrelated scalar symbols, the engine
-identifies the underlying affine generator: <span
-class="math display"><em>d</em><sub><em>i</em></sub> = <em>d</em><sub>0</sub> + <em>i</em> ⋅ <em>δ</em> (mod  256)</span>
-preserving the trajectory as a compact geodesic operator rather than
-individual symbol points.</p>
-<h3 id="c.-attractor-basins-global-semantic-centroids">C. Attractor
-Basins: Global Semantic Centroids</h3>
-<p>Recurring multi-byte structures (protocol headers, method signatures,
-mathematical formulations) act as gravitational attractors, warping the
-semantic metric of the file. The engine calculates the gravitational
-potential of candidate attractors, identifying high-mass centroids that
-provide substantial net free-energy reductions across the entire corpus.
-Once identified, these attractors serve as fixed gravitational reference
-wells across the phase space.</p>
-<h3 id="d.-vapor-phase-thermalized-fluctuations-local-echoes">D. Vapor
-Phase: Thermalized Fluctuations &amp; Local Echoes</h3>
-<p>Unstructured, high-entropy segments that exhibit neither
-monocrystalline unity nor harmonic coherence reside in the vapor phase.
-The engine dynamically bounds literal transmissions while tracking local
-geodesic echoes across the temporal horizon. When exposed to true
-physical quantum noise, the engine naturally respects the Second Law of
-Thermodynamics, preventing false compression artifacts.</p>
+<h2 id="the-theoretical-paradigm-multi-phase-field-relaxation">2. The
+Theoretical Paradigm: Multi-Phase Field Relaxation</h2>
+<p>Classical compression algorithms treat all files identically: as a
+flat sequence of discrete characters on an imaginary tape, attempting to
+optimize 1D sliding-window dictionary pointers and Huffman bit lengths.
+This approach is inherently brittle, computationally hungry, and blind
+to higher-dimensional geometry.</p>
+<p>The Andean architecture operates on a fundamentally different
+physical premise: <strong>modeling digital data as an energetic field
+relaxing into stationary equilibrium states</strong>.</p>
+<p>Rather than relying on mechanical sliding windows, the engine
+projects incoming data into a multi-dimensional topological phase space.
+Highly structured, uniform, or mathematically coherent sequences
+naturally settle into deep potential wells with zero entropy generation,
+while global recurring semantic structures are anchored into stable
+reference centroids. High-entropy fluctuations are dynamically bounded
+without introducing synthetic framing tax, and true microscopic physical
+entropy (such as hardware quantum noise) is recognized and respected in
+strict accordance with the Second Law of Thermodynamics.</p>
+<p>This allows the engine to achieve unprecedented compression densities
+on structured datasets while executing with a fraction of the
+computational and memory overhead of classical algorithms.</p>
+<p>The complete mathematical formalisms, symplectic phase-space
+formulations, and wire-format specifications are documented in our
+formal technical report (<strong>MGP-TR-2026-005</strong>) and are
+available to qualified technical evaluators under Mutual NDA.</p>
 <hr />
 <h2 id="empirical-benchmarks-beating-the-industry-standards">3.
 Empirical Benchmarks: Beating the Industry Standards</h2>

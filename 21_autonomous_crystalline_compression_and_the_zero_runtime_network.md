@@ -36,25 +36,17 @@ In the Andean paradigm, this entire pyramid of user-space dependencies is abolis
 
 ---
 
-## 2. The Four Thermodynamic Phase States of Data
+## 2. The Theoretical Paradigm: Multi-Phase Field Relaxation
 
-Classical compression algorithms treat all bytes uniformly as symbols in an alphabet, attempting to optimize sliding-window dictionary pointers and Huffman bit lengths. The Andean architecture decomposes data into four physical thermodynamic phases:
+Classical compression algorithms treat all files identically: as a flat sequence of discrete characters on an imaginary tape, attempting to optimize 1D sliding-window dictionary pointers and Huffman bit lengths. This approach is inherently brittle, computationally hungry, and blind to higher-dimensional geometry.
 
-![The Four Thermodynamic Phase States of Data](../assets/math/cryst-phases.svg)
+The Andean architecture operates on a fundamentally different physical premise: **modeling digital data as an energetic field relaxing into stationary equilibrium states**. 
 
-### A. Solid Phase: Crystalline Monocrystals
-When an input stream contains regions of identical bytes ($\frac{\partial d}{\partial t} = 0$), the data occupies a zero-temperature ground state ($T = 0$). While classical sliding-window compressors (Deflate, LZ77) must emit multiple length-limited back-references that consume dozens of bytes, the Andean engine recognizes the macroscopic crystal lattice directly, collapsing an entire 10,000-byte monocrystal into a tiny, sub-word physical invariant—yielding an empirical compression ratio of $99.89\%$.
+Rather than relying on mechanical sliding windows, the engine projects incoming data into a multi-dimensional topological phase space. Highly structured, uniform, or mathematically coherent sequences naturally settle into deep potential wells with zero entropy generation, while global recurring semantic structures are anchored into stable reference centroids. High-entropy fluctuations are dynamically bounded without introducing synthetic framing tax, and true microscopic physical entropy (such as hardware quantum noise) is recognized and respected in strict accordance with the Second Law of Thermodynamics.
 
-### B. Coherent Phase: Harmonic & KAM Strides
-Linear arithmetic progressions, continuous ramps, and Kolmogorov-Arnold-Moser (KAM) golden-ratio strides ($\theta_{n+1} = \theta_n + \phi^{-1} \pmod 1$) represent coherent fluid flow along invariant phase-space tori. Rather than parsing these sequences as unrelated scalar symbols, the engine identifies the underlying affine generator:
-$$d_i = d_0 + i \cdot \delta \pmod{256}$$
-preserving the trajectory as a compact geodesic operator rather than individual symbol points.
+This allows the engine to achieve unprecedented compression densities on structured datasets while executing with a fraction of the computational and memory overhead of classical algorithms.
 
-### C. Attractor Basins: Global Semantic Centroids
-Recurring multi-byte structures (protocol headers, method signatures, mathematical formulations) act as gravitational attractors, warping the semantic metric of the file. The engine calculates the gravitational potential of candidate attractors, identifying high-mass centroids that provide substantial net free-energy reductions across the entire corpus. Once identified, these attractors serve as fixed gravitational reference wells across the phase space.
-
-### D. Vapor Phase: Thermalized Fluctuations & Local Echoes
-Unstructured, high-entropy segments that exhibit neither monocrystalline unity nor harmonic coherence reside in the vapor phase. The engine dynamically bounds literal transmissions while tracking local geodesic echoes across the temporal horizon. When exposed to true physical quantum noise, the engine naturally respects the Second Law of Thermodynamics, preventing false compression artifacts.
+The complete mathematical formalisms, symplectic phase-space formulations, and wire-format specifications are documented in our formal technical report (**MGP-TR-2026-005**) and are available to qualified technical evaluators under Mutual NDA.
 
 ---
 
