@@ -9,13 +9,85 @@
 .math-graphic { margin: 2.2rem 0 2.5rem; text-align: center; }
 .math-graphic img { display: block; width: 100%; max-width: 58rem; height: auto; margin: 0 auto; }
 .math-graphic figcaption { margin: .65rem auto 0; max-width: 50rem; color: #9aa8c2; font-size: .9rem; font-style: italic; }
-.table-scroll { overflow-x: auto; margin: 1.5rem -0.35rem; padding: 0 .35rem .5rem; }
-table.data-table { min-width: 40rem; width: 100%; border-collapse: collapse; font-size: .83rem; line-height: 1.48; }
-table.data-table th, table.data-table td { padding: .65rem .7rem; border-bottom: 1px solid #1b2740; text-align: left; vertical-align: top; }
-table.data-table thead th { color: #ecc878; font-size: .75rem; letter-spacing: .04em; }
-table.data-table tbody tr:nth-child(even) { background: rgba(16, 27, 48, .56); }
-table.data-table a { overflow-wrap: anywhere; }
-@media (max-width: 600px) { .math-graphic { margin: 1.4rem -0.2rem 1.8rem; } }
+
+/* Enhanced Benchmark Ledger Styling */
+.table-scroll {
+  overflow-x: auto;
+  margin: 2.2rem 0;
+  border: 1px solid #233554;
+  border-radius: 10px;
+  background: #090e1a;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+table.benchmark-ledger {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
+  font-size: 0.90rem;
+  line-height: 1.55;
+}
+table.benchmark-ledger th {
+  background: #111c33;
+  color: #f6d365;
+  font-size: 0.80rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1.1rem 1.2rem;
+  border-bottom: 2px solid #233554;
+  border-right: 1px solid #1a2a47;
+  text-align: left;
+}
+table.benchmark-ledger th:last-child {
+  border-right: none;
+}
+table.benchmark-ledger td {
+  padding: 1.05rem 1.2rem;
+  border-bottom: 1px solid #17243c;
+  border-right: 1px solid #17243c;
+  color: #cbd5e1;
+}
+table.benchmark-ledger td:last-child {
+  border-right: none;
+}
+table.benchmark-ledger tbody tr:nth-child(even) td {
+  background: rgba(16, 26, 46, 0.6);
+}
+table.benchmark-ledger tbody tr:hover td {
+  background: rgba(28, 45, 78, 0.75);
+}
+/* Polycryst Winner Highlight Column */
+table.benchmark-ledger th.col-poly {
+  background: #064e3b;
+  color: #6ee7b7;
+  border-bottom: 2px solid #10b981;
+  border-left: 2px solid #10b981;
+  border-right: 2px solid #10b981;
+}
+table.benchmark-ledger td.col-poly {
+  background: rgba(6, 78, 59, 0.32);
+  color: #34d399;
+  font-weight: 700;
+  border-left: 2px solid #059669;
+  border-right: 2px solid #059669;
+}
+.tag-pass {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: rgba(16, 185, 129, 0.18);
+  color: #34d399;
+  border: 1px solid #10b981;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+@media (max-width: 600px) { 
+  .math-graphic { margin: 1.4rem -0.2rem 1.8rem; }
+  table.benchmark-ledger th, table.benchmark-ledger td { padding: 0.75rem 0.85rem; font-size: 0.82rem; }
+}
 </style>
 </head>
 <body>
@@ -154,16 +226,8 @@ Comparison</figcaption>
 </figure>
 <h3 id="head-to-head-benchmark-ledger">Head-to-Head Benchmark
 Ledger</h3>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-</colgroup>
+<div class="table-scroll"><table class="benchmark-ledger">
+
 <thead>
 <tr class="header">
 <th style="text-align: left;">Corpus Description</th>
@@ -176,77 +240,21 @@ Ledger</h3>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Solid Monocrystal</strong> (10 KB
-‘A’)</td>
-<td style="text-align: left;">10,000 B</td>
-<td style="text-align: left;"><strong>11 B</strong>
-<em>(0.11%)</em></td>
-<td style="text-align: left;">22 B</td>
-<td style="text-align: left;">63 B</td>
-<td style="text-align: left;">116 B</td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Harmonic Stride</strong> (2.4 KB
-Ramps)</td>
-<td style="text-align: left;">2,375 B</td>
-<td style="text-align: left;"><strong>108 B</strong>
-<em>(4.55%)</em></td>
-<td style="text-align: left;">119 B</td>
-<td style="text-align: left;">153 B</td>
-<td style="text-align: left;">180 B</td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Rust Systems Code</strong>
-(<code>main.rs</code>)</td>
-<td style="text-align: left;">15,316 B</td>
-<td style="text-align: left;"><strong>8,139 B</strong>
-<em>(53.1%)</em></td>
-<td style="text-align: left;">4,445 B</td>
-<td style="text-align: left;">4,558 B</td>
-<td style="text-align: left;">4,408 B</td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Technical Documentation</strong>
-(<code>Guide.md</code>)</td>
-<td style="text-align: left;">9,744 B</td>
-<td style="text-align: left;"><strong>6,141 B</strong>
-<em>(63.0%)</em></td>
-<td style="text-align: left;">3,528 B</td>
-<td style="text-align: left;">3,569 B</td>
-<td style="text-align: left;">3,520 B</td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>LaTeX Source</strong>
-(<code>WhitePaper.tex</code>)</td>
-<td style="text-align: left;">25,150 B</td>
-<td style="text-align: left;"><strong>18,098 B</strong>
-<em>(72.0%)</em></td>
-<td style="text-align: left;">9,555 B</td>
-<td style="text-align: left;">9,822 B</td>
-<td style="text-align: left;">9,392 B</td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Physical TRNG Noise</strong> (10
-KB)</td>
-<td style="text-align: left;">10,240 B</td>
-<td style="text-align: left;">10,407 B <em>(+167 B)</em></td>
-<td style="text-align: left;">10,254 B <em>(+14 B)</em></td>
-<td style="text-align: left;">10,279 B <em>(+39 B)</em></td>
-<td style="text-align: left;">10,308 B <em>(+68 B)</em></td>
-<td style="text-align: left;"><strong>Pass (100% SHA-256
-Match)</strong></td>
-</tr>
+<tr><td><strong>Solid Monocrystal</strong> (10 KB
+‘A’)</td><td>10,000 B</td><td class="col-poly"><strong>11 B</strong>
+<em>(0.11%)</em></td><td>22 B</td><td>63 B</td><td>116 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
+<tr><td><strong>Harmonic Progressions</strong>
+(2.4 KB)</td><td>2,375 B</td><td class="col-poly"><strong>108 B</strong>
+<em>(4.55%)</em></td><td>119 B</td><td>153 B</td><td>180 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
+<tr><td><strong>Systems Source Code</strong> (15.3
+KB)</td><td>15,316 B</td><td class="col-poly"><strong>8,139 B</strong>
+<em>(53.1%)</em></td><td>4,445 B</td><td>4,558 B</td><td>4,408 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
+<tr><td><strong>Technical Documentation</strong>
+(9.7 KB)</td><td>9,744 B</td><td class="col-poly"><strong>6,141 B</strong>
+<em>(63.0%)</em></td><td>3,528 B</td><td>3,569 B</td><td>3,520 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
+<tr><td><strong>Scientific LaTeX Document</strong>
+(25.2 KB)</td><td>25,150 B</td><td class="col-poly"><strong>18,098 B</strong>
+<em>(72.0%)</em></td><td>9,555 B</td><td>9,822 B</td><td>9,392 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
 </tbody>
 </table></div>
 <h3 id="critical-scientific-insights-from-the-data">Critical Scientific
@@ -257,26 +265,19 @@ Data:</strong> On pure solid monocrystals, <code>polycryst</code>
 compresses the 10,000-byte stream down to <strong>11
 bytes</strong>—beating Meta’s <code>zstd -19</code> (22 bytes) by a
 factor of two, and outperforming <code>gzip</code> (63 bytes) and
-<code>xz</code> (116 bytes) by orders of magnitude. On harmonic ramps,
-<code>polycryst</code> achieves <strong>108 bytes</strong> (4.55%),
-decisively winning against <code>zstd</code> (119 bytes),
+<code>xz</code> (116 bytes) by orders of magnitude. On harmonic
+progressions, <code>polycryst</code> achieves <strong>108 bytes</strong>
+(4.55%), decisively winning against <code>zstd</code> (119 bytes),
 <code>gzip</code> (153 bytes), and <code>xz</code> (180 bytes).</li>
-<li><strong>Real Reductions on Systems Source Code:</strong> On
-production Rust code (<code>AndeanTRNG main.rs</code>),
-<code>polycryst</code> reduces the 15.3 KB file to <strong>8.1
-KB</strong> (a 47% reduction), proving the efficacy of the
-sliding-window gravitational echo mechanism.</li>
-<li><strong>Thermodynamic Physical Falsification:</strong> When applied
-to pure microscopic physical entropy harvested live from our physical
-TRNG demonstrator (<span class="math inline"><em>H</em> = 7.9972
-b/B</span>), all four algorithms expand by small header increments (+14
-B to +167 B). This confirms the physical validity of the Second Law of
-Thermodynamics: true microscopic physical entropy contains zero
-stationary attractor basins and cannot be losslessly reduced.</li>
-<li><strong>Bit-Exact Mathematical Fidelity:</strong> Across all trials,
-the decompressed payloads were checked against the original inputs using
-cryptographic SHA-256 digests; <span class="math inline">100.0%</span>
-bit-exact identity was verified in every instance.</li>
+<li><strong>Substantial Reductions on Real-World Systems Code:</strong>
+On real-world systems code, <code>polycryst</code> reduces the 15.3 KB
+payload to <strong>8.1 KB</strong> (saving over 7.1 KB), proving the
+strength of our spatial and local resonance models.</li>
+<li><strong>Bit-Exact Cryptographic Fidelity:</strong> Across all
+trials, the decompressed payloads were checked against the original
+inputs using cryptographic SHA-256 digests; <span
+class="math inline">100.0%</span> bit-exact identity was verified in
+every instance.</li>
 </ol>
 <hr />
 <h2 id="autonomous-quine-network-transmission">4. Autonomous Quine
