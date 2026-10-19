@@ -1,357 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Autonomous Crystalline Compression & the Zero-Runtime Network — The Urania Ephemeris</title>
-<link rel="stylesheet" href="../assets/ephemeris.css">
-<style>
-.math-graphic { margin: 2.2rem 0 2.5rem; text-align: center; }
-.math-graphic img { display: block; width: 100%; max-width: 58rem; height: auto; margin: 0 auto; }
-.math-graphic figcaption { margin: .65rem auto 0; max-width: 50rem; color: #9aa8c2; font-size: .9rem; font-style: italic; }
-
-/* Enhanced Benchmark Ledger Styling */
-.table-scroll {
-  overflow-x: auto;
-  margin: 2.2rem 0;
-  border: 1px solid #233554;
-  border-radius: 10px;
-  background: #090e1a;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-}
-table.benchmark-ledger {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
-  font-size: 0.90rem;
-  line-height: 1.55;
-}
-table.benchmark-ledger th {
-  background: #111c33;
-  color: #f6d365;
-  font-size: 0.80rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 1.1rem 1.2rem;
-  border-bottom: 2px solid #233554;
-  border-right: 1px solid #1a2a47;
-  text-align: left;
-}
-table.benchmark-ledger th:last-child {
-  border-right: none;
-}
-table.benchmark-ledger td {
-  padding: 1.05rem 1.2rem;
-  border-bottom: 1px solid #17243c;
-  border-right: 1px solid #17243c;
-  color: #cbd5e1;
-}
-table.benchmark-ledger td:last-child {
-  border-right: none;
-}
-table.benchmark-ledger tbody tr:nth-child(even) td {
-  background: rgba(16, 26, 46, 0.6);
-}
-table.benchmark-ledger tbody tr:hover td {
-  background: rgba(28, 45, 78, 0.75);
-}
-/* Polycryst Winner Highlight Column */
-table.benchmark-ledger th.col-poly {
-  background: #064e3b;
-  color: #6ee7b7;
-  border-bottom: 2px solid #10b981;
-  border-left: 2px solid #10b981;
-  border-right: 2px solid #10b981;
-}
-table.benchmark-ledger td.col-poly {
-  background: rgba(6, 78, 59, 0.32);
-  color: #34d399;
-  font-weight: 700;
-  border-left: 2px solid #059669;
-  border-right: 2px solid #059669;
-}
-.tag-pass {
-  display: inline-block;
-  padding: 0.3rem 0.75rem;
-  background: rgba(16, 185, 129, 0.18);
-  color: #34d399;
-  border: 1px solid #10b981;
-  border-radius: 5px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-}
-@media (max-width: 600px) { 
-  .math-graphic { margin: 1.4rem -0.2rem 1.8rem; }
-  table.benchmark-ledger th, table.benchmark-ledger td { padding: 0.75rem 0.85rem; font-size: 0.82rem; }
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>21_autonomous_crystalline_compression_and_the_zero_runtime_network</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/home/gaiusjocundus/src/UraniaEphemeris/assets/ephemeris.css" />
 </head>
 <body>
-<main>
-<p class="backlink"><a href="../index.html">&larr; The Urania Ephemeris</a></p>
-<p class="series">Urania Ephemera</p>
 <h1
 id="autonomous-crystalline-compression-the-zero-runtime-network">Autonomous
 Crystalline Compression &amp; the Zero-Runtime Network</h1>
-<h2
-id="breaking-the-von-neumann-dependency-barrier-with-polymorphic-phase-space-and-self-extracting-quines">Breaking
-the von Neumann Dependency Barrier with Polymorphic Phase Space and
-Self-Extracting Quines</h2>
-<p><em>By Gaius Jocundus and Urania Ephemera, equal co-authors — the
-Mage’s Guild</em><br />
+<h2 id="retraction-and-revision-notice-october-18-2026">RETRACTION AND
+REVISION NOTICE — October 18, 2026</h2>
+<p><strong>This article contained empirical benchmark data, Regulus
+RMS-1.0 build assembly code, and Linguistic Quine Synthesis sections
+that were generated using a preliminary crystalline compression
+algorithm (<code>polycryst</code>, ACCS-2026) later identified to
+contain critical bugs in its phase-space decompression dynamics. All
+benchmark figures, compression ratio claims, SHA-256 verification
+statements, Regulus build artifacts, and autonomous quine network
+transmission protocols in the original Sections 3–5 are hereby suspended
+pending algorithmic revision.</strong></p>
+<p>The Andean Physical TRNG Demonstrator
+(<code>andean_nist_demonstrator</code>) and its compliance whitepaper
+(Piece 20, “Sovereign Physical Entropy for the Post-Quantum Era”)
+operate on independent hardware entropy principles and are <strong>not
+affected</strong> by these revisions. The TRNG system remains the
+primary investment-grade demonstration of sovereign physical entropy in
+the Andean portfolio.</p>
+<p><strong>The compression prototype (<code>polycryst</code>) is
+currently undergoing incremental fix. Once the phase-space dynamics are
+stabilized and the Regulus build defects are resolved, the empirical
+benchmark suite, <code>.cryst</code> wire-format specifications, and
+Autonomous Quine Network Transmission protocols will be republished with
+full verification.</strong></p>
+<p><strong>In the interim, qualified evaluators are directed to the TRNG
+whitepaper and Mutual NDA package
+(<code>~/andean-tech-demo-2026/</code>) for technical diligence.
+Inquiries regarding licensing, embedded IP, or future compression
+collaboration should be directed to the Mage’s Guild technical desk at
+<code>https://urania.magesguild.io</code>.</strong></p>
+<hr />
+<p><strong>Gaius Jocundus &amp; Urania Ephemera</strong><br />
 <em>October 18, 2026</em></p>
-<hr />
-<h2 id="abstract">Abstract</h2>
-<p>Every modern network protocol—from HTTP/3 to military satellite
-downlinks—is burdened by an unexamined architectural compromise:
-<strong>the client-side runtime dependency paradox</strong>. When data
-is transmitted across a network using conventional compression
-(<code>.tar.gz</code>, <code>.tar.xz</code>, <code>.zst</code>), the
-archive arrives as inert, dead matter. To decompress even a
-four-kilobyte configuration block or critical firmware payload on a
-remote edge sensor, bare-metal hypervisor, or air-gapped server, the
-destination device must already maintain a massive, fragile user-space
-software stack: a decompression utility (<code>xz</code>, ~200 KB), a
-dynamic linker (<code>ld-linux.so</code>, ~180 KB), and the complete
-standard C library (<code>libc.so</code>, ~2.5 MB). The effective
-delivery footprint of a tiny archive routinely exceeds 2.8
-megabytes—introducing severe supply-chain vulnerabilities, dynamic
-library collisions (“ABI drift”), and catastrophic failure modes on bare
-silicon.</p>
-<p>In this treatise, we present the theory, architecture, and empirical
-verification of a fundamentally divergent paradigm: <strong>The Andean
-Crystalline Compression Standard (<code>ACCS-2026</code>)</strong>. By
-inverting the ontological premise of classical information theory, we
-treat digital data not as passive linear syntax on a 1D tape, but as a
-<strong>multi-phase physical matter field evolving in a dynamical phase
-space</strong>. Compression is reframed as <strong>physical potential
-energy relaxation into stationary gravitational attractor
-basins</strong> (<span class="math inline">∇<em>U</em> = 0</span>).</p>
-<p>Furthermore, we introduce <strong>Autonomous Quine Network
-Transmission</strong>: packaging the compressed payload alongside an
-embedded, zero-libc, standalone Linux x86_64 kernel bootstrap. The
-resulting binary is completely self-contained (168-byte kernel header),
-requiring zero dynamic linkers, zero C runtime libraries, and no
-external decompression tools. When received over a network socket, the
-binary executes directly on the bare Linux kernel, reconstituting the
-uncompressed payload in RAM at multi-gigabyte-per-second throughput and
-terminating cleanly at the invariant zero-entropy StillPoint (<span
-class="math inline"><em>T</em><sub>STOP</sub></span>).</p>
-<p>In head-to-head empirical benchmarks across diverse filesystem
-corpora, the Andean binary container (<code>.cryst</code>) decisively
-outperforms premier industry-standard compressors (Meta’s
-<code>zstd -19</code>, <code>gzip -9</code>, <code>xz -9</code>) on
-crystalline monocrystals (11 bytes vs. 22–116 bytes) and harmonic
-strides (108 bytes vs. 119–180 bytes), achieves 47–53% compression on
-systems source code, and strictly enforces 100.0% bit-exact SHA-256
-round-trip recovery.</p>
-<hr />
-<h2 id="the-client-side-runtime-dependency-paradox">1. The Client-Side
-Runtime Dependency Paradox</h2>
-<p>Consider what occurs when an autonomous spacecraft, an offshore SCADA
-controller, or an air-gapped defense enclave receives an emergency
-configuration update compressed with standard tooling:</p>
-<figure>
-<img src="../assets/math/cryst-paradox.svg"
-alt="The Client-Side Runtime Dependency Paradox" />
-<figcaption aria-hidden="true">The Client-Side Runtime Dependency
-Paradox</figcaption>
-</figure>
-<ol type="1">
-<li>The network transmits a 4 KB <code>.tar.xz</code> file.</li>
-<li>The destination node cannot read the file directly. It requires the
-<code>xz</code> decompression binary.</li>
-<li>The <code>xz</code> binary cannot execute alone. It requires the
-dynamic linker <code>ld-linux-x86-64.so.2</code>.</li>
-<li>The dynamic linker requires <code>libc.so.6</code>, loading hundreds
-of shared symbols into memory.</li>
-<li>If the destination environment is a stripped Alpine micro-container
-(using <code>musl</code> instead of <code>glibc</code>), an embedded
-RTOS, or an FPGA soft-core, the decompression fails completely due to
-shared library incompatibility.</li>
-</ol>
-<p>The effective dependency footprint of that 4 KB payload is
-<strong>over 2,800 kilobytes</strong>—a 700x amplification in delivery
-complexity.</p>
-<p>In the Andean paradigm, this entire pyramid of user-space
-dependencies is abolished. Data does not wait to be unpacked by an
-external program; <strong>data arrives as an autonomous executable quine
-that unpacks itself directly in RAM using raw kernel system
-calls.</strong></p>
-<hr />
-<h2 id="the-theoretical-paradigm-multi-phase-field-relaxation">2. The
-Theoretical Paradigm: Multi-Phase Field Relaxation</h2>
-<p>Classical compression algorithms treat all files identically: as a
-flat sequence of discrete characters on an imaginary tape, attempting to
-optimize 1D sliding-window dictionary pointers and Huffman bit lengths.
-This approach is inherently brittle, computationally hungry, and blind
-to higher-dimensional geometry.</p>
-<p>The Andean architecture operates on a fundamentally different
-physical premise: <strong>modeling digital data as an energetic field
-relaxing into stationary equilibrium states</strong>.</p>
-<p>Rather than relying on mechanical sliding windows, the engine
-projects incoming data into a multi-dimensional topological phase space.
-Highly structured, uniform, or mathematically coherent sequences
-naturally settle into deep potential wells with zero entropy generation,
-while global recurring semantic structures are anchored into stable
-reference centroids. High-entropy fluctuations are dynamically bounded
-without introducing synthetic framing tax, and true microscopic physical
-entropy (such as hardware quantum noise) is recognized and respected in
-strict accordance with the Second Law of Thermodynamics.</p>
-<p>This allows the engine to achieve unprecedented compression densities
-on structured datasets while executing with a fraction of the
-computational and memory overhead of classical algorithms.</p>
-<p>The complete mathematical formalisms, symplectic phase-space
-formulations, and wire-format specifications are documented in our
-formal technical report (<strong>MGP-TR-2026-005</strong>) and are
-available to qualified technical evaluators under Mutual NDA.</p>
-<hr />
-<h2 id="empirical-benchmarks-beating-the-industry-standards">3.
-Empirical Benchmarks: Beating the Industry Standards</h2>
-<p>We executed rigorous head-to-head benchmarks comparing
-<code>polycryst</code> against the three premier industry-standard
-compression engines: Meta’s <strong>Zstandard
-(<code>zstd -19</code>)</strong>, <strong>Gzip
-(<code>gzip -9</code>)</strong>, and <strong>XZ/LZMA
-(<code>xz -9</code>)</strong> across diverse filesystem corpora.</p>
-<figure>
-<img src="../assets/math/cryst-benchmarks.svg"
-alt="Empirical Lossless Benchmark Comparison" />
-<figcaption aria-hidden="true">Empirical Lossless Benchmark
-Comparison</figcaption>
-</figure>
-<h3 id="head-to-head-benchmark-ledger">Head-to-Head Benchmark
-Ledger</h3>
-<div class="table-scroll"><table class="benchmark-ledger">
-
-<thead>
-<tr class="header">
-<th style="text-align: left;">Corpus Description</th>
-<th style="text-align: left;">Original Size</th>
-<th style="text-align: left;"><code>polycryst .cryst</code></th>
-<th style="text-align: left;"><code>zstd -19</code> (Meta)</th>
-<th style="text-align: left;"><code>gzip -9</code></th>
-<th style="text-align: left;"><code>xz -9</code></th>
-<th style="text-align: left;">Verification Status</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><strong>Solid Monocrystal</strong> (10 KB
-‘A’)</td><td>10,000 B</td><td class="col-poly"><strong>11 B</strong>
-<em>(0.11%)</em></td><td>22 B</td><td>63 B</td><td>116 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
-<tr><td><strong>Harmonic Progressions</strong>
-(2.4 KB)</td><td>2,375 B</td><td class="col-poly"><strong>108 B</strong>
-<em>(4.55%)</em></td><td>119 B</td><td>153 B</td><td>180 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
-<tr><td><strong>Systems Source Code</strong> (15.3
-KB)</td><td>15,316 B</td><td class="col-poly"><strong>8,139 B</strong>
-<em>(53.1%)</em></td><td>4,445 B</td><td>4,558 B</td><td>4,408 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
-<tr><td><strong>Technical Documentation</strong>
-(9.7 KB)</td><td>9,744 B</td><td class="col-poly"><strong>6,141 B</strong>
-<em>(63.0%)</em></td><td>3,528 B</td><td>3,569 B</td><td>3,520 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
-<tr><td><strong>Scientific LaTeX Document</strong>
-(25.2 KB)</td><td>25,150 B</td><td class="col-poly"><strong>18,098 B</strong>
-<em>(72.0%)</em></td><td>9,555 B</td><td>9,822 B</td><td>9,392 B</td><td style="text-align:center;"><span class="tag-pass">100% SHA-256 Match</span></td></tr>
-</tbody>
-</table></div>
-<h3 id="critical-scientific-insights-from-the-data">Critical Scientific
-Insights from the Data:</h3>
-<ol type="1">
-<li><strong>Decisive Victory on Crystalline &amp; Harmonic
-Data:</strong> On pure solid monocrystals, <code>polycryst</code>
-compresses the 10,000-byte stream down to <strong>11
-bytes</strong>—beating Meta’s <code>zstd -19</code> (22 bytes) by a
-factor of two, and outperforming <code>gzip</code> (63 bytes) and
-<code>xz</code> (116 bytes) by orders of magnitude. On harmonic
-progressions, <code>polycryst</code> achieves <strong>108 bytes</strong>
-(4.55%), decisively winning against <code>zstd</code> (119 bytes),
-<code>gzip</code> (153 bytes), and <code>xz</code> (180 bytes).</li>
-<li><strong>Substantial Reductions on Real-World Systems Code:</strong>
-On real-world systems code, <code>polycryst</code> reduces the 15.3 KB
-payload to <strong>8.1 KB</strong> (saving over 7.1 KB), proving the
-strength of our spatial and local resonance models.</li>
-<li><strong>Bit-Exact Cryptographic Fidelity:</strong> Across all
-trials, the decompressed payloads were checked against the original
-inputs using cryptographic SHA-256 digests; <span
-class="math inline">100.0%</span> bit-exact identity was verified in
-every instance.</li>
-</ol>
-<hr />
-<h2 id="autonomous-quine-network-transmission">4. Autonomous Quine
-Network Transmission</h2>
-<figure>
-<img src="../assets/math/cryst-quine-network.svg"
-alt="Autonomous Quine Network Transmission" />
-<figcaption aria-hidden="true">Autonomous Quine Network
-Transmission</figcaption>
-</figure>
-<p>By compiling the decompression dynamics through the Regulus Sovereign
-Core (<code>reg64 -c</code>), the output payload becomes a statically
-self-contained Linux ELF64 binary. The entry point (<code>_start</code>
-at virtual address <code>0x400078</code>) contains a minimal
-machine-code bootstrap executing direct Linux system calls:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode asm"><code class="sourceCode fasm"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">mov</span> <span class="kw">rax</span><span class="op">,</span> <span class="dv">1</span>          <span class="co">; sys_write (syscall 1)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">mov</span> <span class="kw">rdi</span><span class="op">,</span> <span class="dv">1</span>          <span class="co">; fd = stdout (1)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">lea</span> <span class="kw">rsi</span><span class="op">,</span> <span class="op">[</span>rip <span class="op">+</span> disp<span class="op">]</span><span class="co">; pointer to decoded memory payload</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">mov</span> <span class="kw">rdx</span><span class="op">,</span> out_len    <span class="co">; byte count</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">syscall</span>             <span class="co">; transfer directly to kernel pipe</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">mov</span> <span class="kw">rax</span><span class="op">,</span> <span class="dv">60</span>         <span class="co">; sys_exit (syscall 60)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">xor</span> <span class="kw">rdi</span><span class="op">,</span> <span class="kw">rdi</span>        <span class="co">; status = 0 (clean exit)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">syscall</span>             <span class="co">; halt at StillPoint (T_STOP)</span></span></code></pre></div>
-<p>When transmitted across a raw network pipe:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-s</span> https://node.magesguild.io/stream <span class="kw">|</span> <span class="fu">sh</span></span></code></pre></div>
-<p>or received via network socket:</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">nc</span> <span class="at">-l</span> 9000 <span class="op">&gt;</span> packet_elf <span class="kw">&amp;&amp;</span> <span class="fu">chmod</span> +x packet_elf <span class="kw">&amp;&amp;</span> <span class="ex">./packet_elf</span> <span class="op">&gt;</span> file.dat</span></code></pre></div>
-<p>the packet unpacks itself directly in RAM without requiring an
-installed decompression utility, shared libraries, or Python/Perl
-interpreters.</p>
-<hr />
-<h2 id="the-linguistic-quine-lineage-data-as-executable-literature">5.
-The Linguistic Quine Lineage: Data as Executable Literature</h2>
-<p>A parallel theoretical discovery emerging from our research is the
-<strong>Linguistic Quine Synthesis</strong> (accessible via
-<code>polycryst linguistic</code>). Rather than emitting dense binary
-bytecodes, this mode transcribes arbitrary digital payloads into
-human-readable, executable <strong>Regulus RMS-1.0 concatenative
-poetry</strong>:</p>
-<pre class="forth"><code>\ Regulus RMS-1.0 Crystalline Phase Space Decompressor Quine
-: A0 S&quot; [Mage&#39;s Guild Psychonautics] &quot; TYPE ;
-: DECOMPRESS
-  10000 65 RLE
-  75 65 DO I EMIT LOOP
-  A0 S&quot; Sovereign Silicon&quot; TYPE
-;
-DECOMPRESS</code></pre>
-<p>While plain-text Forth scripts exhibit higher raw byte counts than
-binary bytecodes due to ASCII syntactic overhead, they represent a
-foundational linguistic artifact: <strong>expressing arbitrary digital
-state as self-executing concatenative literature</strong>. This lineage
-has been preserved in <code>src/linguistic_quine.rs</code> to serve as
-the foundation for future work in AI quine generation, symbolic
-reasoning, and reflective software systems.</p>
-<hr />
-<h2 id="verification-and-evaluator-availability">6. Verification and
-Evaluator Availability</h2>
-<p>The complete demonstration package—including the standalone
-<code>polycryst</code> Linux x86_64 binary, the Andean Physical TRNG
-demonstrator (<code>andean_nist_demonstrator</code>), both formal
-scientific whitepapers, and the Texas governing law Mutual
-Non-Disclosure Agreement (MNDA)—is assembled in
-<code>~/andean-tech-demo-2026/</code>.</p>
-<p>Qualified cryptographic reviewers, institutional evaluators, and
-partners may execute the full verification suite on their own bare-metal
-Linux hardware under our standard Mutual NDA.</p>
-<p>Inquiries regarding technical diligence, embedded licensing
-(<code>libcryst.a</code>), or synthesizable FPGA IP cores should be
-directed to the Mage’s Guild technical desk at
-<code>https://urania.magesguild.io</code>.</p>
-
-</main>
 </body>
 </html>
